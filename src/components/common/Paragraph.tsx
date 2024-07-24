@@ -4,10 +4,10 @@ type PARAGRAPH = {
   textName: string;
 };
 
-const Paragraph = ({ className, textName }:PARAGRAPH) => {
+const Paragraph = ({ className, textName }: PARAGRAPH) => {
   return (
     <p
-      className={`font-poppins font-normal text-base leading-6 text-gray ${className}`}
+      className={`leading-6 text-grey ${className}`}
     >
       {textName}
     </p>
