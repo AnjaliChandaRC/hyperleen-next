@@ -1,7 +1,12 @@
 import React from "react";
+import CommonButton from "../common/CommonButton";
 
 const OurTeam = () => {
-  return <div></div>;
+  return (
+    <div>
+      <CommonButton buttonName="Get Started Now" />
+    </div>
+  );
 };
 
 export default OurTeam;

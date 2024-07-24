@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'poppins': "'Poppins',sans-serif",
+        poppins: "'Poppins',sans-serif",
       },
       fontSize: {
         "2xxl": "32px",
-        "3xxl": "80px"
+        "3xxl": "80px",
       },
       colors: {
         blue: "#084CAF",
@@ -24,14 +24,14 @@ const config: Config = {
         smoke_grey: "#f5f5f5",
       },
       lineHeight: {
-        "sm": "34.8px",
-        "md": "43.2px",
-        "lg": "57.6px",
-        "xl": "80px",
+        sm: "34.8px",
+        md: "43.2px",
+        lg: "57.6px",
+        xl: "80px",
       },
 
       boxShadow: {
-        '3xl': '4px 4px 20px 0px #084CAF4D',
+        "3xl": "4px 4px 20px 0px #084CAF4D",
       },
       container: {
         padding: {
@@ -42,13 +42,13 @@ const config: Config = {
         screens: {
           lg: "1040px",
           xl: "1188px",
-          "2xl": "1368px"
+          "2xl": "1368px",
         },
       },
       screens: {
         xl: "1200px",
       },
-    }
+    },
   },
   plugins: [],
 };
