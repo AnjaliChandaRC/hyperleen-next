@@ -6,6 +6,7 @@ import header_line_2 from '../../../public/assets/images/home/png/header_line_2.
 import Image from 'next/image';
 import { useState } from 'react';
 import CommonButton from './CommonButton';
+import Link from 'next/link';
 
 interface Item {
   id: number;
@@ -59,9 +60,9 @@ const Header = () => {
       <nav className='border-b-[0.1px] border-grey py-4'>
         <div className='container flex items-center justify-between w-full'>
           <div className=' w-[54px] h-[56px]'>
-            <a href="#">
+            <Link href={'/home'}>
               <Image width={100} height={100} src={header_logo} alt='header logo image' />
-            </a>
+            </Link>
           </div>
           <div className='flex lg:hidden flex-col items-center justify-between w-[30px] h-[22px] z-10 cursor-pointer' onClick={handleNvaBar}>
             <span className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active ? "rotate-45 relative top-[8px] -right-px" : "rotate-0"}`}></span>
@@ -70,14 +71,14 @@ const Header = () => {
           </div>
           <div className={`flex ease-in-out duration-300 ${active ? "max-lg:left-[-100%]" : "max-lg:start-0"} max-lg:bg-white max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 items-center justify-center xl:gap-5 gap-4`}>
             {navLink.map((obj, index) => (
-              <a
+              <Link
                 key={index}
                 href={obj.href}
                 className='relative font-normal font-poppins text-base text-grey hover:text-blue ease-in-out duration-300 after:content-[""] after:absolute after:left-0 after:-bottom-2.5 max-lg:after:-bottom-1.5 after:w-0 hover:after:w-full after:h-[2px] after:bg-blue after:transition-all after:duration-300'
                 onClick={removeNavBar}
               >
                 {obj.tabText}
-              </a>
+              </Link>
             ))}
             <div className={`flex items-center justify-center gap-3 ps-6 ${!active ? "max-lg:flex-col" : "flex-row"}`}>
               <CommonButton buttonClass='!bg-white !shadow-none !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent' buttonName='Sign Up' />
@@ -108,7 +109,7 @@ const Header = () => {
                 ))}
               </div>
             </div>
-            <p className='text-center xl:text-3xxl md:text-6xl sm:text-5xl text-3xl font_gilroy_bold md:leading-xl sm:leading-lg lg:pt-11 pt-8 pb-5'>Transform Your <span className='text-blue font_gilroy_medium'>Data into AI</span> Insights</p>
+            <p className='text-center xl:text-3xxl md:text-6xl sm:text-5xl text-3xl font_gilroy_medium md:leading-xl sm:leading-lg lg:pt-11 pt-8 pb-5'>Transform Your <span className='text-blue font_gilroy_medium'>Data into AI</span> Insights</p>
             <div className='flex items-center justify-center lg:pb-10 pb-6'>
               <p className='text-center max-w-[634px] font-poppins font-normal text-base text-grey'>Unlock the full potential of your AI models with our premium data labeling services. Our expert annotators ensure your data is meticulously labeled, enabling superior performance and insights.</p>
             </div>
