@@ -2,7 +2,9 @@ import React from 'react'
 
 const AddLabel = () => {
   return (
-    <div>AddLabel</div>
+    <div>
+      
+    </div>
   )
 }
 
