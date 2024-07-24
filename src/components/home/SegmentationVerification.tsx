@@ -52,18 +52,19 @@ const SegmentationVerification = () => {
           </div>
         </div>
         {/* =======verification======= */}
-        <div className="flex flex-wrap lg:flex-row flex-col-reverse mx-[-12px] items-center pt-10 pb-40">
-          <div className="w-[50%] px-3">
-            <div className="relative border border-blue max-w-[502px] rounded-2xl">
+        <div className="flex flex-wrap flex-row mx-[-12px] items-center lg:pt-10 pt-16 lg:pb-40 md:pb-20 pb-10">
+          <div className="lg:w-[50%] w-full px-3">
+            <div className="relative border border-blue lg:max-w-[502px] sm:max-w-96 max-w-72 rounded-2xl max-lg:mx-auto">
               {/* =====verficationImg===== */}
               <Image
                 width={502}
                 height={483}
                 src="/assets/images/home/png/verification-img.png"
                 alt="segmentation-img"
+                className="rounded-2xl"
               />
               {/* ====blueLayer==== */}
-              <div className="absolute top-[-20px] left-[-20px] z-[-1]">
+              <div className="absolute top-[-20px] left-[-20px] z-[-1] md:block hidden">
                 <Image
                   width={395}
                   height={370}
@@ -72,28 +73,28 @@ const SegmentationVerification = () => {
                 />
               </div>
               {/* =====blue-box-content=== */}
-              <div className="bg-blue max-w-[502px] rounded-t-2xl lg:p-4 p-2 absolute top-0 lg:w-[502px] w-full">
-                <p className="font-Gilroy font-semibold lg:text-2xxl sm:text-2xl text-xl lg:leading-md text-white">
+              <div className="bg-blue max-w-[502px] rounded-t-2xl lg:p-4 p-2 absolute top-0 lg:w-[502px] !w-full">
+                <p className="font-Gilroy font-semibold lg:text-2xxl sm:text-2xl text-lg lg:leading-md leading-6 text-white">
                   Is Previous Selected Object is Correct?
                 </p>
               </div>
               {/* ====white-box==== */}
-              <div className="absolute shadow-WhiteShadow bg-gray-200 max-w-[339px] w-full p-[10px] top-[400px] left-[-21px] rounded-xl">
-                <p className="font-Gilroy font-semibold text-2xl text-center text-black">
+              <div className="absolute shadow-WhiteShadow bg-gray-200 lg:max-w-[339px] max-w-64 w-full p-[10px] bottom-[-22%] left-[-21px] rounded-xl">
+                <p className="font-Gilroy font-semibold lg:text-2xl sm:text-xl text-base text-center text-black">
                   Confirm your action
                 </p>
                 <Paragraph
                   textName="Confirm if the segmentation was performed correctly."
-                  className="max-w-[293px] text-center pb-9"
+                  className="max-w-[293px] text-center lg:pb-9 pb-3 lg:text-base text-sm"
                 />
-                <div className="flex gap-4">
-                  <CommonButton buttonName="Yes" buttonClass="w-[148px]" />
-                  <CommonButton buttonName="No" buttonClass="w-[148px]" />
+                <div className="flex gap-4 justify-center">
+                  <CommonButton buttonName="Yes" buttonClass="lg:w-[148px] w-[110px]" />
+                  <CommonButton buttonName="No" buttonClass="lg:w-[148px] w-[110px]" />
                 </div>
               </div>
             </div>
           </div>
-          <div className="lg:w-[50%] w-full px-3 lg:pt-0 sm:pt-5 pt-3">
+          <div className="lg:w-[50%] w-full px-3 lg:pt-0 sm:pt-24 pt-20">
             <h5 className="font-Gilroy font-semibold lg:text-2xxl text-2xl leading-md text-black lg:pb-4 sm-pb-1 pb-0 max-lg:text-center">
               Verification
             </h5>

@@ -7,7 +7,7 @@ type PARAGRAPH = {
 const Paragraph = ({ className, textName }: PARAGRAPH) => {
   return (
     <p
-      className={`leading-6 text-grey ${className}`}
+      className={`text-grey ${className}`}
     >
       {textName}
     </p>
