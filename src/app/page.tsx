@@ -6,8 +6,6 @@ import OurTeam from "@/components/home/OurTeam";
 import HowWorks from "@/components/home/HowWorks";
 import EnsureHighQuality from "@/components/home/EnsureHighQuality";
 import ToolsPlatforms from "@/components/home/ToolsPlatforms";
-import Faqs from "@/components/common/Faqs";
-import GetInTouch from "@/components/common/GetInTouch";
 
 export default function Home() {
   return (
