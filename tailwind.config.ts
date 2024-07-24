@@ -22,6 +22,8 @@ const config: Config = {
         light_grey: "#0101010D",
         smoke_blue: "#f2f6fb",
         smoke_grey: "#f5f5f5",
+        // add a light black color
+        light_black: "#0000000A"
       },
       lineHeight: {
         sm: "34.8px",

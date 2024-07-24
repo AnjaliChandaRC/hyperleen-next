@@ -51,15 +51,15 @@ const Footer = () => {
             <p className='max-w-[731px] opacity-70 font-poppins font-normal text-base text-center pt-4'>
               Take your experience a step further! Subscribe to our monthly newsletter for exclusive access to discounts, promotions, Hyperleen events, and more. We’d hate to be annoying, please unsubscribe anytime!
             </p>
-            <div className=' flex items-center gap-[14px]'>
-              <input type="email" placeholder='Your e-mail' className=' max-w-[323px] w-full pl-4 rounded-2xl text-black min-h-[55px] placeholder:text-black' />
+            <div className=' flex items-center gap-[14px] mt-6'>
+              <input type="email" placeholder='Your e-mail' className=' w-[323px] pl-4 rounded-2xl bg-light_black min-h-[55px] placeholder:text-black font-poopins text-base font-normal text-grey outline-blue' />
             </div>
           </div>
         </div>
       </section>
-      <footer className='bg-footerSection bg-no-repeat bg-center bg-full'>
+      <footer className='bg-footerSection bg-no-repeat bg-center'>
         <div className='container pt-[69px] pb-[116px] w-full'>
-          <div className='row justify-between'>
+          <div className='flex flex-row flex-wrap -mx-3  justify-between'>
             <div className='lg:w-3/12 px-3'>
               <div className='max-w-[117px]'>
                 <Image
@@ -74,7 +74,7 @@ const Footer = () => {
               </p>
             </div>
             <div className='lg:w-8/12'>
-              <div className='row justify-end'>
+              <div className='flex flex-row flex-wrap -mx-3 justify-end'>
                 {footerData.map((section, index) => (
                   <div key={index} className='md:w-3/12 px-3'>
                     <ul>
