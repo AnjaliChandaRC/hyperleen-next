@@ -1,33 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+    font-family: "Gilroy bold ,sans-serif";
+    src: url(../../public/assets/fonts/Gilroy-Bold.ttf);
+    word-wrap: break-word;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+    font-family: "Gilroy heavy,sans-serif";
+    src: url(../../public/assets/fonts/Gilroy-Heavy.ttf);
+    word-wrap: break-word;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+    font-family: "Gilroy light ,sans-serif";
+    src: url(../../public/assets/fonts/Gilroy-Light.ttf);
+    word-wrap: break-word;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+    font-family: "Gilroy medium ,sans-serif";
+    src: url(../../public/assets/fonts/Gilroy-Medium.ttf);
+    word-wrap: break-word;
+}
+
+@font-face {
+    font-family: "Gilroy regular  ,sans-serif";
+    src: url(../../public/assets/fonts/Gilroy-Regular.ttf);
+    word-wrap: break-word;
+}
+
+.font_gilroy_bold {
+    font-family: "Gilroy bold ,sans-serif";
+}
+
+.font_gilroy_heavy {
+    font-family: "Gilroy heavy ,sans-serif";
+}
+
+.font_gilroy_light {
+    font-family: "Gilroy light ,sans-serif";
+}
+
+.font_gilroy_medium {
+    font-family: "Gilroy medium ,sans-serif";
+}
+
+.font_gilroy_regular {
+    font-family: "Gilroy regular ,sans-serif";
 }
