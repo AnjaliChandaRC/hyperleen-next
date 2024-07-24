@@ -50,6 +50,12 @@ const config: Config = {
       screens: {
         xl: "1200px",
       },
+      backgroundImage: {
+        header_bg: "url('/assets/images/home/png/header_bg.png')",
+      },
+      backgroundSize: {
+        full: "100% 100%",
+      }
     },
   },
   darkMode: "class",
