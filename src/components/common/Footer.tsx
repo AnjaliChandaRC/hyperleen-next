@@ -80,20 +80,34 @@ const Footer = () => {
                   alt='footer logo'
                 />
               </a>
-              <p className='font-poopins font-normal text-base text-white pt-5 opacity-70 max-w-[279px]'>
+              <p className='font-poopins font-normal text-base text-white pt-5 opacity-70 lg:max-w-[279px]'>
                 Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.
               </p>
+              <div className='gap-3 mt-5 max-lg:flex hidden'>
+                <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue'>
+                  <FacebookLogo />
+                </div>
+                <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue'>
+                  <TwitterLogo />
+                </div>
+                <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue'>
+                  <LinkdinLogo />
+                </div>
+                <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue'>
+                  <InstagramLogo />
+                </div>
+              </div>
             </div>
-            <div className='lg:w-7/12'>
-              <div className='flex flex-row flex-wrap -mx-3 lg:justify-end max-lg:pt-4'>
+            <div className='lg:w-7/12 w-full'>
+              <div className='flex flex-row flex-wrap -mx-3 lg:justify-end max-lg:pt-5'>
                 {footerData.map((section, index) => (
-                  <div key={index} className='md:w-3/12 px-3'>
+                  <div key={index} className='md:w-3/12 w-1/2 px-5 lg:px-3 pt-5'>
                     <ul>
                       <li>
                         <h2 className='font-poopins text-lg text-white font-normal'>{section.title}</h2>
                       </li>
                       {section.links.map((link, idx) => (
-                        <li key={idx} className='pt-5'>
+                        <li key={idx} className='lg:pt-5 pt-3 text-nowrap'>
                           <a href={link.href} className='font-poopins text-base text-white opacity-70'>
                             {link.label}
                           </a>
@@ -102,7 +116,7 @@ const Footer = () => {
                     </ul>
                   </div>
                 ))}
-                <div className='md:w-3/12 px-3'>
+                <div className='md:w-3/12 w-full max-lg:hidden'>
                   <h2 className='text-lg font-poopins text-white font-normal'>Follow us on</h2>
                   <div className='flex gap-3 mt-5'>
                     <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue'>
@@ -123,7 +137,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='w-full h-[1px] bg-light_grey mt-14'></div>
+        <div className='w-full h-[1px] bg-light_grey lg:mt-14 md:pt-10 pt-7'></div>
         <p className='font-poppins opacity-70 text-center text-base text-white pt-5 pb-11 px-3'>© 2024 Hyperleen, All Rights reserved.</p>
       </footer>
     </>
