@@ -6,7 +6,9 @@ const ToolsPlatforms = () => {
   return (
     <>
       <div className="container">
-        <PrimaryHeading textName="Tools and" textSpan="Platforms for Polygon" textSpan2="Annotations" className="max-w-[652px]" />
+        <div className=" flex justify-center">
+          <PrimaryHeading textName="Tools and" textSpan="Platforms for Polygon" textSpan2="Annotations" className="max-w-[652px] text-center" />
+        </div>
       </div>
     </>
   )
