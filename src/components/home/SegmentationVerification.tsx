@@ -17,7 +17,9 @@ const SegmentationVerification = () => {
         />
         <div className="flex flex-wrap flex-row mx-[-12px]">
           <div className="w-[50%] px-3">
-            <h3 className="font-gilroy  pb-4">Image Segmentation</h3>
+            <h3 className="font-gilroy font-semibold text-2xxl leading-md text-black pb-4">
+              Image Segmentation
+            </h3>
           </div>
         </div>
       </div>
