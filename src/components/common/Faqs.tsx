@@ -1,9 +1,7 @@
 import React from 'react'
 
 const Faqs = () => {
-  return (
-    <div>Faqs</div>
-  )
+  return <div className="uppercase font_gilroy_medium">Faqs</div>;
 }
 
 export default Faqs
