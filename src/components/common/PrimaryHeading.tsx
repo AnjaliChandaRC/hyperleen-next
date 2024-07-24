@@ -15,7 +15,7 @@ const PrimaryHeading = ({
   textSpan2,
 }: PRIMARY_HEADING_PROPS) => {
   return (
-    <h2 className={`text-5xl text-black font_gilroy_medium ${className}`}>
+    <h2 className={`lg:text-5xl sm:text-4xl text-3xl text-black font_gilroy_medium ${className}`}>
       {textName}
       <span className={`text-blue ${spanClass}`}>{textSpan}</span>
       <span className={`text-black ${spanClass2}`}>{textSpan2}</span>
