@@ -77,14 +77,19 @@ const SegmentationVerification = () => {
                   Is Previous Selected Object is Correct?
                 </p>
               </div>
-              <div className="absolute">
+              {/* ====white-box==== */}
+              <div className="absolute shadow-WhiteShadow bg-gray-200 max-w-[339px] w-full p-[10px] top-[400px] left-[-21px] rounded-xl">
                 <p className="font-Gilroy font-semibold text-2xl text-center text-black">
                   Confirm your action
                 </p>
                 <Paragraph
                   textName="Confirm if the segmentation was performed correctly."
-                className="max-w-[293px] text-center"
+                  className="max-w-[293px] text-center pb-9"
                 />
+                <div className="flex gap-4">
+                  <CommonButton buttonName="Yes" buttonClass="w-[148px]" />
+                  <CommonButton buttonName="No" buttonClass="w-[148px]" />
+                </div>
               </div>
             </div>
           </div>
