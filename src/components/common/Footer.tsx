@@ -51,8 +51,8 @@ const Footer = () => {
             <p className='max-w-[731px] opacity-70 font-poppins font-normal text-base text-center pt-4'>
               Take your experience a step further! Subscribe to our monthly newsletter for exclusive access to discounts, promotions, Hyperleen events, and more. We’d hate to be annoying, please unsubscribe anytime!
             </p>
-            <div className=' flex items-center gap-[14px]'>
-              <input type="email" placeholder='Your e-mail' className=' max-w-[323px] w-full pl-4 rounded-2xl text-black min-h-[55px] placeholder:text-black' />
+            <div className=' flex items-center gap-[14px] mt-6'>
+              <input type="email" placeholder='Your e-mail' className=' w-[323px] pl-4 rounded-2xl bg-light_black min-h-[55px] placeholder:text-black font-poopins text-base font-normal text-grey outline-blue' />
             </div>
           </div>
         </div>
