@@ -1,5 +1,6 @@
 import React from "react";
 import PrimaryHeading from "../common/PrimaryHeading";
+import Paragraph from "../common/Paragraph";
 const SegmentationVerification = () => {
   return (
     <div>
@@ -9,6 +10,7 @@ const SegmentationVerification = () => {
           textSpan="Segmentation and "
           textSpan2="Verification"
         />
+        <Paragraph textName="In the realm of sentiment analysis, human judgment plays a crucial role. While our methods may not be extravagant, they are designed to ensure precise and reliable results." />
       </div>
     </div>
   );
