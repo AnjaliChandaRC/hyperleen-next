@@ -57,9 +57,9 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <footer className='bg-footerSection bg-no-repeat bg-center bg-full'>
+      <footer className='bg-footerSection bg-no-repeat bg-center'>
         <div className='container pt-[69px] pb-[116px] w-full'>
-          <div className='row justify-between'>
+          <div className='flex flex-row flex-wrap -mx-3  justify-between'>
             <div className='lg:w-3/12 px-3'>
               <div className='max-w-[117px]'>
                 <Image
@@ -74,7 +74,7 @@ const Footer = () => {
               </p>
             </div>
             <div className='lg:w-8/12'>
-              <div className='row justify-end'>
+              <div className='flex flex-row flex-wrap -mx-3 justify-end'>
                 {footerData.map((section, index) => (
                   <div key={index} className='md:w-3/12 px-3'>
                     <ul>
