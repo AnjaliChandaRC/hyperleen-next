@@ -1,7 +1,6 @@
 "use client"
 import { useState } from 'react';
 import Image from 'next/image';
-import footerLogo from '../../../public/assets/images/home/png/footer-logo.png';
 import CommonButton from './CommonButton';
 import { FacebookLogo, InstagramLogo, LinkdinLogo, TwitterLogo } from './Icons';
 import Link from 'next/link';
@@ -77,7 +76,7 @@ const Footer = () => {
                 <Image
                   width={117}
                   height={30}
-                  src={footerLogo}
+                  src='/assets/images/home/png/footer-logo.png'
                   alt='footer logo'
                 />
               </a>
@@ -111,7 +110,7 @@ const Footer = () => {
                       </li>
                       {section.links.map((link, idx) => (
                         <li key={idx} className='lg:pt-5 pt-3 text-nowrap'>
-                          <a href={link.href} className='font-poopins text-base text-white opacity-70'>
+                          <a href={link.href} className='text-white opacity-70 hover:opacity-100 ease-in-out duration-300' >
                             {link.label}
                           </a>
                         </li>
