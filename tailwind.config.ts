@@ -23,7 +23,7 @@ const config: Config = {
         smoke_blue: "#f2f6fb",
         smoke_grey: "#f5f5f5",
         // add a light black color
-        light_black: "#0000000A"
+        light_black: "#0000000A",
       },
       lineHeight: {
         sm: "34.8px",
@@ -31,7 +31,6 @@ const config: Config = {
         lg: "57.6px",
         xl: "80px",
       },
-
       boxShadow: {
         "3xl": "4px 4px 20px 0px #084CAF4D",
       },
@@ -52,14 +51,14 @@ const config: Config = {
       },
       backgroundImage: {
         header_bg: "url('/assets/images/home/png/header_bg.png')",
+        footerSection: 'url("/assets/images/home/png/footer-bg-img.png")',
       },
       backgroundSize: {
         full: "100% 100%",
-      }
+      },
     },
   },
   darkMode: "class",
-  plugins: [
-  ],
+  plugins: [],
 };
 export default config;
