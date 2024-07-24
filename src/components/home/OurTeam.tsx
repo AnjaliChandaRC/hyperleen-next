@@ -38,7 +38,7 @@ const OurTeam = () => {
               className="px-[10px] w-full md:w-1/2 flex justify-center mb-12
                md:mb-0"
             >
-              <div className="max-w-[560px] h-full rounded-2xl bg-white">
+              <div className="max-w-[560px] w-full h-full rounded-2xl bg-white">
                 <div className="relative">
                   <Image
                     src={member.image}
@@ -68,17 +68,17 @@ const OurTeam = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="p-4 flex flex-col xl:gap-6 lg:gap-5 md:gap-4">
-                  <div className="flex xl:flex-row flex-col xl:gap-[33px] gap-[18px] justify-between">
-                    <div>
-                      <h3 className="font-semibold text-2xl leading-8 text-black mb-1 font_gilroy_bold">
+                <div className="p-4 flex flex-col xl:gap-6 lg:gap-4 md:gap-4">
+                  <div className="flex flex-col xl:flex-row gap-2 justify-between">
+                    <div className=" flex xl:flex-col flex-row-reverse max-xl:items-center justify-between">
+                      <h3 className="font-semibold text-nowrap text-2xl leading-8 text-black mb-1 font_gilroy_bold">
                         {member.name}
                       </h3>
-                      <h4 className="font-poppins font-normal text-lg leading-7 text-grey">
+                      <h4 className="font-poppins text-nowrap font-normal text-lg leading-7 text-grey">
                         {member.role}
                       </h4>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex xl:flex-col flex-row justify-between max-xl:items-center gap-2 ">
                       <Link
                         href={`tel:${member.phone}`}
                         className="flex items-center gap-3"

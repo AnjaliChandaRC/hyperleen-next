@@ -3,33 +3,37 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 @font-face {
   font-family: "Gilroy bold ,sans-serif";
-  src: url(../../public/assets/fonts/Gilroy-Bold.ttf);
+  src: url("../../public/assets/fonts/Gilroy-Bold.ttf");
   word-wrap: break-word;
 }
 
 @font-face {
   font-family: "Gilroy heavy,sans-serif";
-  src: url(../../public/assets/fonts/Gilroy-Heavy.ttf);
+  src: url("../../public/assets/fonts/Gilroy-Heavy.ttf");
   word-wrap: break-word;
 }
 
 @font-face {
   font-family: "Gilroy light ,sans-serif";
-  src: url(../../public/assets/fonts/Gilroy-Light.ttf);
+  src: url("../../public/assets/fonts/Gilroy-Light.ttf");
   word-wrap: break-word;
 }
 
 @font-face {
   font-family: "Gilroy medium ,sans-serif";
-  src: url(../../public/assets/fonts/Gilroy-Medium.ttf);
+  src: url("../../public/assets/fonts/Gilroy-Medium.ttf");
   word-wrap: break-word;
 }
 
 @font-face {
   font-family: "Gilroy regular  ,sans-serif";
-  src: url(../../public/assets/fonts/Gilroy-Regular.ttf);
+  src: url("../../public/assets/fonts/Gilroy-Regular.ttf");
   word-wrap: break-word;
 }
 
