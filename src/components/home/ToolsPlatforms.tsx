@@ -1,10 +1,12 @@
 import React from 'react'
+import PrimaryHeading from '../common/PrimaryHeading'
+
 
 const ToolsPlatforms = () => {
   return (
     <>
       <div className="container">
-        <h2 className='text-light_blue'>hello</h2>
+        <PrimaryHeading textName="Tools and" textSpan="Platforms for Polygon" textSpan2="Annotations" className="max-w-[652px]" />
       </div>
     </>
   )
