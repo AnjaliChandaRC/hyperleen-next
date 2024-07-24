@@ -22,6 +22,7 @@ const config: Config = {
         light_grey: "#0101010D",
         smoke_blue: "#f2f6fb",
         smoke_grey: "#f5f5f5",
+        smoke_grey2: "#FFFFFF29",
       },
       lineHeight: {
         sm: "34.8px",
@@ -32,6 +33,7 @@ const config: Config = {
 
       boxShadow: {
         "3xl": "4px 4px 20px 0px #084CAF4D",
+        "4xl": "0px 4px 4px 0px #00000040",
       },
       container: {
         padding: {
@@ -47,6 +49,13 @@ const config: Config = {
       },
       screens: {
         xl: "1200px",
+      },
+      backgroundImage: {
+        ourTeam: `url("/assets/images/home/webp/team_Bg.webp")`,
+        teamLayer: `url("/assets/images/home/webp/team_Layer.webp")`,
+      },
+      backgroundSize: {
+        full: "100% 100%",
       },
     },
   },
