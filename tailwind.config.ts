@@ -31,7 +31,9 @@ const config: Config = {
         "lg": "57.6px",
         "xl": "80px",
       },
-
+      backgroundImage: {
+        footerSection: 'url("/assets/images/home/png/footer-bg-img.png")'
+      },
       boxShadow: {
         '3xl': '4px 4px 20px 0px ##084CAF4D',
       },
@@ -50,6 +52,9 @@ const config: Config = {
       screens: {
         xl: "1200px",
       },
+      backgroundSize: {
+        full: "100% 100%",
+      }
     }
   },
   plugins: [],
