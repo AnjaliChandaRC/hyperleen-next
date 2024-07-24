@@ -31,7 +31,7 @@ const config: Config = {
       },
 
       boxShadow: {
-        '3xl': '4px 4px 20px 0px ##084CAF4D',
+        '3xl': '4px 4px 20px 0px #084CAF4D',
       },
       container: {
         padding: {
