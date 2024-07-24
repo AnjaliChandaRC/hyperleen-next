@@ -4,6 +4,7 @@ const SegmentationVerification = () => {
   return (
     <div>
       <h2 className=''>Image Segmentation and Verification</h2>
+      <img src="" alt="" />
     </div>
   );
 }
