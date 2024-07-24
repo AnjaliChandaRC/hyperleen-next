@@ -2,7 +2,11 @@ import React from 'react'
 
 const ToolsPlatforms = () => {
   return (
-    <div>ToolsPlatforms</div>
+    <>
+      <div className="container">
+        <h2 className='text-light_blue'>hello</h2>
+      </div>
+    </>
   )
 }
 

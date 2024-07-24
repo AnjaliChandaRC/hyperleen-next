@@ -8,49 +8,47 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      extend: {
-        fontFamily: {
-          'poppins': "'Poppins',sans-serif",
-        },
-        fontSize: {
-          "2xxl": "32px",
-          "3xxl": "80px"
-        },
-        colors: {
-          blue: "#084CAF",
-          grey: "#4E4E4E",
-          light_blue: "#0A02EC14",
-          light_grey: "#0101010D",
-          smoke_blue: "#f2f6fb",
-          smoke_grey: "#f5f5f5",
-        },
-        lineHeight: {
-          "sm": "34.8px",
-          "md": "43.2px",
-          "lg": "57.6px",
-          "xl": "80px",
-        },
+      fontFamily: {
+        'poppins': "'Poppins',sans-serif",
+      },
+      fontSize: {
+        "2xxl": "32px",
+        "3xxl": "80px"
+      },
+      colors: {
+        blue: "#084CAF",
+        grey: "#4E4E4E",
+        light_blue: "#0A02EC14",
+        light_grey: "#0101010D",
+        smoke_blue: "#f2f6fb",
+        smoke_grey: "#f5f5f5",
+      },
+      lineHeight: {
+        "sm": "34.8px",
+        "md": "43.2px",
+        "lg": "57.6px",
+        "xl": "80px",
+      },
 
-        boxShadow: {
-          '3xl': '4px 4px 20px 0px ##084CAF4D',
+      boxShadow: {
+        '3xl': '4px 4px 20px 0px ##084CAF4D',
+      },
+      container: {
+        padding: {
+          DEFAULT: "20px",
+          sm: "24px",
         },
-        container: {
-          padding: {
-            DEFAULT: "20px",
-            sm: "24px",
-          },
-          center: true,
-          screens: {
-            lg: "1040px",
-            xl: "1188px",
-            "2xl": "1368px"
-          },
-        },
+        center: true,
         screens: {
-          xl: "1200px",
+          lg: "1040px",
+          xl: "1188px",
+          "2xl": "1368px"
         },
-      }
-    },
+      },
+      screens: {
+        xl: "1200px",
+      },
+    }
   },
   plugins: [],
 };
