@@ -10,13 +10,13 @@ import ToolsPlatforms from "@/components/home/ToolsPlatforms";
 export default function Home() {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       <AddLabel />
-      {/* <SegmentationVerification /> */}
-      {/* <ObjectVerification /> */}
+      <SegmentationVerification />
+      <ObjectVerification />
       <OurTeam />
-      {/* <HowWorks /> */}
-      {/* <EnsureHighQuality /> */}
+      <HowWorks />
+      <EnsureHighQuality />
       <ToolsPlatforms />
     </>
   );
