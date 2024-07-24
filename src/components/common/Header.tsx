@@ -75,7 +75,7 @@ const Header = () => {
               </a>
             ))}
             <div className={`flex items-center justify-center gap-3 xl:ps-11 lg:ps-6 ${!active ? "max-lg:flex-col" : "flex-row"}`}>
-              <CommonButton buttonClass='!bg-white !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent' buttonName='Sign Up' />
+              <CommonButton buttonClass='!bg-white !shadow-none !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent' buttonName='Sign Up' />
               <CommonButton buttonName='Contact Us' />
             </div>
           </div>
@@ -95,7 +95,7 @@ const Header = () => {
               </div>
             </div>
             <div className='overflow-auto'>
-              <div className='flex items-center justify-center gap-[24px] max-lg:flex-wrap w-[824px]'>
+              <div className='flex items-center md:justify-center justify-between md:gap-6 gap-3 max-lg:flex-wrap w-[824px]'>
                 {items.map(item => (
                   <div key={item.id} className='rounded-[144px] border border-[#0A02EC] min-h-[44px] w-full bg-light_blue font-poppins font-normal text-base flex items-center justify-center' style={{ maxWidth: item.maxWidth }}>
                     {item.label}
@@ -109,6 +109,10 @@ const Header = () => {
             </div>
             <div className={`flex items-center justify-center gap-[14px] ${!active ? "max-lg:flex-col" : "flex-row"}`}>
               {/* common btn here */}
+              <div className="flex items-center justify-center gap-3 xl:ps-11 lg:ps-6">
+                <CommonButton buttonName='Get Started' />
+                <CommonButton buttonClass='!bg-white !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent !shadow-none' buttonName='Try For Free' />
+              </div>
             </div>
           </div>
         </div>
