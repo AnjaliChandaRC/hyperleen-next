@@ -17,10 +17,10 @@ const Faqs: React.FC = () => {
   return (
     <>
       <div className="container">
-        <h2 className="font_gilroy_bold text-5xl leading-lg text-center text-blue">
+        <h2 className="font_gilroy_medium text-3xl lg:text-5xl lg:leading-lg text-center text-blue">
           FAQs
         </h2>
-        <p className="font-normal text-base text-grey text-center mt-4">
+        <p className="font-normal text-sm md:text-base text-grey text-center mt-4">
           You have got Question. We have got Answer
         </p>
         <div className="max-w-[975px] mx-auto mt-5 lg:mt-[60px]">
@@ -80,8 +80,8 @@ const Faqs: React.FC = () => {
                   activeIndex === index ? "h-auto" : "max-h-0"
                 }`}
               >
-                <div className="text-gray-700 p-6">
-                  <p className="font_gilroy_regular text-xl text-grey max-w-[857px]">
+                <div className="text-gray-700 p-3 lg:p-6">
+                  <p className="font_gilroy_regular text-sm md:text-xl text-grey max-w-[857px]">
                     {data.answer}
                   </p>
                 </div>
