@@ -8,7 +8,7 @@ import GetInTouch from "@/components/common/GetInTouch";
 export const metadata: Metadata = {
   title: "Hyperleen",
   description: "Transform Your Data into AI Insights",
-  metadataBase: new URL("https://hyperleen-next.vercel.app/"),
+  metadataBase: new URL("https://hyperleen-next-student.vercel.app/"),
   openGraph: {
     title: "Hyperleen",
     description: "Transform Your Data into AI Insights",
