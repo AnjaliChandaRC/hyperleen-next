@@ -25,12 +25,10 @@ const config: Config = {
           smoke_grey: "#f5f5f5",
         },
         lineHeight: {
-          "sm": "23.67px",
-          "md": "28px",
-          "lg": "34.8px",
-          "xl": "43.2px",
-          "2xl": "57.6px",
-          "3xl": "80px",
+          "sm": "34.8px",
+          "md": "43.2px",
+          "lg": "57.6px",
+          "xl": "80px",
         },
 
         boxShadow: {
