@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const AddLabel = () => {
   return (
     <div>
       
     </div>
-  )
-}
+  );
+};
 
-export default AddLabel
+export default AddLabel;

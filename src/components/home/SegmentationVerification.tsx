@@ -59,7 +59,7 @@ const SegmentationVerification = () => {
               <Image
                 width={502}
                 height={483}
-                src="/assets/images/home/png/verification-img.png"
+                src="/assets/images/home/webp/verification-img.webp"
                 alt="segmentation-img"
                 className="rounded-2xl"
               />
@@ -68,7 +68,7 @@ const SegmentationVerification = () => {
                 <Image
                   width={395}
                   height={370}
-                  src="/assets/images/home/png/blue-verification-layer.png"
+                  src="/assets/images/home/webp/blue-verification-layer.webp"
                   alt="segmentation-img"
                 />
               </div>
