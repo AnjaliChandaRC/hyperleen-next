@@ -33,18 +33,18 @@ const Header = () => {
   return (
     <div>
       <nav className='border-b-[0.1px] border-grey py-4'>
-        <div className='container flex items-center justify-between w-full'>
+        <div className='max-w-[1140px] mx-auto px-5 flex items-center justify-between w-full'>
           <div className=' w-[54px] h-[56px]'>
             <Link href={'/home'}>
               <Image width={100} height={100} src={'/assets/images/home/png/header_logo.png'} alt='header logo image' />
             </Link>
           </div>
-          <div className='flex lg:hidden flex-col items-center justify-between w-[30px] h-[22px] z-10 cursor-pointer' onClick={handleNvaBar}>
+          <div className='flex lg:hidden flex-col items-center justify-between w-[30px] h-[22px] z-30 cursor-pointer' onClick={handleNvaBar}>
             <span className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active ? "rotate-45 relative top-[8px] -right-px" : "rotate-0"}`}></span>
             <span className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active ? "hidden" : "block"}`}></span>
             <span className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active ? "-rotate-45 relative bottom-[11px] -right-px" : "rotate-0"}`}></span>
           </div>
-          <div className={`flex ease-in-out duration-300 ${active ? "max-lg:left-[-100%]" : "max-lg:start-0"} max-lg:bg-white max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 items-center justify-center xl:gap-5 gap-4`}>
+          <div className={`flex ease-in-out duration-300 ${active ? "max-lg:left-[-100%]" : "max-lg:start-0"} max-lg:bg-white max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 items-center justify-center xl:gap-5 gap-4 z-20`}>
             {navLink.map((obj, index) => (
               <Link
                 key={index}
@@ -55,7 +55,7 @@ const Header = () => {
                 {obj.tabText}
               </Link>
             ))}
-            <div className={`flex items-center justify-center gap-3 ps-6 ${!active ? "max-lg:flex-col" : "flex-row"}`}>
+            <div className={`flex items-center justify-center gap-3 lg:ps-6 ps-0 ${!active ? "max-lg:flex-col" : "flex-row"}`}>
               <CommonButton buttonClass='!bg-white !shadow-none !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent' buttonName='Sign Up' />
               <CommonButton buttonName='Contact Us' />
             </div>
