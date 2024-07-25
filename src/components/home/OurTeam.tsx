@@ -3,6 +3,7 @@ import PrimaryHeading from "../common/PrimaryHeading";
 import Image from "next/image";
 import Link from "next/link";
 import { teamMembers } from "../common/Helper";
+import Paragraph from "../common/Paragraph";
 import {
   FacebookIcon,
   InstagramIcon,
@@ -10,7 +11,6 @@ import {
   MailIcon,
   PhoneIcon,
 } from "../common/Icons";
-import Paragraph from "../common/Paragraph";
 
 const OurTeam = () => {
   interface TeamMember {
@@ -23,7 +23,7 @@ const OurTeam = () => {
   }
 
   return (
-    <div className="xl:py-[183px] py-[160px] 2xl:max-w-[1920px] mx-auto bg-ourTeam bg-cover md:bg-full bg-no-repeat bg-center relative z-30 overflow-hidden">
+    <div className="2xl:max-w-[1920px] mx-auto xl:py-[183px] py-[160px] bg-ourTeam bg-cover md:bg-full bg-no-repeat bg-center relative z-30 overflow-hidden">
       <div className="container 2xl:max-w-[1360px] xl:max-w-[1180px]">
         <div className="mx-auto xl:max-w-[411px] xl:mb-[58px] lg:mb-9 mb-8">
           <PrimaryHeading
@@ -40,7 +40,7 @@ const OurTeam = () => {
           {teamMembers.map((obj: TeamMember, index: number) => (
             <div key={index} className={obj.columnClass}>
               <div className="md:max-w-[560px] max-w-[520px] 2xl:max-w-full w-full h-full rounded-2xl bg-white flex justify-between flex-col">
-                <div className="relative">
+                <div className="relative pb-[6px]">
                   <Image
                     src={obj.image}
                     width={560}
@@ -52,21 +52,21 @@ const OurTeam = () => {
                     <Link
                       target="_blank"
                       href="https://www.linkedin.com/login"
-                      className="min-w-8 h-8 bg-blue hover:bg-white group/social rounded-full flex justify-center items-center  hover:shadow-3xl duration-300 ease-linear"
+                      className="min-w-8 h-8 bg-blue hover:bg-white group/social rounded-full flex justify-center items-center hover:shadow-3xl duration-300 ease-linear"
                     >
                       <LinkedInIcon />
                     </Link>
                     <Link
                       target="_blank"
                       href="https://www.facebook.com/login/"
-                      className="min-w-8 h-8 bg-blue hover:bg-white group/social rounded-full flex justify-center items-center  hover:shadow-3xl duration-300 ease-linear"
+                      className="min-w-8 h-8 bg-blue hover:bg-white group/social rounded-full flex justify-center items-center hover:shadow-3xl duration-300 ease-linear"
                     >
                       <FacebookIcon />
                     </Link>
                     <Link
                       target="_blank"
                       href="https://www.instagram.com/accounts/login/?hl=en"
-                      className="min-w-8 h-8 bg-blue hover:bg-white group/social rounded-full flex justify-center items-center  hover:shadow-3xl duration-300 ease-linear"
+                      className="min-w-8 h-8 bg-blue hover:bg-white group/social rounded-full flex justify-center items-center hover:shadow-3xl duration-300 ease-linear"
                     >
                       <InstagramIcon />
                     </Link>
@@ -76,7 +76,7 @@ const OurTeam = () => {
                 <div className="p-4">
                   <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-2 justify-between xl:mb-6 sm:mb-4 mb-3 max-xl:items-center max-lg:items-start">
                     <div>
-                      <h3 className="font-semibold font_gilroy_bold text-nowrap md:text-2xl text-[22px] leading-[26px] md:leading-[33.6px] text-black mb-1">
+                      <h3 className="font_gilroy_bold text-nowrap md:text-2xl text-[22px] md:leading-[33.6px] leading-[26px] text-black mb-1">
                         {obj.name}
                       </h3>
                       <h4 className="text-nowrap font-normal text-lg leading-7 text-grey">
@@ -86,23 +86,23 @@ const OurTeam = () => {
                     <div className="flex flex-col gap-2 h-fit">
                       <Link
                         href={`tel:${obj.phone}`}
-                        className="flex items-center gap-3 group/text "
+                        className="flex items-center gap-3 group/text"
                       >
                         <span>
                           <PhoneIcon />
                         </span>
-                        <span className="font-normal text-base leading-6 group-hover/text:text-black text-blue duration-300 ease-linear">
+                        <span className="leading-6 group-hover/text:text-black text-blue duration-300 ease-linear">
                           {obj.phone}
                         </span>
                       </Link>
                       <Link
                         href={`mailto:${obj.email}`}
-                        className="flex items-center gap-3 group/text "
+                        className="flex items-center gap-3 group/text"
                       >
                         <span>
                           <MailIcon />
                         </span>
-                        <span className="font-normal text-base leading-6 group-hover/text:text-black text-blue duration-300 ease-linear">
+                        <span className="leading-6 group-hover/text:text-black text-blue duration-300 ease-linear">
                           {obj.email}
                         </span>
                       </Link>
@@ -115,10 +115,10 @@ const OurTeam = () => {
           ))}
         </div>
       </div>
-      {/* ellips */}
+      {/* ellipse */}
       <Image
         className="absolute -z-30 -left-[32px] -top-[57px] min-h-full -rotate-[16deg] pointer-events-none"
-        src="/assets/images/home/webp/team_Layer.webp"
+        src="/assets/images/home/webp/team_layer.webp"
         height="1548"
         width="313"
         alt="layer"
