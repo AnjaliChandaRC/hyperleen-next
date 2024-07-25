@@ -20,7 +20,7 @@ export const InstagramLogo = () => {
     </svg>
   );
 };
-export const LinkdinLogo = () => {
+export const LinkedinLogo = () => {
   return (
     <svg
       width="17"
@@ -101,6 +101,7 @@ export const PhoneIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
+      className="group-hover/text:fill-black duration-300 ease-linear "
       d="M18.125 12.4996L13.3669 11.9488L11.0918 14.224C8.52871 12.9205 6.44545 10.8373 5.14193 8.27422L7.42615 5.98999L6.87541 1.25H1.90068C1.37702 10.4411 8.93392 17.998 18.125 17.4743V12.4996Z"
       fill="#084CAF"
     />
@@ -115,6 +116,7 @@ export const MailIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
+      className="group-hover/text:fill-black duration-300 ease-linear "
       d="M1.66602 16.6666V3.33325H18.3327V16.6666H1.66602ZM9.99935 10.8333L16.666 6.66659V4.99992L9.99935 9.16659L3.33268 4.99992V6.66659L9.99935 10.8333Z"
       fill="#084CAF"
     />
@@ -474,6 +476,20 @@ export const ReceiveData = () => (
       className="group-hover/timeline:fill-white duration-300 ease-linear"
       d="M3.00215 26.543C2.67989 26.6719 2.592 27.0996 2.83223 27.334L2.97285 27.4805H6.18965H9.40645L9.5295 27.3457C9.69356 27.1758 9.69942 26.8418 9.54707 26.6543L9.43575 26.5137L6.27754 26.502C4.54317 26.4961 3.0666 26.5137 3.00215 26.543Z"
       fill="#084CAF"
+    />
+  </svg>
+);
+export const DownArrow = () => (
+  <svg
+    width="15"
+    height="20"
+    viewBox="0 0 15 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6.79289 19.4935C7.18342 19.884 7.81658 19.884 8.20711 19.4935L14.5711 13.1295C14.9616 12.739 14.9616 12.1058 14.5711 11.7153C14.1805 11.3248 13.5474 11.3248 13.1569 11.7153L7.5 17.3722L1.84315 11.7153C1.45262 11.3248 0.819457 11.3248 0.428933 11.7153C0.0384083 12.1058 0.0384083 12.739 0.428933 13.1295L6.79289 19.4935ZM6.5 0.786377L6.5 18.7864L8.5 18.7864L8.5 0.786377L6.5 0.786377Z"
+      fill="black"
     />
   </svg>
 );
