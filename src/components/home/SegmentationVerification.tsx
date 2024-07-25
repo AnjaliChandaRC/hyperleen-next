@@ -9,8 +9,8 @@ const SegmentationVerification = () => {
       <div className="container xl:max-w-[1140px] mx-auto">
         <PrimaryHeading
           textName="Image"
-          textSpan=" Segmentation and "
-          textSpan2="Verification"
+          blueTextClass=" Segmentation and "
+          blackTextClass="Verification"
           className="text-center max-w-[506px] mx-auto sm:pb-4 pb-3 lg:leading-lg"
         />
         <Paragraph

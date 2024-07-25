@@ -22,8 +22,8 @@ const AddLabel = () => {
           <div className="lg:w-[50%] w-full px-3">
             <PrimaryHeading
               textName="Add"
-              textSpan=" Label"
-              textSpan2=" of an Image"
+              blueTextClass=" Label"
+              blackTextClass=" of an Image"
               className="max-w-[478px] leading-lg max-lg:text-center max-lg:mx-auto"
             />
             <Paragraph
