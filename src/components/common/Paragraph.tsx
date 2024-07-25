@@ -1,6 +1,6 @@
 import React from "react";
 interface PARAGRAPH {
-  className: string;
+  className?: string;
   textName: string;
 }
 

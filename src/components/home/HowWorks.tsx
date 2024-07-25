@@ -6,6 +6,11 @@ import { TimelineData } from "../common/Helper";
 import Image from "next/image";
 
 const HowWorks = () => {
+  // interface Timeline {
+  //   title: string;
+  //   description: string;
+  //   icon: string;
+  // }
   return (
     <div className="xl:py-[160px] lg:py-[120px] md:py-[90px] pt-0 pb-20 2xl:max-w-[1920px] mx-auto">
       <div className="container 2xl:max-w-[1344px] xl:max-w-[1180px] xl:px-5 2xl:px-3">
