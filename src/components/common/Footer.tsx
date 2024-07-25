@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import { FacebookLogo, InstagramLogo, LinkdinLogo, TwitterLogo } from './Icons';
+import { FacebookLogo, InstagramLogo, LinkedinLogo, TwitterLogo } from './Icons';
 import Link from 'next/link';
 import { footerData } from './Helper';
 import Paragraph from './Paragraph';
@@ -47,7 +47,7 @@ const Footer = () => {
                 <Link href={"https://twitter.com/login"} target='_blank'> <TwitterLogo /></Link>
               </div>
               <div className=' size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
-                <Link href={"https://www.linkedin.com/login"} target='_blank'> <LinkdinLogo /></Link>
+                <Link href={"https://www.linkedin.com/login"} target='_blank'> <LinkedinLogo /></Link>
               </div>
               <div className=' size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
                 <Link href={"https://www.instagram.com/accounts/login/?hl=en"} target='_blank'> <InstagramLogo /></Link>
@@ -55,12 +55,12 @@ const Footer = () => {
             </div>
           </div>
           <div className='xl:w-7/12 lg:w-8/12 w-full '>
-            <div className='flex flex-row flex-wrap -mx-3 lg:justify-end justify-between max-lg:pt-5'>
+            <div className='flex flex-row flex-wrap -mx-3 lg:justify-end justify-between max-lg:pt-5 w-full'>
               {footerData.map((section: FooterColumns, index: number) => (
                 <div key={index} className={`${section.className} w-1/2 px-5 lg:px-3 pt-5`}>
                   <ul>
                     <li>
-                      <h2 className='text-lg text-white font-normal'>{section.title}</h2>
+                      <h2 className='text-lg text-white'>{section.title}</h2>
                     </li>
                     {section.links.map((link: FooterLinks, index: number) => (
                       <li key={index} className='lg:pt-5 pt-3 max-lg:text-nowrap'>
@@ -72,21 +72,21 @@ const Footer = () => {
                   </ul>
                 </div>
               ))}
-              <div className='md:w-3/12 w-full pt-5 px-3 max-xl:hidden'>
-                <h2 className='text-lg text-white font-normal'>Follow us on</h2>
+              <div className='md:w-3/12 w-full pt-5 px-5 max-xl:hidden'>
+                <h2 className='text-lg text-white'>Follow us on</h2>
                 <div className='gap-3 mt-5 flex'>
-                  <div className=' size-8 w-full rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
+                  <div className=' size-7 w-full rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
                     <Link href={"https://www.facebook.com/login/"} target='_blank'>
                       <FacebookLogo />
                     </Link>
                   </div>
-                  <div className='size-8 w-full rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl' >
+                  <div className='size-7 w-full rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl' >
                     <Link href={"https://twitter.com/login"} target='_blank'> <TwitterLogo /></Link>
                   </div>
-                  <div className='size-8 w-full rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
-                    <Link href={"https://www.linkedin.com/login"} target='_blank'> <LinkdinLogo /></Link>
+                  <div className='size-7 w-full rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
+                    <Link href={"https://www.linkedin.com/login"} target='_blank'> <LinkedinLogo /></Link>
                   </div>
-                  <div className='size-8 w-full rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
+                  <div className='size-7 w-full rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
                     <Link href={"https://www.instagram.com/accounts/login/?hl=en"} target='_blank'> <InstagramLogo /></Link>
                   </div>
                 </div>

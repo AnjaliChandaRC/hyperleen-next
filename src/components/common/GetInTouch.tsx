@@ -14,7 +14,7 @@ const GetInTouch = () => {
         position: "center",
         icon: "success",
         title: "Mail Submitted",
-        showConfirmButton: false,
+        showConfirmButton: true,
         timer: 1500
       });
       setEmail('');
@@ -40,7 +40,7 @@ const GetInTouch = () => {
             <input
               type="email"
               placeholder='Your e-mail'
-              className='w-[323px] px-4 rounded-2xl bg-light_black min-h-[55px] placeholder:text-black text-grey outline-blue'
+              className='sm:w-[323px] max-w-[323px] px-4 rounded-2xl bg-light_black min-h-[55px] placeholder:text-black text-grey outline-blue'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
