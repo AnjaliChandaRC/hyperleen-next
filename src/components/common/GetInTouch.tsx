@@ -12,13 +12,13 @@ const GetInTouch = () => {
     e.preventDefault();
     if (email.trim() !== '') {
       Swal.fire({
-        position: "top-end",
+        position: "center",
         icon: "success",
         title: "Mail Submitted",
         showConfirmButton: false,
         timer: 1500
       });
-      setEmail(''); // Clear the input field after submission
+      setEmail(''); 
     } else {
       Swal.fire({
         position: "top-end",
