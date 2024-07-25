@@ -8,6 +8,7 @@ interface NavLink {
   nav_tabs: string;
   href: string;
 }
+
 const Header = () => {
   const [active, setActive] = useState(true);
   // for navbar toggling
@@ -20,17 +21,19 @@ const Header = () => {
       body.classList.remove("overflow-hidden");
     }
   }
+
   //removing the nav menu when clicked on nav link 
   const REMOVE_NAVBAR = () => {
     let body = document.body;
     setActive(true);
     body.classList.remove("overflow-hidden");
   }
+
   return (
     <nav className='border-b-[0.1px] border-grey py-4'>
       <div className='max-w-[1140px] mx-auto container flex items-center justify-between w-full'>
         <div className='w-[54px] h-[56px]'>
-          <Link href={'/'}>
+          <Link href='/'>
             <Header_logo />
           </Link>
         </div>
@@ -59,4 +62,5 @@ const Header = () => {
     </nav>
   );
 }
+
 export default Header;
