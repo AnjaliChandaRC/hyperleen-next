@@ -56,7 +56,7 @@ export const navLink = [
     { nav_tabs: "FAQs", href: "#faq" },
 ];
 
-export const items = [
+export const Hero_Items = [
   { id: 1, label: "Accurate", maxWidth: "121px" },
   { id: 2, label: "Scalable", maxWidth: "118px" },
   { id: 3, label: "Secure Data", maxWidth: "147px" },
