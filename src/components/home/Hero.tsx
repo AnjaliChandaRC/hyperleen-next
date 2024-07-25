@@ -1,7 +1,7 @@
 import { HeroItems } from "../common/Helper";
 import CommonButton from "../common/CommonButton";
 import { Header_line, Header_line_2 } from "../common/Icons";
-interface Hero_items {
+interface Hero_Items {
   id: number;
   label: string;
   maxWidth: string;
