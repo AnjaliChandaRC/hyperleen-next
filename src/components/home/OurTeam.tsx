@@ -24,7 +24,7 @@ const OurTeam = () => {
 
   return (
     <div className="xl:py-[183px] py-[160px] 2xl:max-w-[1920px] mx-auto bg-ourTeam bg-cover md:bg-full bg-no-repeat bg-center relative z-30 overflow-hidden">
-      <div className="container 2xl:max-w-[1344px] xl:max-w-[1188px]">
+      <div className="container 2xl:max-w-[1344px] xl:max-w-[1180px] xl:px-5 2xl:px-3">
         <div className="mx-auto xl:max-w-[411px] xl:mb-[58px] lg:mb-9 mb-8">
           <PrimaryHeading
             textName="Our Team"
