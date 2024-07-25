@@ -48,12 +48,12 @@ export const FaqList = [
 // Header Helper
 
 export const navLink = [
-    { nav_tabs: "Home", href: "#home" },
-    { nav_tabs: "Label", href: "#label" },
-    { nav_tabs: "About Us", href: "#about" },
-    { nav_tabs: "How it Works", href: "#work" },
-    { nav_tabs: "Team", href: "#team" },
-    { nav_tabs: "FAQs", href: "#faq" },
+  { nav_tabs: "Home", href: "#home" },
+  { nav_tabs: "Label", href: "#label" },
+  { nav_tabs: "About Us", href: "#about" },
+  { nav_tabs: "How it Works", href: "#work" },
+  { nav_tabs: "Team", href: "#team" },
+  { nav_tabs: "FAQs", href: "#faq" },
 ];
 
 export const Hero_Items = [
@@ -63,37 +63,36 @@ export const Hero_Items = [
   { id: 4, label: "Labeling Solutions", maxWidth: "193px" },
   { id: 5, label: "Quality Work", maxWidth: "149px" },
 ];
-
 export const footerData = [
   {
     className: "md:w-3/12 xl:justify-end xl:flex",
-    title: 'Quick Links',
+    title: "Quick Links",
     links: [
-      { label: 'Home', href: '#home' },
-      { label: 'About Us', href: '#about' },
-      { label: 'Services', href: '#services' },
-      { label: 'FAQ', href: '#faq' },
-      { label: 'How It Works', href: '#how-it-works' },
+      { label: "Home", href: "#home" },
+      { label: "About Us", href: "#about" },
+      { label: "Services", href: "#services" },
+      { label: "FAQ", href: "#faq" },
+      { label: "How It Works", href: "#how-it-works" },
     ],
   },
   {
     className: "md:w-2/12 xl:justify-center xl:flex",
-    title: 'Links',
+    title: "Links",
     links: [
-      { label: 'Team', href: '#team' },
-      { label: 'Label', href: '#label' },
+      { label: "Team", href: "#team" },
+      { label: "Label", href: "#label" },
     ],
   },
   {
     className: "md:w-3/12",
-    title: 'Policy',
+    title: "Policy",
     links: [
-      { label: 'Contact Us', href: '#contact' },
-      { label: 'Privacy Policy', href: '#privacy-policy' },
-      { label: 'Terms and conditions', href: '#terms-conditions' },
+      { label: "Contact Us", href: "#contact" },
+      { label: "Privacy Policy", href: "#privacy-policy" },
+      { label: "Terms and conditions", href: "#terms-conditions" },
     ],
-  },]
-
+  },
+];
 export const teamMembers = [
   {
     name: "Mark Butler",
@@ -136,5 +135,84 @@ export const TimelineData = [
     title: "Receive data",
     description: "Get the appropriate data annotated.",
     icon: <ReceiveData />,
+  },
+];
+
+export const EnsureStep1 = [
+  {
+    imageSrc: "/assets/images/home/webp/pizza.webp",
+    imageAlt: "pizza-image",
+    cursorImageSrc: "/assets/images/home/png/cursor_btn.png",
+    text: "Pie..",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/car.webp",
+    imageAlt: "car-image",
+    cursorImageSrc: "/assets/images/home/png/cursor_btn.png",
+    text: "Pie..",
+  },
+];
+export const EnsureStep2 = [
+  {
+    imageSrc: "/assets/images/home/webp/car.webp",
+    imageAlt: "car",
+    cursorImageSrc: "/assets/images/home/png/cursor_btn.png",
+    text: "Car",
+    position: "bottom-4 left-3",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/vegetable.webp",
+    imageAlt: "vegetable",
+    cursorImageSrc: "/assets/images/home/png/cursor_btn.png",
+    text: "Tomato",
+    position: "right-9 bottom-5",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/rider.webp",
+    imageAlt: "rider",
+    cursorImageSrc: "/assets/images/home/png/cursor_btn.png",
+    text: "Man",
+    position: "bottom-5 left-6",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/rider.webp",
+    imageAlt: "rider",
+    cursorImageSrc: "/assets/images/home/png/cursor_btn.png",
+    text: "Men",
+    position: "top-7 left-6",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/car.webp",
+    imageAlt: "car",
+    cursorImageSrc: "/assets/images/home/png/cursor_btn.png",
+    text: "Car",
+    position: "top-7 left-6",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/pizza.webp",
+    imageAlt: "pizza",
+    cursorImageSrc: "/assets/images/home/png/cursor_btn.png",
+    text: "Pie..",
+    position: "right-[30px] bottom-[18px]",
+  },
+];
+export const EnsureStep3 = [
+  {
+    imageSrc: "/assets/images/home/webp/pizza.webp",
+    imageAlt: "pizza",
+    cursorImageSrc: "/assets/images/home/png/cursor_btn.png",
+    text: "Pie..",
+    position: "-right-10 top-[40px]",
+    iconSrc: "/assets/images/home/svg/cross.svg",
+    iconAlt: "cross",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/pizza.webp",
+    imageAlt: "pizza",
+    cursorImageSrc: "/assets/images/home/png/cursor_btn.png",
+    text: "Quiche.",
+    position: "-right-10 top-[40px]",
+    iconSrc: "/assets/images/home/svg/check.svg",
+    iconAlt: "check-icon",
   },
 ];

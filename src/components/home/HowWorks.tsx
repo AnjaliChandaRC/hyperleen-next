@@ -28,7 +28,7 @@ const HowWorks = () => {
                   alt="project-request-image"
                   width={400}
                   height={360}
-                  className="rounded-2xl pointer-events-none shadow-5xl duration-300 ease-linear relative hover:z-40"
+                  className="rounded-2xl pointer-events-none shadow-5xl duration-300 ease-linear relative hover:z-40 2xl:min-w-[450px]"
                 />
                 <Image
                   src="/assets/images/home/webp/request.webp"

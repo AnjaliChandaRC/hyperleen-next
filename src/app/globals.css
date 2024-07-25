@@ -4,78 +4,78 @@
 @tailwind utilities;
 
 * {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @layer components {
-    .ensure_card {
-        @apply w-full p-5 border-[0.5px] rounded-2xl border-blue hover:shadow-7xl;
-    }
+  .ensure_card {
+    @apply w-full p-4 sm:p-5 border-[0.5px] rounded-2xl border-blue hover:shadow-7xl;
+  }
 
-    .timeline_card {
-        @apply max-w-[515px] 2xl:max-w-[615px] w-full min-h-[536px] after:left-[27px] after:-z-30 z-30 relative after:absolute after:w-1 after:border-l-[3px] after:top-6 after:bottom-12 sm:after:bottom-8 2xl:after:bottom-20 after:border-blue after:border-dashed flex flex-col gap-7;
-    }
+  .timeline_card {
+    @apply max-w-[515px] 2xl:max-w-[615px] w-full min-h-[536px] after:left-[27px] after:-z-30 z-30 relative after:absolute after:w-1 after:border-l-[3px] after:top-6 after:bottom-12 sm:after:bottom-8 2xl:after:bottom-20 after:border-blue after:border-dashed flex flex-col gap-7;
+  }
 }
 
 @font-face {
-    font-family: "Gilroy heavy,sans-serif";
-    src: url("/assets/fonts/Gilroy-Heavy.ttf");
-    word-wrap: break-word;
+  font-family: "Gilroy heavy,sans-serif";
+  src: url("/assets/fonts/Gilroy-Heavy.ttf");
+  word-wrap: break-word;
 }
 
 @font-face {
-    font-family: "Gilroy bold,sans-serif";
-    src: url("/assets/fonts/Gilroy-Bold.ttf");
-    word-wrap: break-word;
+  font-family: "Gilroy bold,sans-serif";
+  src: url("/assets/fonts/Gilroy-Bold.ttf");
+  word-wrap: break-word;
 }
 
 @font-face {
-    font-family: "Gilroy medium,sans-serif";
-    src: url("/assets/fonts/Gilroy-Medium.ttf");
-    word-wrap: break-word;
+  font-family: "Gilroy medium,sans-serif";
+  src: url("/assets/fonts/Gilroy-Medium.ttf");
+  word-wrap: break-word;
 }
 
 @font-face {
-    font-family: "Gilroy regular,sans-serif";
-    src: url("/assets/fonts/Gilroy-Regular.ttf");
-    word-wrap: break-word;
+  font-family: "Gilroy regular,sans-serif";
+  src: url("/assets/fonts/Gilroy-Regular.ttf");
+  word-wrap: break-word;
 }
 
 @font-face {
-    font-family: "Gilroy light,sans-serif";
-    src: url("/assets/fonts/Gilroy-Light.ttf");
-    word-wrap: break-word;
+  font-family: "Gilroy light,sans-serif";
+  src: url("/assets/fonts/Gilroy-Light.ttf");
+  word-wrap: break-word;
 }
 
 .font_gilroy_heavy {
-    font-family: "Gilroy heavy,sans-serif";
+  font-family: "Gilroy heavy,sans-serif";
 }
 
 .font_gilroy_bold {
-    font-family: "Gilroy bold,sans-serif";
+  font-family: "Gilroy bold,sans-serif";
 }
 
 .font_gilroy_light {
-    font-family: "Gilroy light,sans-serif";
+  font-family: "Gilroy light,sans-serif";
 }
 
 .font_gilroy_medium {
-    font-family: "Gilroy medium,sans-serif";
+  font-family: "Gilroy medium,sans-serif";
 }
 
 .font_gilroy_regular {
-    font-family: "Gilroy regular,sans-serif";
+  font-family: "Gilroy regular,sans-serif";
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #084CAF;
-    border-radius: 10px;
+  background-color: #084caf;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
