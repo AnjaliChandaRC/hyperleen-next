@@ -38,18 +38,18 @@ const Footer = () => {
                 Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.
               </p>
               <div className='gap-3 mt-5 max-xl:flex hidden'>
-                <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer'>
+                <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:scale-105'>
                   <Link href={"https://www.facebook.com/login/"} target='_blank'>
                     <FacebookLogo />
                   </Link>
                 </div>
-                <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer'>
+                <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:scale-105'>
                   <Link href={"https://twitter.com/login"} target='_blank'> <TwitterLogo /></Link>
                 </div>
-                <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer'>
+                <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:scale-105'>
                   <Link href={"https://www.linkedin.com/login"} target='_blank'> <LinkdinLogo /></Link>
                 </div>
-                <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer'>
+                <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:scale-105'>
                   <Link href={"https://www.instagram.com/accounts/login/?hl=en"} target='_blank'> <InstagramLogo /></Link>
                 </div>
               </div>
@@ -75,18 +75,18 @@ const Footer = () => {
                 <div className='md:w-3/12 w-full pt-5 px-3 max-xl:hidden'>
                   <h2 className='text-lg font-poopins text-white font-normal'>Follow us on</h2>
                   <div className='gap-3 mt-5 flex'>
-                    <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer'>
+                    <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:scale-105'>
                       <Link href={"https://www.facebook.com/login/"} target='_blank'>
                         <FacebookLogo />
                       </Link>
                     </div>
-                    <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer'>
+                    <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:scale-105' >
                       <Link href={"https://twitter.com/login"} target='_blank'> <TwitterLogo /></Link>
                     </div>
-                    <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer'>
+                    <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:scale-105'>
                       <Link href={"https://www.linkedin.com/login"} target='_blank'> <LinkdinLogo /></Link>
                     </div>
-                    <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer'>
+                    <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:scale-105'>
                       <Link href={"https://www.instagram.com/accounts/login/?hl=en"} target='_blank'> <InstagramLogo /></Link>
                     </div>
                   </div>
