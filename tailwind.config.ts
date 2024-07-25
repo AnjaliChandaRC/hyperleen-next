@@ -60,7 +60,7 @@ const config: Config = {
       },
       backgroundImage: {
         header_bg: "url('/assets/images/home/png/header_bg.png')",
-        footerSection: 'url("/assets/images/home/png/footer-bg-img.png")',
+        footer_section: 'url("/assets/images/home/png/footer-bg-img.png")',
         ourTeam: `url("/assets/images/home/webp/team_Bg.webp")`,
         teamLayer: `url("/assets/images/home/webp/team_Layer.webp")`,
       },

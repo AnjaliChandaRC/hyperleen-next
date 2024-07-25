@@ -20,7 +20,7 @@ export const InstagramLogo = () => {
     </svg>
   );
 };
-export const LinkdinLogo = () => {
+export const LinkedinLogo = () => {
   return (
     <svg
       width="17"

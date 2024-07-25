@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import Paragraph from './Paragraph';
 import PrimaryHeading from './PrimaryHeading';
 import Swal from 'sweetalert2';
@@ -7,14 +7,14 @@ import Swal from 'sweetalert2';
 const GetInTouch = () => {
   const [email, setEmail] = useState('');
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (email.trim() !== '') {
       Swal.fire({
         position: "center",
         icon: "success",
         title: "Mail Submitted",
-        showConfirmButton: false,
+        showConfirmButton: true,
         timer: 1500
       });
       setEmail('');
@@ -30,8 +30,8 @@ const GetInTouch = () => {
   };
 
   return (
-    <section className='pt-20'>
-      <div className='container'>
+    <div className='lg:pt-[180px] md:pt-[150px] sm:pt-[120px] pt-20'>
+      <div className='container max-w-[1140px] mx-auto'>
         <div className='flex items-center justify-center flex-col'>
           <PrimaryHeading textName=' Get in touch with' textSpan=' Hyperleen' className=' text-center' />
           <Paragraph textName='
@@ -40,18 +40,18 @@ const GetInTouch = () => {
             <input
               type="email"
               placeholder='Your e-mail'
-              className='w-[323px] px-4 rounded-2xl bg-light_black min-h-[55px] placeholder:text-black font-poopins text-base font-normal text-grey outline-blue'
+              className='sm:w-[323px] max-w-[323px] px-4 rounded-2xl bg-light_black min-h-[55px] placeholder:text-black text-grey outline-blue'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <button type='submit' className='font-normal text-lg leading-7 font-poppins rounded-full shadow-3xl text-white hover:text-black bg-blue py-[13px] hover:bg-white hover:border-black duration-300 ease-linear px-6 border border-white'>
+            <button type='submit' className='text-lg leading-7 rounded-full shadow-3xl text-white hover:text-black bg-blue py-[13px] hover:bg-white hover:border-black duration-300 ease-linear px-6 border border-white'>
               Submit Now
             </button>
           </form>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
