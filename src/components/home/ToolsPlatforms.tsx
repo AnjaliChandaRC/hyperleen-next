@@ -6,7 +6,7 @@ import PrimaryHeading from '../common/PrimaryHeading'
 const ToolsPlatforms = () => {
   return (
     <>
-      <div className="container py-10 xl:py-[160px]">
+      <div className="container py-10 xl:py-[160px] xl:max-w-[1180px]">
         <div className="flex flex-col items-center">
           <PrimaryHeading
             textName="Tools and "
