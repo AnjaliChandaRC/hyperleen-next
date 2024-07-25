@@ -17,7 +17,7 @@ const Faqs: React.FC = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container xl:max-w-[1180px]">
       <PrimaryHeading textName="FAQs" className="text-center text-blue" />
       <Paragraph textName="You have got Question.  We have got Answer" className="font-normal text-sm md:text-base text-grey text-center mt-2 md:mt-4" />
       <div className="max-w-[975px] mx-auto mt-5 lg:mt-[60px]">
