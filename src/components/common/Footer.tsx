@@ -19,7 +19,7 @@ const Footer = () => {
     <div className='bg-footer_section sm:bg-full max-sm:bg-cover bg-no-repeat bg-center'>
       <div className='max-w-[1156px] container mx-auto lg:pt-[160px] sm:pt-[150px] pt-[130px] w-full'>
         <div className='flex flex-row flex-wrap -mx-3  justify-between'>
-          <div className='lg:w-3/12 px-3'>
+          <div className='lg:w-3/12 xl:px-2 px-5'>
             <Link href="/">
               <Image
                 width={117}
