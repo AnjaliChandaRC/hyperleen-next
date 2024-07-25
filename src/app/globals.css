@@ -68,7 +68,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 4px !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -78,4 +78,9 @@
 
 ::-webkit-scrollbar-track {
     background: transparent;
+}
+
+.hero_scrollbar ::-webkit-scrollbar {
+    height: 3px !important;
+    width: 4px;
 }

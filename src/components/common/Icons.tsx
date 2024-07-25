@@ -245,7 +245,7 @@ export const Header_logo = () => (
 
 export const Header_line = () => (
   <svg
-    width="48"
+    width="43"
     height="8"
     viewBox="0 0 48 8"
     fill="none"
@@ -273,7 +273,7 @@ export const Header_line = () => (
 
 export const Header_line_2 = () => (
   <svg
-    width="48"
+    width="43"
     height="8"
     viewBox="0 0 48 8"
     fill="none"
