@@ -6,10 +6,10 @@ import Image from "next/image";
 
 const ObjectVerification = () => {
   return (
-    <div>
+    <div className="lg:pb-72 md:pb-16 pb-5">
       <div className="container">
         {/* =======verification======= */}
-        <div className="flex flex-wrap flex-row mx-[-12px] items-center lg:pt-10 pt-16 lg:pb-40 md:pb-20 pb-10">
+        <div className="flex flex-wrap flex-row mx-[-12px] items-center lg:pt-16 pt-16">
           <div className="lg:w-[50%] w-full px-3">
             <div className="relative border border-blue lg:max-w-[502px] sm:max-w-96 max-w-72 rounded-2xl max-lg:mx-auto">
               {/* =====verficationImg===== */}
@@ -31,13 +31,13 @@ const ObjectVerification = () => {
               </div>
               {/* =====blue-box-content=== */}
               <div className="bg-blue max-w-[502px] rounded-t-2xl lg:p-4 p-2 absolute top-0 lg:w-[502px] !w-full">
-                <p className="font-Gilroy font-semibold lg:text-2xxl sm:text-2xl text-lg lg:leading-md leading-6 text-white">
+                <p className="font_gilroy_regular font-semibold lg:text-2xxl sm:text-2xl text-lg lg:leading-md leading-6 text-white">
                   Is Previous Selected Object is Correct?
                 </p>
               </div>
               {/* ====white-box==== */}
-              <div className="absolute shadow bg-white lg:max-w-[339px] max-w-64 w-full p-[10px] bottom-[-22%] left-[-21px] rounded-xl">
-                <p className="font-Gilroy font-semibold lg:text-2xl sm:text-xl text-base text-center text-black">
+              <div className="absolute shadow bg-white lg:max-w-[339px] max-w-64 w-full lg:py-4 py-2 px-3 bottom-[-23%] left-[-21px] rounded-xl">
+                <p className="font-Gilroy font-semibold lg:text-2xl sm:text-xl text-base text-center text-black pb-1">
                   Confirm your action
                 </p>
                 <Paragraph
@@ -55,8 +55,8 @@ const ObjectVerification = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-[50%] w-full px-3 lg:pt-0 sm:pt-24 pt-20">
-            <h5 className="font-Gilroy font-semibold lg:text-2xxl text-2xl leading-md text-black lg:pb-4 sm-pb-1 pb-0 max-lg:text-center">
+          <div className="lg:w-[50%] w-full px-3 lg:pt-24 sm:pt-24 pt-20">
+            <h5 className="font_gilroy_regular font-semibold lg:text-2xxl text-2xl leading-md text-black lg:pb-4 sm-pb-1 pb-0 max-lg:text-center">
               Verification
             </h5>
             <Paragraph

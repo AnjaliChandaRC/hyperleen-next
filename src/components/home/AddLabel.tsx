@@ -6,7 +6,16 @@ import { PenSvg } from "../common/Icons";
 
 const AddLabel = () => {
   return (
-    <div>
+    <div className="relative pt-20">
+      {/* ======ellip===== */}
+      <div className="absolute top-[-14%] right-[12%]">
+        <Image
+          width={398}
+          height={1313}
+          src="/assets/images/home/png/label-ellip.png"
+          alt="label-ellip"
+        />
+      </div>
       <div className="container mx-auto px-3">
         <div className="flex flex-wrap flex-row mx-[-12px] items-center">
           <div className="lg:w-[50%] w-full px-3 flex items-center justify-center">

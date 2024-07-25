@@ -12,16 +12,16 @@ const SegmentationVerification = () => {
           textName="Image"
           textSpan=" Segmentation and "
           textSpan2="Verification"
-          className="text-center max-w-[506px] mx-auto sm:pb-4 pb-3"
+          className="text-center max-w-[506px] mx-auto sm:pb-4 pb-3 lg:leading-lg"
         />
         <Paragraph
           textName="In the realm of sentiment analysis, human judgment plays a crucial role. While our methods may not be extravagant, they are designed to ensure precise and reliable results."
-          className="text-center max-w-[740px] mx-auto lg:pb-10 sm:pb-8 pb-5"
+          className="text-center max-w-[740px] mx-auto lg:pb-14 sm:pb-8 pb-5"
         />
         {/* ======row-col====== */}
         <div className="flex flex-wrap lg:flex-row flex-col-reverse mx-[-12px] items-center">
           <div className="lg:w-[50%] w-full px-3 lg:pt-0 sm:pt-5 pt-3">
-            <h5 className="font-Gilroy font-semibold lg:text-2xxl text-2xl leading-md text-black lg:pb-4 sm-pb-1 pb-0 max-lg:text-center">
+            <h5 className="font_gilroy_regular font-semibold lg:text-2xxl text-2xl leading-md text-black lg:pb-4 sm-pb-1 pb-0 max-lg:text-center">
               Image Segmentation
             </h5>
             <Paragraph
