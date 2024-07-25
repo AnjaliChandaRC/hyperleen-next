@@ -28,7 +28,7 @@ const Footer = () => {
                 alt='footer logo'
               />
             </Link>
-            <Paragraph textName='Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.' className='lg:max-w-[279px] text-white opacity-70 pt-5' />
+            <Paragraph textName='Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.' className='lg:max-w-[300px] text-white opacity-70 pt-5' />
             <div className='gap-3 mt-5 max-xl:flex hidden'>
               <div className='size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
                 <Link href="https://www.facebook.com/login/" target='_blank'>
