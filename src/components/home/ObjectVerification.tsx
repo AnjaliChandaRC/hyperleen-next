@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const ObjectVerification = () => {
   return (
-    <div className="lg:pb-72 md:pb-16 pb-5">
+    <div className="lg:pb-72 md:pb-20 pb-5">
       <div className="container xl:max-w-[1180px]  mx-auto">
-        <div className="flex flex-wrap flex-row mx-[-12px] items-center pt-16">
+        <div className="flex flex-wrap flex-row mx-[-12px] items-center lg:pt-16 sm:pt-20 pt-16">
           <div className="lg:w-[50%] w-full px-3">
             <div className="relative border border-blue lg:max-w-[502px] sm:max-w-96 max-w-72 rounded-2xl max-lg:mx-auto">
               <Image
@@ -17,7 +17,7 @@ const ObjectVerification = () => {
                 alt="segmentation-img"
                 className="rounded-2xl pointer-events-none"
               />
-              <div className="absolute xl:top-[-20px] top-[-10px] xl:left-[-20px] left-[-10px] z-[-1] md:block hidden">
+              <div className="absolute xl:top-[-20px] top-[-10px] xl:left-[-20px] left-[-10px] z-[-1] md:block hidden max-lg:max-w-72">
                 <Image
                   width={395}
                   height={370}
@@ -32,7 +32,7 @@ const ObjectVerification = () => {
                   className="font_gilroy_regular font-semibold lg:text-2xxl sm:text-2xl text-lg lg:leading-md leading-6 text-white"
                 />
               </div>
-              <div className="absolute shadow bg-white lg:max-w-[339px] max-w-64 w-full lg:py-4 py-2 px-3 bottom-[-25%] left-[-21px] rounded-xl">
+              <div className="absolute shadow bg-white lg:max-w-[339px] max-w-64 w-full lg:py-4 py-2 px-3 bottom-[-25%] xl:left-[-21px] left-[-9px] rounded-xl">
                 <Paragraph
                   textName="Confirm your action"
                   className="font_gilroy_bold lg:text-2xl sm:text-xl text-base text-center text-black pb-1"
@@ -42,8 +42,11 @@ const ObjectVerification = () => {
                   className="max-w-[293px] text-center lg:pb-9 pb-3 lg:text-base text-sm"
                 />
                 <div className="flex gap-4 justify-center">
-                  <CommonButton text="Yes" className="lg:px-[58px] px-10" />
-                  <button className="text-lg text-black py-3.5 lg:px-[58px] px-10 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear">
+                  <CommonButton
+                    text="Yes"
+                    className="lg:px-[58px] sm:px-11 px-8 max-sm:py-2"
+                  />
+                  <button className="text-lg text-black lg:py-3.5 py-3 lg:px-[58px] sm:px-11 px-8 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear">
                     No
                   </button>
                 </div>
