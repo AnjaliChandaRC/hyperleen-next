@@ -3,6 +3,7 @@ import { FormEvent, useState } from 'react';
 import Paragraph from './Paragraph';
 import PrimaryHeading from './PrimaryHeading';
 import Swal from 'sweetalert2';
+
 const GetInTouch = () => {
   const [email, setEmail] = useState('');
   const ON_SUBMIT = (e: FormEvent) => {
