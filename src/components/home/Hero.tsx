@@ -6,6 +6,7 @@ interface Hero_Items {
   label: string;
   maxWidth: string;
 }
+
 const Hero = () => {
   return (
     <div className="md:py-lg py-16 bg-header_bg bg-full bg-center bg-no-repeat max-w-[1536px] mx-auto">
@@ -29,9 +30,9 @@ const Hero = () => {
               ))}
             </div>
           </div>
-          <p className='text-center xl:text-3xxl md:text-6xl sm:text-5xl text-3xl font_gilroy_medium xl:leading-xl sm:leading-lg lg:pt-11 pt-8 pb-5'>Transform Your <span className='text-blue font_gilroy_medium'>Data into AI</span> Insights</p>
+          <p className='text-center xl:text-3xxl md:text-6xl sm:text-5xl text-3xl font_gilroy_medium xl:leading-xl sm:leading-lg lg:pt-11 pt-6 pb-5'>Transform Your <span className='text-blue font_gilroy_medium'>Data into AI</span> Insights</p>
           <div className='flex items-center justify-center lg:pb-10 pb-6'>
-            <p className='text-center max-w-[634px] text-grey'>Unlock the full potential of your AI models with our premium data labeling services. Our expert annotators ensure your data is meticulously labeled, enabling superior performance and insights.</p>
+            <p className='text-center max-sm:text-sm max-w-[634px] text-grey'>Unlock the full potential of your AI models with our premium data labeling services. Our expert annotators ensure your data is meticulously labeled, enabling superior performance and insights.</p>
           </div>
           <div className="flex items-center justify-center gap-3 xl:ps-11 lg:ps-6 max-sm:flex-wrap">
             <CommonButton buttonName="Get Started" />
@@ -45,4 +46,5 @@ const Hero = () => {
     </div>
   );
 };
+
 export default Hero;
