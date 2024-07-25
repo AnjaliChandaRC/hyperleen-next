@@ -69,7 +69,7 @@ export const teamMembers = [
 
 // Header Helper
 
-export const navLink: NavLink[] = [
+export const navLink = [
     { tabText: "Home", href: "#home" },
     { tabText: "Label", href: "#label" },
     { tabText: "About Us", href: "#about" },
@@ -78,7 +78,7 @@ export const navLink: NavLink[] = [
     { tabText: "FAQs", href: "#faq" },
 ];
 
-export const items: Item[] = [
+export const items = [
     { id: 1, label: 'Accurate', maxWidth: '121px' },
     { id: 2, label: 'Scalable', maxWidth: '118px' },
     { id: 3, label: 'Secure Data', maxWidth: '147px' },
