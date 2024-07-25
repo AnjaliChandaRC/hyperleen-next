@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import { FacebookLogo, InstagramLogo, LinkdinLogo, TwitterLogo } from './Icons';
 import Link from 'next/link';
+import { footerData } from './Helper';
 
 interface Link {
   label: string;
@@ -15,33 +16,6 @@ interface Section {
   links: Link[];
 }
 
-const footerData: Section[] = [
-  {
-    title: 'Quick Links',
-    links: [
-      { label: 'Home', href: '#home' },
-      { label: 'About Us', href: '#about' },
-      { label: 'Services', href: '#services' },
-      { label: 'FAQ', href: '#faq' },
-      { label: 'How It Works', href: '#how-it-works' },
-    ],
-  },
-  {
-    title: 'Links',
-    links: [
-      { label: 'Team', href: '#team' },
-      { label: 'Label', href: '#label' },
-    ],
-  },
-  {
-    title: 'Policy',
-    links: [
-      { label: 'Contact Us', href: '#contact' },
-      { label: 'Privacy Policy', href: '#privacy-policy' },
-      { label: 'Terms and conditions', href: '#terms-conditions' },
-    ],
-  },
-];
 
 const Footer = () => {
 
@@ -63,7 +37,7 @@ const Footer = () => {
               <p className='font-poopins font-normal text-base text-white pt-5 opacity-70 lg:max-w-[279px]'>
                 Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.
               </p>
-              <div className='gap-3 mt-5 max-lg:flex hidden'>
+              <div className='gap-3 mt-5 max-xl:flex hidden'>
                 <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer'>
                   <Link href={"https://www.facebook.com/login/"} target='_blank'>
                     <FacebookLogo />
@@ -80,7 +54,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className='lg:w-7/12 w-full'>
+            <div className='xl:w-7/12 lg:w-8/12 w-full '>
               <div className='flex flex-row flex-wrap -mx-3 lg:justify-end max-lg:pt-5'>
                 {footerData.map((section, index) => (
                   <div key={index} className='md:w-3/12 w-1/2 px-5 lg:px-3 pt-5'>
@@ -88,8 +62,8 @@ const Footer = () => {
                       <li>
                         <h2 className='font-poopins text-lg text-white font-normal'>{section.title}</h2>
                       </li>
-                      {section.links.map((link, idx) => (
-                        <li key={idx} className='lg:pt-5 pt-3 max-lg:text-nowrap'>
+                      {section.links.map((link, index) => (
+                        <li key={index} className='lg:pt-5 pt-3 max-lg:text-nowrap'>
                           <a href={link.href} className='text-white opacity-70 hover:opacity-100 ease-in-out duration-300' >
                             {link.label}
                           </a>
@@ -98,7 +72,7 @@ const Footer = () => {
                     </ul>
                   </div>
                 ))}
-                <div className='md:w-3/12 w-full pt-5 px-3 max-lg:hidden'>
+                <div className='md:w-3/12 w-full pt-5 px-3 max-xl:hidden'>
                   <h2 className='text-lg font-poopins text-white font-normal'>Follow us on</h2>
                   <div className='gap-3 mt-5 flex'>
                     <div className=' w-8 h-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer'>
