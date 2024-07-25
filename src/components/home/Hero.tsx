@@ -22,7 +22,7 @@ const Hero = () => {
           </div>
           <div className='overflow-auto'>
             <div className='flex items-center md:justify-center justify-between md:gap-6 gap-3 max-lg:flex-wrap w-[824px] max-lg:pb-1'>
-              {HeroItems.map((item: Hero_items, index: number) => (
+              {HeroItems.map((item: Hero_Items, index: number) => (
                 <div key={item.id} className='rounded-[144px] border border-[#0A02EC] min-h-[44px] w-full bg-light_blue flex items-center justify-center' style={{ maxWidth: item.maxWidth }}>
                   {item.label}
                 </div>
