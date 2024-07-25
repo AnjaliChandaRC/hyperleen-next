@@ -60,7 +60,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder='Your e-mail'
-                className='w-[323px] pl-4 rounded-2xl bg-light_black min-h-[55px] placeholder:text-black font-poopins text-base font-normal text-grey outline-blue'
+                className='w-[323px] px-4  rounded-2xl bg-light_black min-h-[55px] placeholder:text-black font-poopins text-base font-normal text-grey outline-blue'
                 required
               />
               <CommonButton buttonName='Submit Now' />
@@ -72,14 +72,14 @@ const Footer = () => {
         <div className='container pt-[160px] pb-[116px] w-full'>
           <div className='flex flex-row flex-wrap -mx-3  justify-between'>
             <div className='lg:w-3/12 px-3'>
-              <a href="#home">
+              <Link href="#home">
                 <Image
                   width={117}
                   height={30}
                   src='/assets/images/home/png/footer-logo.png'
                   alt='footer logo'
                 />
-              </a>
+              </Link>
               <p className='font-poopins font-normal text-base text-white pt-5 opacity-70 lg:max-w-[279px]'>
                 Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.
               </p>
