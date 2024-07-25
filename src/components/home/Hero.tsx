@@ -26,7 +26,7 @@ const Hero = () => {
               {Hero_Items.map((item: Hero_Items, index: number) => (
                 <div
                   key={index}
-                  className="rounded-[144px] border border-[#0A02EC] min-h-[44px] w-full bg-light_blue flex items-center justify-center"
+                  className="rounded-[144px] text-blue border border-[#0A02EC] min-h-[44px] w-full bg-light_blue flex items-center justify-center"
                   style={{ maxWidth: item.maxWidth }}
                 >
                   {item.label}
