@@ -5,7 +5,7 @@ import CommonButton from "../common/CommonButton";
 import Image from "next/image";
 const SegmentationVerification = () => {
   return (
-    <div>
+    <div className="pt-40">
       <div className="container px-3 mx-auto">
         {/* =======segmentation======= */}
         <PrimaryHeading
@@ -88,8 +88,14 @@ const SegmentationVerification = () => {
                   className="max-w-[293px] text-center lg:pb-9 pb-3 lg:text-base text-sm"
                 />
                 <div className="flex gap-4 justify-center">
-                  <CommonButton buttonName="Yes" buttonClass="lg:w-[148px] w-[110px]" />
-                  <CommonButton buttonName="No" buttonClass="lg:w-[148px] w-[110px]" />
+                  <CommonButton
+                    buttonName="Yes"
+                    buttonClass="lg:w-[148px] w-[110px]"
+                  />
+                  <CommonButton
+                    buttonName="No"
+                    buttonClass="lg:w-[148px] w-[110px]"
+                  />
                 </div>
               </div>
             </div>
