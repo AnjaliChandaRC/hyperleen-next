@@ -3,11 +3,9 @@ import { FormEvent, useState } from 'react';
 import Paragraph from './Paragraph';
 import PrimaryHeading from './PrimaryHeading';
 import Swal from 'sweetalert2';
-
 const GetInTouch = () => {
   const [email, setEmail] = useState('');
-
-  const onSubmit = (e: FormEvent) => {
+  const ON_SUBMIT = (e: FormEvent) => {
     e.preventDefault();
     if (email.trim() !== '') {
       Swal.fire({
@@ -33,10 +31,10 @@ const GetInTouch = () => {
     <div className='lg:pt-[180px] md:pt-[150px] sm:pt-[120px] pt-20'>
       <div className='container max-w-[1140px] mx-auto'>
         <div className='flex items-center justify-center flex-col'>
-          <PrimaryHeading textName=' Get in touch with' textSpan=' Hyperleen' className=' text-center' />
+          <PrimaryHeading textName='Get in touch with' textSpan=' Hyperleen' className=' text-center' />
           <Paragraph textName='
             Take your experience a step further! Subscribe to our monthly newsletter for exclusive access to discounts, promotions, Hyperleen events, and more. We’d hate to be annoying, please unsubscribe anytime!' className='max-w-[731px] text-center pt-4' />
-          <form className='flex items-center gap-[14px] mt-6 max-md:flex-wrap justify-center' onSubmit={onSubmit}>
+          <form className='flex items-center gap-[14px] mt-6 max-md:flex-wrap justify-center' onSubmit={ON_SUBMIT}>
             <input
               type="email"
               placeholder='Your e-mail'
