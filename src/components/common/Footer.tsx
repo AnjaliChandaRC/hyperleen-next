@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { footerData } from './Helper';
 import Paragraph from './Paragraph';
 
+
 interface FooterLinks {
   label: string;
   href: string;
