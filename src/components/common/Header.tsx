@@ -46,12 +46,12 @@ const Header = () => {
             <span className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active ? "hidden" : "block"}`}></span>
             <span className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active ? "-rotate-45 relative bottom-[11px] -right-px" : "rotate-0"}`}></span>
           </div>
-          <div className={`flex ease-in-out duration-300 ${active ? "max-lg:left-[-100%]" : "max-lg:start-0"} max-lg:bg-white max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 items-center justify-center xl:gap-[30px] gap-4 z-20`}>
+          <div className={`flex ease-in-out duration-300 ${active ? "max-lg:left-[-100%]" : "max-lg:start-0"} max-lg:bg-white max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 items-center justify-center xl:gap-5 gap-4 z-20`}>
             {navLink.map((obj, index) => (
               <Link
                 key={index}
                 href={obj.href}
-                className='relative font-normal text-base text-grey hover:text-blue ease-in-out duration-300 after:content-[""] after:absolute after:left-0 after:-bottom-2.5 max-lg:after:-bottom-1.5 after:w-0 hover:after:w-full after:h-[2px] after:bg-blue after:transition-all after:duration-300'
+                className='relative font-normal text-base p-2.5 text-grey hover:text-blue ease-in-out duration-300 after:content-[""] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 max-lg:after:-bottom-1.5 after:w-0 hover:after:w-full after:h-[2px] after:bg-blue after:transition-all after:duration-300'
                 onClick={removeNavBar}
               >
                 {obj.tabText}
