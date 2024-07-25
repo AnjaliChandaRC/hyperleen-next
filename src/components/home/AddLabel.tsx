@@ -17,7 +17,7 @@ const AddLabel = () => {
           className="pointer-events-none"
         />
       </div>
-      <div className="container xl:max-w-[1140px] mx-auto">
+      <div className="container xl:max-w-[1180px] mx-auto">
         <div className="flex flex-wrap flex-row mx-[-12px] items-center">
           <div className="lg:w-[50%] w-full px-3">
             <PrimaryHeading
@@ -57,7 +57,7 @@ const AddLabel = () => {
                   text="Ok"
                   className="lg:max-w-[203px] max-w-[106px] w-full"
                 />
-                <button className="text-lg text-black py-3.5 lg:px-[69px] px-5 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear">
+                <button className="text-lg text-black py-3.5 lg:px-[69px] px-5 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear h-14">
                   Cancel
                 </button>
               </div>

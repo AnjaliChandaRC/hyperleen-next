@@ -6,7 +6,7 @@ import Image from "next/image";
 const SegmentationVerification = () => {
   return (
     <div className="lg:pt-40 md:pt-20 pt-10">
-      <div className="container xl:max-w-[1140px] mx-auto">
+      <div className="container xl:max-w-[1180px] mx-auto">
         <PrimaryHeading
           textName="Image"
           blueTextClass=" Segmentation and "
@@ -30,7 +30,7 @@ const SegmentationVerification = () => {
               <CommonButton text="Learn More" />
             </div>
           </div>
-          <div className="lg:w-[50%] w-full xl:px-3">
+          <div className="lg:w-[50%] w-full px-3">
             <div className="relative lg:max-w-[502px] sm:max-w-96 max-w-72 max-lg:mx-auto">
               <Image
                 width={502}
@@ -39,7 +39,7 @@ const SegmentationVerification = () => {
                 alt="segmentation-img"
                 className="pointer-events-none"
               />
-              <div className="bg-blue max-w-[502px] rounded-t-2xl lg:p-4 p-2 absolute top-0 lg:w-[502px] w-full">
+              <div className="bg-blue xl:max-w-[502px] max-w-[488px] rounded-t-2xl lg:p-4 p-2 absolute top-0 lg:w-[502px] w-full">
                 <Paragraph
                   textName="Selected All Squares With"
                   className="sm:text-lg text-base text-white lg:pb-2 pb-0"

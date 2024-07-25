@@ -6,7 +6,7 @@ import Image from "next/image";
 const ObjectVerification = () => {
   return (
     <div className="lg:pb-72 md:pb-16 pb-5">
-      <div className="container xl:max-w-[1140px] mx-auto">
+      <div className="container xl:max-w-[1180px]  mx-auto">
         <div className="flex flex-wrap flex-row mx-[-12px] items-center pt-16">
           <div className="lg:w-[50%] w-full px-3">
             <div className="relative border border-blue lg:max-w-[502px] sm:max-w-96 max-w-72 rounded-2xl max-lg:mx-auto">
@@ -17,7 +17,7 @@ const ObjectVerification = () => {
                 alt="segmentation-img"
                 className="rounded-2xl pointer-events-none"
               />
-              <div className="absolute top-[-20px] left-[-20px] z-[-1] md:block hidden">
+              <div className="absolute xl:top-[-20px] top-[-10px] xl:left-[-20px] left-[-10px] z-[-1] md:block hidden">
                 <Image
                   width={395}
                   height={370}
