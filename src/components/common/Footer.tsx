@@ -47,7 +47,7 @@ const Footer = () => {
 
   return (
     <>
-      <section>
+      <section className='pt-20'>
         <div className='container'>
           <div className='flex items-center justify-center flex-col'>
             <h1 className='font-manrope font-medium text-3xl text-center font_gilroy_medium'>

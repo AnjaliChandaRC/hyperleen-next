@@ -23,7 +23,8 @@ const config: Config = {
         smoke_blue: "#f2f6fb",
         smoke_grey: "#f5f5f5",
         // add a light black color
-        light_black: "#0000000A"
+        light_black: "#0000000A",
+        smoke_grey2: "#FFFFFF29",
       },
       lineHeight: {
         sm: "34.8px",
@@ -31,11 +32,9 @@ const config: Config = {
         lg: "57.6px",
         xl: "80px",
       },
-      backgroundImage: {
-        footerSection: 'url("/assets/images/home/png/footer-bg-img.png")'
-      },
       boxShadow: {
         "3xl": "4px 4px 20px 0px #084CAF4D",
+        "4xl": "0px 4px 4px 0px #00000040",
       },
       container: {
         padding: {
@@ -52,11 +51,22 @@ const config: Config = {
       screens: {
         xl: "1200px",
       },
+      backgroundImage: {
+        header_bg: "url('/assets/images/home/png/header_bg.png')",
+        footerSection: 'url("/assets/images/home/png/footer-bg-img.png")',
+        ourTeam: `url("/assets/images/home/webp/team_Bg.webp")`,
+        teamLayer: `url("/assets/images/home/webp/team_Layer.webp")`,
+      },
       backgroundSize: {
         full: "100% 100%",
-      }
-    }
+      },
+      // =verification-shadaw
+      boxShadowColor: {
+        WhiteShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px",
+      },
+    },
   },
+  darkMode: "class",
   plugins: [],
 };
 export default config;
