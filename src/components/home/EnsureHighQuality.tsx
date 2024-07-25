@@ -29,13 +29,7 @@ const EnsureHighQuality = () => {
               Data Labeling
             </h4>
             <div className="flex lg:flex-col lg:gap-7 gap-3 mt-2">
-              <div className="p-[11px] rounded-[7px] bg-off_white w-fit relative">
-                <div className="flex flex-col absolute">
-                  <div className="size-5">
-                    <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
-                  </div>
-                  <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
-                </div>
+              <div className="p-[11px] rounded-[7px] bg-off_white w-fit">
                 <Image
                   src="/assets/images/home/webp/pizza3.webp"
                   alt="project-request-image"
@@ -44,13 +38,7 @@ const EnsureHighQuality = () => {
                   className="rounded-[5.3px]"
                 />
               </div>
-              <div className="p-[11px] rounded-[7px] bg-off_white w-fit relative">
-                <div className="flex flex-col absolute">
-                  <div className="size-5">
-                    <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
-                  </div>
-                  <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
-                </div>
+              <div className="p-[11px] rounded-[7px] bg-off_white w-fit">
                 <Image
                   src="/assets/images/home/webp/labeling_2.webp"
                   alt="project-request-image"
@@ -107,7 +95,7 @@ const EnsureHighQuality = () => {
             </div>
             <div className="flex items-start justify-between gap-3">
               <div className="flex flex-col gap-[10px] mt-2 max-lg:w-full">
-                <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit relative">
+                <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit">
                   <Image
                     src="/assets/images/home/webp/car2.webp"
                     alt="project-request-image"
@@ -115,14 +103,8 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[4px] max-lg:!min-w-full"
                   />
-                  <div className="flex flex-col absolute">
-                    <div className="size-5">
-                      <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
-                    </div>
-                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
-                  </div>
                 </div>
-                <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit relative">
+                <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit">
                   <Image
                     src="/assets/images/home/webp/vegitable.webp"
                     alt="project-request-image"
@@ -130,14 +112,8 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[4px] max-lg:!min-w-full"
                   />
-                  <div className="flex flex-col absolute">
-                    <div className="size-5">
-                      <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
-                    </div>
-                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
-                  </div>
                 </div>
-                <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit relative">
+                <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit">
                   <Image
                     src="/assets/images/home/webp/rider.webp"
                     alt="project-request-image"
@@ -145,16 +121,10 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[4px] max-lg:!min-w-full"
                   />
-                  <div className="flex flex-col absolute">
-                    <div className="size-5">
-                      <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
-                    </div>
-                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
-                  </div>
                 </div>
               </div>
               <div className="flex flex-col gap-[10px] mt-2 max-lg:w-full">
-                <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit relative">
+                <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit">
                   <Image
                     src="/assets/images/home/webp/rider.webp"
                     alt="project-request-image"
@@ -162,14 +132,8 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[4px] max-lg:!min-w-full"
                   />
-                  <div className="flex flex-col absolute">
-                    <div className="size-5">
-                      <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
-                    </div>
-                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
-                  </div>
                 </div>
-                <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit relative">
+                <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit">
                   <Image
                     src="/assets/images/home/webp/car2.webp"
                     alt="project-request-image"
@@ -177,14 +141,8 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[4px] max-lg:!min-w-full"
                   />
-                  <div className="flex flex-col absolute">
-                    <div className="size-5">
-                      <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
-                    </div>
-                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
-                  </div>
                 </div>
-                <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit relative">
+                <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit">
                   <Image
                     src="/assets/images/home/webp/pizza2.webp"
                     alt="project-request-image"
@@ -192,12 +150,6 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[4px] max-lg:!min-w-full"
                   />
-                  <div className="flex flex-col absolute">
-                    <div className="size-5">
-                      <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
-                    </div>
-                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -220,13 +172,7 @@ const EnsureHighQuality = () => {
             </h4>
             <Paragraph textName="Incorrectly labeled data is reviewed and relabeled correctly" />
             <div className="flex lg:flex-col lg:gap-7 gap-3 mt-2">
-              <div className="p-[11px] rounded-[7px] bg-off_white w-fit relative">
-                <div className="flex flex-col absolute">
-                  <div className="size-5">
-                    <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
-                  </div>
-                  <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
-                </div>
+              <div className="p-[11px] rounded-[7px] bg-off_white w-fit">
                 <Image
                   src="/assets/images/home/webp/pizza2.webp"
                   alt="project-request-image"
@@ -235,13 +181,7 @@ const EnsureHighQuality = () => {
                   className="rounded-[5.3px]"
                 />
               </div>
-              <div className="p-[11px] rounded-[7px] bg-off_white w-fit relative">
-                <div className="flex flex-col absolute">
-                  <div className="size-5">
-                    <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
-                  </div>
-                  <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
-                </div>
+              <div className="p-[11px] rounded-[7px] bg-off_white w-fit">
                 <Image
                   src="/assets/images/home/webp/piza.webp"
                   alt="project-request-image"
