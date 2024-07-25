@@ -46,7 +46,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className='xl:w-8/12 lg:w-8/12 w-full '>
+          <div className='xl:w-8/12 lg:w-8/12 px-3 w-full '>
             <div className='flex flex-row flex-wrap -mx-3 xl:justify-end lg:justify-evenly justify-between max-lg:pt-5 w-full'>
               {footerData.map((val: FooterColumns, index: number) => (
                 <div key={index} className={`${val.className} w-1/2 px-5 lg:px-3 pt-5`}>
