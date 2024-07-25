@@ -36,11 +36,14 @@ const AddLabel = () => {
                 </p>
                 <div className="max-w-[422px] w-full rounded-xl bg-light_grey p-5 mt-5">
                   {/* =======car-img===== */}
+                  {/* <form action="/upload">
+                    <input type="file" id="file" name="file" />
+                  </form> */}
                   <Image
                     width={399}
                     height={359}
                     src="/assets/images/home/png/label-inputCar.png"
-                    alt="label-jumpingGirl"
+                    alt="label-inputCar"
                   />
                 </div>
                 <div className="max-w-[422px] w-full border-[0.5px] border-grey p-[12px_0px_45px_12px] rounded-xl mt-4">
@@ -65,28 +68,28 @@ const AddLabel = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-[50%] w-full px-3 max-lg:flex max-lg:justify-center relative max-md:flex-col max-sm:items-center max-md:items-center lg:pt-0 md:pt-10 pt-5">
+          <div className="lg:w-[50%] w-full px-3 max-lg:flex max-lg:justify-center relative max-lg:flex-col max-lg:items-center lg:pt-0 md:pt-10 pt-5">
             <Image
               width={399}
               height={359}
-              src="/assets/images/home/png/label-yellowJacketGirl.png"
-              alt="label-jumpingGirl"
+              src="/assets/images/home/webp/label-yellowJacketGirl.webp"
+              alt="label-yellowJacketGirl"
             />
             {/* ====ratio-image====== */}
-            <div className="md:absolute lg:top-[-3%] lg:left-[55%] top-[4%] lg:right-[-40%] right-[14%] max-w-48">
+            <div className="lg:absolute lg:top-[-3%] xl:left-[55%] top-[4%] xl:right-[-40%] left-[59%] max-w-48">
               <Image
                 width={191}
                 height={241}
-                src="/assets/images/home/png/label-ratio.png"
+                src="/assets/images/home/webp/label-ratio.webp"
                 alt="label-jumpingGirl"
               />
             </div>
             {/* ======jumoing-girl-img */}
-            <div className="md:absolute lg:bottom-[-26%] bottom-[-38%] lg:left-[38%] left-[54%]">
+            <div className="lg:absolute lg:bottom-[-26%] bottom-[-38%] lg:left-[38%] left-[54%]">
               <Image
                 width={353}
                 height={216}
-                src="/assets/images/home/png/label-jumpingGirl.png"
+                src="/assets/images/home/webp/label-jumpingGirl.webp"
                 alt="label-jumpingGirl"
               />
             </div>
