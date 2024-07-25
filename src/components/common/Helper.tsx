@@ -45,49 +45,9 @@ export const Data = [
   },
 ];
 
-export interface TeamMember {
-  name: string;
-  role: string;
-  phone: string;
-  email: string;
-  image: string;
-  description: string;
-}
-export const teamMembers = [
-  {
-    name: "Mark Butler",
-    role: "Lead Data Annotator",
-    phone: "972.215.8214",
-    email: "darrin.araki@cbpacific.com",
-    image: "/assets/images/home/webp/butler.webp",
-    columnClass: "px-[10px] w-full md:w-1/2 flex justify-center",
-    description:
-      "Sarah Thompson brings over five years of experience in data labeling and annotation to our team. With a keen eye for detail and a passion for precision, Sarah leads our team of annotators, ensuring every piece of data is meticulously labeled and verified.",
-  },
-  {
-    name: "Corinne Crabtree",
-    role: "Lead Data Annotator",
-    phone: "972.215.8214",
-    email: "darrin.araki@cbpacific.com",
-    image: "/assets/images/home/webp/corrinne.webp",
-    columnClass: "px-[10px] w-full md:w-1/2 flex justify-center md:mt-0 mt-12",
-    description:
-      "Sarah Thompson brings over five years of experience in data labeling and annotation to our team. With a keen eye for detail and a passion for precision, Sarah leads our team of annotators, ensuring every piece of data is meticulously labeled and verified.",
-  },
-];
-
-export interface TeamMember {
-    name: string;
-    role: string;
-    phone: string;
-    email: string;
-    image: string;
-    description: string;
-}
-
 // Header Helper
 
-export const navLink: NavLink[] = [
+export const navLink = [
     { tabText: "Home", href: "#home" },
     { tabText: "Label", href: "#label" },
     { tabText: "About Us", href: "#about" },
@@ -96,14 +56,14 @@ export const navLink: NavLink[] = [
     { tabText: "FAQs", href: "#faq" },
 ];
 
-export const items: Item[] = [
+export const items= [
     { id: 1, label: 'Accurate', maxWidth: '121px' },
     { id: 2, label: 'Scalable', maxWidth: '118px' },
     { id: 3, label: 'Secure Data', maxWidth: '147px' },
     { id: 4, label: 'Labeling Solutions', maxWidth: '193px' },
     { id: 5, label: 'Quality Work', maxWidth: '149px' }
 ];
-export const footerData: Section[] = [
+export const footerData = [
     {
         title: 'Quick Links',
         links: [
@@ -129,3 +89,48 @@ export const footerData: Section[] = [
             { label: 'Terms and conditions', href: '#terms-conditions' },
         ],
     },]
+
+    export const teamMembers = [
+      {
+        name: "Mark Butler",
+        role: "Lead Data Annotator",
+        phone: "972.215.8214",
+        email: "darrin.araki@cbpacific.com",
+        image: "/assets/images/home/webp/butler.webp",
+        columnClass: "px-[10px] 2xl:px-5 w-full md:w-1/2 flex justify-center",
+      },
+      {
+        name: "Corinne Crabtree",
+        role: "Lead Data Annotator",
+        phone: "972.215.8214",
+        email: "darrin.araki@cbpacific.com",
+        image: "/assets/images/home/webp/corrinne.webp",
+        columnClass:
+          "px-[10px] 2xl:px-5 w-full md:w-1/2 flex justify-center md:mt-0 mt-12",
+      },
+    ];
+    export const TimelineData = [
+      {
+        title: "Project request",
+        description:
+          "Send us information about your project and your annotation needs. Our team will work with you to define the Scope of Work and to determine the best way to deliver the results that you require.",
+        icon: <ProjectRequest />,
+      },
+      {
+        title: "Interface setup",
+        description:
+          "Our team will develop a custom interface for your use case and will hand-pick the most suitable workforce based on your requirements in terms of geography, demographics, etc",
+        icon: <InterfaceSetup />,
+      },
+      {
+        title: "Send request",
+        description:
+          "Once the integration is complete, you can start sending requests to our workforce which contain bounding box, tag, polygon assignments, and more.",
+        icon: <SendRequest />,
+      },
+      {
+        title: "Receive data",
+        description: "Get the appropriate data annotated.",
+        icon: <ReceiveData />,
+      },
+    ];
