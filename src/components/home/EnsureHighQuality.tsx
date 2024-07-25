@@ -12,7 +12,7 @@ const EnsureHighQuality = () => {
           <PrimaryHeading
             className="text-center mb-4"
             textName="How We "
-            textSpan="Ensure High Quality"
+            blueText="Ensure High Quality"
           />
           <Paragraph
             className="text-center"
