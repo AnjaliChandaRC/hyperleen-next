@@ -84,3 +84,7 @@
     height: 3px !important;
     width: 4px;
 }
+
+* {
+    scroll-behavior: smooth;
+}
