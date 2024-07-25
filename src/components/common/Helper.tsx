@@ -7,7 +7,7 @@ import {
 
 export const DATA_LIST = [{ text: "text" }];
 
-export const Data = [
+export const FaqList = [
   {
     question: "What is data labeling?",
     answer:
