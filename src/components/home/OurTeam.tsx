@@ -76,7 +76,7 @@ const OurTeam = () => {
                 <div className="p-4">
                   <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-2 justify-between xl:mb-6 sm:mb-4 mb-3 max-xl:items-center max-lg:items-start">
                     <div>
-                      <h3 className="font-semibold text-nowrap md:text-2xl text-[22px] leading-[26px] md:leading-[33.6px] text-black mb-1 font_gilroy_bold">
+                      <h3 className="font-semibold font_gilroy_bold text-nowrap md:text-2xl text-[22px] leading-[26px] md:leading-[33.6px] text-black mb-1">
                         {member.name}
                       </h3>
                       <h4 className="text-nowrap font-normal text-lg leading-7 text-grey">

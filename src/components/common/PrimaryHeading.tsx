@@ -1,10 +1,10 @@
 type PRIMARY_HEADING_PROPS = {
   className: string;
   textName: string;
-  spanClass: string;
-  spanClass2: string;
-  textSpan: string;
-  textSpan2: string;
+  spanClass?: string;
+  spanClass2?: string;
+  textSpan?: string;
+  textSpan2?: string;
 };
 const PrimaryHeading = ({
   className,
