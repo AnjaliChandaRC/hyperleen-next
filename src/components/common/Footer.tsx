@@ -26,10 +26,11 @@ const Footer = () => {
                 height={30}
                 src='/assets/images/home/png/footer-logo.png'
                 alt='footer logo'
+                className=' lg:w-[117px]  sm:w-20  w-16'
               />
             </Link>
-            <Paragraph textName='Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.' className='lg:max-w-[300px] text-white opacity-70 pt-5' />
-            <div className='gap-3 mt-5 max-xl:flex hidden'>
+            <Paragraph textName='Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.' className='lg:max-w-[300px] text-white opacity-70 md:pt-5 sm:pt-4 pt-3' />
+            <div className='gap-3 lg:mt-5  sm:mt-4 mt-3 max-xl:flex hidden'>
               <div className='size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
                 <Link href="https://www.facebook.com/login/" target='_blank'>
                   <FacebookLogo />
@@ -49,7 +50,7 @@ const Footer = () => {
           <div className='xl:w-8/12 lg:w-8/12 px-3 w-full '>
             <div className='flex flex-row flex-wrap -mx-3 xl:justify-end lg:justify-evenly justify-between max-lg:pt-5 w-full'>
               {footerData.map((val: FooterColumns, index: number) => (
-                <div key={index} className={`${val.className} w-1/2 px-5 lg:px-3 pt-5`}>
+                <div key={index} className={`${val.className} w-1/2 px-5 lg:px-3 lg:pt-5 sm:pt-4 pt-3`}>
                   <ul>
                     <li>
                       <h2 className='text-lg text-white'>{val.title}</h2>
