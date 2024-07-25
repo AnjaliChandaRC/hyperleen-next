@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <nav className="border-b-[0.1px] border-grey py-4">
-      <div className="max-w-[1140px] mx-auto container flex items-center justify-between w-full">
+      <div className="max-w-[1180px] mx-auto container flex items-center justify-between w-full">
         <div className="w-[54px] h-[56px]">
           <Link href="/">
             <Header_logo />
@@ -52,8 +52,8 @@ const Header = () => {
           ></span>
           <span
             className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active
-                ? "-rotate-45 relative bottom-[11px] -right-px"
-                : "rotate-0"
+              ? "-rotate-45 relative bottom-[11px] -right-px"
+              : "rotate-0"
               }`}
           ></span>
         </div>
