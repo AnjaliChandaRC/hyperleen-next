@@ -79,3 +79,7 @@
 ::-webkit-scrollbar-track {
     background: transparent;
 }
+
+.hero_scrollbar ::-webkit-scrollbar-thumb {
+    width: 3px !important;
+}

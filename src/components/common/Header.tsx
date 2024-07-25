@@ -48,13 +48,13 @@ const Header = () => {
             <Link
               key={index}
               href={obj.href}
-              className='relative lg:p-2.5 text-grey hover:text-blue ease-in-out duration-300 after:content-[""] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 max-lg:after:-bottom-1.5 after:w-0 hover:after:w-full after:h-[2px] after:bg-blue after:transition-all after:duration-300'
+              className='relative lg:p-2.5 max-lg:text-xl text-grey hover:text-blue ease-in-out duration-300 after:content-[""] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 max-lg:after:-bottom-1.5 after:w-0 hover:after:w-full after:h-[2px] after:bg-blue after:transition-all after:duration-300'
               onClick={REMOVE_NAVBAR}
             >
               {obj.nav_tabs}
             </Link>
           ))}
-          <div className={`flex items-center justify-center gap-3 lg:ps-3.5 ps-0 ${!active ? "max-lg:flex-col" : "flex-row"}`}>
+          <div className={`flex items-center justify-center gap-3 max-lg:gap-4 lg:ps-3.5 ps-0 ${!active ? "max-lg:flex-col" : "flex-row"}`}>
             <CommonButton buttonClass='!bg-white !shadow-none !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent' buttonName='Sign Up' />
             <CommonButton buttonName='Contact Us' />
           </div>
