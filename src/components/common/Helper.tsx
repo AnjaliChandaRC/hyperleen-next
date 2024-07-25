@@ -7,7 +7,7 @@ import {
 
 export const DATA_LIST = [{ text: "text" }];
 
-export const Data = [
+export const FaqList = [
   {
     question: "What is data labeling?",
     answer:
@@ -66,7 +66,7 @@ export const Hero_Items = [
 
 export const footerData = [
   {
-    className: "md:w-3/12",
+    className: "md:w-3/12 xl:justify-end xl:flex",
     title: 'Quick Links',
     links: [
       { label: 'Home', href: '#home' },
@@ -77,7 +77,7 @@ export const footerData = [
     ],
   },
   {
-    className: "md:w-2/12",
+    className: "md:w-2/12 xl:justify-center xl:flex",
     title: 'Links',
     links: [
       { label: 'Team', href: '#team' },
@@ -85,7 +85,7 @@ export const footerData = [
     ],
   },
   {
-    className: "md:w-4/12",
+    className: "md:w-3/12",
     title: 'Policy',
     links: [
       { label: 'Contact Us', href: '#contact' },

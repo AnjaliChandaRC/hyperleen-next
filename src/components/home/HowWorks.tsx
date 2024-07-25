@@ -13,10 +13,10 @@ const HowWorks = () => {
           <div className="pr-[10px] ps-5 2xl:px-0 w-full lg:w-1/2 flex justify-center lg:justify-start">
             <div className="lg:max-w-[530px] w-full lg:text-start text-center">
               <PrimaryHeading
-                textName="How the "
-                textSpan="System "
-                textSpan2="Works"
                 className="mb-4"
+                textName="How the "
+                blueText="System "
+                blackText="Works"
               />
               <Paragraph
                 className="xl:mb-10 mb-9 "
@@ -28,17 +28,17 @@ const HowWorks = () => {
                   alt="project-request-image"
                   width={400}
                   height={360}
-                  className=" rounded-2xl shadow-5xl duration-300 ease-linear relative hover:z-40"
+                  className=" rounded-2xl pointer-events-none shadow-5xl duration-300 ease-linear relative hover:z-40"
                 />
                 <Image
                   src="/assets/images/home/webp/request.webp"
                   alt="project-request-image"
                   width={381}
                   height={216}
-                  className="rounded-2xl absolute right-0 bottom-0 duration-300 ease-linear shadow-6xl z-20 "
+                  className="rounded-2xl pointer-events-none absolute right-0 bottom-0 duration-300 ease-linear shadow-6xl z-20 "
                 />
               </div>
-              <CommonButton buttonName="Get Started Now" />
+              <CommonButton text="Get Started Now" />
             </div>
           </div>
           <div className="pl-[10px] pr-5 2xl:px-0 w-full lg:w-1/2 lg:mt-0 mt-12 flex justify-center lg:justify-end">

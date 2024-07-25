@@ -8,7 +8,6 @@ import { PenSvg } from "../common/Icons";
 const AddLabel = () => {
   return (
     <div className="relative lg:pt-20 sm:pt-10 pt-4">
-      {/* ======ellipse===== */}
       <div className="absolute top-[-14%] right-[12%] lg:block hidden">
         <Image
           width={398}
@@ -23,8 +22,8 @@ const AddLabel = () => {
           <div className="lg:w-[50%] w-full px-3">
             <PrimaryHeading
               textName="Add"
-              textSpan=" Label"
-              textSpan2=" of an Image"
+              blueTextClass=" Label"
+              blackTextClass=" of an Image"
               className="max-w-[478px] leading-lg max-lg:text-center max-lg:mx-auto"
             />
             <Paragraph
@@ -55,16 +54,12 @@ const AddLabel = () => {
               </div>
               <div className="flex gap-4 lg:mt-9 mt-5 justify-center">
                 <CommonButton
-                  buttonName="Ok"
-                  buttonClass="lg:max-w-[203px] max-w-[106px] w-full"
+                  text="Ok"
+                  className="lg:max-w-[203px] max-w-[106px] w-full"
                 />
                 <button className="text-lg text-black py-3.5 lg:px-[69px] px-5 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear">
                   Cancel
                 </button>
-                {/* <CommonButton
-                  buttonName="Cancel"
-                  buttonClass="lg:max-w-[203px] max-w-[106px] w-full text-black !bg-transparent !border !border-black !hover:bg-blue !hover:text-white !hover:border-transparent !duration-300 !ease-linear"
-                /> */}
               </div>
             </div>
           </div>

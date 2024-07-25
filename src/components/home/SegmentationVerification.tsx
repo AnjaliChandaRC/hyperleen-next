@@ -9,8 +9,8 @@ const SegmentationVerification = () => {
       <div className="container xl:max-w-[1140px] mx-auto">
         <PrimaryHeading
           textName="Image"
-          textSpan=" Segmentation and "
-          textSpan2="Verification"
+          blueTextClass=" Segmentation and "
+          blackTextClass="Verification"
           className="text-center max-w-[506px] mx-auto sm:pb-4 pb-3 lg:leading-lg"
         />
         <Paragraph
@@ -27,7 +27,7 @@ const SegmentationVerification = () => {
               className="lg:pb-12 sm:pb-5 pb-2 lg:max-w-[540px] max-lg:text-center"
             />
             <div className="max-lg:mx-auto max-lg:text-center">
-              <CommonButton buttonName="Learn More" />
+              <CommonButton text="Learn More" />
             </div>
           </div>
           <div className="lg:w-[50%] w-full xl:px-3">
@@ -40,9 +40,10 @@ const SegmentationVerification = () => {
                 className="pointer-events-none"
               />
               <div className="bg-blue max-w-[502px] rounded-t-2xl lg:p-4 p-2 absolute top-0 lg:w-[502px] w-full">
-                <p className="sm:text-lg text-base text-white lg:pb-2 pb-0">
-                  Selected All Squares With
-                </p>
+                <Paragraph
+                  textName="Selected All Squares With"
+                  className="sm:text-lg text-base text-white lg:pb-2 pb-0"
+                />
                 <p className="font_gilroy_bold lg:text-2xxl sm:text-2xl text-xl lg:leading-md text-white">
                   Car
                 </p>
