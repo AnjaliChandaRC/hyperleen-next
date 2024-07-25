@@ -23,7 +23,7 @@ const Hero = () => {
           <p className="text-center xl:text-3xxl md:text-6xl sm:text-5xl text-3xl font_gilroy_medium xl:leading-xl sm:leading-lg lg:pt-11 pt-8 pb-5">
             Transform Your{" "}
             <span className="text-blue font_gilroy_medium">Data into AI</span>{" "}
-            Insights
+             Insights
           </p>
           <div className="flex items-center justify-center lg:pb-10 pb-6">
             <p className="text-center max-w-[634px] text-grey">
