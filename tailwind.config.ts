@@ -64,6 +64,9 @@ const config: Config = {
       boxShadowColor: {
         WhiteShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px",
       },
+      padding: {
+        lg: "71px",
+      }
     },
   },
   darkMode: "class",
