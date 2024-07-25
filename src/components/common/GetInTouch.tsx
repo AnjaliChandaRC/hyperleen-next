@@ -1,9 +1,59 @@
-import React from 'react'
+'use client';
+
+import { useState } from 'react';
+import Paragraph from './Paragraph';
+import PrimaryHeading from './PrimaryHeading';
+import Swal from 'sweetalert2';
 
 const GetInTouch = () => {
+  const [email, setEmail] = useState('');
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    if (email.trim() !== '') {
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Mail Submitted",
+        showConfirmButton: false,
+        timer: 1500
+      });
+      setEmail(''); // Clear the input field after submission
+    } else {
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "Email field is empty",
+        showConfirmButton: false,
+        timer: 1500
+      });
+    }
+  };
+
   return (
-    <div>GetInTouch</div>
-  )
+    <section className='pt-20'>
+      <div className='container'>
+        <div className='flex items-center justify-center flex-col'>
+          <PrimaryHeading textName=' Get in touch with' textSpan=' Hyperleen' className=' text-center' />
+          <Paragraph textName='
+            Take your experience a step further! Subscribe to our monthly newsletter for exclusive access to discounts, promotions, Hyperleen events, and more. We’d hate to be annoying, please unsubscribe anytime!' className='max-w-[731px] text-center pt-4' />
+          <form className='flex items-center gap-[14px] mt-6 max-md:flex-wrap justify-center' onSubmit={onSubmit}>
+            <input
+              type="email"
+              placeholder='Your e-mail'
+              className='w-[323px] px-4 rounded-2xl bg-light_black min-h-[55px] placeholder:text-black font-poopins text-base font-normal text-grey outline-blue'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <button type='submit' className='font-normal text-lg leading-7 font-poppins rounded-full shadow-3xl text-white hover:text-black bg-blue py-[13px] hover:bg-white hover:border-black duration-300 ease-linear px-6 border border-white'>
+              Submit Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default GetInTouch
+export default GetInTouch;

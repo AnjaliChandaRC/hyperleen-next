@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
 import Image from 'next/image';
-import CommonButton from './CommonButton';
+
 import { FacebookLogo, InstagramLogo, LinkdinLogo, TwitterLogo } from './Icons';
 import Link from 'next/link';
 
@@ -47,27 +47,7 @@ const Footer = () => {
 
   return (
     <>
-      <section className='pt-20'>
-        <div className='container'>
-          <div className='flex items-center justify-center flex-col'>
-            <h1 className='font-manrope font-medium text-3xl text-center font_gilroy_medium'>
-              Get in touch with <span className='text-blue'>Hyperleen</span>
-            </h1>
-            <p className='max-w-[731px] opacity-70 font-poppins font-normal text-base text-center pt-4'>
-              Take your experience a step further! Subscribe to our monthly newsletter for exclusive access to discounts, promotions, Hyperleen events, and more. We’d hate to be annoying, please unsubscribe anytime!
-            </p>
-            <form className='flex items-center gap-[14px] mt-6 max-md:flex-wrap justify-center'>
-              <input
-                type="email"
-                placeholder='Your e-mail'
-                className='w-[323px] px-4  rounded-2xl bg-light_black min-h-[55px] placeholder:text-black font-poopins text-base font-normal text-grey outline-blue'
-                required
-              />
-              <CommonButton buttonName='Submit Now' />
-            </form>
-          </div>
-        </div>
-      </section>
+
       <footer className='bg-footerSection sm:bg-full max-sm:bg-cover bg-no-repeat bg-center'>
         <div className='container pt-[160px] pb-[116px] w-full'>
           <div className='flex flex-row flex-wrap -mx-3  justify-between'>
