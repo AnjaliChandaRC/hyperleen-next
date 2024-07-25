@@ -22,7 +22,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="overflow-auto">
-            <div className="flex items-center md:justify-center justify-between md:gap-6 gap-3 max-lg:flex-wrap w-[824px] max-lg:pb-1">
+            <div className="flex items-center md:justify-center justify-between md:gap-6 gap-3 max-lg:flex-wrap md:w-[824px] w-[785px] max-lg:pb-1">
               {Hero_Items.map((item: Hero_Items, index: number) => (
                 <div
                   key={index}
