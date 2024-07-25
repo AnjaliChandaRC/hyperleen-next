@@ -24,7 +24,6 @@ const config: Config = {
         light_grey: "#0101010D",
         smoke_blue: "#f2f6fb",
         smoke_grey: "#f5f5f5",
-        // add a light black color
         light_black: "#0000000A",
         smoke_grey2: "#FFFFFF29",
         off_white: "#0101010D",
@@ -46,13 +45,11 @@ const config: Config = {
         padding: {
           DEFAULT: "20px",
           sm: "24px",
-          "2xl": "12px",
+          xl: "20px",
         },
         center: true,
         screens: {
           lg: "1040px",
-          xl: "1188px",
-          "2xl": "1368px",
         },
       },
       screens: {
@@ -67,7 +64,6 @@ const config: Config = {
       backgroundSize: {
         full: "100% 100%",
       },
-      // =verification-shadaw
       boxShadowColor: {
         WhiteShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px",
       },

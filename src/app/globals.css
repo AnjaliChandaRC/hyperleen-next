@@ -7,6 +7,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+@layer components {
+  .ensure_card {
+    @apply w-full p-5 border-[0.5px] rounded-2xl border-blue hover:shadow-7xl;
+  }
+  .timeline_card {
+    @apply max-w-[515px] 2xl:max-w-[615px] w-full min-h-[536px] after:left-[27px] after:-z-30 z-30 relative after:absolute after:w-1 after:border-l-[3px] after:top-6 after:bottom-12 sm:after:bottom-8 2xl:after:bottom-20 after:border-blue after:border-dashed flex flex-col gap-7;
+  }
+}
+
 @font-face {
   font-family: "Gilroy heavy,sans-serif";
   src: url("/assets/fonts/Gilroy-Heavy.ttf");

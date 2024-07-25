@@ -24,7 +24,7 @@ const OurTeam = () => {
 
   return (
     <div className="xl:py-[183px] py-[160px] 2xl:max-w-[1920px] mx-auto bg-ourTeam bg-cover md:bg-full bg-no-repeat bg-center relative z-30 overflow-hidden">
-      <div className="container 2xl:max-w-[1344px] xl:max-w-[1180px] xl:px-5 2xl:px-3">
+      <div className="container 2xl:max-w-[1360px] xl:max-w-[1180px]">
         <div className="mx-auto xl:max-w-[411px] xl:mb-[58px] lg:mb-9 mb-8">
           <PrimaryHeading
             textName="Our Team"
@@ -37,15 +37,15 @@ const OurTeam = () => {
         </div>
         <div className="flex flex-row flex-wrap -mx-[10px] 2xl:-mx-5">
           {/* using map-method */}
-          {teamMembers.map((member: TeamMember, index: number) => (
-            <div key={index} className={member.columnClass}>
+          {teamMembers.map((obj: TeamMember, index: number) => (
+            <div key={index} className={obj.columnClass}>
               <div className="md:max-w-[560px] max-w-[520px] 2xl:max-w-full w-full h-full rounded-2xl bg-white flex justify-between flex-col">
                 <div className="relative">
                   <Image
-                    src={member.image}
+                    src={obj.image}
                     width={560}
                     height={393}
-                    alt={`${member.name}-Image`}
+                    alt={`${obj.name}-Image`}
                     className="rounded-t-xl w-full"
                   />
                   <div className="flex flex-col items-center gap-4 absolute right-0 top-0 py-4 px-2 bg-smoke_grey2 shadow-4xl rounded-tr-2xl">
@@ -77,33 +77,33 @@ const OurTeam = () => {
                   <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-2 justify-between xl:mb-6 sm:mb-4 mb-3 max-xl:items-center max-lg:items-start">
                     <div>
                       <h3 className="font-semibold font_gilroy_bold text-nowrap md:text-2xl text-[22px] leading-[26px] md:leading-[33.6px] text-black mb-1">
-                        {member.name}
+                        {obj.name}
                       </h3>
                       <h4 className="text-nowrap font-normal text-lg leading-7 text-grey">
-                        {member.role}
+                        {obj.role}
                       </h4>
                     </div>
                     <div className="flex flex-col gap-2 h-fit">
                       <Link
-                        href={`tel:${member.phone}`}
-                        className="flex items-center gap-3 hover:scale-95 duration-300 ease-linear"
+                        href={`tel:${obj.phone}`}
+                        className="flex items-center gap-3 group/text "
                       >
                         <span>
                           <PhoneIcon />
                         </span>
-                        <span className="font-normal text-base leading-6 text-blue duration-300 ease-linear">
-                          {member.phone}
+                        <span className="font-normal text-base leading-6 group-hover/text:text-black text-blue duration-300 ease-linear">
+                          {obj.phone}
                         </span>
                       </Link>
                       <Link
-                        href={`mailto:${member.email}`}
-                        className="flex items-center gap-3 hover:scale-95 duration-300 ease-linear"
+                        href={`mailto:${obj.email}`}
+                        className="flex items-center gap-3 group/text "
                       >
                         <span>
                           <MailIcon />
                         </span>
-                        <span className="font-normal text-base leading-6 text-blue duration-300 ease-linear">
-                          {member.email}
+                        <span className="font-normal text-base leading-6 group-hover/text:text-black text-blue duration-300 ease-linear">
+                          {obj.email}
                         </span>
                       </Link>
                     </div>
