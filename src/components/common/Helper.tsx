@@ -48,89 +48,92 @@ export const Data = [
 // Header Helper
 
 export const navLink = [
-    { tabText: "Home", href: "#home" },
-    { tabText: "Label", href: "#label" },
-    { tabText: "About Us", href: "#about" },
-    { tabText: "How it Works", href: "#work" },
-    { tabText: "Team", href: "#team" },
-    { tabText: "FAQs", href: "#faq" },
+  { tabText: "Home", href: "#home" },
+  { tabText: "Label", href: "#label" },
+  { tabText: "About Us", href: "#about" },
+  { tabText: "How it Works", href: "#work" },
+  { tabText: "Team", href: "#team" },
+  { tabText: "FAQs", href: "#faq" },
 ];
 
-export const items= [
-    { id: 1, label: 'Accurate', maxWidth: '121px' },
-    { id: 2, label: 'Scalable', maxWidth: '118px' },
-    { id: 3, label: 'Secure Data', maxWidth: '147px' },
-    { id: 4, label: 'Labeling Solutions', maxWidth: '193px' },
-    { id: 5, label: 'Quality Work', maxWidth: '149px' }
+export const items = [
+  { id: 1, label: 'Accurate', maxWidth: '121px' },
+  { id: 2, label: 'Scalable', maxWidth: '118px' },
+  { id: 3, label: 'Secure Data', maxWidth: '147px' },
+  { id: 4, label: 'Labeling Solutions', maxWidth: '193px' },
+  { id: 5, label: 'Quality Work', maxWidth: '149px' }
 ];
 export const footerData = [
-    {
-        title: 'Quick Links',
-        links: [
-            { label: 'Home', href: '#home' },
-            { label: 'About Us', href: '#about' },
-            { label: 'Services', href: '#services' },
-            { label: 'FAQ', href: '#faq' },
-            { label: 'How It Works', href: '#how-it-works' },
-        ],
-    },
-    {
-        title: 'Links',
-        links: [
-            { label: 'Team', href: '#team' },
-            { label: 'Label', href: '#label' },
-        ],
-    },
-    {
-        title: 'Policy',
-        links: [
-            { label: 'Contact Us', href: '#contact' },
-            { label: 'Privacy Policy', href: '#privacy-policy' },
-            { label: 'Terms and conditions', href: '#terms-conditions' },
-        ],
-    },]
+  {
+    className: "md:w-3/12",
+    title: 'Quick Links',
+    links: [
+      { label: 'Home', href: '#home' },
+      { label: 'About Us', href: '#about' },
+      { label: 'Services', href: '#services' },
+      { label: 'FAQ', href: '#faq' },
+      { label: 'How It Works', href: '#how-it-works' },
+    ],
+  },
+  {
+    className: "md:w-2/12",
+    title: 'Links',
+    links: [
+      { label: 'Team', href: '#team' },
+      { label: 'Label', href: '#label' },
+    ],
+  },
+  {
+    className: "md:w-4/12",
+    title: 'Policy',
+    links: [
+      { label: 'Contact Us', href: '#contact' },
+      { label: 'Privacy Policy', href: '#privacy-policy' },
+      { label: 'Terms and conditions', href: '#terms-conditions' },
+    ],
+  },]
 
-    export const teamMembers = [
-      {
-        name: "Mark Butler",
-        role: "Lead Data Annotator",
-        phone: "972.215.8214",
-        email: "darrin.araki@cbpacific.com",
-        image: "/assets/images/home/webp/butler.webp",
-        columnClass: "px-[10px] 2xl:px-5 w-full md:w-1/2 flex justify-center",
-      },
-      {
-        name: "Corinne Crabtree",
-        role: "Lead Data Annotator",
-        phone: "972.215.8214",
-        email: "darrin.araki@cbpacific.com",
-        image: "/assets/images/home/webp/corrinne.webp",
-        columnClass:
-          "px-[10px] 2xl:px-5 w-full md:w-1/2 flex justify-center md:mt-0 mt-12",
-      },
-    ];
-    export const TimelineData = [
-      {
-        title: "Project request",
-        description:
-          "Send us information about your project and your annotation needs. Our team will work with you to define the Scope of Work and to determine the best way to deliver the results that you require.",
-        icon: <ProjectRequest />,
-      },
-      {
-        title: "Interface setup",
-        description:
-          "Our team will develop a custom interface for your use case and will hand-pick the most suitable workforce based on your requirements in terms of geography, demographics, etc",
-        icon: <InterfaceSetup />,
-      },
-      {
-        title: "Send request",
-        description:
-          "Once the integration is complete, you can start sending requests to our workforce which contain bounding box, tag, polygon assignments, and more.",
-        icon: <SendRequest />,
-      },
-      {
-        title: "Receive data",
-        description: "Get the appropriate data annotated.",
-        icon: <ReceiveData />,
-      },
-    ];
+export const teamMembers = [
+  {
+    name: "Mark Butler",
+    role: "Lead Data Annotator",
+    phone: "972.215.8214",
+    email: "darrin.araki@cbpacific.com",
+    image: "/assets/images/home/webp/butler.webp",
+    columnClass: "px-[10px] 2xl:px-5 w-full md:w-1/2 flex justify-center",
+  },
+  {
+    name: "Corinne Crabtree",
+    role: "Lead Data Annotator",
+    phone: "972.215.8214",
+    email: "darrin.araki@cbpacific.com",
+    image: "/assets/images/home/webp/corrinne.webp",
+    columnClass:
+      "px-[10px] 2xl:px-5 w-full md:w-1/2 flex justify-center md:mt-0 mt-12",
+  },
+];
+export const TimelineData = [
+  {
+    title: "Project request",
+    description:
+      "Send us information about your project and your annotation needs. Our team will work with you to define the Scope of Work and to determine the best way to deliver the results that you require.",
+    icon: <ProjectRequest />,
+  },
+  {
+    title: "Interface setup",
+    description:
+      "Our team will develop a custom interface for your use case and will hand-pick the most suitable workforce based on your requirements in terms of geography, demographics, etc",
+    icon: <InterfaceSetup />,
+  },
+  {
+    title: "Send request",
+    description:
+      "Once the integration is complete, you can start sending requests to our workforce which contain bounding box, tag, polygon assignments, and more.",
+    icon: <SendRequest />,
+  },
+  {
+    title: "Receive data",
+    description: "Get the appropriate data annotated.",
+    icon: <ReceiveData />,
+  },
+];
