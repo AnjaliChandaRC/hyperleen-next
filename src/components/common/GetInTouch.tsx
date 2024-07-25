@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 import Paragraph from './Paragraph';
 import PrimaryHeading from './PrimaryHeading';
@@ -18,7 +17,7 @@ const GetInTouch = () => {
         showConfirmButton: false,
         timer: 1500
       });
-      setEmail(''); 
+      setEmail('');
     } else {
       Swal.fire({
         position: "top-end",

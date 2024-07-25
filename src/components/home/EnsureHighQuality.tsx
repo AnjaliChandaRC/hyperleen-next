@@ -30,7 +30,7 @@ const EnsureHighQuality = () => {
               Data Labeling
             </p>
             <div className="flex lg:flex-col lg:gap-7 gap-3 mt-2">
-              <div className="p-3 rounded-[7px] bg-off_white w-fit">
+              <div className="p-3 rounded-[7px] bg-off_white w-fit relative">
                 <Image
                   src="/assets/images/home/webp/pizza.webp"
                   alt="pizza"
@@ -38,8 +38,37 @@ const EnsureHighQuality = () => {
                   height={115}
                   className="rounded-[5.3px]"
                 />
+                {/* cursor-ellipse */}
+                <div className="flex flex-col absolute -right-7 top-[33px]">
+                  <div className="size-5">
+                    <Image
+                      width={100}
+                      height={100}
+                      className="w-full h-full"
+                      src={"/assets/images/home/png/cursor_btn.png"}
+                      alt="cursor image"
+                    />
+                  </div>
+                  <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
+                    Pie..
+                  </p>
+                </div>
               </div>
-              <div className="p-3 rounded-[7px] bg-off_white w-fit">
+              <div className="p-3 rounded-[7px] bg-off_white w-fit relative">
+                <div className="flex flex-col absolute -right-7 top-[33px]">
+                  <div className="size-5">
+                    <Image
+                      width={100}
+                      height={100}
+                      className="w-full h-full"
+                      src={"/assets/images/home/png/cursor_btn.png"}
+                      alt="cursor image"
+                    />
+                  </div>
+                  <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
+                    car
+                  </p>
+                </div>
                 <Image
                   src="/assets/images/home/webp/car.webp"
                   alt="car"
@@ -104,15 +133,20 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[4px] max-lg:!min-w-full"
                   />
-                  {/* check - icon */}
-                  <span className="absolute top-4 right-4">
-                    <Image
-                      src="/assets/images/home/svg/check.svg"
-                      alt="check-icon"
-                      width={21}
-                      height={21}
-                    />
-                  </span>
+                  <div className="flex flex-col absolute bottom-4 left-3">
+                    <div className="size-5">
+                      <Image
+                        width={100}
+                        height={100}
+                        className="w-full h-full"
+                        src={"/assets/images/home/png/cursor_btn.png"}
+                        alt="cursor image"
+                      />
+                    </div>
+                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
+                      Car
+                    </p>
+                  </div>
                 </div>
                 <div className="p-3 rounded-[7px] bg-off_white w-full lg:w-fit relative">
                   <Image
@@ -122,15 +156,20 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[4px] max-lg:!min-w-full"
                   />
-                  {/* check - icon */}
-                  <span className="absolute top-4 right-4">
-                    <Image
-                      src="/assets/images/home/svg/check.svg"
-                      alt="check-icon"
-                      width={21}
-                      height={21}
-                    />
-                  </span>
+                  <div className="flex flex-col absolute right-9 bottom-5">
+                    <div className="size-5">
+                      <Image
+                        width={100}
+                        height={100}
+                        className="w-full h-full"
+                        src={"/assets/images/home/png/cursor_btn.png"}
+                        alt="cursor image"
+                      />
+                    </div>
+                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
+                      Tomato
+                    </p>
+                  </div>
                 </div>
                 <div className="p-3 rounded-[7px] bg-off_white w-full lg:w-fit relative">
                   <Image
@@ -140,15 +179,20 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[4px] max-lg:!min-w-full"
                   />
-                  {/* check - icon */}
-                  <span className="absolute top-[14px] left-4">
-                    <Image
-                      src="/assets/images/home/svg/check.svg"
-                      alt="check-icon"
-                      width={21}
-                      height={21}
-                    />
-                  </span>
+                  <div className="flex flex-col absolute bottom-5 left-6">
+                    <div className="size-5">
+                      <Image
+                        width={100}
+                        height={100}
+                        className="w-full h-full"
+                        src={"/assets/images/home/png/cursor_btn.png"}
+                        alt="cursor image"
+                      />
+                    </div>
+                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
+                      Man
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="flex flex-col gap-[10px] mt-2 max-lg:w-full">
@@ -160,15 +204,20 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[4px] max-lg:!min-w-full"
                   />
-                  {/* check - icon */}
-                  <span className="absolute top-4 left-[14px]">
-                    <Image
-                      src="/assets/images/home/svg/check.svg"
-                      alt="check-icon"
-                      width={21}
-                      height={21}
-                    />
-                  </span>
+                  <div className="flex flex-col absolute top-7 left-6">
+                    <div className="size-5">
+                      <Image
+                        width={100}
+                        height={100}
+                        className="w-full h-full"
+                        src={"/assets/images/home/png/cursor_btn.png"}
+                        alt="cursor image"
+                      />
+                    </div>
+                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
+                      Men
+                    </p>
+                  </div>
                 </div>
                 <div className="p-3 rounded-[7px] bg-off_white w-full lg:w-fit relative">
                   <Image
@@ -178,15 +227,20 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[4px] max-lg:!min-w-full"
                   />
-                  {/* check - icon */}
-                  <span className="absolute top-4 left-[14px]">
-                    <Image
-                      src="/assets/images/home/svg/check.svg"
-                      alt="check-icon"
-                      width={21}
-                      height={21}
-                    />
-                  </span>
+                  <div className="flex flex-col absolute top-7 left-6">
+                    <div className="size-5">
+                      <Image
+                        width={100}
+                        height={100}
+                        className="w-full h-full"
+                        src={"/assets/images/home/png/cursor_btn.png"}
+                        alt="cursor image"
+                      />
+                    </div>
+                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
+                      Car
+                    </p>
+                  </div>
                 </div>
                 <div className="p-3 rounded-[7px] bg-off_white w-full lg:w-fit relative">
                   <Image
@@ -196,15 +250,20 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[4px] max-lg:!min-w-full"
                   />
-                  {/* check - icon */}
-                  <span className="absolute top-3 right-2">
-                    <Image
-                      src="/assets/images/home/svg/cross.svg"
-                      alt="cross"
-                      width={21}
-                      height={21}
-                    />
-                  </span>
+                  <div className="flex flex-col absolute right-[30px] bottom-[18px]">
+                    <div className="size-5">
+                      <Image
+                        width={100}
+                        height={100}
+                        className="w-full h-full"
+                        src={"/assets/images/home/png/cursor_btn.png"}
+                        alt="cursor image"
+                      />
+                    </div>
+                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
+                      Pie..
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -226,9 +285,22 @@ const EnsureHighQuality = () => {
               Relabeling
             </p>
             <Paragraph textName="Incorrectly labeled data is reviewed and relabeled correctly" />
-            {/* images */}
-            <div className="flex lg:flex-col lg:gap-7 gap-3 mt-2 relative w-fit">
+            <div className="flex lg:flex-col lg:gap-7 gap-3 mt-2">
               <div className="p-3 rounded-[7px] bg-off_white w-fit relative">
+                <div className="flex flex-col absolute -right-10 top-[40px]">
+                  <div className="size-5">
+                    <Image
+                      width={100}
+                      height={100}
+                      className="w-full h-full"
+                      src={"/assets/images/home/png/cursor_btn.png"}
+                      alt="cursor image"
+                    />
+                  </div>
+                  <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
+                    Pie..
+                  </p>
+                </div>
                 <Image
                   src="/assets/images/home/webp/pizza.webp"
                   alt="pizza"
@@ -247,6 +319,20 @@ const EnsureHighQuality = () => {
                 </span>
               </div>
               <div className="p-3 rounded-[7px] bg-off_white w-fit relative">
+                <div className="flex flex-col absolute -right-10 top-[40px]">
+                  <div className="size-5">
+                    <Image
+                      width={100}
+                      height={100}
+                      className="w-full h-full"
+                      src={"/assets/images/home/png/cursor_btn.png"}
+                      alt="cursor image"
+                    />
+                  </div>
+                  <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
+                    Quiche.
+                  </p>
+                </div>
                 <Image
                   src="/assets/images/home/webp/pizza.webp"
                   alt="pizza"

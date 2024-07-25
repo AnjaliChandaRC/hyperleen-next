@@ -264,7 +264,7 @@ export const Header_line = () => (
         y2="4.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0.01" />
+        <stop stopOpacity="0.01" />
         <stop offset="1" />
       </linearGradient>
     </defs>
@@ -293,7 +293,7 @@ export const Header_line_2 = () => (
         gradientUnits="userSpaceOnUse"
       >
         <stop />
-        <stop offset="1" stop-opacity="0.01" />
+        <stop offset="1" stopOpacity="0.01" />
       </linearGradient>
     </defs>
   </svg>

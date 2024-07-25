@@ -63,6 +63,7 @@ export const items = [
   { id: 4, label: "Labeling Solutions", maxWidth: "193px" },
   { id: 5, label: "Quality Work", maxWidth: "149px" },
 ];
+
 export const footerData = [
   {
     title: "Quick Links",
