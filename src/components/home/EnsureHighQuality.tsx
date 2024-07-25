@@ -34,7 +34,7 @@ const EnsureHighQuality = () => {
                   <div className="size-5">
                     <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
                   </div>
-                  <p className="bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
+                  <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
                 </div>
                 <Image
                   src="/assets/images/home/webp/pizza3.webp"
@@ -49,7 +49,7 @@ const EnsureHighQuality = () => {
                   <div className="size-5">
                     <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
                   </div>
-                  <p className="bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
+                  <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
                 </div>
                 <Image
                   src="/assets/images/home/webp/labeling_2.webp"
@@ -119,7 +119,7 @@ const EnsureHighQuality = () => {
                     <div className="size-5">
                       <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
                     </div>
-                    <p className="bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
+                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
                   </div>
                 </div>
                 <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit relative">
@@ -134,7 +134,7 @@ const EnsureHighQuality = () => {
                     <div className="size-5">
                       <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
                     </div>
-                    <p className="bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
+                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
                   </div>
                 </div>
                 <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit relative">
@@ -149,7 +149,7 @@ const EnsureHighQuality = () => {
                     <div className="size-5">
                       <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
                     </div>
-                    <p className="bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
+                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
                   </div>
                 </div>
               </div>
@@ -166,7 +166,7 @@ const EnsureHighQuality = () => {
                     <div className="size-5">
                       <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
                     </div>
-                    <p className="bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
+                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
                   </div>
                 </div>
                 <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit relative">
@@ -181,7 +181,7 @@ const EnsureHighQuality = () => {
                     <div className="size-5">
                       <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
                     </div>
-                    <p className="bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
+                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
                   </div>
                 </div>
                 <div className="p-[11px] rounded-[7px] bg-off_white w-full lg:w-fit relative">
@@ -196,7 +196,7 @@ const EnsureHighQuality = () => {
                     <div className="size-5">
                       <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
                     </div>
-                    <p className="bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
+                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
                   </div>
                 </div>
               </div>
@@ -225,7 +225,7 @@ const EnsureHighQuality = () => {
                   <div className="size-5">
                     <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
                   </div>
-                  <p className="bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
+                  <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
                 </div>
                 <Image
                   src="/assets/images/home/webp/pizza2.webp"
@@ -240,7 +240,7 @@ const EnsureHighQuality = () => {
                   <div className="size-5">
                     <Image width={100} height={100} className="w-full h-full" src={"/assets/images/home/png/cursor_btn.png"} alt="cursor image" />
                   </div>
-                  <p className="bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
+                  <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">Pie..</p>
                 </div>
                 <Image
                   src="/assets/images/home/webp/piza.webp"

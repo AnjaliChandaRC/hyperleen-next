@@ -50,7 +50,7 @@ const Header = () => {
               {obj.tabText}
             </Link>
           ))}
-          <div className={`flex items-center justify-center gap-3 lg:ps-[14px] ps-0 ${!active ? "max-lg:flex-col" : "flex-row"}`}>
+          <div className={`flex items-center justify-center gap-3 lg:ps-3.5 ps-0 ${!active ? "max-lg:flex-col" : "flex-row"}`}>
             <CommonButton buttonClass='!bg-white !shadow-none !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent' buttonName='Sign Up' />
             <CommonButton buttonName='Contact Us' />
           </div>

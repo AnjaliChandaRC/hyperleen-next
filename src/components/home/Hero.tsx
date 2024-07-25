@@ -33,7 +33,7 @@ const Hero = () => {
           <div className='flex items-center justify-center lg:pb-10 pb-6'>
             <p className='text-center max-w-[634px] text-grey'>Unlock the full potential of your AI models with our premium data labeling services. Our expert annotators ensure your data is meticulously labeled, enabling superior performance and insights.</p>
           </div>
-          <div className="flex items-center justify-center gap-3 xl:ps-11 lg:ps-6">
+          <div className="flex items-center justify-center gap-3 xl:ps-11 lg:ps-6 max-sm:flex-wrap">
             <CommonButton buttonName='Get Started' />
             <CommonButton buttonClass='!bg-white !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent !shadow-none' buttonName='Try For Free' />
           </div>
