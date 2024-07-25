@@ -17,7 +17,7 @@ const Footer = () => {
   const date = new Date();
   return (
     <div className='bg-footer_section sm:bg-full max-sm:bg-cover bg-no-repeat bg-center'>
-      <div className='max-w-[1140px] container mx-auto pt-[160px] w-full'>
+      <div className='max-w-[1156px] container mx-auto lg:pt-[160px] sm:pt-[150px] pt-[130px] w-full'>
         <div className='flex flex-row flex-wrap -mx-3  justify-between'>
           <div className='lg:w-3/12 px-3'>
             <Link href="/">
