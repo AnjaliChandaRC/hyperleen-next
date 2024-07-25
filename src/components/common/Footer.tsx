@@ -41,13 +41,13 @@ const Footer = () => {
               <div className='size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
                 <Link href="https://www.linkedin.com/login" target='_blank'> <LinkedinLogo /></Link>
               </div>
-              <div className=' size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
+              <div className='size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
                 <Link href="https://www.instagram.com/accounts/login/?hl=en" target='_blank'> <InstagramLogo /></Link>
               </div>
             </div>
           </div>
-          <div className='xl:w-7/12 lg:w-8/12 w-full '>
-            <div className='flex flex-row flex-wrap -mx-3 lg:justify-end justify-between max-lg:pt-5 w-full'>
+          <div className='xl:w-8/12 lg:w-8/12 w-full '>
+            <div className='flex flex-row flex-wrap -mx-3 xl:justify-end lg:justify-evenly justify-between max-lg:pt-5 w-full'>
               {footerData.map((val: FooterColumns, index: number) => (
                 <div key={index} className={`${val.className} w-1/2 px-5 lg:px-3 pt-5`}>
                   <ul>
@@ -55,7 +55,7 @@ const Footer = () => {
                       <h2 className='text-lg text-white'>{val.title}</h2>
                     </li>
                     {val.links.map((link: FooterLinks, index: number) => (
-                      <li key={index} className='lg:pt-5 pt-3 max-lg:text-nowrap'>
+                      <li key={index} className='lg:pt-5 pt-3 text-nowrap'>
                         <Link href={link.href} className='text-white opacity-70 hover:opacity-100 ease-in-out duration-300' >
                           {link.label}
                         </Link>
@@ -64,21 +64,21 @@ const Footer = () => {
                   </ul>
                 </div>
               ))}
-              <div className='md:w-3/12 w-full pt-5 px-5 max-xl:hidden'>
+              <div className='md:w-4/12 w-full pt-5 px-5 max-xl:hidden'>
                 <h2 className='text-lg text-white'>Follow us on</h2>
                 <div className='gap-3 mt-5 flex'>
-                  <div className='p-2 w-full rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
+                  <div className='size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
                     <Link href="https://www.facebook.com/login/" target='_blank'>
                       <FacebookLogo />
                     </Link>
                   </div>
-                  <div className='p-2 w-full rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl' >
+                  <div className='size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl' >
                     <Link href="https://twitter.com/login" target='_blank'> <TwitterLogo /></Link>
                   </div>
-                  <div className='p-2 w-full rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
+                  <div className='size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
                     <Link href="https://www.linkedin.com/login" target='_blank'> <LinkedinLogo /></Link>
                   </div>
-                  <div className='p-2 w-full rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
+                  <div className='size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl'>
                     <Link href="https://www.instagram.com/accounts/login/?hl=en" target='_blank'> <InstagramLogo /></Link>
                   </div>
                 </div>
