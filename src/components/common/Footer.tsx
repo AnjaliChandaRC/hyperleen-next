@@ -5,14 +5,15 @@ import Link from 'next/link';
 import { footerData } from './Helper';
 import Paragraph from './Paragraph';
 
-interface Link {
+interface FooterLinks {
   label: string;
   href: string;
 }
 
-interface Section {
+interface FooterColumns {
   title: string;
-  links: Link[];
+  links: FooterLinks[];
+  className: string;
 }
 
 
@@ -55,13 +56,13 @@ const Footer = () => {
           </div>
           <div className='xl:w-7/12 lg:w-8/12 w-full '>
             <div className='flex flex-row flex-wrap -mx-3 lg:justify-end justify-between max-lg:pt-5'>
-              {footerData.map((section, index) => (
+              {footerData.map((section: FooterColumns, index: number) => (
                 <div key={index} className={`${section.className} w-1/2 px-5 lg:px-3 pt-5`}>
                   <ul>
                     <li>
                       <h2 className='text-lg text-white font-normal'>{section.title}</h2>
                     </li>
-                    {section.links.map((link, index) => (
+                    {section.links.map((link: FooterLinks, index: number) => (
                       <li key={index} className='lg:pt-5 pt-3 max-lg:text-nowrap'>
                         <a href={link.href} className='text-white opacity-70 hover:opacity-100 ease-in-out duration-300' >
                           {link.label}
