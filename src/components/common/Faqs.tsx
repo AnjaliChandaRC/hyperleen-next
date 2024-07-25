@@ -37,13 +37,13 @@ const Faqs: React.FC = () => {
               <div className="flex justify-between">
                 <span
                   className={`${activeIndex === index ? "text-white" : "text-black"
-                    } font-poppins text-sm md:text-base font-medium text-black`}
+                    } font-poppins text-sm md:text-lg lg:text-md font-medium text-black`}
                 >
                   {data.question}
                 </span>
                 <span className="float-right">
                   <div
-                    className={`size-6 flex justify-center items-center rounded-full ${activeIndex === index ? "bg-white" : "bg-blue"
+                    className={`size-5 md:size-6 flex justify-center items-center rounded-full ${activeIndex === index ? "bg-white" : "bg-blue"
                       }`}
                   >
                     <svg
@@ -71,7 +71,7 @@ const Faqs: React.FC = () => {
                 } accordion-content`}
             >
               <div className="p-3 lg:p-6">
-                <p className="font_gilroy_regular text-sm md:text-xl text-grey max-w-[857px]">
+                <p className="font_gilroy_regular text-sm md:text-2xl lg:text-xl text-grey max-w-[857px]">
                   {data.answer}
                 </p>
               </div>
