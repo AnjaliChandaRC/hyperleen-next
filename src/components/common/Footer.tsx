@@ -88,8 +88,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='w-full h-[1px] bg-light_grey lg:mt-14 md:pt-10 pt-7'></div>
-      <p className='opacity-70 text-center text-white pt-5 pb-11 px-3'>© {date.getFullYear()} Hyperleen, All Rights reserved.</p>
+      <div className='w-full h-[1px] bg-light_grey lg:mt-14 md:mt-10 mt-7'></div>
+      <p className='opacity-70 text-center text-white sm:pt-5 pt-4 pb-11 px-3'>© {date.getFullYear()} Hyperleen, All Rights reserved.</p>
     </div>
   );
 };
