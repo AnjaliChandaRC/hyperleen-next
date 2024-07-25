@@ -46,7 +46,7 @@ const OurTeam = () => {
                     width={560}
                     height={393}
                     alt={`${obj.name}-Image`}
-                    className="rounded-t-xl w-full"
+                    className="rounded-t-xl w-full pointer-events-none"
                   />
                   <div className="flex flex-col items-center gap-4 absolute right-0 top-0 py-4 px-2 bg-smoke_grey2 shadow-4xl rounded-tr-2xl">
                     <Link

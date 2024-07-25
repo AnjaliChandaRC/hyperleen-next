@@ -28,14 +28,14 @@ const HowWorks = () => {
                   alt="project-request-image"
                   width={400}
                   height={360}
-                  className=" rounded-2xl shadow-5xl duration-300 ease-linear relative hover:z-40"
+                  className=" rounded-2xl pointer-events-none shadow-5xl duration-300 ease-linear relative hover:z-40"
                 />
                 <Image
                   src="/assets/images/home/webp/request.webp"
                   alt="project-request-image"
                   width={381}
                   height={216}
-                  className="rounded-2xl absolute right-0 bottom-0 duration-300 ease-linear shadow-6xl z-20 "
+                  className="rounded-2xl pointer-events-none absolute right-0 bottom-0 duration-300 ease-linear shadow-6xl z-20 "
                 />
               </div>
               <CommonButton buttonName="Get Started Now" />
