@@ -1,6 +1,6 @@
 import React from "react";
-type BUTTON = {
-  buttonName?: string;
+interface BUTTON {
+  buttonName: string;
   buttonClass: string;
 };
 

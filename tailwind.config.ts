@@ -19,11 +19,15 @@ const config: Config = {
         blue: "#084CAF",
         grey: "#4E4E4E",
         light_blue: "#0A02EC14",
+        light_blue2: "#E6EDF7",
+        light_blue3: " #084CAF0A",
         light_grey: "#0101010D",
         smoke_blue: "#f2f6fb",
         smoke_grey: "#f5f5f5",
         // add a light black color
         light_black: "#0000000A",
+        smoke_grey2: "#FFFFFF29",
+        off_white: "#0101010D",
       },
       lineHeight: {
         sm: "34.8px",
@@ -31,15 +35,18 @@ const config: Config = {
         lg: "57.6px",
         xl: "80px",
       },
-
       boxShadow: {
         "3xl": "4px 4px 20px 0px #084CAF4D",
         "4xl": "0px 4px 4px 0px #00000040",
+        "5xl": "-2.41px 4.41px 37.77px 1.76px #6F69F21F",
+        "6xl": "-8.88px 5.88px 58.83px 4.37px #6F69F21F",
+        "7xl": "7.88px -8.24px 35.83px -18.63px #084CAF14",
       },
       container: {
         padding: {
           DEFAULT: "20px",
           sm: "24px",
+          "2xl": "12px",
         },
         center: true,
         screens: {
@@ -52,14 +59,24 @@ const config: Config = {
         xl: "1200px",
       },
       backgroundImage: {
+        header_bg: "url('/assets/images/home/png/header_bg.png')",
+        footerSection: 'url("/assets/images/home/png/footer-bg-img.png")',
         ourTeam: `url("/assets/images/home/webp/team_Bg.webp")`,
         teamLayer: `url("/assets/images/home/webp/team_Layer.webp")`,
       },
       backgroundSize: {
         full: "100% 100%",
       },
+      // =verification-shadaw
+      boxShadowColor: {
+        WhiteShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px",
+      },
+      padding: {
+        leftAuto: "auto",
+      },
     },
   },
+  darkMode: "class",
   plugins: [],
 };
 export default config;
