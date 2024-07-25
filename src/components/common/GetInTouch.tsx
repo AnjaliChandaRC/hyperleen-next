@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import Paragraph from './Paragraph';
 import PrimaryHeading from './PrimaryHeading';
 import Swal from 'sweetalert2';
@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 const GetInTouch = () => {
   const [email, setEmail] = useState('');
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (email.trim() !== '') {
       Swal.fire({
