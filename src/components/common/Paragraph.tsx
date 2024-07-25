@@ -1,17 +1,11 @@
 import React from "react";
-type PARAGRAPH = {
-  className?: string;
+interface PARAGRAPH {
+  className: string;
   textName: string;
-};
+}
 
 const Paragraph = ({ className, textName }: PARAGRAPH) => {
-  return (
-    <p
-      className={`text-grey ${className}`}
-    >
-      {textName}
-    </p>
-  );
+  return <p className={`leading-6 text-grey ${className}`}>{textName}</p>;
 };
 
 export default Paragraph;

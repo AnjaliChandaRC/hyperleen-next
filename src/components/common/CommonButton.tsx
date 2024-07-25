@@ -1,7 +1,7 @@
 import React from "react";
 interface BUTTON {
   buttonName: string;
-  buttonClass?: string;
+  buttonClass: string;
 };
 
 const CommonButton = ({ buttonName, buttonClass }: BUTTON) => {
