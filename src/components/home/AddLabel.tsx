@@ -64,7 +64,7 @@ const AddLabel = () => {
               alt="label-jumpingGirl"
             />
             {/* ====ratio-image====== */}
-            <div className="md:absolute lg:top-[-3%] lg:left-[55%] top-[4%] lg:right-[-40%] right-[14%]">
+            <div className="md:absolute lg:top-[-3%] lg:left-[55%] top-[4%] lg:right-[-40%] right-[14%] max-w-48">
               <Image
                 width={191}
                 height={241}

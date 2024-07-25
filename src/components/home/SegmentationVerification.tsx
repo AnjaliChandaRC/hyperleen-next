@@ -79,7 +79,7 @@ const SegmentationVerification = () => {
                 </p>
               </div>
               {/* ====white-box==== */}
-              <div className="absolute shadow-WhiteShadow bg-gray-200 lg:max-w-[339px] max-w-64 w-full p-[10px] bottom-[-22%] left-[-21px] rounded-xl">
+              <div className="absolute shadow bg-white lg:max-w-[339px] max-w-64 w-full p-[10px] bottom-[-22%] left-[-21px] rounded-xl">
                 <p className="font-Gilroy font-semibold lg:text-2xl sm:text-xl text-base text-center text-black">
                   Confirm your action
                 </p>
@@ -88,14 +88,12 @@ const SegmentationVerification = () => {
                   className="max-w-[293px] text-center lg:pb-9 pb-3 lg:text-base text-sm"
                 />
                 <div className="flex gap-4 justify-center">
-                  <CommonButton
-                    buttonName="Yes"
-                    buttonClass="lg:w-[148px] w-[110px]"
-                  />
-                  <CommonButton
-                    buttonName="No"
-                    buttonClass="lg:w-[148px] w-[110px]"
-                  />
+                  <button className=" font-normal lg:text-lg lg:leading-7 text-base font-poppins rounded-full shadow-3xl text-white hover:text-black  bg-blue lg:py-3.5 py-2 hover:bg-white hover:border-black duration-300 ease-linear lg:px-[58px] px-10 border border-white">
+                    Yes
+                  </button>
+                  <button className=" font-poppins font-normal text-lg text-black py-3.5 lg:px-[58px] px-10 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear">
+                    No
+                  </button>
                 </div>
               </div>
             </div>
