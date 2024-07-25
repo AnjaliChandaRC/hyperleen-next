@@ -48,12 +48,12 @@ export const Data = [
 // Header Helper
 
 export const navLink = [
-    { tabText: "Home", href: "#home" },
-    { tabText: "Label", href: "#label" },
-    { tabText: "About Us", href: "#about" },
-    { tabText: "How it Works", href: "#work" },
-    { tabText: "Team", href: "#team" },
-    { tabText: "FAQs", href: "#faq" },
+    { nav_tabs: "Home", href: "#home" },
+    { nav_tabs: "Label", href: "#label" },
+    { nav_tabs: "About Us", href: "#about" },
+    { nav_tabs: "How it Works", href: "#work" },
+    { nav_tabs: "Team", href: "#team" },
+    { nav_tabs: "FAQs", href: "#faq" },
 ];
 
 export const HeroItems = [
