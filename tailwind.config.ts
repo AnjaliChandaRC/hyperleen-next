@@ -10,8 +10,12 @@ const config: Config = {
     extend: {
       fontFamily: {
         poppins: "'Poppins',sans-serif",
+        // global
+        inter: "'Inter',sans-serif",
       },
       fontSize: {
+        // global
+        xxs: "10px",
         "2xxl": "32px",
         "3xxl": "80px",
       },
@@ -28,6 +32,7 @@ const config: Config = {
         smoke_grey2: "#FFFFFF29",
         off_white: "#0101010D",
       },
+      // cuttingEdge
       backgroundColor: {
         light_blue: "#F5F8FC",
       },
@@ -43,6 +48,8 @@ const config: Config = {
         "5xl": "-2.41px 4.41px 37.77px 1.76px #6F69F21F",
         "6xl": "-8.88px 5.88px 58.83px 4.37px #6F69F21F",
         "7xl": "7.88px -8.24px 35.83px -18.63px #084CAF14",
+        // global-shadow
+        "8xl": "0px 1px 37px 0px #00000026",
       },
       container: {
         padding: {
@@ -62,6 +69,7 @@ const config: Config = {
         header_bg: "url('/assets/images/home/png/header_bg.png')",
         footer_section: 'url("/assets/images/home/png/footer-bg-img.png")',
         ourTeam: `url("/assets/images/home/webp/team_bg.webp")`,
+        global_bg: `url("/assets/images/ai-trainer/png/global-bg-img.png")`,
       },
       backgroundSize: {
         full: "100% 100%",

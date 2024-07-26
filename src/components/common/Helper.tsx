@@ -301,3 +301,20 @@ export const CuttingEdgeData = [
     height: 87,
   },
 ];
+export const GlobalWorkforceData = [
+  {
+    img: "/assets/images/ai-trainer/png/global-img1.png",
+  },
+  {
+    img: "/assets/images/ai-trainer/png/global-img2.png",
+  },
+  {
+    img: "/assets/images/ai-trainer/png/global-img3.png",
+  },
+  {
+    img: "/assets/images/ai-trainer/png/global-img4.png",
+  },
+  {
+    img: "/assets/images/ai-trainer/png/global-img5.png",
+  },
+];
