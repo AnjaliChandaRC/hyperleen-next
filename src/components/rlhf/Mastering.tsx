@@ -1,9 +1,36 @@
-import React from 'react'
-import PrimaryHeading from '../common/PrimaryHeading'
-import Paragraph from '../common/Paragraph'
-import { CommentSenderArrow, IconListLogo, LeftArrow, Pen, RightArrow, SmallFavIcon } from '../common/Icons'
+'use client';
+import React, { useState } from 'react';
+import Swal from 'sweetalert2';
+import PrimaryHeading from '../common/PrimaryHeading';
+import Paragraph from '../common/Paragraph';
+import { CommentSenderArrow, IconListLogo, LeftArrow, Pen, RightArrow, SmallFavIcon } from '../common/Icons';
 
 const Mastering = () => {
+    const [inputValue, setInputValue] = useState('');
+
+    const ADD_COMMENT = () => {
+        if (inputValue.trim() === '') {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Input cannot be empty',
+                showConfirmButton: false,
+                timer: 1500
+            });
+            return;
+        }
+
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: `${inputValue} has been posted`,
+            showConfirmButton: false,
+            timer: 1500
+        });
+
+        setInputValue(''); // Clear the input after submission
+    };
+
     return (
         <div className='lg:pt-[160px] md:pt-[120px] sm:pt-20 pt-16'>
             <div className='px-5'>
@@ -25,19 +52,28 @@ const Mastering = () => {
                         <div className=' max-w-9 min-h-9 h-full w-full rounded-full bg-light_blue3 items-center justify-center flex border border-transparent hover:border-blue ease-in-out duration-300'>
                             <SmallFavIcon />
                         </div>
-                        <div>  <p className='text-grey max-w-[935px] text-xl font_gilroy_medium'>Data annotation is the process of labeling data to make it usable for machine learning algorithms. It's essential because accurately labeled data is critical for training models to understand and interpret real-world information.</p>
+                        <div>
+                            <p className='text-grey max-w-[935px] text-xl font_gilroy_medium'>Data annotation is the process of labeling data to make it usable for machine learning algorithms. It's essential because accurately labeled data is critical for training models to understand and interpret real-world information.</p>
                             <p className='text-grey max-w-[935px] text-xl font_gilroy_medium lg:pt-5 sm:pt-3 pt-2'>We specialize in annotating various data types, including text, images, audio, and video. Our services cover sentiment analysis, image segmentation, object detection, and more.</p>
                         </div>
                     </div>
-                    <div className='flex lg:py-8 md:py-6 py-4 lg:pl-8 sm:pl-6 pl-4  lg:pr-7 pr-4 border-grey border-[0.5px] rounded-xl gap-4 bg-white lg:mt-20 md:mt-15 mt-10'>
+                    <div className='flex lg:py-8 md:py-6 py-4 lg:pl-8 sm:pl-6 pl-4 lg:pr-7 pr-4 border-grey border-[0.5px] rounded-xl gap-4 bg-white lg:mt-20 md:mt-15 mt-10'>
                         <div className='cursor-pointer'><IconListLogo /></div>
-                        <input type="text" placeholder='Message Hyperleen' className='font-medium text-grey opacity-40 outline-none w-full' />
-                        <div className='cursor-pointer'> <CommentSenderArrow /></div>
+                        <input
+                            type='text'
+                            placeholder='Message Hyperleen'
+                            className='font-medium text-grey opacity-40 outline-none w-full'
+                            value={inputValue}
+                            onChange={(e) => setInputValue(e.target.value)}
+                        />
+                        <div className='cursor-pointer' onClick={ADD_COMMENT}>
+                            <CommentSenderArrow />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Mastering
+export default Mastering;
