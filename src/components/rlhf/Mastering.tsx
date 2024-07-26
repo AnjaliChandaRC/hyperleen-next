@@ -55,7 +55,7 @@ const Mastering = () => {
                             <p className='text-grey max-w-[935px] md:text-xl  font_gilroy_medium lg:pt-5 sm:pt-3 pt-2'>We specialize in annotating various data types, including text, images, audio, and video. Our services cover sentiment analysis, image segmentation, object detection, and more.</p>
                         </div>
                     </div>
-                    <div className='flex lg:py-8 md:py-6 py-3 lg:pl-8 sm:pl-6 lg:pr-7 px-2 border-grey border-[0.5px] rounded-xl gap-4 bg-white lg:mt-20 md:mt-10 mt-6'>
+                    <div className='flex sm:p-5 lg:p-7 p-2 border-grey border-[0.5px] rounded-xl gap-4 bg-white lg:mt-20 md:mt-10 mt-6'>
                         <div className='cursor-pointer'><IconListLogo /></div>
                         <input
                             type='text'
