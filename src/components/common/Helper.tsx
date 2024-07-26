@@ -229,3 +229,76 @@ export const EnsureStep3 = [
     checkIconAlt: "check-icon",
   },
 ];
+export const CuttingEdgeData = [
+  {
+    img: "/assets/images/ai-trainer/png/sql-img1.png",
+    width: 138,
+    height: 73,
+  },
+  {
+    img: "/assets/images/ai-trainer/png/swift-img2.png",
+    width: 157,
+    height: 62,
+  },
+  {
+    img: "/assets/images/ai-trainer/png/ruby-img3.png",
+    width: 98,
+    height: 98,
+  },
+  {
+    img: "/assets/images/ai-trainer/png/go-img4.png",
+    width: 138,
+    height: 69,
+  },
+  {
+    img: "/assets/images/ai-trainer/png/cutting-edge-img5.png",
+    width: 110,
+    height: 89,
+  },
+  //
+  {
+    img: "/assets/images/ai-trainer/png/matlab-img6.png",
+    width: 97,
+    height: 97,
+  },
+  {
+    img: "/assets/images/ai-trainer/png/php-img7.png",
+    width: 158,
+    height: 85,
+  },
+  {
+    img: "/assets/images/ai-trainer/png/html-img8.png",
+    width: 86,
+    height: 86,
+  },
+  {
+    img: "/assets/images/ai-trainer/png/dart-img9.png",
+    width: 170,
+    height: 63,
+  },
+  {
+    img: "/assets/images/ai-trainer/png/logo-r-10.png",
+    width: 99,
+    height: 99,
+  },
+  {
+    img: "/assets/images/ai-trainer/png/apex-img11.png",
+    width: 132,
+    height: 75,
+  },
+  {
+    img: "/assets/images/ai-trainer/png/greater-img-12.png",
+    width: 88,
+    height: 86,
+  },
+  {
+    img: "/assets/images/ai-trainer/png/c-logo-img13.png",
+    width: 87,
+    height: 87,
+  },
+  {
+    img: "/assets/images/ai-trainer/png/c-logo-img14.png",
+    width: 91,
+    height: 87,
+  },
+];
