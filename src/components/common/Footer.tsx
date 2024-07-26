@@ -52,7 +52,7 @@ const Footer = () => {
               {footerData.map((val: FooterColumns, index: number) => (
                 <div key={index} className={`${val.className} w-1/2 px-5 lg:px-3 lg:pt-5 sm:pt-4 pt-3`}>
                   <ul>
-                    <li>
+                    <li className={`${index === 2 ? "mt-5 md:mt-0" : ""}`}>
                       <h2 className='text-lg text-white'>{val.title}</h2>
                     </li>
                     {val.links.map((link: FooterLinks, index: number) => (
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='w-full h-[1px] [background:linear-gradient(180deg,#ffffff33_0%,#ffffff1a_100%)] lg:mt-14 md:mt-10 mt-7'></div>
-      <p className='opacity-70 text-center text-white sm:pt-5 pt-4 pb-11 px-3'>© {date.getFullYear()} Hyperleen, All Rights reserved.</p>
+      <p className='opacity-70 text-center text-white py-4 lg:pb-11 px-3'>© {date.getFullYear()} Hyperleen, All Rights reserved.</p>
     </div>
   );
 };
