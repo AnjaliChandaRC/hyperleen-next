@@ -29,12 +29,12 @@ const GetInTouch = () => {
   };
 
   return (
-    <div className="lg:pt-[180px] md:pt-[130px] sm:pt-[90px] pt-16">
-      <div className="container max-w-[1140px] mx-auto">
+    <div className="md:pt-[98px] xl:pt-[180px] pt-16 pb-10">
+      <div className="container max-w-[1180px] mx-auto">
         <div className="flex items-center justify-center flex-col">
           <PrimaryHeading
             textName="Get in touch with"
-            blueTextClass=" Hyperleen"
+            blueText=" Hyperleen"
             className=" text-center"
           />
           <Paragraph

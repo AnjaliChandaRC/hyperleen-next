@@ -8,7 +8,7 @@ import { EnsureStep1, EnsureStep2, EnsureStep3 } from "../common/Helper";
 const EnsureHighQuality = () => {
   return (
     <div className="2xl:max-w-[1920px] mx-auto">
-      <div className="container 2xl:max-w-[1360px] xl:max-w-[1180px] relative z-40">
+      <div className="container  xl:max-w-[1180px] relative z-40">
         <div className="max-w-[674px] mx-auto">
           <PrimaryHeading
             className="text-center mb-4"
@@ -61,7 +61,7 @@ const EnsureHighQuality = () => {
             </div>
             {/* ellipse */}
             <Image
-              src="/assets/images/home/webp/ensure_ellipse.webp"
+              src="/assets/images/home/webp/ensure-ellipse.webp"
               alt="ensure_ellipse"
               width={272}
               height={83}
@@ -189,7 +189,7 @@ const EnsureHighQuality = () => {
             </div>
             {/* ellipse */}
             <Image
-              src="/assets/images/home/webp/ensure_ellipse2.webp"
+              src="/assets/images/home/webp/ensure-ellipse2.webp"
               alt="ensure_ellipse"
               width={272}
               height={83}
