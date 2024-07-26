@@ -17,7 +17,7 @@ const Faqs: React.FC = () => {
   };
 
   return (
-    <div className="container xl:max-w-[1180px]">
+    <div className="container xl:max-w-[1180px]" id="faq">
       <PrimaryHeading textName="FAQs" className="text-center text-blue" />
       <Paragraph textName="You have got Question.  We have got Answer" className="font-normal text-sm md:text-base text-grey text-center mt-2 md:mt-4" />
       <div className="max-w-[975px] mx-auto mt-5 lg:mt-[60px]">
@@ -37,13 +37,13 @@ const Faqs: React.FC = () => {
               <div className="flex justify-between">
                 <span
                   className={`${activeIndex === index ? "text-white" : "text-black"
-                    } font-poppins text-sm md:text-base font-medium text-black`}
+                    } font-poppins text-sm md:text-lg lg:text-md font-medium text-black`}
                 >
                   {data.question}
                 </span>
                 <span className="float-right">
                   <div
-                    className={`size-6 flex justify-center items-center rounded-full ${activeIndex === index ? "bg-white" : "bg-blue"
+                    className={`size-5 md:size-6 flex justify-center items-center rounded-full ${activeIndex === index ? "bg-white" : "bg-blue"
                       }`}
                   >
                     <svg
@@ -71,7 +71,7 @@ const Faqs: React.FC = () => {
                 } accordion-content`}
             >
               <div className="p-3 lg:p-6">
-                <p className="font_gilroy_regular text-sm md:text-xl text-grey max-w-[857px]">
+                <p className="font_gilroy_regular text-sm md:text-2xl lg:text-xl text-grey max-w-[857px]">
                   {data.answer}
                 </p>
               </div>
