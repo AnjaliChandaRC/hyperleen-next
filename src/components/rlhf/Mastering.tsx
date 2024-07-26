@@ -26,7 +26,7 @@ const Mastering = () => {
             timer: 1500
         });
 
-        setInputValue(''); 
+        setInputValue('');
     };
 
     return (
@@ -43,7 +43,7 @@ const Mastering = () => {
                     </div>
                     <div className='items-center flex justify-end gap-3 pt-4'>
                         <LeftArrow />
-                        <Paragraph textName='1/1' />
+                        <Paragraph textName='1/1' className='text-lg font_gilroy_medium' />
                         <RightArrow />
                     </div>
                     <div className='flex items-start lg:gap-8 md:gap-6 gap-4 pt-[6px]'>
