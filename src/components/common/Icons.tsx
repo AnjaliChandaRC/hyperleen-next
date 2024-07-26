@@ -509,6 +509,7 @@ export const Triangle = () => (
 export const BacktoTop = () => {
   return (
     <svg
+    className=" size-9 md:size-auto"
       width="38"
       height="37"
       viewBox="0 0 38 37"
