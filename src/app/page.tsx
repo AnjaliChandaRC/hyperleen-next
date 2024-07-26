@@ -6,6 +6,7 @@ import OurTeam from "@/components/home/OurTeam";
 import HowWorks from "@/components/home/HowWorks";
 import EnsureHighQuality from "@/components/home/EnsureHighQuality";
 import ToolsPlatforms from "@/components/home/ToolsPlatforms";
+import BackToTopButton from "@/components/common/BackToTopButton";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <HowWorks />
       <EnsureHighQuality />
       <ToolsPlatforms />
+      <BackToTopButton/>
     </>
   );
 }

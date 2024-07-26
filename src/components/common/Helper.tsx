@@ -48,12 +48,12 @@ export const FaqList = [
 // Header Helper
 
 export const navLink = [
-    { nav_tabs: "Home", href: "#home" },
-    { nav_tabs: "Label", href: "#label" },
-    { nav_tabs: "About Us", href: "#about" },
-    { nav_tabs: "How it Works", href: "#work" },
-    { nav_tabs: "Team", href: "#team" },
-    { nav_tabs: "FAQs", href: "#faq" },
+  { nav_tabs: "Home", href: "#home" },
+  { nav_tabs: "Label", href: "#label" },
+  { nav_tabs: "About Us", href: "#about" },
+  { nav_tabs: "How it Works", href: "#work" },
+  { nav_tabs: "Team", href: "#team" },
+  { nav_tabs: "FAQs", href: "#faq" },
 ];
 
 export const Hero_Items = [
@@ -63,37 +63,36 @@ export const Hero_Items = [
   { id: 4, label: "Labeling Solutions", maxWidth: "193px" },
   { id: 5, label: "Quality Work", maxWidth: "149px" },
 ];
-
 export const footerData = [
   {
     className: "md:w-3/12 xl:justify-end xl:flex",
-    title: 'Quick Links',
+    title: "Quick Links",
     links: [
-      { label: 'Home', href: '#home' },
-      { label: 'About Us', href: '#about' },
-      { label: 'Services', href: '#services' },
-      { label: 'FAQ', href: '#faq' },
-      { label: 'How It Works', href: '#how-it-works' },
+      { label: "Home", href: "#home" },
+      { label: "About Us", href: "#about" },
+      { label: "Services", href: "#services" },
+      { label: "FAQ", href: "#faq" },
+      { label: "How It Works", href: "#how-it-works" },
     ],
   },
   {
     className: "md:w-2/12 xl:justify-center xl:flex",
-    title: 'Links',
+    title: "Links",
     links: [
-      { label: 'Team', href: '#team' },
-      { label: 'Label', href: '#label' },
+      { label: "Team", href: "#team" },
+      { label: "Label", href: "#label" },
     ],
   },
   {
     className: "md:w-3/12",
-    title: 'Policy',
+    title: "Policy",
     links: [
-      { label: 'Contact Us', href: '#contact' },
-      { label: 'Privacy Policy', href: '#privacy-policy' },
-      { label: 'Terms and conditions', href: '#terms-conditions' },
+      { label: "Contact Us", href: "#contact" },
+      { label: "Privacy Policy", href: "#privacy-policy" },
+      { label: "Terms and conditions", href: "#terms-conditions" },
     ],
-  },]
-
+  },
+];
 export const teamMembers = [
   {
     name: "Mark Butler",
@@ -136,5 +135,97 @@ export const TimelineData = [
     title: "Receive data",
     description: "Get the appropriate data annotated.",
     icon: <ReceiveData />,
+  },
+];
+export const EnsureStep1 = [
+  {
+    imageSrc: "/assets/images/home/webp/pizza.webp",
+    imageAlt: "pizza-image",
+    textTriangle: "Pie..",
+    trianglePosition: "-left-[14px] -top-[14px]",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/car.webp",
+    imageAlt: "car-image",
+    textTriangle: "Pie..",
+    trianglePosition: "-left-[14px] -top-[14px]",
+  },
+];
+export const EnsureStep2 = [
+  {
+    imageSrc: "/assets/images/home/webp/car.webp",
+    imageAlt: "car",
+    textTriangle: "Car",
+    positionTriangleCard: "bottom-4 left-3",
+    trianglePosition: "-right-[15px] -top-[10px]",
+    checkIconSrc: "/assets/images/home/svg/check.svg",
+    checkIconAlt: "check-icon",
+    checkIconPosition: "top-3 right-3",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/vegetable.webp",
+    imageAlt: "vegetable",
+    textTriangle: "Tomato",
+    positionTriangleCard: "right-9 bottom-5",
+    trianglePosition: "-left-4 -top-[10px]",
+    checkIconSrc: "/assets/images/home/svg/check.svg",
+    checkIconAlt: "check-icon",
+    checkIconPosition: "top-3 right-3",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/rider.webp",
+    imageAlt: "rider",
+    textTriangle: "Man",
+    positionTriangleCard: "bottom-5 left-6",
+    trianglePosition: "-right-[15px] -top-[10px]",
+    checkIconSrc: "/assets/images/home/svg/check.svg",
+    checkIconAlt: "check-icon",
+    checkIconPosition: "top-3 left-3",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/rider.webp",
+    imageAlt: "rider",
+    textTriangle: "Men",
+    positionTriangleCard: "top-10 left-4",
+    trianglePosition: "-right-[15px] -top-[10px]",
+    checkIconSrc: "/assets/images/home/svg/check.svg",
+    checkIconAlt: "check-icon",
+    checkIconPosition: "top-3 left-3",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/car.webp",
+    imageAlt: "car",
+    textTriangle: "Car",
+    positionTriangleCard: "top-12 left-5",
+    trianglePosition: "-right-[15px] -top-[10px]",
+    checkIconSrc: "/assets/images/home/svg/check.svg",
+    checkIconAlt: "check-icon",
+    checkIconPosition: "top-3 left-3",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/pizza.webp",
+    imageAlt: "pizza",
+    textTriangle: "Pie..",
+    positionTriangleCard: "right-[30px] bottom-[18px]",
+    trianglePosition: "-left-4 -top-[10px] rotate-[41deg]",
+    checkIconSrc: "/assets/images/home/svg/cross.svg",
+    checkIconAlt: "cross",
+    checkIconPosition: "top-3 right-3",
+  },
+];
+export const EnsureStep3 = [
+  {
+    imageSrc: "/assets/images/home/webp/pizza.webp",
+    imageAlt: "pizza",
+    textTriangle: "Pie..",
+    checkIconSrc: "/assets/images/home/svg/cross.svg",
+    checkIconAlt: "cross",
+  },
+  {
+    imageSrc: "/assets/images/home/webp/pizza.webp",
+    imageAlt: "pizza",
+    textTriangle: "Quiche.",
+    checkIconSrc: "/assets/images/home/svg/check.svg",
+    checkIconAlt: "check-icon",
   },
 ];

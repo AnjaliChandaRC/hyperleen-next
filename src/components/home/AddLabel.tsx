@@ -7,7 +7,11 @@ import { PenSvg } from "../common/Icons";
 
 const AddLabel = () => {
   return (
+<<<<<<< HEAD
     <div id="label" className="relative lg:pt-20 sm:pt-10 pt-4">
+=======
+    <div className="relative lg:pt-20 sm:pt-10 pt-4" id="label">
+>>>>>>> 2524152047ebaa63f4f46fd7e42824a9862a2753
       <div className="absolute top-[-14%] right-[12%] lg:block hidden">
         <Image
           width={398}
