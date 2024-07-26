@@ -57,10 +57,12 @@ const ObjectVerification = () => {
             <h5 className="font_gilroy_regular font-semibold lg:text-2xxl text-2xl leading-md text-black lg:pb-4 sm-pb-1 pb-0 max-lg:text-center">
               Verification
             </h5>
-            <Paragraph
-              textName="Verification is a crucial step to ensure the accuracy of the labeled data. It involves reviewing the segmented image to confirm if the segmentation was performed correctly"
-              className="lg:pb-12 sm:pb-5 pb-2 lg:max-w-[540px] max-lg:text-center"
-            />
+            <div className="flex items-center justify-center">
+              <Paragraph
+                textName="Verification is a crucial step to ensure the accuracy of the labeled data. It involves reviewing the segmented image to confirm if the segmentation was performed correctly"
+                className="lg:pb-12 max-lg:max-w-[740px] sm:pb-5 pb-2 lg:max-w-[540px] max-lg:text-center"
+              />
+            </div>
             <div className="max-lg:mx-auto max-lg:text-center">
               <CommonButton text="Learn More" />
             </div>
