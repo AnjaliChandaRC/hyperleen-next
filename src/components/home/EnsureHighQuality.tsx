@@ -2,7 +2,7 @@ import React from "react";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
 import Image from "next/image";
-import { DownArrow } from "../common/Icons";
+import { DownArrow, Triangle } from "../common/Icons";
 import { EnsureStep1, EnsureStep2, EnsureStep3 } from "../common/Helper";
 
 const EnsureHighQuality = () => {
@@ -43,19 +43,18 @@ const EnsureHighQuality = () => {
                     height={93}
                     className="rounded-[5.3px] pointer-events-none"
                   />
-                  <div className="flex flex-col absolute -right-7 top-[33px]">
-                    <div className="size-5">
-                      <Image
-                        width={100}
-                        height={100}
-                        className="w-full h-full pointer-events-none"
-                        src={value.cursorImageSrc}
-                        alt="cursor-image"
-                      />
+                  {/* triangle card */}
+                  <div className="absolute lg:-right-7 -right-2 top-[50px] z-10">
+                    <div className="relative">
+                      <span
+                        className={`absolute ${value.trianglePosition} rotate-[41deg]`}
+                      >
+                        <Triangle />
+                      </span>
+                      <p className="text-white text-[12px] leading-5 bg-blue w-[55px] h-[22px] text-center rounded-[17px]">
+                        {value.textTriangle}
+                      </p>
                     </div>
-                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
-                      {value.text}
-                    </p>
                   </div>
                 </div>
               ))}
@@ -107,35 +106,44 @@ const EnsureHighQuality = () => {
                 </div>
               </div>
             </div>
-            {/*  */}
+            {/* six image */}
             <div className="flex items-start justify-between gap-3">
               <div className="flex flex-col gap-[10px] mt-2 max-lg:w-full">
                 {EnsureStep2.slice(0, 3).map((value, index) => (
                   <div
                     key={index}
-                    className="p-2 rounded-[7px] bg-off_white w-full lg:w-fit relative h-fit xl:h-[87px]"
+                    className="p-2 rounded-[7px] bg-off_white w-full lg:w-fit 2xl:w-full relative h-fit 2xl:h-full xl:h-[87px]"
                   >
                     <Image
                       src={value.imageSrc}
                       alt={value.imageAlt}
                       width={163}
                       height={70}
-                      className="rounded-[4px] max-lg:!min-w-full pointer-events-none"
+                      className="rounded-[4px] max-lg:!min-w-full 2xl:min-w-[200px] pointer-events-none"
                     />
-                    <div className={`flex flex-col absolute ${value.position}`}>
-                      <div className="size-5">
-                        <Image
-                          width={100}
-                          height={100}
-                          className="w-full h-full pointer-events-none"
-                          src={value.cursorImageSrc}
-                          alt="cursor-image"
-                        />
+                    {/* triangle card */}
+                    <div
+                      className={`absolute ${value.positionTriangleCard} z-10`}
+                    >
+                      <div className="relative">
+                        <span className={`absolute ${value.trianglePosition}`}>
+                          <Triangle />
+                        </span>
+                        <p className="text-white text-[12px] leading-5 bg-blue w-[54px] h-[21px] text-center rounded-[17px]">
+                          {value.textTriangle}
+                        </p>
                       </div>
-                      <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
-                        {value.text}
-                      </p>
                     </div>
+                    {/* check icon */}
+                    <span className={`absolute z-0 ${value.checkIconPosition}`}>
+                      <Image
+                        src={value.checkIconSrc}
+                        alt={value.checkIconAlt}
+                        width={21}
+                        height={21}
+                        className="pointer-events-none"
+                      />
+                    </span>
                   </div>
                 ))}
               </div>
@@ -143,34 +151,43 @@ const EnsureHighQuality = () => {
                 {EnsureStep2.slice(3).map((value, index) => (
                   <div
                     key={index}
-                    className="p-2 rounded-[7px] bg-off_white w-full lg:w-fit relative h-fit xl:h-[87px]"
+                    className="p-2 rounded-[7px] bg-off_white w-full lg:w-fit 2xl:w-full relative h-fit 2xl:h-full xl:h-[87px]"
                   >
                     <Image
                       src={value.imageSrc}
                       alt={value.imageAlt}
                       width={163}
                       height={70}
-                      className="rounded-[4px] max-lg:!min-w-full pointer-events-none"
+                      className="rounded-[4px] max-lg:!min-w-full 2xl:min-w-[200px] pointer-events-none"
                     />
-                    <div className={`flex flex-col absolute ${value.position}`}>
-                      <div className="size-5">
-                        <Image
-                          width={100}
-                          height={100}
-                          className="w-full h-full pointer-events-none"
-                          src={value.cursorImageSrc}
-                          alt="cursor-image"
-                        />
+                    {/* triangle card */}
+                    <div
+                      className={`absolute ${value.positionTriangleCard} z-10`}
+                    >
+                      <div className="relative">
+                        <span className={`absolute ${value.trianglePosition}`}>
+                          <Triangle />
+                        </span>
+                        <p className="text-white text-[12px] leading-5 bg-blue w-[48px] h-[21px] text-center rounded-[17px]">
+                          {value.textTriangle}
+                        </p>
                       </div>
-                      <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
-                        {value.text}
-                      </p>
                     </div>
+                    {/* check icon */}
+                    <span className={`absolute z-0 ${value.checkIconPosition}`}>
+                      <Image
+                        src={value.checkIconSrc}
+                        alt={value.checkIconAlt}
+                        width={21}
+                        height={21}
+                        className="pointer-events-none"
+                      />
+                    </span>
                   </div>
                 ))}
               </div>
             </div>
-            {/* ellips */}
+            {/* ellipse */}
             <Image
               src="/assets/images/home/webp/ensure_ellipse2.webp"
               alt="ensure_ellipse"
@@ -195,20 +212,6 @@ const EnsureHighQuality = () => {
                   key={index}
                   className="p-2 rounded-[6px] bg-off_white w-fit relative h-fit"
                 >
-                  <div className={`flex flex-col absolute ${value.position}`}>
-                    <div className="size-5">
-                      <Image
-                        width={100}
-                        height={100}
-                        className="w-full h-full pointer-events-none"
-                        src={value.cursorImageSrc}
-                        alt="cursor-image"
-                      />
-                    </div>
-                    <p className="text-white bg-blue w-[66px] h-[25px] text-center rounded-[17px]">
-                      {value.text}
-                    </p>
-                  </div>
                   <Image
                     src={value.imageSrc}
                     alt={value.imageAlt}
@@ -216,10 +219,22 @@ const EnsureHighQuality = () => {
                     height={70}
                     className="rounded-[5.3px] pointer-events-none"
                   />
-                  <span className="absolute top-3 right-2">
+                  {/* triangle card */}
+                  <div className="absolute lg:-right-10 -right-2 lg:top-[40px] top-[50px] z-10">
+                    <div className="relative">
+                      <span className="absolute -left-4 -top-[10px] rotate-[41deg]">
+                        <Triangle />
+                      </span>
+                      <p className="text-white text-[12px] leading-5 bg-blue w-[55px] h-[22px] text-center rounded-[17px]">
+                        {value.textTriangle}
+                      </p>
+                    </div>
+                  </div>
+                  {/* check icon */}
+                  <span className="absolute top-3 right-3 z-0">
                     <Image
-                      src={value.iconSrc}
-                      alt={value.iconAlt}
+                      src={value.checkIconSrc}
+                      alt={value.checkIconAlt}
                       width={21}
                       height={21}
                       className="pointer-events-none"
