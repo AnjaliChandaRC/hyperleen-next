@@ -4,7 +4,7 @@ import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
 import CommonButton from "../common/CommonButton";
 import Image from "next/image";
-import { PenSvg } from "../common/Icons";
+import { LabelSvg, PenSvg } from "../common/Icons";
 
 const DEFAULT_IMAGE_URL = "/assets/images/home/png/label_input_car.png";
 const DEFAULT_IMAGE_NAME = "Car";
@@ -49,7 +49,7 @@ const AddLabel = () => {
       </div>
       <div className="container xl:max-w-[1180px] mx-auto">
         <div className="flex flex-wrap flex-row mx-[-12px] items-center">
-          <div className="lg:w-[50%] w-full px-3">
+          <div className="lg:w-[50%] w-full px-3 z-10">
             <PrimaryHeading
               textName="Add"
               blueText=" Label"
@@ -94,7 +94,7 @@ const AddLabel = () => {
                   className="lg:max-w-[203px] max-w-[106px] w-full"
                   onClick={handleOkClick} // Add click handler here
                 />
-                <button className="text-lg text-black py-3.5 lg:px-[69px] px-5 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear h-14">
+                <button className="text-lg text-black py-3.5 lg:px-[69px] px-5 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear h-[55px]">
                   Cancel
                 </button>
               </div>

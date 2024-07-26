@@ -27,6 +27,7 @@ const config: Config = {
         light_black: "#0000000A",
         smoke_grey2: "#FFFFFF29",
         off_white: "#0101010D",
+        light_skyblue: "#F2F6FB",
       },
       lineHeight: {
         sm: "34.8px",
@@ -56,9 +57,9 @@ const config: Config = {
         xl: "1200px",
       },
       backgroundImage: {
-        header_bg: "url('/assets/images/home/png/header_bg.png')",
+        header_bg: "url('/assets/images/home/png/header-bg.png')",
         footer_section: 'url("/assets/images/home/png/footer-bg-img.png")',
-        ourTeam: `url("/assets/images/home/webp/team_bg.webp")`,
+        ourTeam: 'url("/assets/images/home/webp/team-bg.webp")',
       },
       backgroundSize: {
         full: "100% 100%",
