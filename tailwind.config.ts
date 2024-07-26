@@ -58,7 +58,7 @@ const config: Config = {
       backgroundImage: {
         header_bg: "url('/assets/images/home/png/header-bg.png')",
         footer_section: 'url("/assets/images/home/png/footer-bg-img.png")',
-        ourTeam: `url("/assets/images/home/webp/team_bg.webp")`,
+        ourTeam: 'url("/assets/images/home/webp/team-bg.webp")',
       },
       backgroundSize: {
         full: "100% 100%",
