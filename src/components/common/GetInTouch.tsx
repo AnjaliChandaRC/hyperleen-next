@@ -29,7 +29,7 @@ const GetInTouch = () => {
   };
 
   return (
-    <div className="lg:pt-[180px] md:pt-[150px] sm:pt-[120px] pt-20">
+    <div className="lg:pt-[180px] md:pt-[130px] sm:pt-[90px] pt-16">
       <div className="container max-w-[1140px] mx-auto">
         <div className="flex items-center justify-center flex-col">
           <PrimaryHeading
