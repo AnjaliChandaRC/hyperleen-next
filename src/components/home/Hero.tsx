@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="md:py-lg py-16 bg-header_bg bg-full hero_scrollbar bg-center bg-no-repeat max-w-[1536px] mx-auto" id="home">
       <div className="container">
-        <div className="max-w-[824px] mx-auto">
+        <div className="max-w-[824px] mx-auto z-10 relative">
           <div className="flex items-center justify-center gap-4 pb-6">
             <div className="w-[43px]">
               <Header_line />

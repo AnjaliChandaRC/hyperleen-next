@@ -3,23 +3,17 @@ import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
 import CommonButton from "../common/CommonButton";
 import Image from "next/image";
-import { PenSvg } from "../common/Icons";
+import { LabelSvg, PenSvg } from "../common/Icons";
 
 const AddLabel = () => {
   return (
-    <div className="relative lg:pt-20 sm:pt-10 pt-4" id="label">
-      <div className="absolute top-[-14%] right-[12%] lg:block hidden">
-        <Image
-          width={398}
-          height={1313}
-          src="/assets/images/home/png/label-ellipse.png"
-          alt="label-ellipse"
-          className="pointer-events-none"
-        />
+    <div className="relative xl:pt-20 sm:pt-10 pt-0" id="label">
+      <div className="absolute lg:block hidden right-0 -top-[84%] opacity-10">
+        <LabelSvg />
       </div>
       <div className="container xl:max-w-[1180px] mx-auto">
         <div className="flex flex-wrap flex-row mx-[-12px] items-center">
-          <div className="lg:w-[50%] w-full px-3">
+          <div className="lg:w-[50%] w-full px-3 z-10">
             <PrimaryHeading
               textName="Add"
               blueText=" Label"
@@ -38,7 +32,7 @@ const AddLabel = () => {
                 <Image
                   width={399}
                   height={359}
-                  src="/assets/images/home/png/label_input_car.png"
+                  src="/assets/images/home/png/label-input-car.png"
                   alt="label_input_car"
                   className="pointer-events-none"
                 />
@@ -63,12 +57,12 @@ const AddLabel = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-[50%] w-full px-3 max-lg:flex max-lg:justify-center relat max-lg:items-center lg:pt-0 pt-10">
+          <div className="lg:w-[50%] w-full px-3 max-lg:flex max-lg:justify-center z-10 max-lg:items-center lg:pt-0 pt-10">
             {/* ======project-overview-img===== */}
             <Image
               width={399}
               height={359}
-              src="/assets/images/home/webp/label_project_overview.webp"
+              src="/assets/images/home/webp/label-project-overview.webp"
               alt="label-yellowJacketGirl"
               className="pointer-events-none max-sm:max-w-[170px]"
             />
@@ -77,7 +71,7 @@ const AddLabel = () => {
               <Image
                 width={191}
                 height={241}
-                src="/assets/images/home/webp/label_graph.webp"
+                src="/assets/images/home/webp/label-graph.webp"
                 alt="label-ratio"
                 className="pointer-events-none max-sm:max-w-[72px]"
               />
@@ -87,7 +81,7 @@ const AddLabel = () => {
               <Image
                 width={353}
                 height={216}
-                src="/assets/images/home/webp/label_jumping_girl.webp"
+                src="/assets/images/home/webp/label-jumping-girl.webp"
                 alt="label_jumping_girl"
                 className="pointer-events-none max-sm:max-w-[132px]"
               />

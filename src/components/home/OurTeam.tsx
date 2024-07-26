@@ -118,7 +118,7 @@ const OurTeam = () => {
       {/* ellipse */}
       <Image
         className="absolute -z-30 -left-[32px] -top-[57px] min-h-full -rotate-[16deg] pointer-events-none"
-        src="/assets/images/home/webp/team_layer.webp"
+        src="/assets/images/home/webp/team-layer.webp"
         height="1548"
         width="313"
         alt="layer"
