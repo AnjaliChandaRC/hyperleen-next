@@ -3,10 +3,10 @@ import Hero from "../components/home/Hero";
 import SegmentationVerification from "@/components/home/SegmentationVerification";
 import ObjectVerification from "@/components/home/ObjectVerification";
 import OurTeam from "@/components/home/OurTeam";
-import HowWorks from "@/components/home/HowWorks";
-import EnsureHighQuality from "@/components/home/EnsureHighQuality";
 import ToolsPlatforms from "@/components/home/ToolsPlatforms";
 import BackToTopButton from "@/components/common/BackToTopButton";
+import HowWorks from "@/components/common/HowWorks";
+import EnsureHighQuality from "@/components/common/EnsureHighQuality";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <HowWorks />
       <EnsureHighQuality />
       <ToolsPlatforms />
-      <BackToTopButton/>
+      <BackToTopButton />
     </>
   );
 }
