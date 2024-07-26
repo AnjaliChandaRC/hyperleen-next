@@ -57,12 +57,12 @@ const AddLabel = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-[50%] w-full px-3 max-lg:flex max-lg:justify-center z-10 max-lg:items-center lg:pt-0 pt-10">
+          <div className="lg:w-[50%] xl:mt-[70px] w-full px-3 max-lg:flex max-lg:justify-center z-10 max-lg:items-center lg:pt-0 pt-10">
             {/* ======project-overview-img===== */}
             <Image
               width={399}
               height={359}
-              src="/assets/images/home/webp/label-project-overview.webp"
+              src="/assets/images/home/png/label-yellow-jacket-girl.png"
               alt="label-yellowJacketGirl"
               className="pointer-events-none max-sm:max-w-full xl:w-[475px] max-lg:relative max-lg:-left-[71px] max-sm:left-0 max-lg:max-w-full xl:relative xl:-left-[71px]"
             />

@@ -5,7 +5,7 @@ import CommonButton from "../common/CommonButton";
 import Image from "next/image";
 const SegmentationVerification = () => {
   return (
-    <div className="lg:pt-40 pt-20" id="about">
+    <div className="xl:pt-40 lg:pt-[100px] md:pt-[100px] pt-20" id="about">
       <div className="container xl:max-w-[1180px] mx-auto">
         <PrimaryHeading
           textName="Image"
