@@ -7,7 +7,7 @@ import { LabelSvg, PenSvg } from "../common/Icons";
 
 const AddLabel = () => {
   return (
-    <div className="relative lg:pt-20 sm:pt-10 pt-4" id="label">
+    <div className="relative xl:pt-20 sm:pt-10 pt-0" id="label">
       <div className="absolute lg:block hidden right-0 -top-[84%] opacity-10">
         <LabelSvg />
       </div>
@@ -32,7 +32,7 @@ const AddLabel = () => {
                 <Image
                   width={399}
                   height={359}
-                  src="/assets/images/home/png/label_input_car.png"
+                  src="/assets/images/home/png/label-input-car.png"
                   alt="label_input_car"
                   className="pointer-events-none"
                 />
@@ -62,7 +62,7 @@ const AddLabel = () => {
             <Image
               width={399}
               height={359}
-              src="/assets/images/home/webp/label_project_overview.webp"
+              src="/assets/images/home/webp/label-project-overview.webp"
               alt="label-yellowJacketGirl"
               className="pointer-events-none max-sm:max-w-[170px]"
             />
@@ -71,7 +71,7 @@ const AddLabel = () => {
               <Image
                 width={191}
                 height={241}
-                src="/assets/images/home/webp/label_graph.webp"
+                src="/assets/images/home/webp/label-graph.webp"
                 alt="label-ratio"
                 className="pointer-events-none max-sm:max-w-[72px]"
               />
@@ -81,7 +81,7 @@ const AddLabel = () => {
               <Image
                 width={353}
                 height={216}
-                src="/assets/images/home/webp/label_jumping_girl.webp"
+                src="/assets/images/home/webp/label-jumping-girl.webp"
                 alt="label_jumping_girl"
                 className="pointer-events-none max-sm:max-w-[132px]"
               />

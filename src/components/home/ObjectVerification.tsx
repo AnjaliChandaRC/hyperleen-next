@@ -6,7 +6,7 @@ import Image from "next/image";
 const ObjectVerification = () => {
   return (
     <div className="lg:pb-72 md:pb-20 pb-5">
-      <div className="container xl:max-w-[1180px]  mx-auto">
+      <div className="container xl:max-w-[1180px] mx-auto">
         <div className="flex flex-wrap flex-row mx-[-12px] items-center lg:pt-16 sm:pt-20 pt-16">
           <div className="lg:w-[50%] w-full px-3">
             <div className="relative border border-blue lg:max-w-[502px] sm:max-w-96 max-w-72 rounded-2xl max-lg:mx-auto">
@@ -26,7 +26,7 @@ const ObjectVerification = () => {
                   className="pointer-events-none"
                 />
               </div>
-              <div className="bg-blue max-w-[502px] rounded-t-2xl lg:p-4 p-2 absolute top-0 lg:w-[502px] !w-full">
+              <div className="bg-blue max-w-[502px] rounded-t-2xl xl:p-4 lg:p-3 p-2 absolute top-0 lg:w-[502px] !w-full">
                 <Paragraph
                   textName="Is Previous Selected Object is Correct?"
                   className="font_gilroy_regular font-semibold lg:text-2xxl sm:text-2xl text-lg lg:leading-md leading-6 text-white"
@@ -46,7 +46,7 @@ const ObjectVerification = () => {
                     text="Yes"
                     className="lg:px-[58px] sm:px-11 px-8 max-sm:py-2"
                   />
-                  <button className="text-lg text-black lg:py-3.5 py-3 lg:px-[58px] sm:px-11 px-8 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear">
+                  <button className="text-lg text-black lg:py-3.5 py-3 lg:px-[58px] sm:px-11 px-8 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear w-[148px]">
                     No
                   </button>
                 </div>

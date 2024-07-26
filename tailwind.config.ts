@@ -56,7 +56,7 @@ const config: Config = {
         xl: "1200px",
       },
       backgroundImage: {
-        header_bg: "url('/assets/images/home/png/header_bg.png')",
+        header_bg: "url('/assets/images/home/png/header-bg.png')",
         footer_section: 'url("/assets/images/home/png/footer-bg-img.png")',
         ourTeam: `url("/assets/images/home/webp/team_bg.webp")`,
       },
