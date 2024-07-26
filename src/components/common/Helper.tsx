@@ -231,73 +231,72 @@ export const EnsureStep3 = [
 ];
 export const CuttingEdgeData = [
   {
-    img: "/assets/images/ai-trainer/png/sql-img1.png",
+    img: "/assets/images/ai-trainer/webp/sql-img1.webp",
     width: 138,
     height: 73,
   },
   {
-    img: "/assets/images/ai-trainer/png/swift-img2.png",
+    img: "/assets/images/ai-trainer/webp/swift-img2.webp",
     width: 157,
     height: 62,
   },
   {
-    img: "/assets/images/ai-trainer/png/ruby-img3.png",
+    img: "/assets/images/ai-trainer/webp/ruby-img3.webp",
     width: 98,
     height: 98,
   },
   {
-    img: "/assets/images/ai-trainer/png/go-img4.png",
+    img: "/assets/images/ai-trainer/webp/go-img4.webp",
     width: 138,
     height: 69,
   },
   {
-    img: "/assets/images/ai-trainer/png/cutting-edge-img5.png",
+    img: "/assets/images/ai-trainer/webp/cutting-edge-img5.webp",
     width: 110,
     height: 89,
   },
-  //
   {
-    img: "/assets/images/ai-trainer/png/matlab-img6.png",
+    img: "/assets/images/ai-trainer/webp/matlab-img6.webp",
     width: 97,
     height: 97,
   },
   {
-    img: "/assets/images/ai-trainer/png/php-img7.png",
+    img: "/assets/images/ai-trainer/webp/php-img7.webp",
     width: 158,
     height: 85,
   },
   {
-    img: "/assets/images/ai-trainer/png/html-img8.png",
+    img: "/assets/images/ai-trainer/webp/html-img8.webp",
     width: 86,
     height: 86,
   },
   {
-    img: "/assets/images/ai-trainer/png/dart-img9.png",
+    img: "/assets/images/ai-trainer/webp/dart-img9.webp",
     width: 170,
     height: 63,
   },
   {
-    img: "/assets/images/ai-trainer/png/logo-r-10.png",
+    img: "/assets/images/ai-trainer/webp/logo-r-10.webp",
     width: 99,
     height: 99,
   },
   {
-    img: "/assets/images/ai-trainer/png/apex-img11.png",
+    img: "/assets/images/ai-trainer/webp/apex-img11.webp",
     width: 132,
     height: 75,
   },
   {
-    img: "/assets/images/ai-trainer/png/greater-img-12.png",
+    img: "/assets/images/ai-trainer/webp/greater-img-12.webp",
     width: 88,
     height: 86,
   },
   {
-    img: "/assets/images/ai-trainer/png/c-logo-img13.png",
+    img: "/assets/images/ai-trainer/webp/c-logo-img13.webp",
     width: 87,
     height: 87,
   },
   {
-    img: "/assets/images/ai-trainer/png/c-logo-img14.png",
+    img: "/assets/images/ai-trainer/webp/c-logo-img14.webp",
     width: 91,
     height: 87,
   },
