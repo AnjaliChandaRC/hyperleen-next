@@ -91,10 +91,13 @@
 //   );
 // };
 
-"use client"; // Add this directive for client-side hooks
+"use client"; // Ensure this directive is used for client-side hooks
 
 import React, { useState } from "react";
 import Image from "next/image";
+import PrimaryHeading from "../common/PrimaryHeading";
+import Paragraph from "../common/Paragraph";
+import CommonButton from "../common/CommonButton";
 
 // Define interfaces directly in the component file
 interface FormData {
@@ -112,7 +115,7 @@ interface FormErrors {
 }
 
 const ContactUs: React.FC = () => {
-  // Initialize state with FormData and FormErrors types
+  // Initialize state with FormData, FormErrors, and Popup Visibility
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
@@ -121,6 +124,7 @@ const ContactUs: React.FC = () => {
   });
 
   const [errors, setErrors] = useState<FormErrors>({});
+  const [showPopup, setShowPopup] = useState<boolean>(false);
 
   // Handle input changes
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -134,14 +138,30 @@ const ContactUs: React.FC = () => {
   // Validate form data
   const validate = (): boolean => {
     const newErrors: FormErrors = {};
+
+    // Validate full name
+    const nameRegex = /^[A-Za-zÀ-ÿ-'\s]{6,}$/;
     if (!formData.fullName) newErrors.fullName = "Full Name is required";
+    else if (!nameRegex.test(formData.fullName))
+      newErrors.fullName = "At least 6 characters required";
+
+    // Validate email
     if (!formData.email) {
       newErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Email address is invalid";
     }
-    if (!formData.phone) newErrors.phone = "Phone Number is required";
+
+    // Validate phone number: exactly 10 digits
+    const phoneRegex = /^\d{10}$/;
+    if (!formData.phone) {
+      newErrors.phone = "Phone Number is required";
+    } else if (!phoneRegex.test(formData.phone)) {
+      newErrors.phone = "Phone Number must be exactly 10 digits";
+    }
+    // Validate subject
     if (!formData.subject) newErrors.subject = "Subject is required";
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -159,25 +179,47 @@ const ContactUs: React.FC = () => {
         subject: "",
       });
       setErrors({});
+      // Show popup
+      setShowPopup(true);
+      // Hide popup after 3 seconds
+      setTimeout(() => setShowPopup(false), 3000);
     }
   };
 
   return (
     <div className="container xl:max-w-[1180px] mx-auto py-40">
+      {/* Popup */}
+      {showPopup && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full text-center">
+            <p className="text-lg font-semibold mb-4">
+              Form submitted successfully!
+            </p>
+            <button
+              onClick={() => setShowPopup(false)}
+              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+
       <div className="flex flex-wrap lg:flex-row flex-col-reverse mx-[-12px]">
         <div className="lg:w-[50%] w-full px-3 flex flex-col justify-center items-center lg:pt-0 pt-5">
           <div className="flex flex-col justify-center">
-            <h1 className="text-3xl font-bold mb-4">
-              Contact <span className="text-blue-500">Us</span>
-            </h1>
-            <p className="max-w-[475px] opacity-70 mb-4">
-              Personalized Finance Tutoring Tailored assistance to meet your
-              unique learning needs. Expert Tutors Highly qualified tutors with
-              extensive knowledge in finance and related subjects.
-            </p>
+            <PrimaryHeading
+              textName="Contact"
+              blueText=" Us"
+              className="lg:pb-4 pb-2"
+            />
+            <Paragraph
+              className="max-w-[475px] opacity-70 lg:pb-6 pb-4"
+              textName="Personalized Finance Tutoring Tailored assistance to meet your unique learning needs.  Expert Tutors Highly qualified tutors with extensive knowledge in finance and related subjects."
+            />
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label htmlFor="fullName" className="block text-lg text-black">
+                <label htmlFor="fullName" className="text-lg text-black">
                   Full Name*
                 </label>
                 <input
@@ -186,7 +228,7 @@ const ContactUs: React.FC = () => {
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleChange}
-                  className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 mt-2 ${
+                  className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
                     errors.fullName ? "border-red-500" : ""
                   }`}
                 />
@@ -195,7 +237,7 @@ const ContactUs: React.FC = () => {
                 )}
               </div>
               <div className="mb-4">
-                <label htmlFor="email" className="block text-lg text-black">
+                <label htmlFor="email" className="text-lg text-black">
                   Active Email*
                 </label>
                 <input
@@ -204,7 +246,7 @@ const ContactUs: React.FC = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 mt-2 ${
+                  className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
                     errors.email ? "border-red-500" : ""
                   }`}
                 />
@@ -213,16 +255,16 @@ const ContactUs: React.FC = () => {
                 )}
               </div>
               <div className="mb-4">
-                <label htmlFor="phone" className="block text-lg text-black">
+                <label htmlFor="phone" className="text-lg text-black">
                   Phone Number*
                 </label>
                 <input
-                  type="tel"
+                  type="number"
                   id="phone"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 mt-2 ${
+                  className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
                     errors.phone ? "border-red-500" : ""
                   }`}
                 />
@@ -231,7 +273,7 @@ const ContactUs: React.FC = () => {
                 )}
               </div>
               <div className="mb-6">
-                <label htmlFor="subject" className="block text-lg text-black">
+                <label htmlFor="subject" className="text-lg text-black">
                   Subject*
                 </label>
                 <input
@@ -250,7 +292,7 @@ const ContactUs: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="bg-blue-500 text-white rounded-2xl py-3 px-6 hover:bg-blue-600 transition duration-300"
+                className="bg-blue text-white rounded-2xl py-3 px-6 hover:bg-blue-600 transition duration-300"
               >
                 Submit Now
               </button>
@@ -277,4 +319,3 @@ const ContactUs: React.FC = () => {
 };
 
 export default ContactUs;
-
