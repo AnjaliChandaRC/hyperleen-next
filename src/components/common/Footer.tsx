@@ -20,13 +20,13 @@ const Footer = () => {
       <div className='max-w-[1180px] container mx-auto lg:pt-[160px] pt-[174px] w-full'>
         <div className='flex flex-row flex-wrap -mx-3  justify-between'>
           <div className='lg:w-4/12 xl:px-2 px-5'>
-            <Link href="/">
+            <Link href="/" className='inline-block'>
               <Image
                 width={117}
                 height={30}
                 src='/assets/images/home/svg/footer-logo.svg'
                 alt='footer logo'
-                className=' lg:w-[117px]  sm:w-20  w-16'
+                className=' lg:w-[117px]  sm:w-20  w-16 '
               />
             </Link>
             <Paragraph textName='Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.' className='lg:max-w-[279px] text-white opacity-70 md:pt-5 sm:pt-4 pt-3' />
