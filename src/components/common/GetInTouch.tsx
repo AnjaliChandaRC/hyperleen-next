@@ -29,7 +29,7 @@ const GetInTouch = () => {
   };
 
   return (
-    <div className="md:pt-[80px] xl:pt-[180px] pt-16">
+    <div className="md:pt-[80px] xl:pt-[180px] pt-16 pb-8">
       <div className="container max-w-[1180px] mx-auto">
         <div className="flex items-center justify-center flex-col">
           <PrimaryHeading
@@ -49,7 +49,7 @@ const GetInTouch = () => {
             <input
               type="email"
               placeholder="Your e-mail"
-              className="sm:w-[323px] max-w-[323px] px-4 rounded-2xl bg-light_black min-h-[55px] placeholder:text-black text-grey outline-blue"
+              className="sm:w-[323px] w-full px-4 rounded-2xl bg-light_black min-h-[55px] placeholder:text-black text-grey outline-blue"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required

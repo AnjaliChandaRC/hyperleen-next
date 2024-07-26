@@ -502,21 +502,21 @@ export const Triangle = () => (
       d="M12.5725 15.9004L15.7438 2.58101C15.9462 1.73087 15.0952 1.01212 14.2909 1.35395L1.6058 6.74513C0.872506 7.05677 0.728418 8.0337 1.34051 8.54378L10.8544 16.472C11.4617 16.9781 12.3894 16.6695 12.5725 15.9004Z"
       fill="#084CAF"
       stroke="white"
-      stroke-width="0.631427"
+      strokeWidth="0.631427"
     />
   </svg>
 );
 export const BacktoTop = () => {
   return (
     <svg
-    className=" size-9 md:size-auto"
+      className=" size-9 md:size-auto"
       width="38"
       height="37"
       viewBox="0 0 38 37"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_36698_752)">
+      <g clipPath="url(#clip0_36698_752)">
         <path
           d="M20.5103 18.4993V30.5827H17.4894V18.4993H6.9165L18.9998 6.41602L31.0832 18.4993H20.5103Z"
           fill="white"
