@@ -37,15 +37,9 @@ const AddLabel = () => {
   }, [selectedImage]);
 
   return (
-    <div className="relative lg:pt-20 sm:pt-10 pt-4" id="label">
-      <div className="absolute top-[-14%] right-[12%] lg:block hidden">
-        <Image
-          width={398}
-          height={1313}
-          src="/assets/images/home/png/label-ellipse.png"
-          alt="Decorative ellipse"
-          className="pointer-events-none"
-        />
+    <div className="relative lg:pt-20 sm:pt-10 pt-4 max-w-[1536px] mx-auto" id="label">
+      <div className="absolute lg:block hidden right-0 -top-[80%] opacity-10">
+        <LabelSvg />
       </div>
       <div className="container xl:max-w-[1180px] mx-auto">
         <div className="flex flex-wrap flex-row mx-[-12px] items-center">
@@ -69,7 +63,7 @@ const AddLabel = () => {
                   type="file"
                   accept="image/*"
                   onChange={handleFileChange}
-                  className="mb-4 px-4 py-2 border border-gray-300 rounded"
+                  className="mb-4 px-4 py-2 border border-gray-300 rounded w-full"
                 />
                 <Image
                   width={382}
@@ -100,30 +94,33 @@ const AddLabel = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-[50%] w-full px-3 max-lg:flex max-lg:justify-center relat max-lg:items-center lg:pt-0 pt-10">
+          <div className="lg:w-[50%] w-full px-3 max-lg:flex max-lg:justify-center z-10 max-lg:items-center lg:pt-0 pt-10">
+            {/* ======project-overview-img===== */}
             <Image
               width={399}
               height={359}
-              src="/assets/images/home/webp/label_project_overview.webp"
-              alt="Project overview"
-              className="pointer-events-none max-sm:max-w-[170px]"
+              src="/assets/images/home/png/label-yellow-jacket-girl.png"
+              alt="label-yellowJacketGirl"
+              className="pointer-events-none max-sm:max-w-full xl:w-[475px] max-lg:relative max-lg:-left-[71px] max-sm:left-0 max-lg:max-w-full xl:relative xl:-left-[71px]"
             />
-            <div className="absolute 2xl:left-[70%] xl:left-[77%] xl:top-[27%] lg:top-[27%] lg:left-[82%] sm:top-[60%] sm:left-[68%] top-[74%] left-[62%] max-w-48">
+            {/* ====graph-image====== */}
+            <div className="absolute 2xl:left-[74%] xl:left-[76%] xl:top-[27%] lg:top-[33%] lg:left-[82%] sm:top-[64%] sm:left-[62%] top-[69%] left-[74%] max-w-48 max-sm:max-w-[160px]">
               <Image
                 width={191}
                 height={241}
-                src="/assets/images/home/webp/label_graph.webp"
-                alt="Label ratio graph"
-                className="pointer-events-none max-sm:max-w-[72px]"
+                src="/assets/images/home/webp/label-graph.webp"
+                alt="label-ratio"
+                className="pointer-events-none max-sm:max-w-full"
               />
             </div>
-            <div className="absolute xl:bottom-[8%] xl:left-[68%] lg:bottom-[4%] lg:left-[68%] sm:left-[54%] left-[52%] bottom-[-4%]">
+            {/* ======jumping-girl-img */}
+            <div className="absolute xl:bottom-[13%] xl:left-[68%] lg:bottom-[13%] lg:left-[68%] sm:left-[50%] left-[50%] bottom-[-4%]">
               <Image
                 width={353}
                 height={216}
-                src="/assets/images/home/webp/label_jumping_girl.webp"
-                alt="Jumping girl"
-                className="pointer-events-none max-sm:max-w-[132px]"
+                src="/assets/images/home/webp/label-jumping-girl.webp"
+                alt="label_jumping_girl"
+                className="pointer-events-none max-sm:max-w-full"
               />
             </div>
           </div>
