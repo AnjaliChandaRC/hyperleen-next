@@ -22,8 +22,8 @@ const AddLabel = () => {
           <div className="lg:w-[50%] w-full px-3">
             <PrimaryHeading
               textName="Add"
-              blueTextClass=" Label"
-              blackTextClass=" of an Image"
+              blueText=" Label"
+              blackText=" of an Image"
               className="max-w-[478px] leading-lg max-lg:text-center max-lg:mx-auto"
             />
             <Paragraph
@@ -63,32 +63,33 @@ const AddLabel = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-[50%] w-full px-3 max-lg:flex max-lg:justify-center relative max-lg:flex-col max-lg:items-center lg:pt-0 md:pt-10 pt-5">
+          <div className="lg:w-[50%] w-full px-3 max-lg:flex max-lg:justify-center relat max-lg:items-center lg:pt-0 pt-10">
+            {/* ======project-overview-img===== */}
             <Image
               width={399}
               height={359}
               src="/assets/images/home/webp/label_project_overview.webp"
               alt="label-yellowJacketGirl"
-              className="pointer-events-none"
+              className="pointer-events-none max-sm:max-w-[170px]"
             />
             {/* ====graph-image====== */}
-            <div className="lg:absolute lg:top-[-3%] xl:left-[68%] top-[4%] left-[66%] max-w-48">
+            <div className="absolute 2xl:left-[70%] xl:left-[77%] xl:top-[27%] lg:top-[27%] lg:left-[82%] sm:top-[60%] sm:left-[68%] top-[74%] left-[62%] max-w-48">
               <Image
                 width={191}
                 height={241}
                 src="/assets/images/home/webp/label_graph.webp"
                 alt="label-ratio"
-                className="pointer-events-none"
+                className="pointer-events-none max-sm:max-w-[72px]"
               />
             </div>
             {/* ======jumping-girl-img */}
-            <div className="lg:absolute lg:bottom-[-26%] bottom-[-38%] lg:left-[38%] left-[54%]">
+            <div className="absolute xl:bottom-[8%] xl:left-[68%] lg:bottom-[4%] lg:left-[68%] sm:left-[54%] left-[52%] bottom-[-4%]">
               <Image
                 width={353}
                 height={216}
                 src="/assets/images/home/webp/label_jumping_girl.webp"
                 alt="label_jumping_girl"
-                className="pointer-events-none"
+                className="pointer-events-none max-sm:max-w-[132px]"
               />
             </div>
           </div>

@@ -5,12 +5,12 @@ import CommonButton from "../common/CommonButton";
 import Image from "next/image";
 const SegmentationVerification = () => {
   return (
-    <div className="lg:pt-40 md:pt-20 pt-10">
+    <div className="lg:pt-40 md:pt-32 pt-20">
       <div className="container xl:max-w-[1180px] mx-auto">
         <PrimaryHeading
           textName="Image"
-          blueTextClass=" Segmentation and "
-          blackTextClass="Verification"
+          blueText=" Segmentation and "
+          blackText="Verification"
           className="text-center max-w-[506px] mx-auto sm:pb-4 pb-3 lg:leading-lg"
         />
         <Paragraph
@@ -39,7 +39,7 @@ const SegmentationVerification = () => {
                 alt="segmentation-img"
                 className="pointer-events-none"
               />
-              <div className="bg-blue xl:max-w-[502px] max-w-[488px] rounded-t-2xl lg:p-4 p-2 absolute top-0 lg:w-[502px] w-full">
+              <div className="bg-blue xl:max-w-[502px] max-w-[488px] rounded-t-2xl lg:p-4 p-2 absolute top-0 w-full">
                 <Paragraph
                   textName="Selected All Squares With"
                   className="sm:text-lg text-base text-white lg:pb-2 pb-0"
