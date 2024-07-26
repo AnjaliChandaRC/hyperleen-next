@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='w-full h-[1px] [background:linear-gradient(180deg,#ffffff33_0%,#ffffff1a_100%)] lg:mt-14 md:mt-10 mt-7'></div>
-      <p className='opacity-70 text-center text-white py-4 lg:pb-11 px-3'>© {date.getFullYear()} Hyperleen, All Rights reserved.</p>
+      <p className='opacity-70 text-center text-white py-4 px-3'>© {date.getFullYear()} Hyperleen, All Rights reserved.</p>
     </div>
   );
 };
