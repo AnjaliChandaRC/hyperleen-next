@@ -6,7 +6,7 @@ import CommonButton from "../common/CommonButton";
 import Image from "next/image";
 import { LabelSvg, PenSvg } from "../common/Icons";
 
-const DEFAULT_IMAGE_URL = "/assets/images/home/png/label_input_car.png";
+const DEFAULT_IMAGE_URL = "/assets/images/home/png/label-input-car.png";
 const DEFAULT_IMAGE_NAME = "Car";
 
 const AddLabel = () => {
