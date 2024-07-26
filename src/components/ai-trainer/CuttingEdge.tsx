@@ -21,8 +21,8 @@ const CuttingEdge = () => {
         {/* ======using-map====== */}
         <div className="flex items-center flex-wrap sm:gap-6 gap-5 justify-center">
           {CuttingEdgeData.map((obj: CuttingData, index: number) => (
-            <div key={index} className="">
-              <div className="sm:w-[209px] w-[182px] min-h-[108px] h-full rounded-xl border-[0.5px] border-blue bg-light_blue flex justify-center items-center">
+            <div key={index}>
+              <div className="sm:w-[209px] w-[182px] min-h-[108px] h-full rounded-xl border-[0.5px] border-blue bg-light_blue4 flex justify-center items-center">
                 <Image
                   src={obj.img}
                   width={obj.width}

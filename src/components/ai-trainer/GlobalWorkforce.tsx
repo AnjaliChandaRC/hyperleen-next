@@ -1,6 +1,5 @@
 import React from "react";
 import PrimaryHeading from "../common/PrimaryHeading";
-import CommonButton from "../common/CommonButton";
 import Paragraph from "../common/Paragraph";
 import Image from "next/image";
 import { GlobalWorkforceData } from "../common/Helper";
@@ -23,7 +22,7 @@ const GlobalWorkforce = () => {
         <div className="flex flex-wrap gap-3 max-lg:justify-center">
           {GlobalWorkforceData.map((obj: GlobalData, index: number) => (
             <div key={index}>
-              <div className="bg-white shadow-8xl max-w-[218px] lg:py-3 lg:px-2 p-2 rounded-xl">
+              <div className="bg-white  max-w-[218px] lg:py-3 lg:px-2 p-2 rounded-xl border border-transparent hover:shadow-9xl">
                 <Image
                   src={obj.img}
                   width={203}
@@ -37,10 +36,6 @@ const GlobalWorkforce = () => {
                 <p className="font_gilroy_light text-xs leading-3 text-grey pb-3">
                   HTML Developer
                 </p>
-                {/* <CommonButton
-                  text="HTML"
-                  className="!font_gilroy_medium !text-xxs !leading-3 !text-grey !bg-transparent border !border-grey !hover:bg-blue"
-                /> */}
                 <div className="flex items-center gap-2 pb-3">
                   <button className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-2 rounded-full hover:shadow-3xl">
                     HTML
@@ -52,10 +47,6 @@ const GlobalWorkforce = () => {
                     CSS
                   </button>
                 </div>
-                {/* <CommonButton
-                  text="5 Years Experince"
-                  className="text-nowrap !py-2 !px-5 font-inter"
-                /> */}
                 <button className="font-inter font-semibold text-sm text-white bg-blue rounded-full py-2 px-5 max-w-[162px] w-full border border-transparent hover:bg-white hover:border-grey hover:text-grey transition-all duration-300 ease-linear">
                   5 Years Experince
                 </button>

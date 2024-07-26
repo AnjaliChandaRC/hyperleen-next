@@ -34,7 +34,8 @@ const config: Config = {
       },
       // cuttingEdge
       backgroundColor: {
-        light_blue: "#F5F8FC",
+        light_blue4: "#F5F8FC",
+        light_blue5: "#E5ECF6",
       },
       lineHeight: {
         sm: "34.8px",
@@ -50,6 +51,7 @@ const config: Config = {
         "7xl": "7.88px -8.24px 35.83px -18.63px #084CAF14",
         // global-shadow
         "8xl": "0px 1px 37px 0px #00000026",
+        "9xl": "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
       },
       container: {
         padding: {
