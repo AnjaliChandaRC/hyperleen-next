@@ -12,7 +12,7 @@ interface FaqData {
 const Faqs: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const toggleAccordion = (index: number) => {
+  const TOGGLE_ACCORDION = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
@@ -28,7 +28,7 @@ const Faqs: React.FC = () => {
               } mt-5`}
           >
             <button
-              onClick={() => toggleAccordion(index)}
+              onClick={() => TOGGLE_ACCORDION(index)}
               className={`${activeIndex === index ? "bg-blue" : "bg-transparent"} w-full text-left p-3 lg:p-6 transition duration-300 ease-in-out`}
             >
               <div className="flex justify-between items-center">
