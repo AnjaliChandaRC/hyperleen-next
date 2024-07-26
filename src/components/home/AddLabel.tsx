@@ -7,7 +7,7 @@ import { LabelSvg, PenSvg } from "../common/Icons";
 
 const AddLabel = () => {
   return (
-    <div className="relative xl:pt-20 lg:pt-10 pt-0" id="label">
+    <div className="relative xl:pt-20 lg:pt-10 pt-0 max-w-[1920px] mx-auto" id="label">
       <div className="absolute lg:block hidden right-0 -top-[84%] opacity-10">
         <LabelSvg />
       </div>
