@@ -7,8 +7,8 @@ import Image from "next/image";
 
 const HowWorks = () => {
   return (
-    <div className="xl:py-[160px] lg:py-[120px] md:py-[90px] pt-0 pb-20 2xl:max-w-[1920px] mx-auto" id="work">
-      <div className="container 2xl:max-w-[1360px] xl:max-w-[1180px]">
+    <div className="xl:py-[160px] pb-16 md:pb-[80px] lg:py-[80px] 2xl:max-w-[1920px] mx-auto" id="work">
+      <div className="container xl:max-w-[1180px]">
         <div className="flex flex-row flex-wrap -mx-[10px] xl:-mx-[20px] 2xl:mx-0 items-end">
           <div className="pr-[10px] ps-5 2xl:px-0 w-full lg:w-1/2 flex justify-center lg:justify-start">
             <div className="2xl:max-w-[590px] lg:max-w-[530px] w-full lg:text-start text-center">

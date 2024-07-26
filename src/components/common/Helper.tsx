@@ -229,6 +229,96 @@ export const EnsureStep3 = [
     checkIconAlt: "check-icon",
   },
 ];
+export const CuttingEdgeData = [
+  {
+    img: "/assets/images/ai-trainer/webp/sql-img1.webp",
+    width: 138,
+    height: 73,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/swift-img2.webp",
+    width: 157,
+    height: 62,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/ruby-img3.webp",
+    width: 98,
+    height: 98,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/go-img4.webp",
+    width: 138,
+    height: 69,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/cutting-edge-img5.webp",
+    width: 110,
+    height: 89,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/matlab-img6.webp",
+    width: 97,
+    height: 97,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/php-img7.webp",
+    width: 158,
+    height: 85,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/html-img8.webp",
+    width: 86,
+    height: 86,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/dart-img9.webp",
+    width: 170,
+    height: 63,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/logo-r-10.webp",
+    width: 99,
+    height: 99,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/apex-img11.webp",
+    width: 132,
+    height: 75,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/greater-img-12.webp",
+    width: 88,
+    height: 86,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/c-logo-img13.webp",
+    width: 87,
+    height: 87,
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/c-logo-img14.webp",
+    width: 91,
+    height: 87,
+  },
+];
+export const GlobalWorkforceData = [
+  {
+    img: "/assets/images/ai-trainer/webp/global-img1.webp",
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/global-img2.webp",
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/global-img3.webp",
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/global-img4.webp",
+  },
+  {
+    img: "/assets/images/ai-trainer/webp/global-img5.webp",
+  },
+];
+
 export const TrainerLanguageData = [
   {
     imageSrc: "/assets/images/ai-trainer/svg/java-icon.svg",

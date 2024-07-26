@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="md:py-lg py-16 bg-header_bg bg-full hero_scrollbar bg-center bg-no-repeat max-w-[1536px] mx-auto" id="home">
       <div className="container">
-        <div className="max-w-[824px] mx-auto">
+        <div className="max-w-[824px] mx-auto z-10 relative">
           <div className="flex items-center justify-center gap-4 pb-6">
             <div className="w-[43px]">
               <Header_line />
@@ -22,7 +22,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="overflow-auto">
-            <div className="flex items-center md:justify-center justify-between md:gap-6 gap-3 max-lg:flex-wrap md:w-[824px] w-[785px] max-lg:pb-1">
+            <div className="flex items-center md:justify-center justify-between md:gap-6 gap-3 max-lg:flex-wrap md:w-[824px] w-[785px] max-lg:pb-1.5">
               {Hero_Items.map((item: Hero_Items, index: number) => (
                 <div
                   key={index}
@@ -34,7 +34,7 @@ const Hero = () => {
               ))}
             </div>
           </div>
-          <p className="text-center xl:text-3xxl md:text-6xl sm:text-5xl text-3xl font_gilroy_medium xl:leading-xl sm:leading-lg lg:pt-11 pt-6 pb-5">
+          <p className="text-center xl:text-3xxl md:text-6xl sm:text-5xl text-3xl font_gilroy_medium xl:leading-xl sm:leading-lg lg:pt-11 pt-7 pb-5">
             Transform Your{" "}
             <span className="text-blue font_gilroy_medium">Data into AI</span>{" "}
             Insights

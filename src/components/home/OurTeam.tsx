@@ -24,7 +24,7 @@ const OurTeam = () => {
 
   return (
     <div className="xl:py-[183px] py-[160px] 2xl:max-w-[1920px] mx-auto bg-ourTeam bg-cover md:bg-full bg-no-repeat bg-center relative z-30 overflow-hidden" id="team">
-      <div className="container 2xl:max-w-[1360px] xl:max-w-[1180px]">
+      <div className="container xl:max-w-[1180px]">
         <div className="mx-auto xl:max-w-[411px] xl:mb-[58px] lg:mb-9 mb-8">
           <PrimaryHeading
             textName="Our Team"
@@ -118,7 +118,7 @@ const OurTeam = () => {
       {/* ellipse */}
       <Image
         className="absolute -z-30 -left-[32px] -top-[57px] min-h-full -rotate-[16deg] pointer-events-none"
-        src="/assets/images/home/webp/team_layer.webp"
+        src="/assets/images/home/webp/team-layer.webp"
         height="1548"
         width="313"
         alt="layer"

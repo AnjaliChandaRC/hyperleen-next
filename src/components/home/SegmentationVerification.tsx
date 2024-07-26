@@ -5,8 +5,8 @@ import CommonButton from "../common/CommonButton";
 import Image from "next/image";
 const SegmentationVerification = () => {
   return (
-    <div className="lg:pt-40 md:pt-20 pt-10" id="about">
-      <div className="container xl:max-w-[1140px] mx-auto">
+    <div className="xl:pt-40 lg:pt-[100px] md:pt-[100px] pt-20" id="about">
+      <div className="container xl:max-w-[1180px] mx-auto">
         <PrimaryHeading
           textName="Image"
           blueText=" Segmentation and "
@@ -22,10 +22,12 @@ const SegmentationVerification = () => {
             <h5 className="font_gilroy_regular font-semibold lg:text-2xxl text-2xl leading-md text-black lg:pb-4 sm-pb-1 pb-0 max-lg:text-center">
               Image Segmentation
             </h5>
-            <Paragraph
-              textName="Image segmentation is the process of partitioning an image into multiple segments to simplify its representation and make it more meaningful. This technique is essential for identifying and analyzing objects within an image, such as cars in autonomous driving applications."
-              className="lg:pb-12 sm:pb-5 pb-2 lg:max-w-[540px] max-lg:text-center"
-            />
+            <div className="flex items-center lg:justify-start justify-center">
+              <Paragraph
+                textName="Image segmentation is the process of partitioning an image into multiple segments to simplify its representation and make it more meaningful. This technique is essential for identifying and analyzing objects within an image, such as cars in autonomous driving applications."
+                className="lg:pb-12 max-lg:max-w-[740px] sm:pb-5 pb-2 lg:max-w-[540px] max-lg:text-center"
+              />
+            </div>
             <div className="max-lg:mx-auto max-lg:text-center">
               <CommonButton text="Learn More" />
             </div>
