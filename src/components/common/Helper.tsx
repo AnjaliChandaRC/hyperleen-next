@@ -303,18 +303,18 @@ export const CuttingEdgeData = [
 ];
 export const GlobalWorkforceData = [
   {
-    img: "/assets/images/ai-trainer/png/global-img1.png",
+    img: "/assets/images/ai-trainer/webp/global-img1.webp",
   },
   {
-    img: "/assets/images/ai-trainer/png/global-img2.png",
+    img: "/assets/images/ai-trainer/webp/global-img2.webp",
   },
   {
-    img: "/assets/images/ai-trainer/png/global-img3.png",
+    img: "/assets/images/ai-trainer/webp/global-img3.webp",
   },
   {
-    img: "/assets/images/ai-trainer/png/global-img4.png",
+    img: "/assets/images/ai-trainer/webp/global-img4.webp",
   },
   {
-    img: "/assets/images/ai-trainer/png/global-img5.png",
+    img: "/assets/images/ai-trainer/webp/global-img5.webp",
   },
 ];
