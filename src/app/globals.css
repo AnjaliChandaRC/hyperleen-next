@@ -14,6 +14,9 @@
   .ensure_card {
     @apply w-full p-4 sm:p-5 border-[0.5px] rounded-2xl border-blue hover:shadow-7xl;
   }
+  .trainer_accordion_dots {
+    @apply relative after:absolute after:-left-5 after:top-[20%] after:size-1 after:bg-grey after:rounded-full;
+  }
 
   .timeline_card {
     @apply max-w-[515px] 2xl:max-w-[615px] w-full min-h-[536px] after:left-[27px] after:-z-30 z-30 relative after:absolute after:w-1 after:border-l-[3px] after:top-6 after:bottom-12 sm:after:bottom-8 2xl:after:bottom-20 after:border-blue after:border-dashed flex flex-col gap-7;
