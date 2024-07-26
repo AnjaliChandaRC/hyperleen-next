@@ -7,7 +7,6 @@ import { CommentSenderArrow, IconListLogo, LeftArrow, Pen, RightArrow, SmallFavI
 
 const Mastering = () => {
     const [inputValue, setInputValue] = useState('');
-
     const ADD_COMMENT = () => {
         if (inputValue.trim() === '') {
             Swal.fire({
@@ -19,7 +18,6 @@ const Mastering = () => {
             });
             return;
         }
-
         Swal.fire({
             position: 'center',
             icon: 'success',
@@ -28,7 +26,7 @@ const Mastering = () => {
             timer: 1500
         });
 
-        setInputValue(''); // Clear the input after submission
+        setInputValue(''); 
     };
 
     return (
