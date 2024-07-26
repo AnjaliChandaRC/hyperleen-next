@@ -7,7 +7,7 @@ import { LabelSvg, PenSvg } from "../common/Icons";
 
 const AddLabel = () => {
   return (
-    <div className="relative xl:pt-20 sm:pt-10 pt-0" id="label">
+    <div className="relative xl:pt-20 lg:pt-10 pt-0" id="label">
       <div className="absolute lg:block hidden right-0 -top-[84%] opacity-10">
         <LabelSvg />
       </div>
@@ -49,9 +49,9 @@ const AddLabel = () => {
               <div className="flex gap-4 lg:mt-9 mt-5 justify-center">
                 <CommonButton
                   text="Ok"
-                  className="lg:max-w-[203px] max-w-[106px] w-full"
+                  className="lg:max-w-[203px] h-[55px] max-w-[106px] w-full"
                 />
-                <button className="text-lg text-black py-3.5 lg:px-[69px] px-5 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear h-14">
+                <button className="text-lg text-black py-3.5 lg:px-[69px] px-5 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear h-[55px]">
                   Cancel
                 </button>
               </div>
@@ -64,26 +64,26 @@ const AddLabel = () => {
               height={359}
               src="/assets/images/home/webp/label-project-overview.webp"
               alt="label-yellowJacketGirl"
-              className="pointer-events-none max-sm:max-w-[170px]"
+              className="pointer-events-none max-sm:max-w-full xl:w-[475px] max-lg:relative max-lg:-left-[71px] max-sm:left-0 max-lg:max-w-full xl:relative xl:-left-[71px]"
             />
             {/* ====graph-image====== */}
-            <div className="absolute 2xl:left-[70%] xl:left-[77%] xl:top-[27%] lg:top-[27%] lg:left-[82%] sm:top-[60%] sm:left-[68%] top-[74%] left-[62%] max-w-48">
+            <div className="absolute 2xl:left-[70%] xl:left-[76%] xl:top-[27%] lg:top-[27%] lg:left-[82%] sm:top-[60%] sm:left-[59%] top-[60%] left-[74%] max-w-48 max-sm:max-w-[96px]">
               <Image
                 width={191}
                 height={241}
                 src="/assets/images/home/webp/label-graph.webp"
                 alt="label-ratio"
-                className="pointer-events-none max-sm:max-w-[72px]"
+                className="pointer-events-none max-sm:max-w-full"
               />
             </div>
             {/* ======jumping-girl-img */}
-            <div className="absolute xl:bottom-[8%] xl:left-[68%] lg:bottom-[4%] lg:left-[68%] sm:left-[54%] left-[52%] bottom-[-4%]">
+            <div className="absolute xl:bottom-[8%] xl:left-[68%] lg:bottom-[4%] lg:left-[68%] sm:left-[50%] left-[50%] bottom-[-4%]">
               <Image
                 width={353}
                 height={216}
                 src="/assets/images/home/webp/label-jumping-girl.webp"
                 alt="label_jumping_girl"
-                className="pointer-events-none max-sm:max-w-[132px]"
+                className="pointer-events-none max-sm:max-w-full"
               />
             </div>
           </div>

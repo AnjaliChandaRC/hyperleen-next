@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const ObjectVerification = () => {
   return (
-    <div className="lg:pb-72 md:pb-20 pb-5">
+    <div className="xl:pb-72 md:pb-36 pb-5">
       <div className="container xl:max-w-[1180px] mx-auto">
-        <div className="flex flex-wrap flex-row mx-[-12px] items-center lg:pt-16 sm:pt-20 pt-16">
+        <div className="flex flex-wrap flex-row mx-[-12px] items-center lg:pt-16 sm:pt-20 pt-20">
           <div className="lg:w-[50%] w-full px-3">
             <div className="relative border border-blue lg:max-w-[502px] sm:max-w-96 max-w-72 rounded-2xl max-lg:mx-auto">
               <Image
@@ -46,7 +46,7 @@ const ObjectVerification = () => {
                     text="Yes"
                     className="lg:px-[58px] sm:px-11 px-8 max-sm:py-2"
                   />
-                  <button className="text-lg text-black lg:py-3.5 py-3 lg:px-[58px] sm:px-11 px-8 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear w-[148px]">
+                  <button className="text-lg text-black lg:py-3.5 py-3 lg:px-[58px] sm:px-11 px-8 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear w-[148px] h-[55px]">
                     No
                   </button>
                 </div>
@@ -57,7 +57,7 @@ const ObjectVerification = () => {
             <h5 className="font_gilroy_regular font-semibold lg:text-2xxl text-2xl leading-md text-black lg:pb-4 sm-pb-1 pb-0 max-lg:text-center">
               Verification
             </h5>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center lg:justify-start justify-center">
               <Paragraph
                 textName="Verification is a crucial step to ensure the accuracy of the labeled data. It involves reviewing the segmented image to confirm if the segmentation was performed correctly"
                 className="lg:pb-12 max-lg:max-w-[740px] sm:pb-5 pb-2 lg:max-w-[540px] max-lg:text-center"
