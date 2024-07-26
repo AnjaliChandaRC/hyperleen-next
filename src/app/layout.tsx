@@ -4,6 +4,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Faqs from "@/components/common/Faqs";
 import GetInTouch from "@/components/common/GetInTouch";
+import BackToTopButton from "@/components/common/BackToTopButton";
 
 export const metadata: Metadata = {
   title: "Hyperleen",
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Faqs />
          <GetInTouch />
         <Footer />
+        <BackToTopButton />
       </body>
     </html>
   );
