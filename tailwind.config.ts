@@ -27,6 +27,7 @@ const config: Config = {
         light_black: "#0000000A",
         smoke_grey2: "#FFFFFF29",
         off_white: "#0101010D",
+        light_skyblue: "#F2F6FB",
       },
       lineHeight: {
         sm: "34.8px",
