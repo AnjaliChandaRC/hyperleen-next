@@ -1,5 +1,5 @@
-import EnsureHighQuality from '@/components/home/EnsureHighQuality'
-import HowWorks from '@/components/home/HowWorks'
+import EnsureHighQuality from '@/components/common/EnsureHighQuality'
+import HowWorks from '@/components/common/HowWorks'
 import Mastering from '@/components/rlhf/Mastering'
 import React from 'react'
 
