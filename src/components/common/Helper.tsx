@@ -229,3 +229,41 @@ export const EnsureStep3 = [
     checkIconAlt: "check-icon",
   },
 ];
+export const TrainerLanguageData = [
+  {
+    imageSrc: "/assets/images/ai-trainer/svg/java-icon.svg",
+    title: "Expertise of Trainers in Java",
+    bodyTexts: [
+      "Extensive experience in building scalable, high-performance applications.",
+      "Proficient in Java SE (Standard Edition) and EE (Enterprise Edition).",
+      "Skilled in using frameworks such as Spring, Hibernate, and Apache Struts.",
+      "Expertise in developing RESTful web services and microservices.",
+      "Strong understanding of JVM internals, garbage collection, and memory management.",
+      "Ability to integrate Java applications with various databases and external systems.",
+    ],
+  },
+  {
+    imageSrc: "/assets/images/ai-trainer/svg/swift-icon.svg",
+    title: "Expertise of Trainers in Swift",
+    bodyTexts: [
+      "Proficient in developing iOS and macOS applications using Swift.",
+      "Deep understanding of Swift syntax, best practices, and design patterns.",
+      "Experience with SwiftUI, UIKit, and Core Data for building robust and dynamic user interfaces.",
+      "Expertise in optimizing performance and memory usage in mobile applications.",
+      "Skilled in integrating Swift applications with backend services and third-party APIs.",
+      "Strong knowledge of Xcode and Apple's development ecosystem.",
+    ],
+  },
+  {
+    imageSrc: "/assets/images/ai-trainer/svg/python-icon.svg",
+    title: "Expertise of Trainers in Python",
+    bodyTexts: [
+      "Extensive experience in developing web applications, data analysis.",
+      "Proficient in using frameworks like Django, Flask, and FastAPI.",
+      "Expertise in data manipulation and analysis using libraries such as Pandas, NumPy, and SciPy.",
+      "Skilled in developing machine learning models with TensorFlow, Keras, and Scikit-Learn.",
+      "Strong understanding of Python's asynchronous programming capabilities.",
+      "Experience in automating tasks and building scripts for various purposes.",
+    ],
+  },
+];
