@@ -22,7 +22,7 @@ const GlobalWorkforce = () => {
         <div className="flex flex-wrap gap-3 max-lg:justify-center">
           {GlobalWorkforceData.map((obj: GlobalData, index: number) => (
             <div key={index}>
-              <div className="bg-white  max-w-[218px] lg:py-3 lg:px-2 p-2 rounded-xl border border-transparent hover:shadow-9xl">
+              <div className="bg-white shadow-8xl max-w-[218px] lg:py-3 lg:px-2 p-2 rounded-xl border border-transparent hover:shadow-9xl">
                 <Image
                   src={obj.img}
                   width={203}
