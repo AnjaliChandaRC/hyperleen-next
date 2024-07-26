@@ -6,7 +6,7 @@ import Image from "next/image";
 const SegmentationVerification = () => {
   return (
     <div className="lg:pt-40 md:pt-20 pt-10" id="about">
-      <div className="container xl:max-w-[1140px] mx-auto">
+      <div className="container xl:max-w-[1180px] mx-auto">
         <PrimaryHeading
           textName="Image"
           blueText=" Segmentation and "
