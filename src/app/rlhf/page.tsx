@@ -6,14 +6,14 @@ import React from "react";
 
 const page = () => {
   return (
-    <div>
+    <>
       <RlhfHero />
       <Mastering />
       <div className="xl:pt-[160px] lg:pt-20 pt-16">
         <HowWorks />
       </div>
       <EnsureHighQuality />
-    </div>
+    </>
   );
 };
 

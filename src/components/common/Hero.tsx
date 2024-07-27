@@ -26,7 +26,7 @@ const Hero = ({
     >
       <div className="container max-w-[1180px]">
         <div className={`mx-auto ${className}`}>
-          <div className="flex items-center justify-center gap-4 lg:mb-6 mb-5">
+          <div className="flex items-center justify-center gap-4 lg:mb-6 sm:mb-5 mb-4">
             <div className="w-[43px]">
               <Header_line />
             </div>
@@ -36,7 +36,7 @@ const Hero = ({
             </div>
           </div>
           <PrimaryHeading
-            className="lg:mb-6 mb-4 text-center"
+            className="lg:mb-6 mb-3 text-center"
             textName={textHeading}
             blueText={blueTextHeading}
             blackText={blackTextHeading}
