@@ -357,3 +357,17 @@ export const TrainerLanguageData = [
     ],
   },
 ];
+export const ImproveData = [
+  {
+    imageSrc: "/assets/images/ai-trainer/svg/benchmark-icon.svg",
+    title: "Benchmark tasks list",
+  },
+  {
+    imageSrc: "/assets/images/ai-trainer/svg/metric-icon.svg",
+    title: "Predefined Metrics overview",
+  },
+  {
+    imageSrc: "/assets/images/ai-trainer/svg/blockchain-icon.svg",
+    title: "Human vs. Model output comparison",
+  },
+];

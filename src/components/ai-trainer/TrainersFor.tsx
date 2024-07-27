@@ -26,6 +26,15 @@ const TrainersFor = () => {
           <div className="2xl:px-5 w-full lg:w-1/2 px-5 lg:pl-5 lg:pr-3 flex lg:justify-start justify-center">
             <div className="xl:max-w-[522px] md:max-w-[470px] sm:max-w-[420px] max-w-[268px] xl:h-[678px] md:h-[610px] sm:h-[550px] h-[350px] w-full relative">
               <div className="xl:max-w-[395px] md:max-w-[360px] sm:max-w-[310px] max-w-[210px] w-full xl:h-[370px] md:h-[340px] sm:h-[300px] h-[200px] rounded-2xl bg-blue opacity-10 pointer-events-none"></div>
+              {/* blue layer */}
+              <Image
+                src="/assets/images/ai-trainer/webp/trainer-bg-layer.webp"
+                width={398}
+                height={1313}
+                alt="trainer-image"
+                className="pointer-events-none absolute max-h-[1313px] xl:-top-[109%] lg:-top-[122%] md:-top-full hidden sm:inline-block -top-[125%] xl:-left-1/2 lg:-left-[70%] md:-left-[77%] -left-[85%] -rotate-45"
+              />
+              {/* trainer image */}
               <div className="absolute sm:top-5 top-2 sm:left-5 left-2 w-full xl:max-w-[502px] md:max-w-[450px] sm:max-w-[400px] max-w-[260px] xl:h-[483px]">
                 <div className="relative w-full">
                   <Image
@@ -47,7 +56,7 @@ const TrainersFor = () => {
                 src="/assets/images/ai-trainer/webp/remove-error.webp"
                 width={339}
                 height={212}
-                alt="trainer-image"
+                alt="remove-error-image"
                 className="pointer-events-none bottom-0 left-0 absolute z-10 max-xl:max-w-[300px] max-md:max-w-[280px] max-sm:max-w-[180px]"
               />
               {/* remove-error-text */}
