@@ -53,6 +53,7 @@ const config: Config = {
         // global-shadow
         "8xl": "0px 1px 37px 0px #00000026",
         "9xl": "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
+        "10xl": "15.01px -15.69px 68.22px -35.47px #084CAF14",
       },
       container: {
         padding: {

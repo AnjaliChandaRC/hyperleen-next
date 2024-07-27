@@ -24,18 +24,23 @@ const TrainersFor = () => {
       <div className="container max-w-[1180px]">
         <div className="flex flex-row flex-wrap -mx-5">
           <div className="2xl:px-5 w-full lg:w-1/2 px-5 lg:pl-5 lg:pr-3 flex lg:justify-start justify-center">
-            <div className="xl:max-w-[522px] lg:max-w-[465px] max-w-[280px] sm:max-w-[430px] h-[400px] sm:h-[540px] lg:h-[580px] xl:h-[678px] w-full relative">
-              <Image
-                src="/assets/images/ai-trainer/png/trainer.png"
-                width={522}
-                height={503}
-                alt="trainer-image"
-                className="pointer-events-none"
-              />
-              <div className="xl:max-w-[502px] sm:max-w-[415px] max-w-[289px] w-full sm:h-[74px] h-[50px] bg-blue rounded-t-2xl flex flex-col items-center justify-center absolute right-0 lg:top-5 sm:top-[18px] top-3">
-                <h3 className="text-white text-[20px] sm:text-[24px] md:text-[32px] leading-[43px] text-center font_gilroy_bold">
-                  AI Trainers
-                </h3>
+            <div className="xl:max-w-[522px] md:max-w-[470px] sm:max-w-[420px] max-w-[268px] xl:h-[678px] md:h-[610px] sm:h-[550px] h-[350px] w-full relative">
+              <div className="xl:max-w-[395px] md:max-w-[360px] sm:max-w-[310px] max-w-[210px] w-full xl:h-[370px] md:h-[340px] sm:h-[300px] h-[200px] rounded-2xl bg-blue opacity-10 pointer-events-none"></div>
+              <div className="absolute sm:top-5 top-2 sm:left-5 left-2 w-full xl:max-w-[502px] md:max-w-[450px] sm:max-w-[400px] max-w-[260px] xl:h-[483px]">
+                <div className="relative w-full">
+                  <Image
+                    src="/assets/images/ai-trainer/webp/trainer.webp"
+                    width={502}
+                    height={483}
+                    alt="trainer-image"
+                    className="pointer-events-none rounded-2xl shadow-10xl"
+                  />
+                  <div className="bg-blue rounded-t-2xl w-full lg:h-[74px] absolute top-0">
+                    <h3 className="text-white lg:text-[32] text-2xl sm:text-[28px] lg:leading-[43px] sm:leading-9 leading-7 text-center font_gilroy_medium sm:py-4 py-3">
+                      AI Trainers
+                    </h3>
+                  </div>
+                </div>
               </div>
               {/* remove error image */}
               <Image
@@ -43,23 +48,23 @@ const TrainersFor = () => {
                 width={339}
                 height={212}
                 alt="trainer-image"
-                className="pointer-events-none absolute bottom-0 left-0 sm:max-w-[270px] max-w-[220px] lg:max-w-[300px]"
+                className="pointer-events-none bottom-0 left-0 absolute z-10 max-xl:max-w-[300px] max-md:max-w-[280px] max-sm:max-w-[180px]"
               />
-              {/* triangle card */}
-              <div className="absolute bottom-[85px] right-12 z-10">
+              {/* remove-error-text */}
+              <div className="absolute sm:bottom-[85px] bottom-[35px] md:right-12 right-0 z-10">
                 <div className="relative">
                   <span className="absolute rotate-[36deg] -left-3 -top-3">
                     <Triangle />
                   </span>
-                  <p className="text-white text-[12px] leading-5 bg-blue w-[135px] h-[31px] py-1 text-center rounded-[17px]">
+                  <p className="text-white text-[12px] leading-5 bg-blue sm:w-[135px] w-[110px] h-[31px] py-1 text-center rounded-[17px]">
                     Remove Errors
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="2xl:px-5 w-full lg:w-1/2 px-5 lg:pr-5 lg:pl-3 flex lg:justify-end justify-center lg:mt-0 mt-12">
-            <div className="lg:max-w-[558px] max-w-[740px] min-h-[663px] text-center lg:text-start">
+          <div className="2xl:px-5 w-full lg:w-1/2 px-5 lg:pr-5 lg:pl-3 flex lg:justify-end justify-center lg:mt-0 md:mt-12 mt-10">
+            <div className="lg:max-w-[558px] max-w-[740px] text-center lg:text-start">
               <PrimaryHeading
                 className="lg:mb-4 mb-3 text-center lg:text-start"
                 textName="AI Trainers "
@@ -67,23 +72,23 @@ const TrainersFor = () => {
                 blackText=", Python"
               />
               <Paragraph
-                className="xl:mb-6 mb-5 text-center lg:text-start"
+                className="mb-6 text-center lg:text-start"
                 textName="The AI Trainer for Java, Swift, and Python is a seasoned expert in crafting high-quality code, evaluating AI-generated solutions, and developing robust test cases. With extensive knowledge in these programming languages, the trainer ensures precision and efficiency in AI training processes, contributing to innovative and reliable AI applications."
               />
               {/* accordion */}
-              <div className="xl:mb-12 mb-10 lg:max-w-[558px] max-w-[600px] mx-auto w-full flex flex-col gap-4">
+              <div className="xl:mb-12 sm:mb-10 mb-6 lg:max-w-[558px] max-w-[600px] mx-auto w-full flex flex-col sm:gap-4 gap-3">
                 {/* accordion-item */}
                 {TrainerLanguageData.map(
                   (value: AccordionData, index: number) => (
                     <div
                       key={index}
-                      className={`flex cursor-pointer gap-4 rounded-2xl w-full border-[0.5px] border-blue bg-white overflow-hidden ${
+                      className={`flex cursor-pointer gap-4 sm:rounded-2xl rounded-xl w-full border-[0.5px] border-blue bg-white overflow-hidden ${
                         openAccordion === index ? "!pb-5" : " "
                       }`}
                     >
                       <span
                         onClick={() => toggleAccordion(index)}
-                        className="size-fit !py-5 pl-5"
+                        className="size-fit sm:!py-5 py-3 sm:pl-5 pl-4"
                       >
                         <Image
                           src={value.imageSrc}
@@ -93,13 +98,14 @@ const TrainersFor = () => {
                           className="pointer-events-none"
                         />
                       </span>
-                      {/*  */}
                       <div className="max-lg:w-full">
                         {/* accordion-head */}
                         <div
                           onClick={() => toggleAccordion(index)}
-                          className={`pt-5 pr-5 flex items-center gap-4 w-full ${
-                            openAccordion === index ? "!pb-3" : "pb-5"
+                          className={`sm:pt-[26px] pt-4 duration-300 ease-linear sm:pr-5 pr-4 flex items-center gap-4 w-full ${
+                            openAccordion === index
+                              ? "!pb-3"
+                              : "sm:pb-[26px] pb-4"
                           }`}
                         >
                           <Paragraph
@@ -109,17 +115,17 @@ const TrainersFor = () => {
                         </div>
                         {/* accordion-body */}
                         <div
-                          className={`px-5 flex justify-end duration-300 ease-linear w-full max-h-0 ${
+                          className={`sm:px-5 px-4 flex justify-end duration-300 ease-linear w-full max-h-0 ${
                             openAccordion === index
-                              ? "max-h-[288px] !pt-1"
-                              : "pt-2"
+                              ? "xl:max-h-[288px] sm:max-h-[318px] max-h-[344px] !pt-1"
+                              : ""
                           }`}
                         >
                           <div className="max-w-[466px]">
                             {value.bodyTexts.map((bodyText, i) => (
                               <Paragraph
                                 key={i}
-                                className="trainer_accordion_dots text-start"
+                                className="trainer_accordion_dots text-start max-sm:text-sm"
                                 textName={bodyText}
                               />
                             ))}
