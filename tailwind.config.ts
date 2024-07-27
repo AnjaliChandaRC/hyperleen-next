@@ -74,6 +74,7 @@ const config: Config = {
         footer_section: 'url("/assets/images/home/png/footer-bg-img.png")',
         ourTeam: 'url("/assets/images/home/webp/team-bg.webp")',
         global_bg: `url("/assets/images/ai-trainer/webp/global-bg-img.webp")`,
+        trainer_hero: `url("/assets/images/ai-trainer/webp/trainer-hero-bg.webp")`,
       },
       backgroundSize: {
         full: "100% 100%",

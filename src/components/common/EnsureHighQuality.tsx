@@ -7,7 +7,7 @@ import { EnsureStep1, EnsureStep2, EnsureStep3 } from "../common/Helper";
 
 const EnsureHighQuality = () => {
   return (
-    <div className="2xl:max-w-[1920px] mx-auto">
+    <div className="max-w-[1440px] mx-auto">
       <div className="container xl:max-w-[1180px] relative z-40">
         <div className="max-w-[674px] mx-auto">
           <PrimaryHeading

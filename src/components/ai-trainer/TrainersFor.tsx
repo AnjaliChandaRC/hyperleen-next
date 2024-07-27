@@ -20,7 +20,7 @@ const TrainersFor = () => {
   };
 
   return (
-    <div className="xl:pt-[111px] md:pt-20 pt-16 2xl:max-w-[1920px] mx-auto">
+    <div className="xl:pt-[111px] sm:pt-[30px] pt-0 max-w-[1440px] mx-auto">
       <div className="container max-w-[1180px]">
         <div className="flex flex-row flex-wrap -mx-5">
           <div className="2xl:px-5 w-full lg:w-1/2 px-5 lg:pl-5 lg:pr-3 flex lg:justify-start justify-center">
