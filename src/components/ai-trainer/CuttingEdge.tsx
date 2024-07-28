@@ -22,7 +22,7 @@ const CuttingEdge = () => {
         <div className="flex items-center flex-wrap sm:gap-6 gap-5 justify-center">
           {CuttingEdgeData.map((obj: CuttingData, index: number) => (
             <div key={index}>
-              <div className="sm:w-[209px] md:w-[182px] w-[172px] min-h-[108px] h-full rounded-xl border-[0.5px] border-blue bg-light_blue4 flex justify-center items-center">
+              <div className="sm:w-[209px] md:w-[182px] w-[165px] min-h-[108px] h-full rounded-xl border-[0.5px] border-blue bg-light_blue4 flex justify-center items-center">
                 <Image
                   src={obj.img}
                   width={obj.width}
