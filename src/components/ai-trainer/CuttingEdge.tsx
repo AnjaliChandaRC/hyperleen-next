@@ -10,7 +10,7 @@ const CuttingEdge = () => {
   }
 
   return (
-    <div className="lg:py-40 md:py-28 sm:py-16 py-10">
+    <div className="lg:py-40 sm:py-20 py-16">
       <div className="container xl:max-w-[1180px] px-3">
         <PrimaryHeading
           textName="Cutting-Edge"
@@ -22,12 +22,13 @@ const CuttingEdge = () => {
         <div className="flex items-center flex-wrap sm:gap-6 gap-5 justify-center">
           {CuttingEdgeData.map((obj: CuttingData, index: number) => (
             <div key={index}>
-              <div className="sm:w-[209px] w-[182px] min-h-[108px] h-full rounded-xl border-[0.5px] border-blue bg-light_blue4 flex justify-center items-center">
+              <div className="sm:w-[209px] md:w-[182px] w-[172px] min-h-[108px] h-full rounded-xl border-[0.5px] border-blue bg-light_blue4 flex justify-center items-center">
                 <Image
                   src={obj.img}
                   width={obj.width}
                   height={obj.height}
                   alt="sql-img1"
+                  className="max-sm:max-w-[90px] pointer-events-none"
                 />
               </div>
             </div>
