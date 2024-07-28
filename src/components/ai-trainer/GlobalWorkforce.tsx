@@ -9,7 +9,7 @@ const GlobalWorkforce = () => {
     img: string;
   }
   return (
-    <div className="bg-global_bg lg:bg-full bg-cover lg:pt-[164px] lg:pb-[249px] pt-28 pb-28">
+    <div className="bg-global_bg lg:bg-full bg-cover lg:pt-[164px] lg:pb-[249px] sm:py-20 py-16">
       <div className="container xl:max-w-[1180px] mx-auto">
         <PrimaryHeading
           textName="Global Workforce"
@@ -28,7 +28,7 @@ const GlobalWorkforce = () => {
                   width={203}
                   height={125}
                   alt="global-img"
-                  className="max-lg:w-[175px]"
+                  className="max-lg:w-[175px] pointer-events-none"
                 />
                 <h5 className="font_gilroy_medium leading-5 text-black pt-3 pb-1">
                   Wade Warren

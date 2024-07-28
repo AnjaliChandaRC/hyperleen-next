@@ -9,7 +9,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div>
+    <>
       <TrainerHero />
       <TrainersFor />
       <CuttingEdge />
@@ -17,7 +17,7 @@ const page = () => {
       <HowWorks />
       <EnsureHighQuality />
       <ContactUs />
-    </div>
+    </>
   );
 };
 

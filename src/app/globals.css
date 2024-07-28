@@ -14,8 +14,8 @@
   .ensure_card {
     @apply w-full p-4 sm:p-5 border-[0.5px] rounded-2xl border-blue hover:shadow-7xl;
   }
-  .trainer_accordion_dots {
-    @apply relative after:absolute after:-left-5 after:top-[20%] after:size-1 after:bg-grey after:rounded-full;
+  .accordion_dots {
+    @apply relative after:absolute sm:after:-left-5 after:-left-4 sm:after:top-[20%] after:top-[14%] after:size-1 after:bg-grey after:rounded-full;
   }
 
   .timeline_card {
@@ -74,7 +74,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 4px !important;
+  width: 4px !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -83,10 +83,10 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 .hero_scrollbar ::-webkit-scrollbar {
-    height: 3px !important;
-    width: 4px;
+  height: 3px !important;
+  width: 4px;
 }
