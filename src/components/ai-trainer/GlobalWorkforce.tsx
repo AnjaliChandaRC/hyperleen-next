@@ -9,20 +9,20 @@ const GlobalWorkforce = () => {
     img: string;
   }
   return (
-    <div className="bg-global_bg lg:bg-full bg-cover lg:pt-[164px] lg:pb-[249px] sm:py-20 py-16">
+    <div className="bg-global_bg lg:bg-full bg-cover xl:pt-[164px] xl:pb-[249px] md:py-20 py-16 max-w-[1920px] mx-auto">
       <div className="container xl:max-w-[1180px] mx-auto">
         <PrimaryHeading
           textName="Global Workforce"
-          className="!text-white lg:pb-5 pb-3 max-lg:mx-auto max-lg:text-center"
+          className="!text-white lg:pb-5 pb-3 max-xl:mx-auto max-xl:text-center"
         />
         <Paragraph
-          className="!text-white opacity-70 lg:pb-10 pb-5 lg:max-w-[606px] max-lg:mx-auto max-lg:text-center"
+          className="!text-white opacity-70 lg:pb-10 pb-5 lg:max-w-[606px] max-xl:mx-auto max-xl:text-center"
           textName="Our expertise lies in a global workforce of highly skilled professionals, each with over 5 years of industry experience. With proficiency in a wide array of programming languages and technologies, our experts can seamlessly scale to meet the demands of any project, ensuring high-quality, robust solutions across various domains."
         />
-        <div className="flex flex-wrap gap-3 max-lg:justify-center">
+        <div className="flex flex-wrap gap-3 max-xl:justify-center">
           {GlobalWorkforceData.map((obj: GlobalData, index: number) => (
             <div key={index}>
-              <div className="bg-white shadow-8xl max-w-[218px] lg:py-3 lg:px-2 p-2 rounded-xl border border-transparent hover:shadow-9xl">
+              <div className="bg-white shadow-8xl max-w-[218px] lg:py-3 lg:px-2 p-2 rounded-xl border border-transparent hover:shadow-9xl transition duration-300 ease-linear">
                 <Image
                   src={obj.img}
                   width={203}
