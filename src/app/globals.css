@@ -14,7 +14,7 @@
   .ensure_card {
     @apply w-full p-4 sm:p-5 border-[0.5px] rounded-2xl border-blue hover:shadow-7xl;
   }
-  .trainer_accordion_dots {
+  .accordion_dots {
     @apply relative after:absolute sm:after:-left-5 after:-left-4 sm:after:top-[20%] after:top-[14%] after:size-1 after:bg-grey after:rounded-full;
   }
 

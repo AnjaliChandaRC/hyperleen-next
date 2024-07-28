@@ -10,6 +10,7 @@ const Improve = () => {
   interface AccordionData {
     imageSrc: string;
     title: string;
+    bodyTexts: string[];
   }
 
   const [openAccordion, setOpenAccordion] = useState<null | number>(null);
@@ -77,7 +78,7 @@ const Improve = () => {
                   <div
                     key={index}
                     className={`flex cursor-pointer text-start gap-4 sm:rounded-2xl rounded-xl w-full border-[0.5px] border-blue bg-white overflow-hidden ${
-                      openAccordion === index ? "" : " "
+                      openAccordion === index ? "!pb-5" : ""
                     }`}
                   >
                     <span
@@ -108,6 +109,23 @@ const Improve = () => {
                         />
                       </div>
                       {/* accordion-body */}
+                      <div
+                        className={`sm:px-5 px-4 flex justify-end duration-300 ease-linear w-full max-h-0 ${
+                          openAccordion === index
+                            ? "xl:max-h-[288px] sm:max-h-[318px] max-h-[344px] !pt-1"
+                            : ""
+                        }`}
+                      >
+                        <div className="max-w-[466px]">
+                          {value.bodyTexts.map((bodyText, i) => (
+                            <Paragraph
+                              key={i}
+                              className="accordion_dots text-start max-sm:text-sm"
+                              textName={bodyText}
+                            />
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 ))}

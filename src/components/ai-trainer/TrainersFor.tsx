@@ -134,7 +134,7 @@ const TrainersFor = () => {
                             {value.bodyTexts.map((bodyText, i) => (
                               <Paragraph
                                 key={i}
-                                className="trainer_accordion_dots text-start max-sm:text-sm"
+                                className="accordion_dots text-start max-sm:text-sm"
                                 textName={bodyText}
                               />
                             ))}
