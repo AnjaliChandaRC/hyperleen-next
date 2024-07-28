@@ -24,7 +24,7 @@ const TrainersFor = () => {
       <div className="container max-w-[1180px]">
         <div className="flex flex-row flex-wrap -mx-5">
           <div className="2xl:px-5 w-full lg:w-1/2 px-5 lg:pl-5 lg:pr-3 flex lg:justify-start justify-center">
-            <div className="xl:max-w-[522px] lg:max-w-[465px] max-w-[300px] sm:max-w-[430px] h-[540px] lg:h-[580px] xl:h-[678px] w-full relative">
+            <div className="xl:max-w-[522px] lg:max-w-[465px] max-w-[280px] sm:max-w-[430px] h-[400px] sm:h-[540px] lg:h-[580px] xl:h-[678px] w-full relative">
               <Image
                 src="/assets/images/ai-trainer/png/trainer.png"
                 width={522}
@@ -32,8 +32,8 @@ const TrainersFor = () => {
                 alt="trainer-image"
                 className="pointer-events-none"
               />
-              <div className="xl:max-w-[502px] max-w-[415px] w-full h-[74px] bg-blue rounded-t-2xl flex flex-col items-center justify-center absolute right-0 lg:top-5 top-[18px]">
-                <h3 className="text-white text-[32px] leading-[43px] text-center font_gilroy_bold">
+              <div className="xl:max-w-[502px] sm:max-w-[415px] max-w-[289px] w-full sm:h-[74px] h-[50px] bg-blue rounded-t-2xl flex flex-col items-center justify-center absolute right-0 lg:top-5 sm:top-[18px] top-3">
+                <h3 className="text-white text-[20px] sm:text-[24px] md:text-[32px] leading-[43px] text-center font_gilroy_bold">
                   AI Trainers
                 </h3>
               </div>
@@ -43,7 +43,7 @@ const TrainersFor = () => {
                 width={339}
                 height={212}
                 alt="trainer-image"
-                className="pointer-events-none rounded-2xl absolute bottom-0 left-0 max-w-[270px] lg:max-w-[300px]"
+                className="pointer-events-none absolute bottom-0 left-0 sm:max-w-[270px] max-w-[220px] lg:max-w-[300px]"
               />
               {/* triangle card */}
               <div className="absolute bottom-[85px] right-12 z-10">
@@ -59,25 +59,25 @@ const TrainersFor = () => {
             </div>
           </div>
           <div className="2xl:px-5 w-full lg:w-1/2 px-5 lg:pr-5 lg:pl-3 flex lg:justify-end justify-center lg:mt-0 mt-12">
-            <div className="max-w-[558px] min-h-[663px] text-center lg:text-start">
+            <div className="lg:max-w-[558px] max-w-[740px] min-h-[663px] text-center lg:text-start">
               <PrimaryHeading
-                className="mb-4 text-center lg:text-start"
+                className="lg:mb-4 mb-3 text-center lg:text-start"
                 textName="AI Trainers "
                 blueText="for Java, Swift"
                 blackText=", Python"
               />
               <Paragraph
-                className="mb-6 text-center lg:text-start"
+                className="xl:mb-6 mb-5 text-center lg:text-start"
                 textName="The AI Trainer for Java, Swift, and Python is a seasoned expert in crafting high-quality code, evaluating AI-generated solutions, and developing robust test cases. With extensive knowledge in these programming languages, the trainer ensures precision and efficiency in AI training processes, contributing to innovative and reliable AI applications."
               />
               {/* accordion */}
-              <div className="mb-12 max-w-[558px] w-full flex flex-col gap-4">
+              <div className="xl:mb-12 mb-10 lg:max-w-[558px] max-w-[600px] mx-auto w-full flex flex-col gap-4">
                 {/* accordion-item */}
                 {TrainerLanguageData.map(
                   (value: AccordionData, index: number) => (
                     <div
                       key={index}
-                      className={`flex cursor-pointer gap-4 rounded-2xl border-[0.5px] border-blue bg-white overflow-hidden ${
+                      className={`flex cursor-pointer gap-4 rounded-2xl w-full border-[0.5px] border-blue bg-white overflow-hidden ${
                         openAccordion === index ? "!pb-5" : " "
                       }`}
                     >
@@ -94,7 +94,7 @@ const TrainersFor = () => {
                         />
                       </span>
                       {/*  */}
-                      <div>
+                      <div className="max-lg:w-full">
                         {/* accordion-head */}
                         <div
                           onClick={() => toggleAccordion(index)}
