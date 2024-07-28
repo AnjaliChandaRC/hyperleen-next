@@ -7,7 +7,7 @@ const page = () => {
     return (
         <div>
             <Mastering />
-            <div className='xl:pt-[160px] lg:pt-20 pt-16'>  <HowWorks /></div>
+            <div className='xl:pt-[160px] lg:pt-20 pt-16'><HowWorks /></div>
             <EnsureHighQuality />
         </div>
     )
