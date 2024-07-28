@@ -1,3 +1,5 @@
+import ContactUs from "@/components/ai-trainer/ContactUs";
+import GlobalWorkforce from "@/components/ai-trainer/GlobalWorkforce";
 import EnsureHighQuality from "@/components/common/EnsureHighQuality";
 import HowWorks from "@/components/common/HowWorks";
 import Improve from "@/components/rlhf/Improve";
@@ -8,13 +10,19 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <RlhfHero />
-      <Improve />
+      <div className=" py-6 md:py-8 xl:py-0">
+        <RlhfHero />
+      </div>
+      <div className=" pb-16 md:pb-20 xl:pb-[180px]">
+        <Improve />
+      </div>
+      <GlobalWorkforce />
       <Mastering />
-      <div className="xl:pt-[160px] lg:pt-20 pt-16">
+      <div className=" py-16 md:py-20 lg:py-0">
         <HowWorks />
       </div>
       <EnsureHighQuality />
+      <ContactUs />
     </>
   );
 };
