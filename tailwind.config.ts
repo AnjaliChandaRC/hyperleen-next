@@ -50,9 +50,10 @@ const config: Config = {
         "5xl": "-2.41px 4.41px 37.77px 1.76px #6F69F21F",
         "6xl": "-8.88px 5.88px 58.83px 4.37px #6F69F21F",
         "7xl": "7.88px -8.24px 35.83px -18.63px #084CAF14",
-        // global-shadow
         "8xl": "0px 1px 37px 0px #00000026",
         "9xl": "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
+        "10xl": "15.01px -15.69px 68.22px -35.47px #084CAF14",
+        "11xl": "2.11px -1.29px 28.66px 6.3px #084CAF14",
       },
       container: {
         padding: {
@@ -73,6 +74,7 @@ const config: Config = {
         footer_section: 'url("/assets/images/home/png/footer-bg-img.png")',
         ourTeam: 'url("/assets/images/home/webp/team-bg.webp")',
         global_bg: `url("/assets/images/ai-trainer/webp/global-bg-img.webp")`,
+        trainer_hero: `url("/assets/images/ai-trainer/webp/trainer-hero-bg.webp")`,
       },
       backgroundSize: {
         full: "100% 100%",
