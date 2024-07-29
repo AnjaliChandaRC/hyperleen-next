@@ -1,9 +1,11 @@
 "use client";
+
 import { useState } from 'react';
 import CommonButton from './CommonButton';
 import Link from 'next/link';
 import { navLink } from './Helper';
 import { Header_logo } from './Icons';
+
 interface NavLink {
   nav_tabs: string;
   href: string;
@@ -12,23 +14,26 @@ interface NavLink {
 const Header = () => {
   const [active, setActive] = useState(true);
 
-  // for navbar toggling
   const HANDLE_NAVBAR = () => {
     setActive(!active);
     let body = document.body;
-    if (active) {
-      body.classList.add("overflow-hidden");
-    } else {
-      body.classList.remove("overflow-hidden");
-    }
+    active && body.classList.add("overflow-hidden");
+    !active && body.classList.remove("overflow-hidden");
   }
 
-  //removing the nav menu when clicked on nav link 
   const REMOVE_NAVBAR = () => {
     let body = document.body;
     setActive(true);
     body.classList.remove("overflow-hidden");
   }
+
+  const HANDLE_CONTACT_US_CLICK = () => {
+    setActive(true);
+    document.body.classList.remove("overflow-hidden");
+
+    const contactSection = document.getElementById('contact');
+    contactSection && contactSection.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <nav className="border-b-[0.1px] border-grey py-4">
@@ -43,23 +48,17 @@ const Header = () => {
           onClick={HANDLE_NAVBAR}
         >
           <span
-            className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active ? "rotate-45 relative top-[8px] -right-px" : "rotate-0"
-              }`}
+            className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active && "rotate-45 relative top-[8px] -right-px"} ${active && "rotate-0"}`}
           ></span>
           <span
-            className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active ? "hidden" : "block"
-              }`}
+            className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active && "hidden"} ${active && "block"}`}
           ></span>
           <span
-            className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active
-              ? "-rotate-45 relative bottom-[11px] -right-px"
-              : "rotate-0"
-              }`}
+            className={`w-full h-[3px] bg-black ease-in-out duration-300 rounded-[2px] ${!active && "-rotate-45 relative bottom-[11px] -right-px"} ${active && "rotate-0"}`}
           ></span>
         </div>
         <div
-          className={`flex ease-in-out duration-300 ${active ? "max-lg:left-[-100%]" : "max-lg:start-0"
-            } max-lg:bg-white max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 items-center justify-center xl:gap-5 gap-4 z-20`}
+          className={`flex ease-in-out duration-300 ${active && "max-lg:left-[-100%]"} ${!active && "max-lg:start-0"} max-lg:bg-white max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:h-full max-lg:top-0 items-center justify-center xl:gap-5 gap-4 z-20`}
         >
           {navLink.map((obj: NavLink, index: number) => (
             <Link
@@ -71,15 +70,16 @@ const Header = () => {
               {obj.nav_tabs}
             </Link>
           ))}
-          <div
-            className={`flex items-center justify-center gap-3 lg:ps-3.5 ps-0 ${!active ? "max-lg:flex-col" : "flex-row"
-              }`}
-          >
+          <div className={`flex items-center justify-center gap-3 lg:ps-3.5 ps-0 ${!active && "max-lg:flex-col"} ${active && "flex-row"}`}>
             <CommonButton
               className="!bg-white !shadow-none !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent"
               text="Sign Up"
             />
-            <CommonButton text="Contact Us" href="#contact" />
+            <CommonButton
+              text="Contact Us"
+              href="#contact"
+              mobileAction={HANDLE_CONTACT_US_CLICK}
+            />
           </div>
         </div>
       </div>

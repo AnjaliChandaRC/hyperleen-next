@@ -1,7 +1,7 @@
 import CommonButton from "../common/CommonButton";
 import { Hero_Items } from "../common/Helper";
 import { Header_line, Header_line_2 } from "../common/Icons";
-interface Hero_Items {
+interface HeroItems {
   id: number;
   label: string;
   maxWidth: string;
@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
           <div className="overflow-auto">
             <div className="flex items-center md:justify-center justify-between md:gap-6 gap-3 max-lg:flex-wrap md:w-[824px] w-[785px] max-lg:pb-1.5">
-              {Hero_Items.map((item: Hero_Items, index: number) => (
+              {Hero_Items.map((item: HeroItems, index: number) => (
                 <div
                   key={index}
                   className="rounded-[144px] text-blue border border-[#0A02EC] min-h-[44px] w-full bg-light_blue flex items-center justify-center"
@@ -35,8 +35,8 @@ const Hero = () => {
             </div>
           </div>
           <p className="text-center xl:text-3xxl md:text-6xl sm:text-5xl text-3xl font_gilroy_medium xl:leading-xl sm:leading-lg lg:pt-11 pt-7 pb-5">
-            Transform Your{" "}
-            <span className="text-blue font_gilroy_medium">Data into AI</span>{" "}
+            Transform Your
+            <span className="text-blue font_gilroy_medium"> Data into AI </span>
             Insights
           </p>
           <div className="flex items-center justify-center lg:pb-10 pb-6">
