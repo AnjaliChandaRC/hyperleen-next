@@ -21,7 +21,7 @@ const Hero = ({
 }: CommonHero) => {
   return (
     <div
-      className="py-[49px] max-sm:pt-10 bg-trainer_hero bg-full bg-center bg-no-repeat max-w-[1440px] mx-auto"
+      className="xl:py-[49px] py-20 max-sm:pt-16 bg-trainer_hero bg-full bg-center bg-no-repeat max-w-[1440px] mx-auto"
       id="home"
     >
       <div className="container max-w-[1180px]">
