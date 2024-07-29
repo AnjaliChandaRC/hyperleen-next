@@ -1,4 +1,3 @@
-import React from "react";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Image from "next/image";
 import { CuttingEdgeData } from "../common/Helper";
@@ -10,7 +9,7 @@ const CuttingEdge = () => {
   }
 
   return (
-    <div className="xl:pb-40 lg:pb-5 md:pb-4">
+    <div className="xl:pb-40 lg:pb-5 md:pb-4 2xl:max-w-[1536px] mx-auto">
       <div className="container xl:max-w-[1180px] px-3">
         <PrimaryHeading
           textName="Cutting-Edge"
@@ -22,7 +21,7 @@ const CuttingEdge = () => {
         <div className="flex items-center flex-wrap sm:gap-6 gap-5 justify-center">
           {CuttingEdgeData.map((obj: CuttingData, index: number) => (
             <div key={index}>
-              <div className="lg:w-[209px] md:w-[182px] w-[165px] min-h-[108px] h-full rounded-xl border-[0.5px] border-blue bg-light_blue4 flex justify-center items-center">
+              <div className="lg:w-[209px] md:w-[182px] w-[165px] min-h-[108px] h-full rounded-xl border-[0.5px] border-blue bg-off_white_blue flex justify-center items-center">
                 <Image
                   src={obj.img}
                   width={obj.width}

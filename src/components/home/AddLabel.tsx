@@ -37,7 +37,10 @@ const AddLabel = () => {
   }, [selectedImage]);
 
   return (
-    <div className="relative lg:pt-20 sm:pt-10 pt-4 max-w-[1536px] mx-auto" id="label">
+    <div
+      className="relative lg:pt-20 sm:pt-10 pt-4 2xl:max-w-[1536px] mx-auto"
+      id="label"
+    >
       <div className="absolute lg:block hidden right-0 -top-[80%] opacity-10">
         <LabelSvg />
       </div>
