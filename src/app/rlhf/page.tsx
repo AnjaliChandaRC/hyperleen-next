@@ -10,9 +10,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <div className=" py-6 md:py-8 xl:py-0">
-        <RlhfHero />
-      </div>
+      <RlhfHero />
       <div className=" pb-16 md:pb-20 xl:pb-[180px]">
         <Improve />
       </div>

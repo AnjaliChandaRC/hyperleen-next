@@ -20,7 +20,7 @@ const TrainersFor = () => {
   };
 
   return (
-    <div className="xl:pt-[111px] sm:pt-[30px] pt-0 max-w-[1440px] mx-auto">
+    <div className="xl:pt-[111px] sm:pt-[30px] pt-0 2xl:max-w-[1536px] mx-auto overflow-hidden">
       <div className="container max-w-[1180px]">
         <div className="flex flex-row flex-wrap -mx-5">
           <div className="2xl:px-5 w-full lg:w-1/2 px-5 lg:pl-5 lg:pr-3 flex lg:justify-start justify-center">
@@ -45,7 +45,7 @@ const TrainersFor = () => {
                     className="pointer-events-none rounded-2xl shadow-10xl"
                   />
                   <div className="bg-blue rounded-t-2xl w-full lg:h-[74px] absolute top-0">
-                    <h3 className="text-white lg:text-[32] text-2xl sm:text-[28px] lg:leading-[43px] sm:leading-9 leading-7 text-center font_gilroy_medium sm:py-4 py-3">
+                    <h3 className="text-white lg:text-[32px] text-2xl sm:text-[28px] lg:leading-[43px] sm:leading-9 leading-7 text-center font_gilroy_medium sm:py-4 py-3">
                       AI Trainers
                     </h3>
                   </div>

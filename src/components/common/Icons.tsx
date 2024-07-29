@@ -506,7 +506,7 @@ export const Triangle = () => (
     />
   </svg>
 );
-export const BacktoTop = () => {
+export const BackToTop = () => {
   return (
     <svg
       className=" size-9 md:size-auto"
