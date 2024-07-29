@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <ContactHero />
-      <div className="relative">
+      <div className="relative xl:pt-3 xl:pb-[60px]">
         <div className="absolute right-0 !top-[18%] pointer-events-none lg:block hidden">
           <ContactUsEllipse />
         </div>
