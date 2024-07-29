@@ -13,8 +13,8 @@ const page = () => {
       <TrainerHero />
       <TrainersFor />
       <CuttingEdge />
-      <GlobalWorkforce />
-        <HowWorks />
+      <GlobalWorkforce showExperienceButton={true} />
+      <HowWorks />
       <EnsureHighQuality />
       <ContactUs />
     </>

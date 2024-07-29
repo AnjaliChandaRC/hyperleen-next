@@ -4,10 +4,17 @@ import Paragraph from "../common/Paragraph";
 import Image from "next/image";
 import { GlobalWorkforceData } from "../common/Helper";
 
-const GlobalWorkforce = () => {
+interface GlobalWorkforceProps {
+  showExperienceButton?: boolean; // Optional prop to control button visibility
+}
+
+const GlobalWorkforce: React.FC<GlobalWorkforceProps> = ({
+  showExperienceButton = true,
+}) => {
   interface GlobalData {
     img: string;
   }
+
   return (
     <div className="bg-global_bg xl:bg-full bg-cover xl:pt-[164px] xl:pb-[249px] lg:py-32 py-28 max-w-[1920px] mx-auto">
       <div className="container xl:max-w-[1180px] mx-auto">
@@ -22,7 +29,7 @@ const GlobalWorkforce = () => {
         <div className="flex flex-wrap gap-3 max-xl:justify-center">
           {GlobalWorkforceData.map((obj: GlobalData, index: number) => (
             <div key={index}>
-              <div className="bg-white shadow-8xl max-w-[218px] lg:py-3 lg:px-2 p-2 rounded-xl border border-transparent hover:shadow-9xl transition duration-300 ease-linear">
+              <div className="bg-white shadow-8xl max-w-[218px] lg:py-[10px] lg:px-2 p-2 rounded-xl border border-transparent hover:shadow-9xl transition duration-300 ease-linear">
                 <Image
                   src={obj.img}
                   width={203}
@@ -33,23 +40,25 @@ const GlobalWorkforce = () => {
                 <h5 className="font_gilroy_medium leading-5 text-black pt-3 pb-1">
                   Wade Warren
                 </h5>
-                <p className="font_gilroy_light text-xs leading-3 text-grey pb-3">
+                <p className="font_gilroy_light text-xs leading-3 text-grey pb-[10px]">
                   HTML Developer
                 </p>
-                <div className="flex items-center gap-2 pb-3">
-                  <button className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-2 rounded-full hover:shadow-3xl">
+                <div className="flex items-center gap-2 pb-4">
+                  <button className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-2 rounded-full hover:shadow-3xl transition duration-300 ease-linear">
                     HTML
                   </button>
-                  <button className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-2 rounded-full hover:shadow-3xl">
+                  <button className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-2 rounded-full hover:shadow-3xl transition duration-300 ease-linear">
                     Bootstrap
                   </button>
-                  <button className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-2 rounded-full hover:shadow-3xl">
+                  <button className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-2 rounded-full hover:shadow-3xl transition duration-300 ease-linear">
                     CSS
                   </button>
                 </div>
-                <button className="font-inter font-semibold text-sm text-white bg-blue rounded-full py-2 px-5 max-w-[162px] w-full border border-transparent hover:bg-white hover:border-grey hover:text-grey transition-all duration-300 ease-linear">
-                  5 Years Experince
-                </button>
+                {showExperienceButton && ( // Conditionally render the button
+                  <button className="font-inter font-semibold text-sm text-white bg-blue rounded-full py-[6px] px-5 max-w-[162px] w-full border border-transparent hover:bg-white hover:border-grey hover:text-grey transition-all duration-300 ease-linear text-nowrap">
+                    5 Years Experience
+                  </button>
+                )}
               </div>
             </div>
           ))}
