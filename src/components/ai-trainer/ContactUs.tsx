@@ -97,7 +97,7 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <div className="xl:py-[100px] lg:py-20 pb-16 2xl:max-w-[1536px] mx-auto">
+    <div className="2xl:max-w-[1536px] mx-auto">
       <div className="container xl:max-w-[1180px] mx-auto">
         <div className="flex flex-wrap lg:flex-row flex-col-reverse mx-[-12px]">
           <div className="lg:w-[50%] w-full px-3 flex flex-col items-center lg:pt-0 pt-5">
@@ -122,9 +122,8 @@ const ContactUs: React.FC = () => {
                     name="fullName"
                     value={formData.fullName}
                     onChange={HANDLE_CHANGE}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
-                      errors.fullName && "border-red-500"
-                    }`}
+                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${errors.fullName && "border-red-500"
+                      }`}
                   />
                   {errors.fullName && (
                     <p className="text-red-500 text-sm">{errors.fullName}</p>
@@ -140,9 +139,8 @@ const ContactUs: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={HANDLE_CHANGE}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
-                      errors.email && "border-red-500"
-                    }`}
+                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${errors.email && "border-red-500"
+                      }`}
                   />
                   {errors.email && (
                     <p className="text-red-500 text-sm">{errors.email}</p>
@@ -158,9 +156,8 @@ const ContactUs: React.FC = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={HANDLE_CHANGE}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
-                      errors.phone && "border-red-500"
-                    }`}
+                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${errors.phone && "border-red-500"
+                      }`}
                   />
                   {errors.phone && (
                     <p className="text-red-500 text-sm">{errors.phone}</p>
@@ -176,9 +173,8 @@ const ContactUs: React.FC = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={HANDLE_CHANGE}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 mt-2 ${
-                      errors.subject && "border-red-500"
-                    }`}
+                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 mt-2 ${errors.subject && "border-red-500"
+                      }`}
                   />
                   {errors.subject && (
                     <p className="text-red-500 text-sm">{errors.subject}</p>

@@ -18,7 +18,7 @@ const GlobalWorkforce: React.FC<GlobalWorkforceProps> = ({
   }
 
   return (
-    <div className="bg-global_bg xl:bg-full bg-cover xl:pt-[164px] xl:pb-[249px] lg:py-32 py-28 2xl:max-w-[1536px] mx-auto">
+    <div className="md:bg-global_bg max-md:bg-blue xl:bg-full bg-cover xl:pt-[164px] xl:pb-[249px] lg:py-32 md:py-28 py-16 2xl:max-w-[1536px] mx-auto">
       <div className="container xl:max-w-[1180px] mx-auto">
         <PrimaryHeading
           textName="Global Workforce"
