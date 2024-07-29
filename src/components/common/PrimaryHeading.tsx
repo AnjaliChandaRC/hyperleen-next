@@ -1,5 +1,5 @@
 type PRIMARY_HEADING_PROPS = {
-  className: string;
+  className?: string;
   textName: string;
   blueTextClass?: string;
   blackTextClass?: string;

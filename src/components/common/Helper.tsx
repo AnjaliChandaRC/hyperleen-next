@@ -93,7 +93,7 @@ export const footerData = [
     ],
   },
 ];
-export const teamMembers = [
+export const TEAM_MEMBERS = [
   {
     name: "Mark Butler",
     role: "Lead Data Annotator",
@@ -112,7 +112,7 @@ export const teamMembers = [
       "px-[10px] 2xl:px-5 w-full md:w-1/2 flex justify-center md:mt-0 mt-12",
   },
 ];
-export const TimelineData = [
+export const TIMELINE_DATA = [
   {
     title: "Project request",
     description:
@@ -137,7 +137,7 @@ export const TimelineData = [
     icon: <ReceiveData />,
   },
 ];
-export const EnsureStep1 = [
+export const ENSURE_STEP1 = [
   {
     imageSrc: "/assets/images/home/webp/pizza.webp",
     imageAlt: "pizza-image",
@@ -151,7 +151,7 @@ export const EnsureStep1 = [
     trianglePosition: "-left-[14px] -top-[14px]",
   },
 ];
-export const EnsureStep2 = [
+export const ENSURE_STEP2 = [
   {
     imageSrc: "/assets/images/home/webp/car.webp",
     imageAlt: "car",
@@ -213,7 +213,7 @@ export const EnsureStep2 = [
     checkIconPosition: "top-3 right-3",
   },
 ];
-export const EnsureStep3 = [
+export const ENSURE_STEP3 = [
   {
     imageSrc: "/assets/images/home/webp/pizza.webp",
     imageAlt: "pizza",
@@ -319,7 +319,7 @@ export const GlobalWorkforceData = [
   },
 ];
 
-export const TrainerLanguageData = [
+export const TRAINER_LANGUAGE_DATA = [
   {
     imageSrc: "/assets/images/ai-trainer/svg/java-icon.svg",
     title: "Expertise of Trainers in Java",
@@ -357,7 +357,7 @@ export const TrainerLanguageData = [
     ],
   },
 ];
-export const ImproveData = [
+export const IMPROVE_DATA = [
   {
     imageSrc: "/assets/images/ai-trainer/svg/benchmark-icon.svg",
     title: "Benchmark tasks list",

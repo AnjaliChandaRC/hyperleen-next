@@ -1,9 +1,8 @@
-import React from "react";
-import Hero from "../common/Hero";
+import CommonHero from "../common/CommonHero";
 
 const TrainerHero = () => {
   return (
-    <Hero
+    <CommonHero
       className="xl:max-w-[632px] md:max-w-[600px] sm:max-w-[550px] max-w-[450px]"
       textHero="AI Trainer"
       textHeading="Elevate Your "

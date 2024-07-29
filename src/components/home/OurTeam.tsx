@@ -1,8 +1,6 @@
-import React from "react";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Image from "next/image";
 import Link from "next/link";
-import { teamMembers } from "../common/Helper";
 import Paragraph from "../common/Paragraph";
 import {
   FacebookIcon,
@@ -11,6 +9,7 @@ import {
   MailIcon,
   PhoneIcon,
 } from "../common/Icons";
+import { TEAM_MEMBERS } from "../common/Helper";
 
 const OurTeam = () => {
   interface TeamMember {
@@ -23,7 +22,10 @@ const OurTeam = () => {
   }
 
   return (
-    <div className="xl:py-[183px] py-[160px] 2xl:max-w-[1536px] mx-auto bg-ourTeam bg-cover md:bg-full bg-no-repeat bg-center relative z-30 overflow-hidden" id="team">
+    <div
+      className="xl:py-[183px] py-[160px] 2xl:max-w-[1536px] mx-auto bg-ourTeam bg-cover md:bg-full bg-no-repeat bg-center relative z-30 overflow-hidden"
+      id="team"
+    >
       <div className="container xl:max-w-[1180px]">
         <div className="mx-auto xl:max-w-[411px] xl:mb-[58px] lg:mb-9 mb-8">
           <PrimaryHeading
@@ -37,7 +39,7 @@ const OurTeam = () => {
         </div>
         <div className="flex flex-row flex-wrap -mx-[10px] 2xl:-mx-5">
           {/* using map-method */}
-          {teamMembers.map((obj: TeamMember, index: number) => (
+          {TEAM_MEMBERS.map((obj: TeamMember, index: number) => (
             <div key={index} className={obj.columnClass}>
               <div className="md:max-w-[560px] max-w-[520px] 2xl:max-w-full w-full h-full rounded-2xl bg-white flex justify-between flex-col">
                 <div className="relative pb-[6px]">

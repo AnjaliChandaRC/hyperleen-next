@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
 import CommonButton from "../common/CommonButton";
-import { ImproveData } from "../common/Helper";
+import { IMPROVE_DATA } from "../common/Helper";
 
 const Improve = () => {
   interface AccordionData {
@@ -14,11 +14,11 @@ const Improve = () => {
   }
 
   const [openAccordion, setOpenAccordion] = useState<null | number>(null);
-  const toggleAccordion = (index: number) => {
+  const TOGGLE_ACCORDION = (index: number) => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
   return (
-    <div className="xl:pt-[111px] pt-0 2xl:max-w-[1536px] mx-auto overflow-hidden">
+    <div className="xl:pt-[111px] pt-0 pb-16 md:pb-20 xl:pb-[160px] 2xl:max-w-[1536px] mx-auto overflow-hidden">
       <div className="container max-w-[1180px]">
         <div className="flex flex-row flex-wrap -mx-5">
           <div className="2xl:px-5 w-full lg:w-1/2 px-5 lg:pl-5 lg:pr-3 flex lg:justify-start justify-center">
@@ -54,7 +54,7 @@ const Improve = () => {
                 src="/assets/images/ai-trainer/webp/llm-growth-graph.webp"
                 width={339}
                 height={212}
-                alt="remove-error-image"
+                alt="growth-graph-image"
                 className="pointer-events-none bottom-0 left-0 absolute z-10 max-xl:max-w-[300px] max-md:max-w-[280px] max-sm:max-w-[180px] shadow-11xl rounded-2xl"
               />
             </div>
@@ -74,16 +74,16 @@ const Improve = () => {
               {/* accordion */}
               <div className="xl:mb-12 sm:mb-10 mb-6 lg:max-w-[558px] max-w-[600px] mx-auto w-full flex flex-col sm:gap-4 gap-3">
                 {/* accordion-item */}
-                {ImproveData.map((value: AccordionData, index: number) => (
+                {IMPROVE_DATA.map((value: AccordionData, index: number) => (
                   <div
                     key={index}
-                    className={`flex cursor-pointer text-start gap-4 sm:rounded-2xl rounded-xl w-full border-[0.5px] border-blue bg-white overflow-hidden ${
-                      openAccordion === index ? "!pb-5" : ""
+                    className={`flex text-start gap-4 sm:rounded-2xl rounded-xl w-full border-[0.5px] border-blue bg-white overflow-hidden ${
+                      openAccordion === index && "!pb-5"
                     }`}
                   >
                     <span
-                      onClick={() => toggleAccordion(index)}
-                      className="size-fit sm:!py-5 py-3 sm:pl-5 pl-4"
+                      onClick={() => TOGGLE_ACCORDION(index)}
+                      className="size-fit sm:!py-5 py-3 sm:pl-5 pl-4 cursor-pointer"
                     >
                       <Image
                         src={value.imageSrc}
@@ -96,8 +96,8 @@ const Improve = () => {
                     <div className="max-lg:w-full">
                       {/* accordion-head */}
                       <div
-                        onClick={() => toggleAccordion(index)}
-                        className={`sm:pt-[26px] pt-4 duration-300 ease-linear sm:pr-5 pr-4 flex items-center gap-4 w-full ${
+                        onClick={() => TOGGLE_ACCORDION(index)}
+                        className={`sm:pt-[26px] cursor-pointer pt-4 duration-300 ease-linear sm:pr-5 pr-4 flex items-center gap-4 w-full ${
                           openAccordion === index
                             ? "!pb-3"
                             : "sm:pb-[26px] pb-4"
@@ -111,9 +111,8 @@ const Improve = () => {
                       {/* accordion-body */}
                       <div
                         className={`sm:px-5 px-4 flex justify-end duration-300 ease-linear w-full max-h-0 ${
-                          openAccordion === index
-                            ? "xl:max-h-[288px] sm:max-h-[318px] max-h-[344px] !pt-1"
-                            : ""
+                          openAccordion === index &&
+                          "xl:max-h-[288px] sm:max-h-[318px] max-h-[344px] !pt-1"
                         }`}
                       >
                         <div className="max-w-[466px]">

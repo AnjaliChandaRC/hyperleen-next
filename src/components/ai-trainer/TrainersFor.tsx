@@ -5,7 +5,7 @@ import { Triangle } from "../common/Icons";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
 import CommonButton from "../common/CommonButton";
-import { TrainerLanguageData } from "../common/Helper";
+import { TRAINER_LANGUAGE_DATA } from "../common/Helper";
 
 const TrainersFor = () => {
   interface AccordionData {
@@ -15,7 +15,7 @@ const TrainersFor = () => {
   }
 
   const [openAccordion, setOpenAccordion] = useState<null | number>(null);
-  const toggleAccordion = (index: number) => {
+  const TOGGLE_ACCORDION = (index: number) => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
 
@@ -65,7 +65,7 @@ const TrainersFor = () => {
                   <span className="absolute rotate-[36deg] -left-3 -top-3">
                     <Triangle />
                   </span>
-                  <p className="text-white text-[12px] leading-5 bg-blue sm:w-[135px] w-[110px] h-[31px] py-1 text-center rounded-[17px]">
+                  <p className="text-white text-[12px] leading-5 bg-blue sm:w-[135px] w-[110px] h-[31px] pb-1 pt-[6px] text-center rounded-[17px]">
                     Remove Errors
                   </p>
                 </div>
@@ -87,17 +87,17 @@ const TrainersFor = () => {
               {/* accordion */}
               <div className="xl:mb-12 sm:mb-10 mb-6 lg:max-w-[558px] max-w-[600px] mx-auto w-full flex flex-col sm:gap-4 gap-3">
                 {/* accordion-item */}
-                {TrainerLanguageData.map(
+                {TRAINER_LANGUAGE_DATA.map(
                   (value: AccordionData, index: number) => (
                     <div
                       key={index}
-                      className={`flex cursor-pointer gap-4 sm:rounded-2xl rounded-xl w-full border-[0.5px] border-blue bg-white overflow-hidden ${
-                        openAccordion === index ? "!pb-5" : " "
+                      className={`flex gap-4 sm:rounded-2xl rounded-xl w-full border-[0.5px] border-blue bg-white overflow-hidden ${
+                        openAccordion === index && "!pb-5"
                       }`}
                     >
                       <span
-                        onClick={() => toggleAccordion(index)}
-                        className="size-fit sm:!py-5 py-3 sm:pl-5 pl-4"
+                        onClick={() => TOGGLE_ACCORDION(index)}
+                        className="size-fit sm:!py-5 py-3 sm:pl-5 pl-4 cursor-pointer"
                       >
                         <Image
                           src={value.imageSrc}
@@ -110,8 +110,8 @@ const TrainersFor = () => {
                       <div className="max-lg:w-full">
                         {/* accordion-head */}
                         <div
-                          onClick={() => toggleAccordion(index)}
-                          className={`sm:pt-[26px] pt-4 duration-300 ease-linear sm:pr-5 pr-4 flex items-center gap-4 w-full ${
+                          onClick={() => TOGGLE_ACCORDION(index)}
+                          className={`sm:pt-[26px] pt-4 duration-300 ease-linear sm:pr-5 pr-4 flex items-center gap-4 w-full cursor-pointer ${
                             openAccordion === index
                               ? "!pb-3"
                               : "sm:pb-[26px] pb-4"
@@ -125,9 +125,8 @@ const TrainersFor = () => {
                         {/* accordion-body */}
                         <div
                           className={`sm:px-5 px-4 flex justify-end duration-300 ease-linear w-full max-h-0 ${
-                            openAccordion === index
-                              ? "xl:max-h-[288px] sm:max-h-[318px] max-h-[344px] !pt-1"
-                              : ""
+                            openAccordion === index &&
+                            "xl:max-h-[288px] sm:max-h-[318px] max-h-[344px] !pt-1"
                           }`}
                         >
                           <div className="max-w-[466px]">
