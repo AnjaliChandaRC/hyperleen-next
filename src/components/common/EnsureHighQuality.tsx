@@ -79,7 +79,7 @@ const EnsureHighQuality = () => {
                 </p>
               </div>
               <div className="flex gap-[13px] items-center">
-                <div className="flex items-center gap-[3px] border-[0.5px] py-[6px] xl:px-3 px-2 bg-light_blue3 rounded-[12px] border-blue">
+                <div className="flex items-center gap-[3px] border-[0.5px] py-[6px] xl:px-3 px-2 bg-royal_blue rounded-[12px] border-blue">
                   <h4 className="font_gilroy_bold text-lg sm:text-xl leading-6 sm:leading-[29px] text-black">
                     90%
                   </h4>
@@ -91,7 +91,7 @@ const EnsureHighQuality = () => {
                     className="pointer-events-none"
                   />
                 </div>
-                <div className="flex items-center gap-[3px] border-[0.5px] py-[6px] xl:px-3 px-2 bg-light_blue3 rounded-[12px] border-blue">
+                <div className="flex items-center gap-[3px] border-[0.5px] py-[6px] xl:px-3 px-2 bg-royal_blue rounded-[12px] border-blue">
                   <h4 className="font_gilroy_bold text-lg sm:text-xl leading-6 sm:leading-[29px] text-black">
                     10%
                   </h4>

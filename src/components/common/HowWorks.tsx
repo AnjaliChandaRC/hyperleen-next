@@ -50,7 +50,7 @@ const HowWorks = () => {
                   key={index}
                   className="max-w-[445px] 2xl:max-w-[535px] ml-[70px] 2xl:ml-20 relative group/timeline"
                 >
-                  <div className="absolute group-hover/timeline:bg-blue duration-300 ease-linear -left-[68px] 2xl:-left-[78px] top-0 h-[54px] w-[54px] flex flex-col justify-center items-center bg-light_blue2 rounded-full">
+                  <div className="absolute group-hover/timeline:bg-blue duration-300 ease-linear -left-[68px] 2xl:-left-[78px] top-0 h-[54px] w-[54px] flex flex-col justify-center items-center bg-pale_blue rounded-full">
                     {obj.icon}
                   </div>
                   <h4 className="sm:mb-3 mb-2 font_gilroy_bold text-lg sm:text-xl leading-6 sm:leading-[29px] text-black">
