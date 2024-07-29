@@ -51,6 +51,7 @@ const Hero = () => {
             <CommonButton
               className="!bg-white !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent !shadow-none"
               text="Try For Free"
+              href="#contact"
             />
           </div>
         </div>
