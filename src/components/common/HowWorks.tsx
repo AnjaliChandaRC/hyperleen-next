@@ -6,10 +6,7 @@ import { TIMELINE_DATA } from "./Helper";
 
 const HowWorks = () => {
   return (
-    <div
-      className="xl:py-[160px] py-16 md:py-[80px] 2xl:max-w-[1536px] mx-auto"
-      id="work"
-    >
+    <div id="work">
       <div className="container xl:max-w-[1180px]">
         <div className="flex flex-row flex-wrap -mx-[10px] xl:-mx-[20px] 2xl:mx-0 items-end">
           <div className="pr-[10px] ps-5 2xl:px-0 w-full lg:w-1/2 flex justify-center lg:justify-start">

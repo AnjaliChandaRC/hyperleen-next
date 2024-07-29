@@ -74,6 +74,7 @@ const Header = () => {
             <CommonButton
               className="!bg-white !shadow-none !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent"
               text="Sign Up"
+              onClick={REMOVE_NAVBAR}
             />
             <CommonButton
               text="Contact Us"

@@ -1,5 +1,5 @@
 "use client";
-import React, { FormEvent, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
@@ -32,7 +32,6 @@ const ContactUs: React.FC = () => {
   // Handle input changes
   const HANDLE_CHANGE = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-
     setErrors((prevErrors) => ({ ...prevErrors, [name]: undefined }));
     setFormData({
       ...formData,
@@ -40,7 +39,6 @@ const ContactUs: React.FC = () => {
     });
   };
 
-  // Validate form data
   const Validate = (): boolean => {
     const newErrors: FormErrors = {};
     // Validate full name
@@ -85,14 +83,6 @@ const ContactUs: React.FC = () => {
         showConfirmButton: true,
         timer: 1500,
       });
-    } else {
-      await Swal.fire({
-        position: "center",
-        icon: "error",
-        title: "Please correct the errors in the form",
-        showConfirmButton: false,
-        timer: 1500,
-      });
     }
   };
 
@@ -122,7 +112,7 @@ const ContactUs: React.FC = () => {
                     name="fullName"
                     value={formData.fullName}
                     onChange={HANDLE_CHANGE}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
+                    className={`border-[0.5px] border-grey rounded-2xl sm:h-14 h-11 sm:p-3 p-2 max-w-[475px] w-full outline-none lg:mt-2 mt-0 ${
                       errors.fullName && "border-red-500"
                     }`}
                   />
@@ -140,7 +130,7 @@ const ContactUs: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={HANDLE_CHANGE}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
+                    className={`border-[0.5px] border-grey rounded-2xl sm:h-14 h-11 sm:p-3 p-2 max-w-[475px] w-full outline-none lg:mt-2 mt-0 ${
                       errors.email && "border-red-500"
                     }`}
                   />
@@ -158,7 +148,7 @@ const ContactUs: React.FC = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={HANDLE_CHANGE}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
+                    className={`border-[0.5px] border-grey rounded-2xl sm:h-14 h-11 sm:p-3 p-2 max-w-[475px] w-full outline-none lg:mt-2 mt-0 ${
                       errors.phone && "border-red-500"
                     }`}
                   />
@@ -176,7 +166,7 @@ const ContactUs: React.FC = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={HANDLE_CHANGE}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 mt-2 ${
+                    className={`border-[0.5px] border-grey rounded-2xl sm:h-14 h-11 sm:p-3 p-2 max-w-[475px] w-full outline-none lg-mt-2 mt-0 ${
                       errors.subject && "border-red-500"
                     }`}
                   />

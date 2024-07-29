@@ -13,9 +13,11 @@ const page = () => {
       <Improve />
       <GlobalWorkforce showExperienceButton={false} />
       <Mastering />
-      <HowWorks />
+      <div className="xl:py-[160px] md:py-20 py-16 2xl:max-w-[1536px] mx-auto">
+        <HowWorks />
+      </div>
       <EnsureHighQuality />
-      <div className="xl:py-40 md:py-20 py-16">
+      <div className="xl:py-[160px] md:py-20 py-16">
         <ContactUs />
       </div>
     </>

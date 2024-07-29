@@ -29,7 +29,10 @@ const GetInTouch = () => {
   };
 
   return (
-    <div className="md:pt-[80px] xl:pt-[180px] pt-16 md:pb-8" id="contact">
+    <div
+      className="md:pt-[80px] xl:pt-[180px] max-md:py-16 md:pb-8"
+      id="contact"
+    >
       <div className="container max-w-[1180px] mx-auto">
         <div className="flex items-center justify-center flex-col">
           <PrimaryHeading

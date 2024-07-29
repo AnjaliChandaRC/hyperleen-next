@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const ObjectVerification = () => {
   return (
-    <div className="xl:pb-72 lg:pb-44 md:pb-5 pb-0 2xl:max-w-[1536px]">
+    <div className="xl:pb-72 pb-16 lg:pb-40">
       <div className="container xl:max-w-[1180px] mx-auto">
-        <div className="flex flex-wrap flex-row mx-[-12px] items-center lg:pt-16 md:pt-20 pt-16">
+        <div className="flex flex-wrap flex-row mx-[-12px] items-center pt-16">
           <div className="lg:w-[50%] w-full px-3">
             <div className="relative border border-blue lg:max-w-[502px] sm:max-w-96 max-w-72 rounded-2xl max-lg:mx-auto">
               <Image
