@@ -11,7 +11,7 @@ const page = () => {
   return (
     <>
       <RlhfHero />
-      <div className=" pb-16 md:pb-20 xl:pb-[180px]">
+      <div className=" pb-16 md:pb-20 xl:pb-[160px]">
         <Improve />
       </div>
       <GlobalWorkforce showExperienceButton={false} />
@@ -20,7 +20,9 @@ const page = () => {
         <HowWorks />
       </div>
       <EnsureHighQuality />
-      <ContactUs />
+      <div className="xl:py-[60px] pt-16">
+        <ContactUs />
+      </div>
     </>
   );
 };
