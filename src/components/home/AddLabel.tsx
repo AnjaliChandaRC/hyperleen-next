@@ -23,7 +23,7 @@ const AddLabel = () => {
     }
   }, []);
 
-  const handleOkClick = () => {
+  const HANDLE_OK_CLICK = () => {
     setSelectedImage(DEFAULT_IMAGE_URL);
     setImageName(DEFAULT_IMAGE_NAME);
   };
@@ -86,7 +86,7 @@ const AddLabel = () => {
                 <CommonButton
                   text="Ok"
                   className="lg:max-w-[203px] max-w-[106px] w-full"
-                  onClick={handleOkClick} // Add click handler here
+                  onClick={HANDLE_OK_CLICK}
                 />
                 <button className="text-lg text-black py-3.5 lg:px-[69px] px-5 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear h-[55px]">
                   Cancel

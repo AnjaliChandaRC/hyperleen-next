@@ -8,11 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: "'Poppins',sans-serif",
-        // global
-        inter: "'Inter',sans-serif",
-      },
       fontSize: {
         // global
         xxs: "10px",
@@ -23,20 +18,20 @@ const config: Config = {
         blue: "#084CAF",
         grey: "#4E4E4E",
         light_blue: "#0A02EC14",
-        light_blue2: "#E6EDF7",
-        light_blue3: " #084CAF0A",
+        pale_blue: "#E6EDF7",
+        royal_blue: "#084CAF0A",
         light_grey: "#0101010D",
         smoke_blue: "#f2f6fb",
         smoke_grey: "#f5f5f5",
         light_black: "#0000000A",
-        smoke_grey2: "#FFFFFF29",
+        frosted_white: "#FFFFFF29",
         off_white: "#0101010D",
         light_skyblue: "#F2F6FB",
       },
       // cuttingEdge
       backgroundColor: {
-        light_blue4: "#F5F8FC",
-        light_blue5: "#E5ECF6",
+        off_white_blue: "#F5F8FC",
+        alice_blue: "#E5ECF6",
       },
       lineHeight: {
         sm: "34.8px",
