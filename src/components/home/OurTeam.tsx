@@ -23,7 +23,7 @@ const OurTeam = () => {
 
   return (
     <div
-      className="xl:py-[183px] py-[160px] 2xl:max-w-[1536px] mx-auto bg-ourTeam bg-cover md:bg-full bg-no-repeat bg-center relative z-30 overflow-hidden"
+      className="xl:py-[183px] md:py-36 py-16 2xl:max-w-[1920px] mx-auto md:bg-ourTeam max-md:bg-blue bg-cover md:bg-full bg-no-repeat sm:bg-center bg-right relative z-30 overflow-hidden"
       id="team"
     >
       <div className="container xl:max-w-[1180px]">

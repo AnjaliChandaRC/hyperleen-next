@@ -9,7 +9,7 @@ const CuttingEdge = () => {
   }
 
   return (
-    <div className="xl:pb-40 lg:pb-5 md:pb-4 2xl:max-w-[1536px] mx-auto">
+    <div className="xl:pb-40 md:pb-6 max-md:pb-16 2xl:max-w-[1536px] mx-auto">
       <div className="container xl:max-w-[1180px] px-3">
         <PrimaryHeading
           textName="Cutting-Edge"

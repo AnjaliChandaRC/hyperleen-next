@@ -19,8 +19,8 @@ interface FooterColumns {
 const Footer = () => {
   const date = new Date();
   return (
-    <div className='bg-footer_section sm:bg-full max-sm:bg-cover bg-no-repeat bg-center'>
-      <div className='max-w-[1180px] container mx-auto lg:pt-[160px] pt-[144px] w-full'>
+    <div className='md:bg-footer_section max-md:bg-black sm:bg-full max-sm:bg-cover bg-no-repeat bg-center'>
+      <div className='max-w-[1180px] container mx-auto lg:pt-[160px] md:pt-[144px] pt-16 w-full'>
         <div className='flex flex-row flex-wrap -mx-3 justify-between'>
           <div className='lg:w-4/12 xl:px-2 px-5'>
             <Link href="/" className='inline-block'>

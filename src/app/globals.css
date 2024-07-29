@@ -18,7 +18,7 @@
   }
 
   .timeline_card {
-    @apply max-w-[515px] 2xl:max-w-[615px] w-full min-h-[536px] after:left-[27px] after:-z-30 z-30 relative after:absolute after:w-1 after:border-l-[3px] after:top-6 after:bottom-12 sm:after:bottom-8 2xl:after:bottom-20 after:border-blue after:border-dashed flex flex-col gap-7;
+    @apply max-w-[515px] 2xl:max-w-[615px] w-full sm:min-h-[536px] after:left-[27px] after:-z-30 z-30 relative after:absolute after:w-1 after:border-l-[3px] after:top-6 after:bottom-12 sm:after:bottom-8 2xl:after:bottom-20 after:border-blue after:border-dashed flex flex-col gap-7;
   }
 }
 

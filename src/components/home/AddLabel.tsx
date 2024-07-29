@@ -41,7 +41,7 @@ const AddLabel = () => {
       className="relative xl:pt-20 2xl:max-w-[1536px] mx-auto"
       id="label"
     >
-      <div className="absolute lg:block hidden right-0 -top-[80%] opacity-10">
+      <div className="absolute lg:block hidden right-0 -top-[80%] opacity-10 pointer-events-none">
         <LabelSvg />
       </div>
       <div className="container xl:max-w-[1180px] mx-auto">
