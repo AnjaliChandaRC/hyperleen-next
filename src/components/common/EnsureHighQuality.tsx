@@ -65,7 +65,7 @@ const EnsureHighQuality = () => {
               alt="ensure_ellipse"
               width={272}
               height={83}
-              className="pointer-events-none absolute xl:-top-[67px] lg:-top-[45px] max-xl:rotate-[13deg] max-lg:!hidden 2xl:-right-[77%] -right-[84%] -z-40"
+              className="pointer-events-none absolute xl:-top-[67px] lg:-top-[45px] max-xl:rotate-[13deg] max-lg:!hidden 2xl:-right-[88%] -right-[84%] -z-40"
             />
           </div>
           {/* card-2 */}
@@ -193,7 +193,7 @@ const EnsureHighQuality = () => {
               alt="ensure_ellipse"
               width={272}
               height={83}
-              className="absolute -top-[94px] max-lg:hidden max-xl:-rotate-[8deg] xl:-top-[67px] 2xl:-right-[54%] xl:-right-[61%] -right-[85%] -z-30 pointer-events-none"
+              className="absolute -top-[94px] max-lg:hidden max-xl:-rotate-[8deg] xl:-top-[67px] 2xl:-right-[55%] xl:-right-[61%] -right-[85%] -z-30 pointer-events-none"
             />
           </div>
           {/* card-3 */}
