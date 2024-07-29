@@ -14,7 +14,9 @@ const page = () => {
       <TrainersFor />
       <CuttingEdge />
       <GlobalWorkforce />
-      <HowWorks />
+      <div className="py-16 md:py-20 lg:py-0">
+        <HowWorks />
+      </div>
       <EnsureHighQuality />
       <ContactUs />
     </>

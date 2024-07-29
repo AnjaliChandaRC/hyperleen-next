@@ -45,7 +45,7 @@ const TrainersFor = () => {
                     className="pointer-events-none rounded-2xl shadow-10xl"
                   />
                   <div className="bg-blue rounded-t-2xl w-full lg:h-[74px] absolute top-0">
-                    <h3 className="text-white lg:text-[32] text-2xl sm:text-[28px] lg:leading-[43px] sm:leading-9 leading-7 text-center font_gilroy_medium sm:py-4 py-3">
+                    <h3 className="text-white lg:text-[32px] text-2xl sm:text-[28px] lg:leading-[43px] sm:leading-9 leading-7 text-center font_gilroy_medium sm:py-4 py-3">
                       AI Trainers
                     </h3>
                   </div>
