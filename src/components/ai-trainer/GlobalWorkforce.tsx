@@ -55,7 +55,7 @@ const GlobalWorkforce: React.FC<GlobalWorkforceProps> = ({
                   ))}
                 </div>
                 {showExperienceButton && (
-                  <button className="font-semibold text-sm text-white bg-blue rounded-full py-[6px] px-3 border border-transparent hover:bg-white hover:border-grey hover:text-grey transition-all duration-300 ease-linear text-nowrap mt-4">
+                  <button className="font-semibold text-sm text-white bg-blue rounded-full py-[6px] px-4 border border-transparent hover:bg-white hover:border-grey hover:text-grey transition-all duration-300 ease-linear text-nowrap mt-4">
                     5 Years Experience
                   </button>
                 )}
