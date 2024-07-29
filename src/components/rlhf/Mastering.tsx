@@ -13,9 +13,9 @@ import {
 } from "../common/Icons";
 
 const Mastering = () => {
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
   const ADD_COMMENT = () => {
-    if (inputValue.trim() === '') {
+    if (inputValue.trim() === "") {
       Swal.fire({
         position: "center",
         icon: "error",
@@ -32,11 +32,11 @@ const Mastering = () => {
       showConfirmButton: false,
       timer: 1500,
     });
-    setInputValue('');
+    setInputValue("");
   };
 
   return (
-    <div className="xl:pt-[160px] lg:pt-20 pt-16">
+    <div className="xl:pt-[160px] md:pt-20 sm:pt-11 pt-9">
       <div className="px-5">
         <PrimaryHeading
           textName="Mastering"
@@ -59,10 +59,7 @@ const Mastering = () => {
           </div>
           <div className="items-center flex justify-end gap-3 lg:pt-4 pt-3">
             <LeftArrow />
-            <Paragraph
-              textName="1/1"
-              className="text-lg font_gilroy_medium"
-            />
+            <Paragraph textName="1/1" className="text-lg font_gilroy_medium" />
             <RightArrow />
           </div>
           <div className="flex items-start lg:gap-8 md:gap-6 gap-4 lg:pt-[6px] pt-3">
@@ -70,13 +67,19 @@ const Mastering = () => {
               <SmallFavIcon />
             </div>
             <div>
-              <Paragraph textName='   Data annotation is the process of labeling data to make it
-                usable for machine learning algorithms. It&apos;s essential
+              <Paragraph
+                textName="   Data annotation is the process of labeling data to make it
+                usable for machine learning algorithms. It's essential
                 because accurately labeled data is critical for training
-                models to understand and interpret real-world information.' className='text-grey max-w-[935px] md:text-xl font_gilroy_medium' />
-              <Paragraph textName='  We specialize in annotating various data types, including
+                models to understand and interpret real-world information."
+                className="text-grey max-w-[935px] md:text-xl font_gilroy_medium"
+              />
+              <Paragraph
+                textName="  We specialize in annotating various data types, including
                 text, images, audio, and video. Our services cover sentiment
-                analysis, image segmentation, object detection, and more.' className='text-grey max-w-[935px] md:text-xl font_gilroy_medium lg:pt-5 sm:pt-3 pt-2' />
+                analysis, image segmentation, object detection, and more."
+                className="text-grey max-w-[935px] md:text-xl font_gilroy_medium lg:pt-5 sm:pt-3 pt-2"
+              />
             </div>
           </div>
           <div className="flex sm:p-5 lg:p-7 p-2 border-grey border-[0.5px] rounded-xl gap-4 bg-white lg:mt-20 md:mt-10 mt-6">
@@ -98,6 +101,6 @@ const Mastering = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Mastering;

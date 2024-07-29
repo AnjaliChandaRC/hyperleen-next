@@ -15,7 +15,7 @@ const page = () => {
       <Mastering />
       <HowWorks />
       <EnsureHighQuality />
-      <div className="xl:py-[60px]">
+      <div className="xl:py-40 md:py-20 py-16">
         <ContactUs />
       </div>
     </>

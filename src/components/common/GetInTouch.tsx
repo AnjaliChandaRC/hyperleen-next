@@ -1,35 +1,35 @@
-'use client';
-import { FormEvent, useState } from 'react';
-import Paragraph from './Paragraph';
-import PrimaryHeading from './PrimaryHeading';
-import Swal from 'sweetalert2';
+"use client";
+import { FormEvent, useState } from "react";
+import Paragraph from "./Paragraph";
+import PrimaryHeading from "./PrimaryHeading";
+import Swal from "sweetalert2";
 
 const GetInTouch = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const ON_SUBMIT = (e: FormEvent) => {
     e.preventDefault();
-    if (email.trim() !== '') {
+    if (email.trim() !== "") {
       Swal.fire({
         position: "center",
         icon: "success",
         title: "Mail Submitted",
         showConfirmButton: true,
-        timer: 1500
+        timer: 1500,
       });
-      setEmail('');
+      setEmail("");
     } else {
       Swal.fire({
         position: "top-end",
         icon: "error",
         title: "Email field is empty",
         showConfirmButton: false,
-        timer: 1500
+        timer: 1500,
       });
     }
   };
 
   return (
-    <div className="lg:pt-[80px] xl:pt-[180px] pt-16 md:pb-8" id='contact'>
+    <div className="md:pt-[80px] xl:pt-[180px] pt-16 md:pb-8" id="contact">
       <div className="container max-w-[1180px] mx-auto">
         <div className="flex items-center justify-center flex-col">
           <PrimaryHeading
@@ -65,6 +65,6 @@ const GetInTouch = () => {
       </div>
     </div>
   );
-}
+};
 
 export default GetInTouch;

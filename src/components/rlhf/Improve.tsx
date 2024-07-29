@@ -18,7 +18,7 @@ const Improve = () => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
   return (
-    <div className="xl:pt-[111px] pt-0 pb-16 md:pb-20 xl:pb-[160px] 2xl:max-w-[1536px] mx-auto overflow-hidden">
+    <div className="xl:pt-[111px] sm:pb-11 pb-9 md:pb-20 xl:pb-[160px] 2xl:max-w-[1536px] mx-auto overflow-hidden">
       <div className="container max-w-[1180px]">
         <div className="flex flex-row flex-wrap -mx-5">
           <div className="2xl:px-5 w-full lg:w-1/2 px-5 lg:pl-5 lg:pr-3 flex lg:justify-start justify-center">
