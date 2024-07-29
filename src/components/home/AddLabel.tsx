@@ -54,7 +54,7 @@ const AddLabel = () => {
               textName="Efficient and Accurate Labeling on Image."
               className="md:mt-4 sm:mt-2 mt-0 max-lg:text-center"
             />
-            <div className="lg:max-w-[462px] sm:max-w-[386px] max-w-[299px] rounded-2xl border-[0.5px] border-blue bg-white md:p-5 p-4 md:mt-6 mt-4 max-lg:mx-auto">
+            <div className="lg:max-w-[462px] sm:max-w-[386px] max-w-[400px] rounded-2xl border-[0.5px] border-blue bg-white md:p-5 p-4 md:mt-6 mt-4 max-lg:mx-auto">
               <p className="font-semibold text-black">
                 Upload Image and add label
               </p>
