@@ -1,13 +1,12 @@
-import React from "react";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
 import Image from "next/image";
 import { DownArrow, Triangle } from "../common/Icons";
-import { EnsureStep1, EnsureStep2, EnsureStep3 } from "../common/Helper";
+import { ENSURE_STEP1, ENSURE_STEP2, ENSURE_STEP3 } from "../common/Helper";
 
 const EnsureHighQuality = () => {
   return (
-    <div className="max-w-[1440px] mx-auto">
+    <div className="2xl:max-w-[1536px] mx-auto">
       <div className="container xl:max-w-[1180px] relative z-40">
         <div className="max-w-[674px] mx-auto">
           <PrimaryHeading
@@ -31,7 +30,7 @@ const EnsureHighQuality = () => {
               Data Labeling
             </p>
             <div className="flex lg:flex-col lg:gap-7 gap-3 mt-2">
-              {EnsureStep1.map((value, index) => (
+              {ENSURE_STEP1.map((value, index) => (
                 <div
                   key={index}
                   className="xl:p-3 p-2 rounded-[7px] bg-off_white w-fit relative h-fit xl:h-[115px]"
@@ -109,7 +108,7 @@ const EnsureHighQuality = () => {
             {/* six image */}
             <div className="flex items-start justify-between gap-3">
               <div className="flex flex-col gap-[10px] mt-2 max-lg:w-full">
-                {EnsureStep2.slice(0, 3).map((value, index) => (
+                {ENSURE_STEP2.slice(0, 3).map((value, index) => (
                   <div
                     key={index}
                     className="p-2 rounded-[7px] bg-off_white w-full lg:w-fit 2xl:w-full relative h-fit 2xl:h-full xl:h-[87px]"
@@ -148,7 +147,7 @@ const EnsureHighQuality = () => {
                 ))}
               </div>
               <div className="flex flex-col gap-[10px] mt-2 max-lg:w-full">
-                {EnsureStep2.slice(3).map((value, index) => (
+                {ENSURE_STEP2.slice(3).map((value, index) => (
                   <div
                     key={index}
                     className="p-2 rounded-[7px] bg-off_white w-full lg:w-fit 2xl:w-full relative h-fit 2xl:h-full xl:h-[87px]"
@@ -205,9 +204,8 @@ const EnsureHighQuality = () => {
               Relabeling
             </p>
             <Paragraph textName="Incorrectly labeled data is reviewed and relabeled correctly" />
-            {/*  */}
             <div className="flex lg:flex-col justify-between w-full lg:gap-7 gap-3 mt-2 relative lg:w-fit">
-              {EnsureStep3.map((value, index) => (
+              {ENSURE_STEP3.map((value, index) => (
                 <div
                   key={index}
                   className="p-2 rounded-[6px] bg-off_white w-fit relative h-fit"

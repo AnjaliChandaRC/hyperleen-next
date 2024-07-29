@@ -1,9 +1,8 @@
-import React from "react";
-import Hero from "../common/Hero";
+import CommonHero from "../common/CommonHero";
 
 const ContactHero = () => {
   return (
-    <Hero
+    <CommonHero
       className="xl:max-w-[853px] lg:max-w-[710px] md:max-w-[645px] sm:max-w-[580px] max-w-full"
       textHero="Get In Touch"
       textHeading="We're Here to "

@@ -1,14 +1,13 @@
-import React from "react";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
 import CommonButton from "../common/CommonButton";
-import { TimelineData } from "../common/Helper";
 import Image from "next/image";
+import { TIMELINE_DATA } from "./Helper";
 
 const HowWorks = () => {
   return (
     <div
-      className="xl:py-[160px] pb-16 md:pb-[80px] lg:py-[80px] 2xl:max-w-[1440px] mx-auto"
+      className="xl:py-[160px] pb-16 md:pb-[80px] lg:py-[80px] 2xl:max-w-[1536px] mx-auto"
       id="work"
     >
       <div className="container xl:max-w-[1180px]">
@@ -46,7 +45,7 @@ const HowWorks = () => {
           </div>
           <div className="pl-[10px] pr-5 2xl:px-0 w-full lg:w-1/2 lg:mt-0 mt-12 flex justify-center lg:justify-end">
             <div className="timeline_card">
-              {TimelineData.map((obj, index) => (
+              {TIMELINE_DATA.map((obj, index) => (
                 <div
                   key={index}
                   className="max-w-[445px] 2xl:max-w-[535px] ml-[70px] 2xl:ml-20 relative group/timeline"

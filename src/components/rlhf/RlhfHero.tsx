@@ -1,9 +1,8 @@
-import React from "react";
-import Hero from "../common/Hero";
+import CommonHero from "../common/CommonHero";
 
 const RlhfHero = () => {
   return (
-    <Hero
+    <CommonHero
       className="xl:max-w-[705px] lg:max-w-[650px] md:max-w-[600px] sm:max-w-[540px] max-w-[450px]"
       textHero="RLHF"
       textHeading="Enhance Your "

@@ -1,7 +1,6 @@
-import React from "react";
-import { Header_line, Header_line_2 } from "../common/Icons";
-import Paragraph from "../common/Paragraph";
-import PrimaryHeading from "../common/PrimaryHeading";
+import { Header_line, Header_line_2 } from "./Icons";
+import Paragraph from "./Paragraph";
+import PrimaryHeading from "./PrimaryHeading";
 
 interface CommonHero {
   textHero: string;
@@ -11,7 +10,7 @@ interface CommonHero {
   textParagraph: string;
   className?: string;
 }
-const Hero = ({
+const CommonHero = ({
   textHero,
   textHeading,
   blueTextHeading,
@@ -48,4 +47,4 @@ const Hero = ({
   );
 };
 
-export default Hero;
+export default CommonHero;
