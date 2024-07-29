@@ -66,7 +66,7 @@ const Mastering = () => {
             <RightArrow />
           </div>
           <div className="flex items-start lg:gap-8 md:gap-6 gap-4 lg:pt-[6px] pt-3">
-            <div className="max-w-9 min-h-9 h-full w-full rounded-full bg-light_blue3 items-center justify-center flex border border-transparent hover:border-blue ease-in-out duration-300">
+            <div className="max-w-9 min-h-9 h-full w-full rounded-full bg-royal_blue items-center justify-center flex border border-transparent hover:border-blue ease-in-out duration-300">
               <SmallFavIcon />
             </div>
             <div>
