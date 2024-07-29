@@ -38,7 +38,7 @@ const AddLabel = () => {
 
   return (
     <div
-      className="relative lg:pt-20 sm:pt-10 pt-4 2xl:max-w-[1536px] mx-auto"
+      className="relative xl:pt-20 2xl:max-w-[1536px] mx-auto"
       id="label"
     >
       <div className="absolute lg:block hidden right-0 -top-[80%] opacity-10">
