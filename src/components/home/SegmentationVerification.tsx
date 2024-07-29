@@ -1,11 +1,13 @@
-import React from "react";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
 import CommonButton from "../common/CommonButton";
 import Image from "next/image";
 const SegmentationVerification = () => {
   return (
-    <div className="xl:pt-40 lg:pt-[100px] md:pt-[100px] pt-20" id="about">
+    <div
+      className="xl:pt-40 lg:pt-[100px] md:pt-[100px] pt-20 2xl:max-w-[1536px]"
+      id="about"
+    >
       <div className="container xl:max-w-[1180px] mx-auto">
         <PrimaryHeading
           textName="Image"

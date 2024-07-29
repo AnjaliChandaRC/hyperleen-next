@@ -8,11 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: "'Poppins',sans-serif",
-        // global
-        inter: "'Inter',sans-serif",
-      },
       fontSize: {
         // global
         xxs: "10px",
@@ -35,8 +30,8 @@ const config: Config = {
       },
       // cuttingEdge
       backgroundColor: {
-        light_blue4: "#F5F8FC",
-        light_blue5: "#E5ECF6",
+        off_white_blue: "#F5F8FC",
+        alice_blue: "#E5ECF6",
       },
       lineHeight: {
         sm: "34.8px",

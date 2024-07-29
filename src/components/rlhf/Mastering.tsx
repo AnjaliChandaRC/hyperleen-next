@@ -13,9 +13,9 @@ import {
 } from "../common/Icons";
 
 const Mastering = () => {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
   const ADD_COMMENT = () => {
-    if (inputValue.trim() === "") {
+    if (inputValue.trim() === '') {
       Swal.fire({
         position: "center",
         icon: "error",
@@ -32,8 +32,7 @@ const Mastering = () => {
       showConfirmButton: false,
       timer: 1500,
     });
-
-    setInputValue("");
+    setInputValue('');
   };
 
   return (
@@ -60,25 +59,24 @@ const Mastering = () => {
           </div>
           <div className="items-center flex justify-end gap-3 lg:pt-4 pt-3">
             <LeftArrow />
-            <Paragraph textName="1/1" className="text-lg font_gilroy_medium" />
+            <Paragraph
+              textName="1/1"
+              className="text-lg font_gilroy_medium"
+            />
             <RightArrow />
           </div>
           <div className="flex items-start lg:gap-8 md:gap-6 gap-4 lg:pt-[6px] pt-3">
-            <div className="max-w-9 min-h-9 h-full w-full rounded-full bg-light_blue3 items-center justify-center flex border border-transparent hover:border-blue ease-in-out duration-300">
+            <div className="max-w-9 min-h-9 h-full w-full rounded-full bg-royal_blue items-center justify-center flex border border-transparent hover:border-blue ease-in-out duration-300">
               <SmallFavIcon />
             </div>
             <div>
-              <p className="text-grey max-w-[935px] md:text-xl font_gilroy_medium">
-                Data annotation is the process of labeling data to make it
+              <Paragraph textName='   Data annotation is the process of labeling data to make it
                 usable for machine learning algorithms. It&apos;s essential
-                because accurately labeled data is critical for training models
-                to understand and interpret real-world information.
-              </p>
-              <p className="text-grey max-w-[935px] md:text-xl font_gilroy_medium lg:pt-5 sm:pt-3 pt-2">
-                We specialize in annotating various data types, including text,
-                images, audio, and video. Our services cover sentiment analysis,
-                image segmentation, object detection, and more.
-              </p>
+                because accurately labeled data is critical for training
+                models to understand and interpret real-world information.' className='text-grey max-w-[935px] md:text-xl font_gilroy_medium' />
+              <Paragraph textName='  We specialize in annotating various data types, including
+                text, images, audio, and video. Our services cover sentiment
+                analysis, image segmentation, object detection, and more.' className='text-grey max-w-[935px] md:text-xl font_gilroy_medium lg:pt-5 sm:pt-3 pt-2' />
             </div>
           </div>
           <div className="flex sm:p-5 lg:p-7 p-2 border-grey border-[0.5px] rounded-xl gap-4 bg-white lg:mt-20 md:mt-10 mt-6">
@@ -100,6 +98,6 @@ const Mastering = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Mastering;

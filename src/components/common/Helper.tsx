@@ -395,3 +395,14 @@ export const IMPROVE_DATA = [
     ],
   },
 ];
+export const Global_Language = [
+  {
+    text: "HTML",
+  },
+  {
+    text: "Bootstrap",
+  },
+  {
+    text: "CSS",
+  },
+];
