@@ -79,7 +79,7 @@ const Header = () => {
               className="!bg-white !shadow-none !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent"
               text="Sign Up"
             />
-            <CommonButton text="Contact Us" />
+            <CommonButton text="Contact Us" href="#contact" />
           </div>
         </div>
       </div>
