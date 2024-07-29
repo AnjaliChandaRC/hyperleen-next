@@ -9,7 +9,7 @@ const GlobalWorkforce = () => {
     img: string;
   }
   return (
-    <div className="bg-global_bg lg:bg-full bg-cover xl:pt-[164px] xl:pb-[249px] md:py-20 py-16 max-w-[1920px] mx-auto">
+    <div className="bg-global_bg xl:bg-full bg-cover xl:pt-[164px] xl:pb-[249px] lg:py-32 py-28 max-w-[1920px] mx-auto">
       <div className="container xl:max-w-[1180px] mx-auto">
         <PrimaryHeading
           textName="Global Workforce"

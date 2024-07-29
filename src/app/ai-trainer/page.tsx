@@ -14,7 +14,7 @@ const page = () => {
       <TrainersFor />
       <CuttingEdge />
       <GlobalWorkforce />
-      <HowWorks />
+        <HowWorks />
       <EnsureHighQuality />
       <ContactUs />
     </>
