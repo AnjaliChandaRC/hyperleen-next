@@ -13,7 +13,7 @@ const page = () => {
       <TrainerHero />
       <TrainersFor />
       <CuttingEdge />
-      <GlobalWorkforce />
+      <GlobalWorkforce showExperienceButton={true} />
       <div className="pt-16 md:pt-20 lg:pt-0">
         <HowWorks />
       </div>
