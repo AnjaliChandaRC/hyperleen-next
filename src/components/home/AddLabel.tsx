@@ -104,7 +104,7 @@ const AddLabel = () => {
               className="pointer-events-none max-sm:max-w-full xl:w-[475px] max-lg:relative max-lg:-left-[71px] max-sm:left-0 max-lg:max-w-full xl:relative xl:-left-[71px]"
             />
             {/* ====graph-image====== */}
-            <div className="absolute 2xl:left-[74%] xl:left-[76%] xl:top-[27%] lg:top-[33%] lg:left-[82%] sm:top-[64%] sm:left-[62%] top-[69%] left-[74%] max-w-48 max-sm:max-w-[160px]">
+            <div className="absolute 2xl:left-[75%] xl:left-[76%] xl:top-[27%] lg:top-[33%] lg:left-[82%] sm:top-[64%] sm:left-[62%] top-[69%] left-[74%] max-w-48 max-sm:max-w-[160px]">
               <Image
                 width={191}
                 height={241}
