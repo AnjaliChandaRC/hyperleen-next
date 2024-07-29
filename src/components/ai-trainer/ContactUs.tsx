@@ -87,7 +87,7 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <div className="xl:py-[100px] lg:py-20 pb-16 2xl:max-w-[1536px] mx-auto">
+    <div className="2xl:max-w-[1536px] mx-auto">
       <div className="container xl:max-w-[1180px] mx-auto">
         <div className="flex flex-wrap lg:flex-row flex-col-reverse mx-[-12px]">
           <div className="lg:w-[50%] w-full px-3 flex flex-col items-center lg:pt-0 pt-5">
