@@ -13,11 +13,11 @@ const page = () => {
       <TrainersFor />
       <CuttingEdge />
       <GlobalWorkforce showExperienceButton={true} />
-      <div className="pt-16 md:pt-20 lg:pt-0">
+      <div className="pt-6 md:pt-20 lg:pt-0">
         <HowWorks />
       </div>
       <EnsureHighQuality />
-      <div className="xl:py-[60px] pt-16">
+      <div className="xl:py-[160px] pt-16 md:py-20">
         <ContactUs />
       </div>
     </>
