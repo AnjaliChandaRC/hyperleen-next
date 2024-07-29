@@ -1,11 +1,10 @@
-import React from "react";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
 import Image from "next/image";
-import { GlobalWorkforceData } from "../common/Helper";
+import { GlobalWorkforceData, Global_Language } from "../common/Helper";
 
 interface GlobalWorkforceProps {
-  showExperienceButton?: boolean; // Optional prop to control button visibility
+  showExperienceButton?: boolean;
 }
 
 const GlobalWorkforce: React.FC<GlobalWorkforceProps> = ({
@@ -13,6 +12,9 @@ const GlobalWorkforce: React.FC<GlobalWorkforceProps> = ({
 }) => {
   interface GlobalData {
     img: string;
+  }
+  interface GlobalLanguage {
+    text: string;
   }
 
   return (
@@ -43,19 +45,17 @@ const GlobalWorkforce: React.FC<GlobalWorkforceProps> = ({
                 <p className="font_gilroy_light text-xs leading-3 text-grey pb-[10px]">
                   HTML Developer
                 </p>
-                <div className="flex items-center gap-2 pb-4">
-                  <button className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-2 rounded-full hover:shadow-3xl transition duration-300 ease-linear">
-                    HTML
-                  </button>
-                  <button className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-2 rounded-full hover:shadow-3xl transition duration-300 ease-linear">
-                    Bootstrap
-                  </button>
-                  <button className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-2 rounded-full hover:shadow-3xl transition duration-300 ease-linear">
-                    CSS
-                  </button>
+                <div className="flex items-center gap-2">
+                  {Global_Language.map((obj: GlobalLanguage, index: number) => (
+                    <div key={index}>
+                      <p className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-2 rounded-full">
+                        {obj.text}
+                      </p>
+                    </div>
+                  ))}
                 </div>
-                {showExperienceButton && ( // Conditionally render the button
-                  <button className="font-inter font-semibold text-sm text-white bg-blue rounded-full py-[6px] px-5 max-w-[162px] w-full border border-transparent hover:bg-white hover:border-grey hover:text-grey transition-all duration-300 ease-linear text-nowrap">
+                {showExperienceButton && (
+                  <button className="font-semibold text-sm text-white bg-blue rounded-full py-[6px] px-4 border border-transparent hover:bg-white hover:border-grey hover:text-grey transition-all duration-300 ease-linear text-nowrap mt-4">
                     5 Years Experience
                   </button>
                 )}

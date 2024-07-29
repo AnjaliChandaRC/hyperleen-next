@@ -1,4 +1,3 @@
-import React from "react";
 import Paragraph from "../common/Paragraph";
 import CommonButton from "../common/CommonButton";
 import Image from "next/image";

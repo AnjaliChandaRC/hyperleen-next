@@ -1,4 +1,3 @@
-import React from "react";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
 import CommonButton from "../common/CommonButton";

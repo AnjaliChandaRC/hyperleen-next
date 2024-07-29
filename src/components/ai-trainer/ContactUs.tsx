@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { FormEvent, useState } from "react";
 import Image from "next/image";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
 import CommonButton from "../common/CommonButton";
+import Swal from "sweetalert2";
 
 interface FormData {
   fullName: string;
@@ -27,19 +28,18 @@ const ContactUs: React.FC = () => {
     subject: "",
   });
   const [errors, setErrors] = useState<FormErrors>({});
-  const [showPopup, setShowPopup] = useState<boolean>(false);
+
   // Handle input changes
   const HANDLE_CHANGE = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
-    // Remove the error for the specific field being updated
     setErrors((prevErrors) => ({ ...prevErrors, [name]: undefined }));
-
     setFormData({
       ...formData,
       [name as keyof FormData]: value,
     });
   };
+
   // Validate form data
   const Validate = (): boolean => {
     const newErrors: FormErrors = {};
@@ -54,7 +54,7 @@ const ContactUs: React.FC = () => {
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Email address is invalid";
     }
-    // Validate phone number:exactly 10 digits
+    // Validate phone number: exactly 10 digits
     const phoneRegex = /^\d{10}$/;
     if (!formData.phone) {
       newErrors.phone = "Phone Number is required";
@@ -67,7 +67,7 @@ const ContactUs: React.FC = () => {
     return Object.keys(newErrors).length === 0;
   };
   // Handle form submission
-  const Handle_Submit = (e: React.FormEvent<HTMLFormElement>) => {
+  const HANDLE_SUBMIT = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (Validate()) {
       console.log("Form data submitted:", formData);
@@ -78,30 +78,27 @@ const ContactUs: React.FC = () => {
         subject: "",
       });
       setErrors({});
-      setShowPopup(true);
-      setTimeout(() => setShowPopup(false), 3000);
+      await Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Form Submitted Successfully",
+        showConfirmButton: true,
+        timer: 1500,
+      });
+    } else {
+      await Swal.fire({
+        position: "center",
+        icon: "error",
+        title: "Please correct the errors in the form",
+        showConfirmButton: false,
+        timer: 1500,
+      });
     }
   };
 
   return (
-    <div className="xl:py-[100px] lg:py-20 pb-16">
+    <div className="xl:py-[100px] lg:py-20 pb-16 2xl:max-w-[1536px] mx-auto">
       <div className="container xl:max-w-[1180px] mx-auto">
-        {/* Popup  */}
-        {showPopup && (
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-            <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full text-center">
-              <p className="text-lg font-semibold mb-4">
-                Form submitted successfully!
-              </p>
-              <button
-                onClick={() => setShowPopup(false)}
-                className="bg-blue text-white py-2 px-4 rounded-full border border-transparent hover:bg-transparent hover:text-blue hover:border-blue transition duration-300 ease-linear"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        )}
         <div className="flex flex-wrap lg:flex-row flex-col-reverse mx-[-12px]">
           <div className="lg:w-[50%] w-full px-3 flex flex-col items-center lg:pt-0 pt-5">
             <div className="flex flex-col justify-center">
@@ -112,9 +109,9 @@ const ContactUs: React.FC = () => {
               />
               <Paragraph
                 className="max-w-[475px] opacity-70 lg:pb-6 pb-4"
-                textName="Personalized Finance Tutoring Tailored assistance to meet your unique learning needs.  Expert Tutors Highly qualified tutors with extensive knowledge in finance and related subjects."
+                textName="Personalized Finance Tutoring Tailored assistance to meet your unique learning needs. Expert Tutors Highly qualified tutors with extensive knowledge in finance and related subjects."
               />
-              <form onSubmit={Handle_Submit}>
+              <form onSubmit={HANDLE_SUBMIT}>
                 <div className="lg:pb-4 pb-2">
                   <label htmlFor="fullName" className="text-lg text-black">
                     Full Name*
@@ -126,7 +123,7 @@ const ContactUs: React.FC = () => {
                     value={formData.fullName}
                     onChange={HANDLE_CHANGE}
                     className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
-                      errors.fullName ? "border-red-500" : ""
+                      errors.fullName && "border-red-500"
                     }`}
                   />
                   {errors.fullName && (
@@ -144,7 +141,7 @@ const ContactUs: React.FC = () => {
                     value={formData.email}
                     onChange={HANDLE_CHANGE}
                     className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
-                      errors.email ? "border-red-500" : ""
+                      errors.email && "border-red-500"
                     }`}
                   />
                   {errors.email && (
@@ -162,7 +159,7 @@ const ContactUs: React.FC = () => {
                     value={formData.phone}
                     onChange={HANDLE_CHANGE}
                     className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
-                      errors.phone ? "border-red-500" : ""
+                      errors.phone && "border-red-500"
                     }`}
                   />
                   {errors.phone && (
@@ -180,7 +177,7 @@ const ContactUs: React.FC = () => {
                     value={formData.subject}
                     onChange={HANDLE_CHANGE}
                     className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 mt-2 ${
-                      errors.subject ? "border-red-500" : ""
+                      errors.subject && "border-red-500"
                     }`}
                   />
                   {errors.subject && (
@@ -195,7 +192,7 @@ const ContactUs: React.FC = () => {
             </div>
           </div>
           <div className="lg:w-[50%] w-full lg:px-3 pb-2 flex flex-col items-center">
-            <div className="bg-light_blue5 rounded-2xl p-5 lg:max-w-[595px] sm:max-w-[482px] max-w-[360px]">
+            <div className="bg-alice_blue rounded-2xl p-5 lg:max-w-[595px] sm:max-w-[482px] max-w-[360px]">
               <p className="font_gilroy_bold lg:text-2xl sm:text-xl text-lg lg:pb-8 pb-3 text-center">
                 Choose a time that works for you.
               </p>
@@ -203,7 +200,7 @@ const ContactUs: React.FC = () => {
                 width={555}
                 height={483}
                 src="/assets/images/ai-trainer/svg/calendar.svg"
-                alt="label_input_car"
+                alt="calendar.svg"
                 className="pointer-events-none"
               />
             </div>
