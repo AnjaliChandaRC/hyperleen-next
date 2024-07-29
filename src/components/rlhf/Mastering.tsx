@@ -1,9 +1,16 @@
-'use client';
-import React, { useState } from 'react';
-import Swal from 'sweetalert2';
-import PrimaryHeading from '../common/PrimaryHeading';
-import Paragraph from '../common/Paragraph';
-import { CommentSenderArrow, IconListLogo, LeftArrow, Pen, RightArrow, SmallFavIcon } from '../common/Icons';
+"use client";
+import React, { useState } from "react";
+import Swal from "sweetalert2";
+import PrimaryHeading from "../common/PrimaryHeading";
+import Paragraph from "../common/Paragraph";
+import {
+  CommentSenderArrow,
+  IconListLogo,
+  LeftArrow,
+  Pen,
+  RightArrow,
+  SmallFavIcon,
+} from "../common/Icons";
 
 const Mastering = () => {
   const [inputValue, setInputValue] = useState('');
@@ -42,11 +49,11 @@ const Mastering = () => {
           textName="Providing In-Depth, Customized Solutions to Complex Queries"
           className="text-center pt-4"
         />
-        <div className="container 2xl:max-w-[1360px] max-w-[1180px] mx-auto mt-10 bg-light_skyblue lg:py-11 py-8 md:px-6 px-4 rounded-2xl">
+        <div className="container max-w-[1180px] mx-auto mt-10 bg-light_skyblue lg:py-11 py-8 md:px-6 px-4 rounded-2xl">
           <div className="flex justify-end items-center gap-4">
             <Pen />
             <div className="max-w-[690px] w-full lg:py-5 py-3 pl-3 lg:pl-5 border-[0.5px] border-grey rounded-xl bg-white">
-              <h3 className="font-medium text-black">
+              <h3 className="font-medium">
                 What is data annotation, and why is it important?
               </h3>
             </div>

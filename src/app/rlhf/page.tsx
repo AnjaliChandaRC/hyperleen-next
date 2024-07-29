@@ -10,19 +10,19 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <div className=" py-6 md:py-8 xl:py-0">
-        <RlhfHero />
-      </div>
-      <div className=" pb-16 md:pb-20 xl:pb-[180px]">
+      <RlhfHero />
+      <div className=" pb-16 md:pb-20 xl:pb-[160px]">
         <Improve />
       </div>
-      <GlobalWorkforce />
+      <GlobalWorkforce showExperienceButton={false} />
       <Mastering />
       <div className=" py-16 md:py-20 lg:py-0">
         <HowWorks />
       </div>
       <EnsureHighQuality />
-      <ContactUs />
+      <div className="xl:py-[60px] pt-16">
+        <ContactUs />
+      </div>
     </>
   );
 };

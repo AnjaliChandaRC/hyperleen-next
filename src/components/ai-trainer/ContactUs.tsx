@@ -28,9 +28,8 @@ const ContactUs: React.FC = () => {
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [showPopup, setShowPopup] = useState<boolean>(false);
-
   // Handle input changes
-  const Handle_Change = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const HANDLE_CHANGE = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     // Remove the error for the specific field being updated
@@ -41,45 +40,37 @@ const ContactUs: React.FC = () => {
       [name as keyof FormData]: value,
     });
   };
-
   // Validate form data
   const Validate = (): boolean => {
     const newErrors: FormErrors = {};
-
     // Validate full name
     const nameRegex = /^[A-Za-zÀ-ÿ-'\s]{6,}$/;
     if (!formData.fullName) newErrors.fullName = "Full Name is required";
     else if (!nameRegex.test(formData.fullName))
       newErrors.fullName = "At least 6 characters required";
-
     // Validate email
     if (!formData.email) {
       newErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Email address is invalid";
     }
-
-    // Validate phone number: exactly 10 digits
+    // Validate phone number:exactly 10 digits
     const phoneRegex = /^\d{10}$/;
     if (!formData.phone) {
       newErrors.phone = "Phone Number is required";
     } else if (!phoneRegex.test(formData.phone)) {
       newErrors.phone = "Phone Number must be exactly 10 digits";
     }
-
     // Validate subject
     if (!formData.subject) newErrors.subject = "Subject is required";
-
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-
   // Handle form submission
   const Handle_Submit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (Validate()) {
       console.log("Form data submitted:", formData);
-      // Reset form
       setFormData({
         fullName: "",
         email: "",
@@ -87,7 +78,6 @@ const ContactUs: React.FC = () => {
         subject: "",
       });
       setErrors({});
-      // Show popup
       setShowPopup(true);
       setTimeout(() => setShowPopup(false), 3000);
     }
@@ -96,7 +86,7 @@ const ContactUs: React.FC = () => {
   return (
     <div className="xl:py-[100px] lg:py-20 pb-16">
       <div className="container xl:max-w-[1180px] mx-auto">
-        {/* Popup */}
+        {/* Popup  */}
         {showPopup && (
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
             <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full text-center">
@@ -134,9 +124,10 @@ const ContactUs: React.FC = () => {
                     id="fullName"
                     name="fullName"
                     value={formData.fullName}
-                    onChange={Handle_Change}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${errors.fullName ? "border-red-500" : ""
-                      }`}
+                    onChange={HANDLE_CHANGE}
+                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
+                      errors.fullName ? "border-red-500" : ""
+                    }`}
                   />
                   {errors.fullName && (
                     <p className="text-red-500 text-sm">{errors.fullName}</p>
@@ -151,9 +142,10 @@ const ContactUs: React.FC = () => {
                     id="email"
                     name="email"
                     value={formData.email}
-                    onChange={Handle_Change}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${errors.email ? "border-red-500" : ""
-                      }`}
+                    onChange={HANDLE_CHANGE}
+                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
+                      errors.email ? "border-red-500" : ""
+                    }`}
                   />
                   {errors.email && (
                     <p className="text-red-500 text-sm">{errors.email}</p>
@@ -168,9 +160,10 @@ const ContactUs: React.FC = () => {
                     id="phone"
                     name="phone"
                     value={formData.phone}
-                    onChange={Handle_Change}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${errors.phone ? "border-red-500" : ""
-                      }`}
+                    onChange={HANDLE_CHANGE}
+                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
+                      errors.phone ? "border-red-500" : ""
+                    }`}
                   />
                   {errors.phone && (
                     <p className="text-red-500 text-sm">{errors.phone}</p>
@@ -185,9 +178,10 @@ const ContactUs: React.FC = () => {
                     id="subject"
                     name="subject"
                     value={formData.subject}
-                    onChange={Handle_Change}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 mt-2 ${errors.subject ? "border-red-500" : ""
-                      }`}
+                    onChange={HANDLE_CHANGE}
+                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 mt-2 ${
+                      errors.subject ? "border-red-500" : ""
+                    }`}
                   />
                   {errors.subject && (
                     <p className="text-red-500 text-sm">{errors.subject}</p>
