@@ -29,7 +29,7 @@ const Faqs: React.FC = () => {
           >
             <button
               onClick={() => TOGGLE_ACCORDION(index)}
-              className={`${activeIndex === index ? "bg-blue" : "bg-transparent"} w-full text-left p-3 lg:p-6 transition duration-300 ease-in-out`}
+              className={`${activeIndex === index ? "bg-blue" : "bg-white"} w-full text-left p-3 lg:p-6 transition duration-300 ease-in-out`}
             >
               <div className="flex justify-between items-center">
                 <span className={`${activeIndex === index ? "text-white" : "text-black"} text-sm md:text-lg xl:text-md font-medium transition-colors duration-300`}>

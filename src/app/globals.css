@@ -14,6 +14,7 @@
   .ensure_card {
     @apply w-full p-4 sm:p-5 border-[0.5px] rounded-2xl border-blue hover:shadow-7xl;
   }
+
   .accordion_dots {
     @apply relative after:absolute sm:after:-left-5 after:-left-4 sm:after:top-[20%] after:top-[14%] after:size-1 after:bg-grey after:rounded-full;
   }
@@ -89,4 +90,17 @@
 .hero_scrollbar ::-webkit-scrollbar {
   height: 3px !important;
   width: 4px;
+}
+
+
+/* remove the arrow of inut type number  */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+ input[type=number] {
+  -moz-appearance: textfield;
 }

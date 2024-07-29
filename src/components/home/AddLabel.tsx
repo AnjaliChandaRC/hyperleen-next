@@ -57,7 +57,7 @@ const AddLabel = () => {
               textName="Efficient and Accurate Labeling on Image."
               className="md:mt-4 sm:mt-2 mt-0 max-lg:text-center"
             />
-            <div className="lg:max-w-[462px] sm:max-w-[386px] max-w-[299px] rounded-2xl border-[0.5px] border-blue bg-white md:p-5 p-4 md:mt-6 mt-4 max-lg:mx-auto">
+            <div className="lg:max-w-[462px] sm:max-w-[386px] max-w-[400px] rounded-2xl border-[0.5px] border-blue bg-white md:p-5 p-4 md:mt-6 mt-4 max-lg:mx-auto">
               <p className="font-semibold text-black">
                 Upload Image and add label
               </p>
@@ -107,7 +107,7 @@ const AddLabel = () => {
               className="pointer-events-none max-sm:max-w-full xl:w-[475px] max-lg:relative max-lg:-left-[71px] max-sm:left-0 max-lg:max-w-full xl:relative xl:-left-[71px]"
             />
             {/* ====graph-image====== */}
-            <div className="absolute 2xl:left-[74%] xl:left-[76%] xl:top-[27%] lg:top-[33%] lg:left-[82%] sm:top-[64%] sm:left-[62%] top-[69%] left-[74%] max-w-48 max-sm:max-w-[160px]">
+            <div className="absolute 2xl:left-[75%] xl:left-[76%] xl:top-[27%] lg:top-[33%] lg:left-[82%] sm:top-[64%] sm:left-[62%] top-[69%] left-[74%] max-w-48 max-sm:max-w-[160px]">
               <Image
                 width={191}
                 height={241}

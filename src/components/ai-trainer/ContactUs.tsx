@@ -31,6 +31,10 @@ const ContactUs: React.FC = () => {
   // Handle input changes
   const HANDLE_CHANGE = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+
+    // Remove the error for the specific field being updated
+    setErrors((prevErrors) => ({ ...prevErrors, [name]: undefined }));
+
     setFormData({
       ...formData,
       [name as keyof FormData]: value,
@@ -80,7 +84,7 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <div className="xl:py-40 md:py-20 py-16 2xl:max-w-[1536px]">
+    <div className="xl:py-[100px] lg:py-20 pb-16">
       <div className="container xl:max-w-[1180px] mx-auto">
         {/* Popup  */}
         {showPopup && (

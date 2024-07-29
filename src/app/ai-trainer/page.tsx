@@ -14,9 +14,13 @@ const page = () => {
       <TrainersFor />
       <CuttingEdge />
       <GlobalWorkforce showExperienceButton={true} />
-      <HowWorks />
+      <div className="pt-16 md:pt-20 lg:pt-0">
+        <HowWorks />
+      </div>
       <EnsureHighQuality />
-      <ContactUs />
+      <div className="xl:py-[60px] pt-16">
+        <ContactUs />
+      </div>
     </>
   );
 };
