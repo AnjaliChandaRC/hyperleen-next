@@ -32,7 +32,6 @@ const ContactUs: React.FC = () => {
   // Handle input changes
   const HANDLE_CHANGE = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-
     setErrors((prevErrors) => ({ ...prevErrors, [name]: undefined }));
     setFormData({
       ...formData,
@@ -40,7 +39,6 @@ const ContactUs: React.FC = () => {
     });
   };
 
-  // Validate form data
   const Validate = (): boolean => {
     const newErrors: FormErrors = {};
     // Validate full name
