@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const ObjectVerification = () => {
   return (
-    <div className="xl:pb-72 lg:pb-44 md:pb-5 pb-0">
+    <div className="xl:pb-72 lg:pb-44 md:pb-5 pb-0 2xl:max-w-[1536px]">
       <div className="container xl:max-w-[1180px] mx-auto">
         <div className="flex flex-wrap flex-row mx-[-12px] items-center lg:pt-16 md:pt-20 pt-16">
           <div className="lg:w-[50%] w-full px-3">
