@@ -36,7 +36,7 @@ const Hero = () => {
           </div>
           <p className="text-center xl:text-3xxl md:text-6xl sm:text-5xl text-3xl font_gilroy_medium xl:leading-xl sm:leading-lg lg:pt-11 pt-7 pb-5">
             Transform Your
-            <span className="text-blue font_gilroy_medium"> Data into AI</span>
+            <span className="text-blue font_gilroy_medium"> Data into AI </span>
             Insights
           </p>
           <div className="flex items-center justify-center lg:pb-10 pb-6">
