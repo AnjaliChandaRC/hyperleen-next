@@ -48,14 +48,14 @@ const GlobalWorkforce: React.FC<GlobalWorkforceProps> = ({
                 <div className="flex items-center gap-2">
                   {Global_Language.map((obj: GlobalLanguage, index: number) => (
                     <div key={index}>
-                      <p className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-2 rounded-full">
+                      <p className="font_gilroy_medium text-xxs leading-3 text-grey bg-transparent border-[0.5px] border-grey py-1 px-[10px] rounded-full">
                         {obj.text}
                       </p>
                     </div>
                   ))}
                 </div>
                 {showExperienceButton && (
-                  <button className="font-semibold text-sm text-white bg-blue rounded-full py-[6px] px-4 border border-transparent hover:bg-white hover:border-grey hover:text-grey transition-all duration-300 ease-linear text-nowrap mt-4">
+                  <button className="font-semibold text-sm text-white bg-blue rounded-full py-[6px] px-3 border border-transparent hover:bg-white hover:border-grey hover:text-grey transition-all duration-300 ease-linear text-nowrap mt-4">
                     5 Years Experience
                   </button>
                 )}
