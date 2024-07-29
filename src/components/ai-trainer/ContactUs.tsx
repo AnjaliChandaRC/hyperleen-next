@@ -29,7 +29,7 @@ const ContactUs: React.FC = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [showPopup, setShowPopup] = useState<boolean>(false);
   // Handle input changes
-  const Handle_Change = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const HANDLE_CHANGE = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -120,7 +120,7 @@ const ContactUs: React.FC = () => {
                     id="fullName"
                     name="fullName"
                     value={formData.fullName}
-                    onChange={Handle_Change}
+                    onChange={HANDLE_CHANGE}
                     className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
                       errors.fullName ? "border-red-500" : ""
                     }`}
@@ -138,7 +138,7 @@ const ContactUs: React.FC = () => {
                     id="email"
                     name="email"
                     value={formData.email}
-                    onChange={Handle_Change}
+                    onChange={HANDLE_CHANGE}
                     className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
                       errors.email ? "border-red-500" : ""
                     }`}
@@ -156,7 +156,7 @@ const ContactUs: React.FC = () => {
                     id="phone"
                     name="phone"
                     value={formData.phone}
-                    onChange={Handle_Change}
+                    onChange={HANDLE_CHANGE}
                     className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
                       errors.phone ? "border-red-500" : ""
                     }`}
@@ -174,7 +174,7 @@ const ContactUs: React.FC = () => {
                     id="subject"
                     name="subject"
                     value={formData.subject}
-                    onChange={Handle_Change}
+                    onChange={HANDLE_CHANGE}
                     className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 mt-2 ${
                       errors.subject ? "border-red-500" : ""
                     }`}
