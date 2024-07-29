@@ -32,7 +32,6 @@ const Mastering = () => {
       showConfirmButton: false,
       timer: 1500,
     });
-
     setInputValue('');
   };
 
