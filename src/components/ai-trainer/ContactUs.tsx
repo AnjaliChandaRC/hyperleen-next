@@ -80,7 +80,7 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <div className="xl:py-40 md:py-20 py-16">
+    <div className="xl:py-[100px] md:py-20 py-16">
       <div className="container xl:max-w-[1180px] mx-auto">
         {/* Popup  */}
         {showPopup && (
