@@ -18,7 +18,9 @@ const page = () => {
         <HowWorks />
       </div>
       <EnsureHighQuality />
-      <ContactUs />
+      <div className="xl:py-[60px] pt-16">
+        <ContactUs />
+      </div>
     </>
   );
 };
