@@ -7,7 +7,7 @@ import { TIMELINE_DATA } from "./Helper";
 const HowWorks = () => {
   return (
     <div
-      className="xl:py-[160px] pb-16 md:pb-[80px] lg:pt-[64px] lg:pb-[80px] 2xl:max-w-[1536px] mx-auto"
+      className="xl:py-[160px] pt-5 pb-16 md:pb-[80px] lg:pt-[64px] lg:pb-[80px] 2xl:max-w-[1536px] mx-auto"
       id="work"
     >
       <div className="container xl:max-w-[1180px]">
