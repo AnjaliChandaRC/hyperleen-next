@@ -29,7 +29,7 @@ const ContactUs: React.FC = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [showPopup, setShowPopup] = useState<boolean>(false);
   // Handle input changes
-  const Handle_Change = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const HANDLE_CHANGE = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     // Remove the error for the specific field being updated
@@ -124,9 +124,10 @@ const ContactUs: React.FC = () => {
                     id="fullName"
                     name="fullName"
                     value={formData.fullName}
-                    onChange={Handle_Change}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${errors.fullName ? "border-red-500" : ""
-                      }`}
+                    onChange={HANDLE_CHANGE}
+                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
+                      errors.fullName ? "border-red-500" : ""
+                    }`}
                   />
                   {errors.fullName && (
                     <p className="text-red-500 text-sm">{errors.fullName}</p>
@@ -141,9 +142,10 @@ const ContactUs: React.FC = () => {
                     id="email"
                     name="email"
                     value={formData.email}
-                    onChange={Handle_Change}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${errors.email ? "border-red-500" : ""
-                      }`}
+                    onChange={HANDLE_CHANGE}
+                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
+                      errors.email ? "border-red-500" : ""
+                    }`}
                   />
                   {errors.email && (
                     <p className="text-red-500 text-sm">{errors.email}</p>
@@ -158,9 +160,10 @@ const ContactUs: React.FC = () => {
                     id="phone"
                     name="phone"
                     value={formData.phone}
-                    onChange={Handle_Change}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${errors.phone ? "border-red-500" : ""
-                      }`}
+                    onChange={HANDLE_CHANGE}
+                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 lg:mt-2 mt-0 ${
+                      errors.phone ? "border-red-500" : ""
+                    }`}
                   />
                   {errors.phone && (
                     <p className="text-red-500 text-sm">{errors.phone}</p>
@@ -175,9 +178,10 @@ const ContactUs: React.FC = () => {
                     id="subject"
                     name="subject"
                     value={formData.subject}
-                    onChange={Handle_Change}
-                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 mt-2 ${errors.subject ? "border-red-500" : ""
-                      }`}
+                    onChange={HANDLE_CHANGE}
+                    className={`border-[0.5px] border-grey rounded-2xl h-14 max-w-[475px] w-full outline-none p-3 mt-2 ${
+                      errors.subject ? "border-red-500" : ""
+                    }`}
                   />
                   {errors.subject && (
                     <p className="text-red-500 text-sm">{errors.subject}</p>
