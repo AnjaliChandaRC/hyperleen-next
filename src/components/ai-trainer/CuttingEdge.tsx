@@ -10,7 +10,7 @@ const CuttingEdge = () => {
   }
 
   return (
-    <div className="lg:py-40 sm:py-20 py-16">
+    <div className="xl:py-40 md:py-20 py-16">
       <div className="container xl:max-w-[1180px] px-3">
         <PrimaryHeading
           textName="Cutting-Edge"
