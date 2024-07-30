@@ -111,7 +111,7 @@ const AddLabel = () => {
                 className="pointer-events-none max-sm:max-w-full xl:w-[475px] max-lg:relative max-lg:-left-[71px] max-sm:left-0 max-lg:max-w-full xl:relative xl:-left-[71px]"
               />
               {/* ====graph-image====== */}
-              <div className="absolute xl:left-[69%] lg:left-[70%] max-lg:w-full md:left-[79%] left-[77%] max-sm:w-auto xl:-top-[15px] -top-[2%] xl:max-w-44 max-w-36 max-sm:max-w-[160px] lg:w-full shadow-13xl rounded-2xl">
+              <div className="absolute xl:left-[69%] lg:left-[70%] max-lg:w-full md:left-[79%] left-[77%] max-sm:w-auto xl:-top-[15px] -top-[2%] xl:max-w-44 max-w-36 max-sm:max-w-[160px] lg:w-full lg:shadow-13xl shadow-14xl rounded-2xl">
                 <Image
                   width={191}
                   height={241}
@@ -121,7 +121,7 @@ const AddLabel = () => {
                 />
               </div>
               {/* ======jumping-girl-img */}
-              <div className="absolute lg:left-[39%] max-lg:w-full max-sm:w-auto lg:!-bottom-[17%] left-[50%]  bottom-[-8%] max-lg:max-w-[300px] xl:w-[353px] shadow-13xl">
+              <div className="absolute lg:left-[39%] max-lg:w-full max-sm:w-auto lg:!-bottom-[17%] left-[50%]  bottom-[-8%] max-lg:max-w-[300px] xl:w-[353px] lg:shadow-13xl shadow-14xl rounded-2xl">
                 <Image
                   width={353}
                   height={216}
