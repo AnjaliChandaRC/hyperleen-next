@@ -24,12 +24,12 @@ const Faqs: React.FC = () => {
         {FaqList.map((data: FaqData, index: number) => (
           <div
             key={index}
-            className={`overflow-hidden transition-all duration-500 ease-in-out rounded-2xl ${activeIndex === index ? "border-[0.5px] border-transparent bg-smoke_blue" : "border-[0.5px] border-grey"
+            className={`overflow-hidden transition-all duration-500 ease-in-out rounded-lg lg:rounded-2xl ${activeIndex === index ? "border-[0.5px] border-transparent bg-smoke_blue" : "border-[0.5px] border-grey"
               } mt-5`}
           >
             <button
               onClick={() => TOGGLE_ACCORDION(index)}
-              className={`${activeIndex === index ? "bg-blue" : "bg-white"} w-full text-left p-3 lg:p-6 transition duration-300 ease-in-out relative`}
+              className={`${activeIndex === index ? "bg-blue" : "bg-white"} w-full text-left p-3 lg:p-[21px] transition duration-300 ease-in-out relative`}
             >
               <div className="flex justify-between items-center gap-2">
                 <span className={`${activeIndex === index ? "text-white" : "text-black"} text-sm md:text-lg xl:text-md font-medium transition-colors duration-300`}>
