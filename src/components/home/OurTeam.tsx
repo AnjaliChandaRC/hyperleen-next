@@ -41,15 +41,15 @@ const OurTeam = () => {
           {/* using map-method */}
           {TEAM_MEMBERS.map((obj: TeamMember, index: number) => (
             <div key={index} className={obj.columnClass}>
-              <div className="md:max-w-[560px] max-w-[520px] 2xl:max-w-full w-full h-full rounded-2xl bg-white flex justify-between flex-col">
-                <div className="relative pb-[6px]">
+              <div className="md:max-w-[560px] max-w-[520px] 2xl:max-w-full w-full h-full rounded-2xl bg-white flex justify-between flex-col group/our">
+                <div className="relative pb-[6px] overflow-hidden rounded-t-xl">
                   <Image
                     src={obj.image}
                     width={560}
                     height={393}
                     alt="team-member"
                     rel="preload"
-                    className="rounded-t-xl w-full pointer-events-none"
+                    className="rounded-t-xl w-full pointer-events-none group-hover/our:scale-110 duration-300 ease-linear"
                   />
                   <div className="flex flex-col items-center gap-4 absolute right-0 top-0 py-4 px-2 bg-frosted_white shadow-4xl rounded-tr-2xl">
                     <Link
