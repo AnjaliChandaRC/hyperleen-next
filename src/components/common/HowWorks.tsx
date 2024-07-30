@@ -11,16 +11,18 @@ const HowWorks = () => {
         <div className="flex flex-row flex-wrap -mx-[10px] xl:-mx-[20px] 2xl:mx-0 items-end">
           <div className="pr-[10px] ps-5 2xl:px-0 w-full lg:w-1/2 flex justify-center lg:justify-start">
             <div className="2xl:max-w-[590px] lg:max-w-[530px] w-full lg:text-start text-center">
-              <PrimaryHeading
-                className="mb-4"
-                textName="How the "
-                blueText="System "
-                blackText="Works"
-              />
-              <Paragraph
-                className="xl:mb-10 mb-9"
-                textName="Effortless Data Labeling: Streamlined, Accurate, and Scalable Solutions for AI Development"
-              />
+              <div className="lg:text-start text-center mx-auto max-lg:max-w-[580px] w-full">
+                <PrimaryHeading
+                  className="mb-4"
+                  textName="How the "
+                  blueText="System "
+                  blackText="Works"
+                />
+                <Paragraph
+                  className="xl:mb-10 mb-9"
+                  textName="Effortless Data Labeling: Streamlined, Accurate, and Scalable Solutions for AI Development"
+                />
+              </div>
               <div className="w-full 2xl:max-w-[590px] max-w-[530px] max-lg:mx-auto h-[400px] sm:h-[463px] xl:mb-12 lg:mb-9 mb-7 relative">
                 <Image
                   src="/assets/images/home/webp/project-request.webp"

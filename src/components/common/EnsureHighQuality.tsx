@@ -218,7 +218,7 @@ const EnsureHighQuality = () => {
                     className="rounded-[5.3px] pointer-events-none"
                   />
                   {/* triangle card */}
-                  <div className="absolute lg:-right-10 -right-2 lg:top-[40px] top-[50px] z-10">
+                  <div className="absolute lg:-right-10 -right-2 lg:top-[60px] top-[50px] z-10">
                     <div className="relative">
                       <span className="absolute -left-4 -top-[10px] rotate-[41deg]">
                         <Triangle />

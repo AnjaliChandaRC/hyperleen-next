@@ -147,7 +147,7 @@ export const ENSURE_STEP1 = [
   {
     imageSrc: "/assets/images/home/webp/car.webp",
     imageAlt: "car-image",
-    textTriangle: "Pie..",
+    textTriangle: "car",
     trianglePosition: "-left-[14px] -top-[14px]",
   },
 ];
