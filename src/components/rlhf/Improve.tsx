@@ -65,7 +65,7 @@ const Improve = () => {
                 className="lg:mb-4 mb-3 text-center lg:text-start"
                 textName="Improve your "
                 blueText="LLM with human "
-                blackText="in the loop training "
+                blackText="in the loop training"
               />
               <Paragraph
                 className="mb-6 text-center lg:text-start"
