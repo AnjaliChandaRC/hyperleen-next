@@ -25,7 +25,7 @@ const ObjectVerification = () => {
                   className="pointer-events-none"
                 />
               </div>
-              <div className="bg-blue max-w-[502px] rounded-t-2xl xl:p-4 lg:p-3 p-2 absolute top-0 lg:w-[502px] !w-full">
+              <div className="bg-blue max-w-[502px] rounded-t-2xl lg:p-4 p-[10px_10px_10px_16px] absolute top-0 lg:w-[502px] !w-full">
                 <Paragraph
                   textName="Is Previous Selected Object is Correct?"
                   className="font_gilroy_regular font-semibold lg:text-2xxl sm:text-2xl text-lg lg:leading-md leading-6 text-white"
