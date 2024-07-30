@@ -89,40 +89,42 @@ const AddLabel = () => {
                   className="lg:max-w-[203px] max-w-[106px] w-full"
                   onClick={HANDLE_OK_CLICK}
                 />
-                <button className="text-lg text-black py-3.5 lg:px-[69px] px-5 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear sm:h-[55px] h-[50px]">
+                <button className="text-lg text-black py-2 sm:py-3.5 lg:px-[69px] px-5 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear sm:h-[55px] h-[50px]">
                   Cancel
                 </button>
               </div>
             </div>
           </div>
           <div className="lg:w-[50%] w-full px-3 max-lg:flex max-lg:justify-center z-10 max-lg:items-center lg:pt-0 pt-10">
-            {/* ======project-overview-img===== */}
-            <Image
-              width={399}
-              height={359}
-              src="/assets/images/home/webp/label-yellow-jacket-girl.webp"
-              alt="label-yellowJacketGirl"
-              className="pointer-events-none max-sm:max-w-full xl:w-[475px] max-lg:relative max-lg:-left-[71px] max-sm:left-0 max-lg:max-w-full xl:relative xl:-left-[71px]"
-            />
-            {/* ====graph-image====== */}
-            <div className="absolute 2xl:left-[75%] xl:left-[76%] xl:top-[27%] lg:top-[33%] lg:left-[82%] sm:top-[64%] sm:left-[62%] top-[69%] left-[74%] max-w-48 max-sm:max-w-[160px]">
+            <div className="relative">
+              {/* ======project-overview-img===== */}
               <Image
-                width={191}
-                height={241}
-                src="/assets/images/home/webp/label-graph.webp"
-                alt="label-ratio"
-                className="pointer-events-none max-sm:max-w-full"
+                width={399}
+                height={359}
+                src="/assets/images/home/webp/label-yellow-jacket-girl.webp"
+                alt="label-yellowJacketGirl"
+                className="pointer-events-none max-sm:max-w-full xl:w-[475px] max-lg:relative max-lg:-left-[71px] max-sm:left-0 max-lg:max-w-full xl:relative xl:-left-[71px]"
               />
-            </div>
-            {/* ======jumping-girl-img */}
-            <div className="absolute xl:bottom-[13%] xl:left-[68%] lg:bottom-[13%] lg:left-[68%] sm:left-[50%] left-[50%] bottom-[-4%]">
-              <Image
-                width={353}
-                height={216}
-                src="/assets/images/home/webp/label-jumping-girl.webp"
-                alt="label_jumping_girl"
-                className="pointer-events-none max-sm:max-w-full"
-              />
+              {/* ====graph-image====== */}
+              <div className="absolute lg:left-[66%] max-lg:w-full left-[73%] max-sm:w-auto xl:-top-[15px] -top-[4%] max-w-44 max-sm:max-w-[160px] lg:w-full">
+                <Image
+                  width={191}
+                  height={241}
+                  src="/assets/images/home/webp/label-graph.webp"
+                  alt="label-ratio"
+                  className="pointer-events-none max-sm:max-w-full"
+                />
+              </div>
+              {/* ======jumping-girl-img */}
+              <div className="absolute lg:left-[46%] max-lg:w-full max-sm:w-auto lg:!-bottom-[11%] left-[50%]  bottom-[-8%] max-lg:max-w-[300px] xl:w-[300px]">
+                <Image
+                  width={353}
+                  height={216}
+                  src="/assets/images/home/webp/label-jumping-girl.webp"
+                  alt="label_jumping_girl"
+                  className="pointer-events-none max-sm:max-w-full w-full"
+                />
+              </div>
             </div>
           </div>
         </div>

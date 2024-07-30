@@ -49,7 +49,7 @@ const Hero = () => {
           <div className="flex items-center justify-center gap-3 xl:ps-11 lg:ps-6 max-sm:flex-wrap">
             <CommonButton text="Get Started" />
             <CommonButton
-              className="!bg-white !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent !shadow-none"
+              className="!bg-white !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent !shadow-none flex items-center"
               text="Try For Free"
               href="#contact"
             />
