@@ -72,7 +72,7 @@ const Header = () => {
           ))}
           <div className={`flex items-center justify-center gap-3 lg:ps-3.5 ps-0 ${!active && "max-lg:flex-col"} ${active && "flex-row"}`}>
             <CommonButton
-              className="!bg-white !shadow-none !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent"
+              className="!bg-white !shadow-none !border-black !border !text-black hover:!bg-blue hover:!text-white hover:!border-transparent max-lg:!h-[50px] flex items-center justify-center"
               text="Sign Up"
               onClick={REMOVE_NAVBAR}
             />
@@ -80,6 +80,7 @@ const Header = () => {
               text="Contact Us"
               href="#contact"
               mobileAction={HANDLE_CONTACT_US_CLICK}
+              className='flex items-center'
             />
           </div>
         </div>
