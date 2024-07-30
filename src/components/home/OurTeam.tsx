@@ -53,6 +53,7 @@ const OurTeam = () => {
                   <div className="flex flex-col items-center gap-4 absolute right-0 top-0 py-4 px-2 bg-frosted_white shadow-4xl rounded-tr-2xl">
                     <Link
                       target="_blank"
+                      aria-label="linkedin-icon"
                       href="https://www.linkedin.com/login"
                       className="min-w-8 h-8 bg-blue hover:bg-white group/social rounded-full flex justify-center items-center hover:shadow-3xl duration-300 ease-linear"
                     >
@@ -60,6 +61,7 @@ const OurTeam = () => {
                     </Link>
                     <Link
                       target="_blank"
+                      aria-label="facebook-icon"
                       href="https://www.facebook.com/login/"
                       className="min-w-8 h-8 bg-blue hover:bg-white group/social rounded-full flex justify-center items-center hover:shadow-3xl duration-300 ease-linear"
                     >
@@ -67,6 +69,7 @@ const OurTeam = () => {
                     </Link>
                     <Link
                       target="_blank"
+                      aria-label="Instagram-icon"
                       href="https://www.instagram.com/accounts/login/?hl=en"
                       className="min-w-8 h-8 bg-blue hover:bg-white group/social rounded-full flex justify-center items-center hover:shadow-3xl duration-300 ease-linear"
                     >

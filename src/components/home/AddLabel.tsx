@@ -37,10 +37,7 @@ const AddLabel = () => {
   }, [selectedImage]);
 
   return (
-    <div
-      className="relative xl:pt-20 2xl:max-w-[1536px] mx-auto"
-      id="label"
-    >
+    <div className="relative xl:pt-20 2xl:max-w-[1536px] mx-auto" id="label">
       <div className="absolute lg:block hidden right-0 -top-[80%] opacity-10 pointer-events-none">
         <LabelSvg />
       </div>
@@ -65,6 +62,7 @@ const AddLabel = () => {
                 <input
                   type="file"
                   accept="image/*"
+                  aria-label="search-file"
                   onChange={handleFileChange}
                   className="mb-4 px-4 py-2 border border-gray-300 rounded w-full"
                 />

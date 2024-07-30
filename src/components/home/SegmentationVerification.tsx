@@ -21,9 +21,9 @@ const SegmentationVerification = () => {
         />
         <div className="flex flex-wrap lg:flex-row flex-col-reverse mx-[-12px] items-center">
           <div className="lg:w-[50%] w-full px-3 lg:pt-0 sm:pt-5 pt-3">
-            <h5 className="font_gilroy_regular font-semibold lg:text-2xxl text-2xl leading-md text-black lg:pb-4 sm-pb-1 pb-0 max-lg:text-center">
+            <h4 className="font_gilroy_regular font-semibold lg:text-2xxl text-2xl leading-md text-black lg:pb-4 sm-pb-1 pb-0 max-lg:text-center">
               Image Segmentation
-            </h5>
+            </h4>
             <div className="flex items-center lg:justify-start justify-center">
               <Paragraph
                 textName="Image segmentation is the process of partitioning an image into multiple segments to simplify its representation and make it more meaningful. This technique is essential for identifying and analyzing objects within an image, such as cars in autonomous driving applications."

@@ -39,7 +39,7 @@ const Header = () => {
     <nav className="border-b-[0.1px] border-grey py-4">
       <div className="max-w-[1180px] mx-auto container flex items-center justify-between w-full">
         <div className="w-[54px] h-[56px]">
-          <Link href="/">
+          <Link href="/" aria-label='header-logo'>
             <Header_logo />
           </Link>
         </div>
