@@ -4,10 +4,7 @@ import CommonButton from "../common/CommonButton";
 import Image from "next/image";
 const SegmentationVerification = () => {
   return (
-    <div
-      className="xl:pt-40 pt-20"
-      id="about"
-    >
+    <div className="xl:pt-40 pt-20" id="about">
       <div className="container xl:max-w-[1180px] mx-auto">
         <PrimaryHeading
           textName="Image"
@@ -41,9 +38,9 @@ const SegmentationVerification = () => {
                 height={483}
                 src="/assets/images/home/webp/segmentation-img.webp"
                 alt="segmentation-img"
-                className="pointer-events-none"
+                className="pointer-events-none rounded-2xl"
               />
-              <div className="bg-blue xl:max-w-[502px] max-w-[488px] rounded-t-2xl lg:p-4 p-2 absolute top-0 w-full">
+              <div className="bg-blue xl:max-w-[502px] max-w-[488px] rounded-t-2xl lg:p-4 p-[10px_10px_10px_16px]  absolute top-0 w-full">
                 <Paragraph
                   textName="Selected All Squares With"
                   className="sm:text-lg text-base text-white lg:pb-2 pb-0"
