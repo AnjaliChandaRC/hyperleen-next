@@ -15,7 +15,7 @@ const AddLabel = () => {
   );
   const [imageName, setImageName] = useState<string>(DEFAULT_IMAGE_NAME);
 
-  const handleFileChange = useCallback(
+  const HANDLE_FILE_CHANGE = useCallback(
     (event: ChangeEvent<HTMLInputElement>) => {
       const file = event.target.files?.[0];
       if (file && file.type.startsWith("image/")) {
@@ -68,15 +68,15 @@ const AddLabel = () => {
                   type="file"
                   accept="image/*"
                   aria-label="search-file"
-                  onChange={handleFileChange}
-                  className="mb-4 px-4 py-2 border border-gray-300 rounded w-full"
+                  onChange={HANDLE_FILE_CHANGE}
+                  className="mb-4 px-4 py-2 border border-gray-300 rounded w-full absolute z-[1] max-w-[261px] lg:max-w-[380px] h-[180px]"
                 />
                 <Image
                   width={382}
                   height={180}
                   src={selectedImage as string}
                   alt={imageName}
-                  className="pointer-events-none rounded h-[180px]"
+                  className="pointer-events-none rounded h-[180px] relative z-[2]"
                 />
                 <div className="max-w-[422px] w-full border-[0.5px] border-grey p-[12px_0px_45px_12px] rounded-xl mt-4">
                   <div className="flex gap-2">
