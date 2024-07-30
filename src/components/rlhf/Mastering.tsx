@@ -86,7 +86,7 @@ const Mastering = () => {
             <input
               type="text"
               placeholder="Message Hyperleen"
-              className="font-medium text-grey opacity-40 outline-none w-full"
+              className="font-medium placeholder-grey placeholder:opacity-40 outline-none w-full text-black"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
             />
