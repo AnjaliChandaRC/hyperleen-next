@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState, ChangeEvent, useCallback, useEffect } from "react";
 import PrimaryHeading from "../common/PrimaryHeading";
 import Paragraph from "../common/Paragraph";
@@ -10,18 +10,23 @@ const DEFAULT_IMAGE_URL = "/assets/images/home/webp/label-input-car.webp";
 const DEFAULT_IMAGE_NAME = "Car";
 
 const AddLabel = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(DEFAULT_IMAGE_URL);
+  const [selectedImage, setSelectedImage] = useState<string | null>(
+    DEFAULT_IMAGE_URL
+  );
   const [imageName, setImageName] = useState<string>(DEFAULT_IMAGE_NAME);
 
-  const handleFileChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (file && file.type.startsWith('image/')) {
-      setSelectedImage(URL.createObjectURL(file));
-      setImageName(file.name);
-    } else {
-      alert('Please select a valid image file.');
-    }
-  }, []);
+  const handleFileChange = useCallback(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      const file = event.target.files?.[0];
+      if (file && file.type.startsWith("image/")) {
+        setSelectedImage(URL.createObjectURL(file));
+        setImageName(file.name);
+      } else {
+        alert("Please select a valid image file.");
+      }
+    },
+    []
+  );
 
   const HANDLE_OK_CLICK = () => {
     setSelectedImage(DEFAULT_IMAGE_URL);
@@ -106,17 +111,17 @@ const AddLabel = () => {
                 className="pointer-events-none max-sm:max-w-full xl:w-[475px] max-lg:relative max-lg:-left-[71px] max-sm:left-0 max-lg:max-w-full xl:relative xl:-left-[71px]"
               />
               {/* ====graph-image====== */}
-              <div className="absolute lg:left-[66%] max-lg:w-full left-[73%] max-sm:w-auto xl:-top-[15px] -top-[4%] max-w-44 max-sm:max-w-[160px] lg:w-full">
+              <div className="absolute xl:left-[69%] lg:left-[70%] max-lg:w-full md:left-[79%] left-[77%] max-sm:w-auto xl:-top-[15px] -top-[2%] xl:max-w-44 max-w-36 max-sm:max-w-[160px] lg:w-full shadow-13xl rounded-2xl">
                 <Image
                   width={191}
                   height={241}
-                  src="/assets/images/home/webp/label-graph.webp"
+                  src="/assets/images/home/webp/label-graph-img.webp"
                   alt="label-ratio"
                   className="pointer-events-none max-sm:max-w-full"
                 />
               </div>
               {/* ======jumping-girl-img */}
-              <div className="absolute lg:left-[46%] max-lg:w-full max-sm:w-auto lg:!-bottom-[11%] left-[50%]  bottom-[-8%] max-lg:max-w-[300px] xl:w-[300px]">
+              <div className="absolute lg:left-[39%] max-lg:w-full max-sm:w-auto lg:!-bottom-[17%] left-[50%]  bottom-[-8%] max-lg:max-w-[300px] xl:w-[353px] shadow-13xl">
                 <Image
                   width={353}
                   height={216}
