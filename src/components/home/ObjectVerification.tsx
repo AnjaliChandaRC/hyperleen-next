@@ -45,7 +45,7 @@ const ObjectVerification = () => {
                     text="Yes"
                     className="lg:px-[58px] sm:px-11 px-8 max-sm:py-2"
                   />
-                  <button className="text-lg text-black lg:py-3.5 py-3 lg:px-[58px] sm:px-11 px-8 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear w-[148px] h-[55px]">
+                  <button className="text-lg text-black lg:py-3.5 py-3 lg:px-[58px] sm:px-11 px-8 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear w-[148px] sm:h-[55px] h-[50px]">
                     No
                   </button>
                 </div>

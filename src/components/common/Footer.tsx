@@ -1,9 +1,14 @@
 "use client";
-import Image from 'next/image';
-import { FacebookLogo, InstagramLogo, LinkedinLogo, TwitterLogo } from './Icons';
-import Link from 'next/link';
-import { footerData } from './Helper';
-import Paragraph from './Paragraph';
+import Image from "next/image";
+import {
+  FacebookLogo,
+  InstagramLogo,
+  LinkedinLogo,
+  TwitterLogo,
+} from "./Icons";
+import Link from "next/link";
+import { footerData } from "./Helper";
+import Paragraph from "./Paragraph";
 
 interface FooterLinks {
   label: string;
@@ -96,7 +101,7 @@ const Footer = () => {
                     <Link
                       href="https://www.facebook.com/login/"
                       target="_blank"
-                      aria-label="facebook-icon"
+                      aria-label="Facebook login page"
                     >
                       <FacebookLogo />
                     </Link>
@@ -105,7 +110,7 @@ const Footer = () => {
                     <Link
                       href="https://twitter.com/login"
                       target="_blank"
-                      aria-label="twitter-icon"
+                      aria-label="Twitter login page"
                     >
                       <TwitterLogo />
                     </Link>
@@ -114,7 +119,7 @@ const Footer = () => {
                     <Link
                       href="https://www.linkedin.com/login"
                       target="_blank"
-                      aria-label="linkedin-icon"
+                      aria-label="LinkedIn login page"
                     >
                       <LinkedinLogo />
                     </Link>
@@ -123,7 +128,7 @@ const Footer = () => {
                     <Link
                       href="https://www.instagram.com/accounts/login/?hl=en"
                       target="_blank"
-                      aria-label="Instagram-icon"
+                      aria-label="Instagram login page"
                     >
                       <InstagramLogo />
                     </Link>

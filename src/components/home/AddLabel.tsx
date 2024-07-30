@@ -6,7 +6,7 @@ import CommonButton from "../common/CommonButton";
 import Image from "next/image";
 import { LabelSvg, PenSvg } from "../common/Icons";
 
-const DEFAULT_IMAGE_URL = "/assets/images/home/png/label-input-car.png";
+const DEFAULT_IMAGE_URL = "/assets/images/home/webp/label-input-car.webp";
 const DEFAULT_IMAGE_NAME = "Car";
 
 const AddLabel = () => {
@@ -89,7 +89,7 @@ const AddLabel = () => {
                   className="lg:max-w-[203px] max-w-[106px] w-full"
                   onClick={HANDLE_OK_CLICK}
                 />
-                <button className="text-lg text-black py-3.5 lg:px-[69px] px-5 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear h-[55px]">
+                <button className="text-lg text-black py-3.5 lg:px-[69px] px-5 rounded-[100px] border border-black hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear sm:h-[55px] h-[50px]">
                   Cancel
                 </button>
               </div>
@@ -100,7 +100,7 @@ const AddLabel = () => {
             <Image
               width={399}
               height={359}
-              src="/assets/images/home/png/label-yellow-jacket-girl.png"
+              src="/assets/images/home/webp/label-yellow-jacket-girl.webp"
               alt="label-yellowJacketGirl"
               className="pointer-events-none max-sm:max-w-full xl:w-[475px] max-lg:relative max-lg:-left-[71px] max-sm:left-0 max-lg:max-w-full xl:relative xl:-left-[71px]"
             />
