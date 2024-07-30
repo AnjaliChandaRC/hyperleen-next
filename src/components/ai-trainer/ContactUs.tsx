@@ -89,8 +89,8 @@ const ContactUs: React.FC = () => {
   return (
     <div className="2xl:max-w-[1536px] mx-auto">
       <div className="container xl:max-w-[1180px] mx-auto">
-        <div className="flex flex-wrap lg:flex-row flex-col-reverse mx-[-12px]">
-          <div className="lg:w-[50%] w-full px-3 flex flex-col items-center lg:pt-0 pt-5">
+        <div className="flex flex-wrap mx-[-12px]">
+          <div className="lg:w-[50%] w-full px-3 flex flex-col items-center">
             <div className="flex flex-col justify-center">
               <PrimaryHeading
                 textName="Contact"
@@ -102,7 +102,7 @@ const ContactUs: React.FC = () => {
                 textName="Personalized Finance Tutoring Tailored assistance to meet your unique learning needs. Expert Tutors Highly qualified tutors with extensive knowledge in finance and related subjects."
               />
               <form onSubmit={HANDLE_SUBMIT}>
-                <div className="lg:pb-4 pb-2">
+                <div className="lg:pb-4 pb-2 mt-1 lg:mt-0">
                   <label htmlFor="fullName" className="text-lg text-black">
                     Full Name*
                   </label>
@@ -112,15 +112,15 @@ const ContactUs: React.FC = () => {
                     name="fullName"
                     value={formData.fullName}
                     onChange={HANDLE_CHANGE}
-                    className={`border-[0.5px] border-grey rounded-2xl sm:h-14 h-11 sm:p-3 p-2 max-w-[475px] w-full outline-none lg:mt-2 mt-0 ${
+                    className={`border-[0.5px] border-grey rounded-2xl sm:h-14 h-[50px] sm:p-3 p-2 max-w-[475px] w-full outline-none mt-2  ${
                       errors.fullName && "border-red-500"
                     }`}
                   />
                   {errors.fullName && (
-                    <p className="text-red-500 text-sm">{errors.fullName}</p>
+                    <p className="text-red-500 text-sm mt-2">{errors.fullName}</p>
                   )}
                 </div>
-                <div className="lg:pb-4 pb-2">
+                <div className="lg:pb-4 pb-2 mt-1 lg:mt-0">
                   <label htmlFor="email" className="text-lg text-black">
                     Active Email*
                   </label>
@@ -130,15 +130,15 @@ const ContactUs: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={HANDLE_CHANGE}
-                    className={`border-[0.5px] border-grey rounded-2xl sm:h-14 h-11 sm:p-3 p-2 max-w-[475px] w-full outline-none lg:mt-2 mt-0 ${
+                    className={`border-[0.5px] border-grey rounded-2xl sm:h-14 h-[50px] sm:p-3 p-2 max-w-[475px] w-full outline-none mt-2  ${
                       errors.email && "border-red-500"
                     }`}
                   />
                   {errors.email && (
-                    <p className="text-red-500 text-sm">{errors.email}</p>
+                    <p className="text-red-500 text-sm mt-2">{errors.email}</p>
                   )}
                 </div>
-                <div className="lg:pb-4 pb-2">
+                <div className="lg:pb-4 pb-2 mt-1 lg:mt-0">
                   <label htmlFor="phone" className="text-lg text-black">
                     Phone Number*
                   </label>
@@ -148,15 +148,15 @@ const ContactUs: React.FC = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={HANDLE_CHANGE}
-                    className={`border-[0.5px] border-grey rounded-2xl sm:h-14 h-11 sm:p-3 p-2 max-w-[475px] w-full outline-none lg:mt-2 mt-0 ${
+                    className={`border-[0.5px] border-grey rounded-2xl sm:h-14 h-[50px] sm:p-3 p-2 max-w-[475px] w-full outline-none mt-2 ${
                       errors.phone && "border-red-500"
                     }`}
                   />
                   {errors.phone && (
-                    <p className="text-red-500 text-sm">{errors.phone}</p>
+                    <p className="text-red-500 text-sm mt-2">{errors.phone}</p>
                   )}
                 </div>
-                <div className="lg:pb-10 md:pb-8 pb-6">
+                <div className="lg:pb-10 md:pb-8 pb-6 mt-1 lg:mt-0">
                   <label htmlFor="subject" className="text-lg text-black">
                     Subject*
                   </label>
@@ -166,12 +166,12 @@ const ContactUs: React.FC = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={HANDLE_CHANGE}
-                    className={`border-[0.5px] border-grey rounded-2xl sm:h-14 h-11 sm:p-3 p-2 max-w-[475px] w-full outline-none lg-mt-2 mt-0 ${
+                    className={`border-[0.5px] border-grey rounded-2xl sm:h-14 h-[50px] sm:p-3 p-2 max-w-[475px] w-full outline-none mt-2  ${
                       errors.subject && "border-red-500"
                     }`}
                   />
                   {errors.subject && (
-                    <p className="text-red-500 text-sm">{errors.subject}</p>
+                    <p className="text-red-500 text-sm mt-2">{errors.subject}</p>
                   )}
                 </div>
                 <CommonButton
@@ -181,8 +181,8 @@ const ContactUs: React.FC = () => {
               </form>
             </div>
           </div>
-          <div className="lg:w-[50%] w-full lg:px-3 pb-2 flex flex-col items-center">
-            <div className="bg-alice_blue rounded-2xl p-5 lg:max-w-[595px] sm:max-w-[482px] max-w-[360px]">
+          <div className="lg:w-[50%] w-full lg:px-3 pb-2 flex flex-col items-center lg:pt-0 pt-6">
+            <div className="bg-alice_blue rounded-2xl px-3 pb-3 pt-4 lg:p-5 lg:max-w-[595px] sm:max-w-[482px] w-[320px] sm:w-auto">
               <p className="font_gilroy_bold lg:text-2xl sm:text-xl text-lg lg:pb-8 pb-3 text-center">
                 Choose a time that works for you.
               </p>
@@ -191,7 +191,7 @@ const ContactUs: React.FC = () => {
                 height={483}
                 src="/assets/images/ai-trainer/svg/calendar.svg"
                 alt="calendar.svg"
-                className="pointer-events-none"
+                className="pointer-events-none max-w-[555px] w-full"
               />
             </div>
           </div>

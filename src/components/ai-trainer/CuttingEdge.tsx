@@ -9,7 +9,7 @@ const CuttingEdge = () => {
   }
 
   return (
-    <div className="xl:pb-40 md:pb-6 max-md:pb-16 2xl:max-w-[1536px] mx-auto">
+    <div className="xl:pb-40 md:pb-20 max-md:pb-16 2xl:max-w-[1536px] mx-auto">
       <div className="container xl:max-w-[1180px] px-3">
         <PrimaryHeading
           textName="Cutting-Edge"
@@ -21,7 +21,7 @@ const CuttingEdge = () => {
         <div className="flex items-center flex-wrap sm:gap-6 gap-5 justify-center">
           {CuttingEdgeData.map((obj: CuttingData, index: number) => (
             <div key={index}>
-              <div className="lg:w-[209px] md:w-[182px] w-[120px] sm:min-h-[108px] min-h-[100px] h-full rounded-xl border-[0.5px] border-blue bg-off_white_blue flex justify-center items-center">
+              <div className="lg:w-[209px] md:w-[182px] sm:w-[188px] w-[120px] sm:min-h-[108px] min-h-[100px] h-full rounded-xl border-[0.5px] border-blue bg-off_white_blue flex justify-center items-center">
                 <Image
                   src={obj.img}
                   width={obj.width}
