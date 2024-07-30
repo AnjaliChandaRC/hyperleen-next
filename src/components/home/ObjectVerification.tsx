@@ -31,10 +31,10 @@ const ObjectVerification = () => {
                   className="font_gilroy_regular font-semibold lg:text-2xxl sm:text-2xl text-lg lg:leading-md leading-6 text-white"
                 />
               </div>
-              <div className="absolute shadow bg-white lg:max-w-[339px] max-w-64 w-full lg:py-4 py-2 px-3 bottom-[-25%] xl:left-[-21px] left-[-9px] rounded-xl">
+              <div className="absolute shadow-12xl bg-white lg:max-w-[339px] max-w-64 w-full lg:py-4 py-2 px-3 bottom-[-25%] xl:left-[-21px] left-[-9px] rounded-xl">
                 <Paragraph
                   textName="Confirm your action"
-                  className="font_gilroy_bold lg:text-2xl sm:text-xl text-base text-center text-black pb-1"
+                  className="font_gilroy_bold lg:text-2xl sm:text-xl text-base text-center !text-black pb-1"
                 />
                 <Paragraph
                   textName="Confirm if the segmentation was performed correctly."
