@@ -10,7 +10,7 @@ interface BUTTON {
 }
 
 const CommonButton = ({ text, className, onClick, href, mobileAction }: BUTTON) => {
-  const buttonClasses = `font-normal text-lg leading-7 rounded-full shadow-3xl text-white hover:text-black px-6 py-[14px] h-[55px] bg-blue hover:bg-white border border-white hover:border-black duration-300 ease-linear ${className}`;
+  const buttonClasses = `font-normal text-lg leading-7 rounded-full shadow-3xl text-white hover:text-black px-6 py-2 sm:py-[14px] h-[50px] sm:h-[55px] bg-blue hover:bg-white border border-white hover:border-black duration-300 ease-linear ${className}`;
 
   const HANDLE_CLICK = (event: React.MouseEvent<HTMLParagraphElement | HTMLButtonElement>) => {
     if (window.innerWidth <= 1024 && mobileAction) {
