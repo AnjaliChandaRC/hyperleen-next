@@ -83,7 +83,7 @@ const Improve = () => {
                   >
                     <span
                       onClick={() => TOGGLE_ACCORDION(index)}
-                      className="size-fit sm:!py-5 py-3 sm:pl-5 pl-4 cursor-pointer"
+                      className="size-fit sm:!py-5 py-[10px] sm:pl-5 pl-4 cursor-pointer"
                     >
                       <Image
                         src={value.imageSrc}
@@ -104,7 +104,7 @@ const Improve = () => {
                         }`}
                       >
                         <Paragraph
-                          className="!font-semibold !text-black"
+                          className="!font-semibold !text-black max-sm:text-sm max-sm:leading-5"
                           textName={value.title}
                         />
                       </div>
