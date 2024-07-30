@@ -50,8 +50,8 @@ const config: Config = {
         "10xl": "15.01px -15.69px 68.22px -35.47px #084CAF14",
         "11xl": "2.11px -1.29px 28.66px 6.3px #084CAF14",
         "12xl": "-4.11px 4.11px 18.66px -9.7px #6F69F21F",
-        "13xl": "6px -6px 37px -2px rgba(8, 76, 175, 0.4)",
-        "14xl": "3px -9px 23px -2px rgba(8, 76, 175, 0.4)",
+        "13xl": "6px -6px 37px -2px rgba(8, 76, 175, 0.2)",
+        "14xl": "3px -9px 23px -2px rgba(8, 76, 175, 0.2)",
       },
       container: {
         padding: {
