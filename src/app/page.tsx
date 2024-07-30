@@ -15,7 +15,7 @@ export default function Home() {
       <SegmentationVerification />
       <ObjectVerification />
       <OurTeam />
-      <div className="xl:py-[160px] md:pt-5 max-md:pt-16 pb-16 md:pb-[80px] lg:pt-[64px] lg:pb-[80px] 2xl:max-w-[1536px] mx-auto">
+      <div className="xl:py-[160px] md:py-20 py-16 lg:pt-[64px] lg:pb-[80px] 2xl:max-w-[1536px] mx-auto">
         <HowWorks />
       </div>
       <EnsureHighQuality />
