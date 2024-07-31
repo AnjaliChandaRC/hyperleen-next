@@ -25,7 +25,7 @@ const GlobalWorkforce: React.FC<GlobalWorkforceProps> = ({
           className="!text-white lg:pb-5 pb-3 max-xl:mx-auto max-xl:text-center"
         />
         <Paragraph
-          className="!text-white opacity-70 lg:pb-10 pb-5 lg:max-w-[606px] max-xl:mx-auto max-xl:text-center"
+          className="!text-white opacity-70 lg:pb-10 pb-5 xl:max-w-[606px] max-w-[740px] max-xl:mx-auto max-xl:text-center"
           textName="Our expertise lies in a global workforce of highly skilled professionals, each with over 5 years of industry experience. With proficiency in a wide array of programming languages and technologies, our experts can seamlessly scale to meet the demands of any project, ensuring high-quality, robust solutions across various domains."
         />
         <div className="flex flex-wrap gap-3 max-xl:justify-center">
