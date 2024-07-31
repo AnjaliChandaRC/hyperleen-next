@@ -36,7 +36,7 @@ const Mastering = () => {
   };
 
   return (
-    <div className="xl:pt-[160px] md:pt-20 sm:pt-11 pt-9">
+    <div className="xl:pt-[160px] md:pt-20 pt-16">
       <div className="px-5">
         <PrimaryHeading
           textName="Mastering"
@@ -48,7 +48,7 @@ const Mastering = () => {
           textName="Providing In-Depth, Customized Solutions to Complex Queries"
           className="text-center pt-4"
         />
-        <div className="container max-w-[1180px] mx-auto mt-10 bg-light_skyblue lg:py-11 py-8 md:px-6 px-4 rounded-2xl">
+        <div className="container max-w-[1180px] mx-auto mt-10 bg-light_skyblue lg:py-11 py-8 md:px-6 px-4 rounded-lg lg:rounded-2xl">
           <div className="flex justify-end items-center gap-4">
             <Pen />
             <div className="max-w-[690px] w-full lg:py-5 py-3 pl-3 lg:pl-5 border-[0.5px] border-grey rounded-xl bg-white">

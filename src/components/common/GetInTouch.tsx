@@ -52,7 +52,7 @@ const GetInTouch = () => {
             <input
               type="email"
               placeholder="Your e-mail"
-              className="sm:w-[323px] w-full px-4 rounded-2xl bg-light_black min-h-[55px] placeholder:text-grey text-black outline-blue"
+              className="sm:w-[323px] w-full px-4 rounded-lg lg:rounded-2xl bg-light_black min-h-[55px] placeholder:text-grey text-black outline-blue"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
