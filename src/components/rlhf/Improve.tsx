@@ -18,7 +18,7 @@ const Improve = () => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
   return (
-    <div className="xl:pt-[111px] sm:pb-11 pb-9 md:pb-20 xl:pb-[160px] 2xl:max-w-[1536px] mx-auto overflow-hidden">
+    <div className="xl:pt-[111px] pb-16 md:pb-20 xl:pb-[160px] 2xl:max-w-[1536px] mx-auto overflow-hidden">
       <div className="container max-w-[1180px]">
         <div className="flex flex-row flex-wrap -mx-5">
           <div className="2xl:px-5 w-full lg:w-1/2 px-5 lg:pl-5 lg:pr-3 flex lg:justify-start justify-center">
@@ -77,7 +77,7 @@ const Improve = () => {
                 {IMPROVE_DATA.map((value: AccordionData, index: number) => (
                   <div
                     key={index}
-                    className={`flex text-start gap-4 sm:rounded-2xl rounded-xl w-full border-[0.5px] border-blue bg-white overflow-hidden ${
+                    className={`flex text-start gap-4 rounded-lg lg:rounded-2xl w-full border-[0.5px] border-blue bg-white overflow-hidden ${
                       openAccordion === index && "!pb-5"
                     }`}
                   >
@@ -110,7 +110,7 @@ const Improve = () => {
                       </div>
                       {/* accordion-body */}
                       <div
-                        className={`sm:px-5 px-4 flex justify-end duration-300 ease-linear w-full max-h-0 ${
+                        className={`sm:px-5 px-4 flex duration-300 ease-linear w-full max-h-0 ${
                           openAccordion === index &&
                           "xl:max-h-[288px] sm:max-h-[318px] max-h-[344px] !pt-1"
                         }`}
