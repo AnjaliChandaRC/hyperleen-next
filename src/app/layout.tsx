@@ -9,11 +9,11 @@ import BackToTopButton from "@/components/common/BackToTopButton";
 export const metadata: Metadata = {
   title: "Hyperleen",
   description: "Transform Your Data into AI Insights",
-  metadataBase: new URL("https://hyperleen-next-student.vercel.app/"),
+  metadataBase: new URL("https://hyperleen-next.vercel.app/"),
   openGraph: {
     title: "Hyperleen",
     description: "Transform Your Data into AI Insights",
-    images: "/meta-img.png",
+    images: "/home-meta-img.png",
   },
 };
 
