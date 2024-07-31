@@ -2,7 +2,6 @@ import ContactUs from "@/components/ai-trainer/ContactUs";
 import { ContactUsEllipse } from "@/components/common/Icons";
 import ContactHero from "@/components/contact-us/ContactHero";
 import { Metadata } from "next";
-import React from "react";
 
 export const metadata: Metadata = {
   title: "Hyperleen | Contact-Us",
