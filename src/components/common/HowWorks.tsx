@@ -24,13 +24,15 @@ const HowWorks = () => {
                 />
               </div>
               <div className="w-full 2xl:max-w-[590px] max-w-[530px] max-lg:mx-auto h-[400px] sm:h-[463px] xl:mb-12 lg:mb-9 mb-7 relative">
-                <Image
-                  src="/assets/images/home/webp/project-request.webp"
-                  alt="project-request-image"
-                  width={400}
-                  height={360}
-                  className="rounded-2xl pointer-events-none shadow-5xl duration-300 ease-linear relative hover:z-40"
-                />
+                <div className="w-fit rounded-2xl border-[0.5px] border-blue">
+                  <Image
+                    src="/assets/images/home/webp/project-request.webp"
+                    alt="project-request-image"
+                    width={400}
+                    height={360}
+                    className="rounded-2xl pointer-events-none shadow-5xl duration-300 ease-linear relative hover:z-40"
+                  />
+                </div>
                 <Image
                   src="/assets/images/home/webp/request.webp"
                   alt="project-request-image"

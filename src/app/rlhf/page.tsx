@@ -5,6 +5,18 @@ import HowWorks from "@/components/common/HowWorks";
 import Improve from "@/components/rlhf/Improve";
 import Mastering from "@/components/rlhf/Mastering";
 import RlhfHero from "@/components/rlhf/RlhfHero";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Hyperleen | RLHF",
+  description: "Enhance Your LLM with Human-in-the-Loop Training",
+  metadataBase: new URL("https://hyperleen-next.vercel.app/rlhf"),
+  openGraph: {
+    title: "Hyperleen | RLHF",
+    description: "Enhance Your LLM with Human-in-the-Loop Training",
+    images: "/rlhf-meta-img.png",
+  },
+};
 
 const page = () => {
   return (

@@ -39,7 +39,7 @@ const Footer = () => {
             </Link>
             <Paragraph
               textName="Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at."
-              className="lg:max-w-[279px] text-white opacity-70 md:pt-5 sm:pt-4 pt-3"
+              className="lg:max-w-[279px] md:max-w-[740px] text-white opacity-70 md:pt-5 sm:pt-4 pt-3"
             />
             <div className="gap-3 lg:mt-5 sm:mt-4 mt-3 max-xl:flex hidden">
               <div className="size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl">

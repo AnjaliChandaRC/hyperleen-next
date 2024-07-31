@@ -1,8 +1,19 @@
 import ContactUs from "@/components/ai-trainer/ContactUs";
 import { ContactUsEllipse } from "@/components/common/Icons";
 import ContactHero from "@/components/contact-us/ContactHero";
+import { Metadata } from "next";
 import React from "react";
 
+export const metadata: Metadata = {
+  title: "Hyperleen | Contact-Us",
+  description: "We're Here to Assist You With Any Questions or Concerns",
+  metadataBase: new URL("https://hyperleen-next.vercel.app/contact-us"),
+  openGraph: {
+    title: "Hyperleen | Contact-Us",
+    description: "We're Here to Assist You With Any Questions or Concerns",
+    images: "/contact-us-meta-img.png",
+  },
+};
 const page = () => {
   return (
     <>

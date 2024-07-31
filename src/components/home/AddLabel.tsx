@@ -76,7 +76,7 @@ const AddLabel = () => {
                   height={180}
                   src={selectedImage as string}
                   alt={imageName}
-                  className="pointer-events-none rounded h-[180px] relative z-[2]"
+                  className="pointer-events-none rounded h-[180px] relative z-[2] cursor-pointer"
                 />
                 <div className="max-w-[422px] w-full border-[0.5px] border-grey p-[12px_0px_45px_12px] rounded-xl mt-4">
                   <div className="flex gap-2">

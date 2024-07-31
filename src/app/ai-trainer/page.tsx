@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   description: "Elevate Your Code with Expert AI Training",
   metadataBase: new URL("https://hyperleen-next.vercel.app/ai-trainer"),
   openGraph: {
-    title: "Hyperleen",
+    title: "Hyperleen | Ai-Trainer",
     description: "Elevate Your Code with Expert AI Training",
-    images: "/meta-img.png",
+    images: "/ai-trainer-meta-img.png",
   },
 };
 
