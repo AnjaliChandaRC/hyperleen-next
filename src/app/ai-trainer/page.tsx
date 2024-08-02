@@ -6,7 +6,6 @@ import TrainersFor from "@/components/ai-trainer/TrainersFor";
 import EnsureHighQuality from "@/components/common/EnsureHighQuality";
 import HowWorks from "@/components/common/HowWorks";
 import { Metadata } from "next";
-
 export const metadata: Metadata = {
   title: "Hyperleen | Ai-Trainer",
   description: "Elevate Your Code with Expert AI Training",
