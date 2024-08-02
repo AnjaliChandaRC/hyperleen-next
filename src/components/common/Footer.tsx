@@ -1,108 +1,149 @@
-import Image from 'next/image';
-import footerLogo from '../../../public/assets/images/home/png/footer-logo.png'
+"use client";
+import Image from "next/image";
+import {
+  FacebookLogo,
+  InstagramLogo,
+  LinkedinLogo,
+  TwitterLogo,
+} from "./Icons";
+import Link from "next/link";
+import { footerData } from "./Helper";
+import Paragraph from "./Paragraph";
 
-interface Link {
+interface FooterLinks {
   label: string;
   href: string;
 }
 
-interface Section {
+interface FooterColumns {
   title: string;
-  links: Link[];
+  links: FooterLinks[];
+  className: string;
 }
 
-const footerData: Section[] = [
-  {
-    title: 'Quick Links',
-    links: [
-      { label: 'Home', href: '#home' },
-      { label: 'About Us', href: '#about' },
-      { label: 'Services', href: '#services' },
-      { label: 'FAQ', href: '#faq' },
-      { label: 'How It Works', href: '#how-it-works' },
-    ],
-  },
-  {
-    title: 'Links',
-    links: [
-      { label: 'Team', href: '#team' },
-      { label: 'Label', href: '#label' },
-    ],
-  },
-  {
-    title: 'Policy',
-    links: [
-      { label: 'Contact Us', href: '#contact' },
-      { label: 'Privacy Policy', href: '#privacy-policy' },
-      { label: 'Terms and conditions', href: '#terms-conditions' },
-    ],
-  },
-];
-
 const Footer = () => {
+  const date = new Date();
   return (
-    <>
-      <section>
-        <div className='container'>
-          <div className='flex items-center justify-center flex-col'>
-            <h1 className='font-manrope font-medium text-3xl text-center font_gilroy_medium'>
-              Get in touch with <span className='text-blue'>Hyperleen</span>
-            </h1>
-            <p className='max-w-[731px] opacity-70 font-poppins font-normal text-base text-center pt-4'>
-              Take your experience a step further! Subscribe to our monthly newsletter for exclusive access to discounts, promotions, Hyperleen events, and more. We’d hate to be annoying, please unsubscribe anytime!
-            </p>
-            <div className=' flex items-center gap-[14px] mt-6'>
-              <input type="email" placeholder='Your e-mail' className=' w-[323px] pl-4 rounded-2xl bg-light_black min-h-[55px] placeholder:text-black font-poopins text-base font-normal text-grey outline-blue' />
+    <div className="md:bg-footer_section max-md:bg-black sm:bg-full max-sm:bg-cover bg-no-repeat bg-center">
+      <div className="max-w-[1180px] container mx-auto lg:pt-[160px] md:pt-[144px] pt-16 w-full">
+        <div className="flex flex-row flex-wrap -mx-3 justify-between">
+          <div className="lg:w-4/12 xl:px-2 px-5">
+            <Link href="/" className="inline-block">
+              <Image
+                width={117}
+                height={30}
+                src="/assets/images/home/svg/footer-logo.svg"
+                alt="footer logo"
+                className="lg:w-[117px] sm:w-20 w-16"
+              />
+            </Link>
+            <Paragraph
+              textName="Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at."
+              className="lg:max-w-[279px] md:max-w-[740px] text-white opacity-70 md:pt-5 sm:pt-4 pt-3"
+            />
+            <div className="gap-3 lg:mt-5 sm:mt-4 mt-3 max-xl:flex hidden">
+              <div className="size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl">
+                <Link href="https://www.facebook.com/login/" target="_blank">
+                  <FacebookLogo />
+                </Link>
+              </div>
+              <div className="size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl">
+                <Link href="https://twitter.com/login" target="_blank">
+                  {" "}
+                  <TwitterLogo />
+                </Link>
+              </div>
+              <div className="size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl">
+                <Link href="https://www.linkedin.com/login" target="_blank">
+                  {" "}
+                  <LinkedinLogo />
+                </Link>
+              </div>
+              <div className="size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl">
+                <Link
+                  href="https://www.instagram.com/accounts/login/?hl=en"
+                  target="_blank"
+                >
+                  {" "}
+                  <InstagramLogo />
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <footer className='bg-footerSection bg-no-repeat bg-center'>
-        <div className='container pt-[69px] pb-[116px] w-full'>
-          <div className='flex flex-row flex-wrap -mx-3  justify-between'>
-            <div className='lg:w-3/12 px-3'>
-              <div className='max-w-[117px]'>
-                <Image
-                  width={117}
-                  height={30}
-                  src={footerLogo}
-                  alt='footer logo'
-                />
-              </div>
-              <p className='font-jakarata font-normal text-base text-white pt-5 opacity-70 max-w-[279px]'>
-                Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.
-              </p>
-            </div>
-            <div className='lg:w-8/12'>
-              <div className='flex flex-row flex-wrap -mx-3 justify-end'>
-                {footerData.map((section, index) => (
-                  <div key={index} className='md:w-3/12 px-3'>
-                    <ul>
-                      <li>
-                        <h2 className='font-jakarata text-lg text-white font-normal'>{section.title}</h2>
+          <div className="xl:w-8/12 lg:w-8/12 px-3 w-full">
+            <div className="flex flex-row flex-wrap -mx-3 xl:justify-end lg:justify-evenly justify-between max-lg:pt-5 w-full">
+              {footerData.map((val: FooterColumns, index: number) => (
+                <div
+                  key={index}
+                  className={`${val.className} w-1/2 px-5 lg:px-3 lg:pt-5 sm:pt-4 pt-3`}
+                >
+                  <ul>
+                    <li className={`${index === 2 && "mt-5 md:mt-0"}`}>
+                      <h2 className="text-lg text-white">{val.title}</h2>
+                    </li>
+                    {val.links.map((link: FooterLinks, index: number) => (
+                      <li key={index} className="lg:pt-5 pt-3 text-nowrap">
+                        <Link
+                          href={link.href}
+                          className="text-white opacity-70 hover:opacity-100 ease-in-out duration-300"
+                        >
+                          {link.label}
+                        </Link>
                       </li>
-                      {section.links.map((link, idx) => (
-                        <li key={idx}>
-                          <a href={link.href} className='font-jakarata text-base text-white opacity-70'>
-                            {link.label}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+              <div className="md:w-4/12 w-full pt-5 px-5 max-xl:hidden">
+                <h2 className="text-lg text-white">Follow us on</h2>
+                <div className="gap-3 mt-5 flex">
+                  <div className="size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl">
+                    <Link
+                      href="https://www.facebook.com/login/"
+                      target="_blank"
+                      aria-label="Facebook login page"
+                    >
+                      <FacebookLogo />
+                    </Link>
                   </div>
-                ))}
-                <div className='md:w-3/12 px-3'>
-                  <h2 className='text-lg font-jakarata text-white font-normal'>Follow us on</h2>
-                  <div className='flex gap-3'>
-
+                  <div className="size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl">
+                    <Link
+                      href="https://twitter.com/login"
+                      target="_blank"
+                      aria-label="Twitter login page"
+                    >
+                      <TwitterLogo />
+                    </Link>
+                  </div>
+                  <div className="size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl">
+                    <Link
+                      href="https://www.linkedin.com/login"
+                      target="_blank"
+                      aria-label="LinkedIn login page"
+                    >
+                      <LinkedinLogo />
+                    </Link>
+                  </div>
+                  <div className="size-8 rounded-full bg-white flex items-center justify-center border border-white ease-in-out duration-300 hover:border-blue cursor-pointer hover:shadow-3xl">
+                    <Link
+                      href="https://www.instagram.com/accounts/login/?hl=en"
+                      target="_blank"
+                      aria-label="Instagram login page"
+                    >
+                      <InstagramLogo />
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+      <div className="w-full h-[1px] [background:linear-gradient(180deg,#ffffff33_0%,#ffffff1a_100%)] lg:mt-14 md:mt-10 mt-7"></div>
+      <p className="opacity-70 text-center text-white py-4 px-3">
+        © {date.getFullYear()} Hyperleen, All Rights reserved.
+      </p>
+    </div>
   );
 };
 

@@ -3,9 +3,9 @@ import Hero from "../components/home/Hero";
 import SegmentationVerification from "@/components/home/SegmentationVerification";
 import ObjectVerification from "@/components/home/ObjectVerification";
 import OurTeam from "@/components/home/OurTeam";
-import HowWorks from "@/components/home/HowWorks";
-import EnsureHighQuality from "@/components/home/EnsureHighQuality";
 import ToolsPlatforms from "@/components/home/ToolsPlatforms";
+import HowWorks from "@/components/common/HowWorks";
+import EnsureHighQuality from "@/components/common/EnsureHighQuality";
 
 export default function Home() {
   return (
@@ -15,7 +15,9 @@ export default function Home() {
       <SegmentationVerification />
       <ObjectVerification />
       <OurTeam />
-      <HowWorks />
+      <div className="xl:py-[160px] md:py-20 py-16 lg:pt-[64px] lg:pb-[80px] 2xl:max-w-[1536px] mx-auto">
+        <HowWorks />
+      </div>
       <EnsureHighQuality />
       <ToolsPlatforms />
     </>

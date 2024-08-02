@@ -1,17 +1,10 @@
-import React from "react";
-type PARAGRAPH = {
+interface PARAGRAPH {
   className?: string;
   textName: string;
-};
+}
 
-const Paragraph = ({ className, textName }:PARAGRAPH) => {
-  return (
-    <p
-      className={`font-poppins font-normal text-base leading-6 text-gray ${className}`}
-    >
-      {textName}
-    </p>
-  );
+const Paragraph = ({ className, textName }: PARAGRAPH) => {
+  return <p className={`leading-6 text-grey ${className}`}>{textName}</p>;
 };
 
 export default Paragraph;
